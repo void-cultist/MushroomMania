@@ -1,0 +1,13 @@
+{
+  "Name": "Mushroom Mania FTM",
+  "Author": "voidcultist",
+  "Version": "1.0.0",
+  "Description": "FTM part of Mushroom Mania",
+  "UniqueID": "void.MM.FTM",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": [],
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager",
+    "MinimumVersion": "1.23.0"
+  }
+}
