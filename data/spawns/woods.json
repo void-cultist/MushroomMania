@@ -1,0 +1,503 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add edible mushroom spawns to Woods",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": {
+                 "{{ModID}}_CommonEdibleMushrooms": //common
+                {
+
+                    "Chance": 0.7,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_GreatWoodMushroom",
+                    "ItemId": "(O)MM_GreatWoodMushroom",
+                    "RandomItemId": [ "(O)MM_GreatWoodMushroom", "(O)MM_OrangePeelFungus", "(O)MM_SaffronMilkcap", "(O)MM_RussulaVesca", "(O)MM_OrangeGrisette", "(O)MM_ParasolMushroom"],
+                    "PerItemCondition": null
+                },
+
+                "MM_Aspen": //rare
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, SEASON summer fall",
+                    "Id": "(O)MM_Aspen",
+                    "ItemId": "(O)MM_Aspen",
+                    "PerItemCondition": null
+                },
+                "MM_BlackTrumpet": //uncommon
+                {
+                    "Chance": 0.3,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall",
+                    "Id": "(O)MM_BlackTrumpet",
+                    "ItemId": "(O)MM_BlackTrumpet",
+
+                },
+
+                  "MM_CaesarsMushroom": //rare
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, SEASON summer fall",
+                    "Id": "(O)MM_CaesarsMushroom",
+                    "ItemId": "(O)MM_CaesarsMushroom",
+                    "PerItemCondition": null
+                },
+
+                    "MM_Champignon": //common
+                {
+
+                    "Chance": 0.8,
+                    "Condition": "SEASON fall winter",
+                    "Id": "(O)MM_Champignon",
+                    "ItemId": "(O)MM_Champignon",
+                    "PerItemCondition": null
+                },
+
+                "MM_Enoki": //common
+                {
+                    "Chance": 0.5,
+                    "Season": "Spring",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5",
+                    "Id": "(O)MM_Enoki",
+                    "ItemId": "(O)MM_Enoki",
+                    "PerItemCondition": null
+                },
+                
+
+                "MM_GoldenBrittlegill": //uncommon
+                {
+                    "Chance": 0.3,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_GoldenBrittlegill",
+                    "ItemId": "(O)MM_GoldenBrittlegill",
+
+                },
+                
+                "MM_LobsterMushroom": //uncommon
+                {
+                    "Chance": 0.4,
+                    "Season": null,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7",
+                    "Id": "(O)MM_LobsterMushroom",
+                    "ItemId": "(O)MM_LobsterMushroom",
+                    "PerItemCondition": null
+                },
+                "MM_Matsutake": //rare
+                {
+                    "Chance": 0.1,
+                    "Season": "Fall",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 9",
+                    "Id": "(O)MM_Matsutake",
+                    "ItemId": "(O)MM_Matsutake",
+                    "PerItemCondition": null
+                },
+                 "MM_RubyBolete": //rare
+                {
+
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 8, SEASON summer fall",
+                    "Id": "(O)MM_RubyBolete",
+                    "ItemId": "(O)MM_RubyBolete",
+                    "PerItemCondition": null
+                },
+
+                 
+           
+
+
+            }
+        },
+     {
+            "LogName": "Add poisonous mushroom spawns to Woods",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "When": { "Include Poisonous Mushrooms": true },
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": {
+                "MM_Deathcap": //common
+                {
+                    "Chance": 0.5,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_Deathcap",
+                    "ItemId": "(O)MM_Deathcap",
+                    "PerItemCondition": null
+                },
+
+                  "MM_DestroyingAngel": //common
+                {
+                    "Chance": 0.5,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall",
+                    "Id": "(O)MM_DestroyingAngel",
+                    "ItemId": "(O)MM_DestroyingAngel",
+                    "PerItemCondition": null
+                },
+
+                 "MM_GreyKnight": //common
+                {
+                    "Chance": 0.5,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_GreyKnight",
+                    "ItemId": "(O)MM_GreyKnight",
+                    "PerItemCondition": null
+                },
+
+                  "MM_SulfurTuft": //common
+                {
+                    "Chance": 0.7,
+                    "Season": null,
+                    "Id": "(O)MM_SulfurTuft",
+                    "ItemId": "(O)MM_SulfurTuft",
+                    "PerItemCondition": null
+                },
+
+                "MM_TheSickener":
+                 {
+                    "Chance": 0.6,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_TheSickener",
+                    "ItemId": "(O)MM_TheSickener",
+                    "PerItemCondition": null
+                },
+
+            }
+        },
+        {
+             "LogName": "Add inedible mushroom spawns to Woods",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": {
+                   "MM_DevilsFingers": //uncommon
+                  {
+
+                    "Chance": 0.3,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5, SEASON summer fall",
+                    "Id": "(O)MM_DevilsFingers",
+                    "ItemId": "(O)MM_DevilsFingers",
+                    "PerItemCondition": null
+                },
+
+                 "MM_JubileeWaxcap": //uncommon
+                  {
+
+                    "Chance": 0.3,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_JubileeWaxcap",
+                    "ItemId": "(O)MM_JubileeWaxcap",
+                    "PerItemCondition": null
+                },
+            }
+        },
+
+////Spawn imaginary shrooms
+ {
+            "LogName": "Spawn edbile imaginary mushrooms in Woods map",
+            "Action": "EditData",
+            "When": { "Include imaginary Mushrooms": "on" },
+            "Target": "Data/Locations",
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": {
+                "MM_BurgerShroom":
+                {
+                    "Chance": 0.4,
+                    "Season": "Spring",
+                    "Condition": "PLAYER_BASE_MINING_LEVEL Any 3",
+                    "Id": "(O)MM_BurgerShroom",
+                    "ItemId": "(O)MM_BurgerShroom",
+                    "PerItemCondition": null
+                },
+                "MM_ShroomOfTransingYourGender":
+                  {
+                    "Chance": 0.01,
+                    "Season": null,
+                    "Condition": "PLAYER_BASE_FARMING_LEVEL Any 10",
+                    "Id": "(O)MM_ShroomOfTransingYourGender",
+                    "ItemId": "(O)MM_ShroomOfTransingYourGender",
+                    "PerItemCondition": null
+                },
+
+            }
+        },
+
+ { 
+            "LogName": "Spawn poisonous imaginary mushrooms in Woods map",
+            "Action": "EditData",
+            "When": { "Include imaginary Mushrooms": "on", "Include Poisonous Mushrooms": true },
+            "Target": "Data/Locations",
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": 
+            {
+                "MM_BleedingHeart":
+                  {
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 9, SEASON fall winter",
+                    "Id": "(O)MM_BleedingHeart",
+                    "ItemId": "(O)MM_BleedingHeart",
+                    "PerItemCondition": null
+                },
+                "MM_AllEyes":
+                  {
+                    "Chance": 0.15,
+                    "Condition": "PLAYER_BASE_FARMING_LEVEL Any 9, SEASON fall winter",
+                    "Id": "(O)MM_AllEyes",
+                    "ItemId": "(O)MM_AllEyes",
+                    "PerItemCondition": null
+                }
+            }
+        },
+{ 
+            "LogName": "Spawn inedible imaginary mushrooms in Woods map",
+            "Action": "EditData",
+            "When": { "Include imaginary Mushrooms": "on", "Include Inedible Mushrooms": true },
+            "Target": "Data/Locations",
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": 
+            {
+                "MM_WaningMoonShroom":
+                  {
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 6",
+                    "Season": "Winter",
+                    "Id": "(O)MM_WaningMoonShroom",
+                    "ItemId": "(O)MM_WaningMoonShroom",
+                    "PerItemCondition": null
+                }
+            }
+        },
+
+
+///DURING RAINY DAYS
+
+{
+            "LogName": "Add edible mushroom spawns to Woods",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "When": { "Weather": "Rain, Storm, GreenRain", "Spawn Rate in Rain": "increased" },
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": {
+                 "{{ModID}}_CommonEdibleMushrooms": //common
+                {
+
+                    "Chance": 0.9,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_GreatWoodMushroom",
+                    "ItemId": "(O)MM_GreatWoodMushroom",
+                    "RandomItemId": [ "(O)MM_GreatWoodMushroom", "(O)MM_OrangePeelFungus", "(O)MM_SaffronMilkcap", "(O)MM_RussulaVesca", "(O)MM_OrangeGrisette", "(O)MM_ParasolMushroom"],
+                    "PerItemCondition": null
+                },
+
+                "MM_Aspen": //rare
+                {
+
+                    "Chance": 0.4,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, SEASON summer fall",
+                    "Id": "(O)MM_Aspen",
+                    "ItemId": "(O)MM_Aspen",
+                    "PerItemCondition": null
+                },
+                "MM_BlackTrumpet": //uncommon
+                {
+                    "Chance": 0.6,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall",
+                    "Id": "(O)MM_BlackTrumpet",
+                    "ItemId": "(O)MM_BlackTrumpet",
+
+                },
+
+                  "MM_CaesarsMushroom": //rare
+                {
+
+                    "Chance": 0.4,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, SEASON summer fall",
+                    "Id": "(O)MM_CaesarsMushroom",
+                    "ItemId": "(O)MM_CaesarsMushroom",
+                    "PerItemCondition": null
+                },
+
+                    "MM_Champignon": //common
+                {
+
+                    "Chance": 1,
+                    "Condition": "SEASON fall winter",
+                    "Id": "(O)MM_Champignon",
+                    "ItemId": "(O)MM_Champignon",
+                    "PerItemCondition": null
+                },
+
+                "MM_Enoki": //common
+                {
+                    "Chance": 0.7,
+                    "Season": "Spring",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5",
+                    "Id": "(O)MM_Enoki",
+                    "ItemId": "(O)MM_Enoki",
+                    "PerItemCondition": null
+                },
+                
+
+                "MM_GoldenBrittlegill": //uncommon
+                {
+                    "Chance": 0.7,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_GoldenBrittlegill",
+                    "ItemId": "(O)MM_GoldenBrittlegill",
+
+                },
+                
+                "MM_LobsterMushroom": //uncommon
+                {
+                    "Chance": 0.5,
+                    "Season": null,
+                    "Id": "(O)MM_LobsterMushroom",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7",
+                    "ItemId": "(O)MM_LobsterMushroom",
+                    "PerItemCondition": null
+                },
+                "MM_Matsutake": //rare
+                {
+                    "Chance": 0.2,
+                    "Season": "Fall",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 9",
+                    "Id": "(O)MM_Matsutake",
+                    "ItemId": "(O)MM_Matsutake",
+                    "PerItemCondition": null
+                },
+                 "MM_RubyBolete": //rare
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 8, SEASON summer fall",
+                    "Id": "(O)MM_RubyBolete",
+                    "ItemId": "(O)MM_RubyBolete",
+                    "PerItemCondition": null
+                },
+                "422":
+                {
+                    "Chance": 0.5,
+                    "Season": null,
+                    "Id": "(O)422",
+                    "ItemId": "(O)422",
+                    "PerItemCondition": null
+                },
+                "257":
+                {
+                    "Chance": 0.7,
+                    "Season": null,
+                    "Id": "(O)257",
+                    "ItemId": "(O)257",
+                    "PerItemCondition": null
+                },
+                "430":
+                {
+                    "Chance": 0.4,
+                    "Season": null,
+                    "Id": "(O)430",
+                    "ItemId": "(O)430",
+                    "PerItemCondition": null
+                },
+
+
+
+                 
+           
+
+
+            }
+        },
+     {
+            "LogName": "Add poisonous mushroom spawns to Woods during rain",
+            "Action": "EditData",
+            "When": { "Weather": "Rain, Storm, GreenRain", "Include Poisonous Mushrooms": true, "Spawn Rate in Rain": "increased" },
+            "Target": "Data/Locations",
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": {
+                "MM_Deathcap": //common
+                {
+                    "Chance": 0.7,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_Deathcap",
+                    "ItemId": "(O)MM_Deathcap",
+                    "PerItemCondition": null
+                },
+
+                  "MM_DestroyingAngel": //common
+                {
+                    "Chance": 0.7,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall",
+                    "Id": "(O)MM_DestroyingAngel",
+                    "ItemId": "(O)MM_DestroyingAngel",
+                    "PerItemCondition": null
+                },
+
+                 "MM_GreyKnight": //common
+                {
+                    "Chance": 0.7,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_GreyKnight",
+                    "ItemId": "(O)MM_GreyKnight",
+                    "PerItemCondition": null
+                },
+
+                  "MM_SulfurTuft": //common
+                {
+                    "Chance": 0.8,
+                    "Season": null,
+                    "Id": "(O)MM_SulfurTuft",
+                    "ItemId": "(O)MM_SulfurTuft",
+                    "PerItemCondition": null
+                },
+
+                "MM_TheSickener":
+                 {
+                    "Chance": 0.8,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_TheSickener",
+                    "ItemId": "(O)MM_TheSickener",
+                    "PerItemCondition": null
+                },
+                 "420":
+                {
+                    "Chance": 0.9,
+                    "Season": null,
+                    "Id": "(O)420",
+                    "ItemId": "(O)420",
+                    "PerItemCondition": null
+                },
+
+            }
+        },
+        {
+             "LogName": "Add inedible mushroom spawns to Woods during rain",
+            "Action": "EditData",
+             "When": { "Weather": "Rain, Storm, GreenRain", "Spawn Rate in Rain": "increased" },
+            "Target": "Data/Locations",
+            "TargetField": [ "Woods", "Forage" ],
+            "Entries": {
+                   "MM_DevilsFingers": //uncommon
+                  {
+
+                    "Chance": 0.5,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5, SEASON summer fall",
+                    "Id": "(O)MM_DevilsFingers",
+                    "ItemId": "(O)MM_DevilsFingers",
+                    "PerItemCondition": null
+                },
+
+                 "MM_JubileeWaxcap": //uncommon
+                  {
+
+                    "Chance": 0.5,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_JubileeWaxcap",
+                    "ItemId": "(O)MM_JubileeWaxcap",
+                    "PerItemCondition": null
+                },
+            }
+        }
+
+
+    
+    ]
+}

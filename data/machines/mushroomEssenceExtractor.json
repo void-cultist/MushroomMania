@@ -1,0 +1,141 @@
+{
+    "Changes": [
+ {
+            "LogName": "Load extractor Textures",
+            "Action": "Load",
+            "Target": "{{ModID}}/Mushroomessenceextractor, {{ModID}}/ExtractBottle",
+            "FromFile": "assets/objects/{{TargetWithoutPath}}.png"
+ },
+
+ //Add BC patch
+        {
+    "LogName": "Add Mushroom Essence extractor Machines to BigCraftables",
+    "Action": "EditData",
+    "Target": "Data/BigCraftables",
+    "Entries": {
+        "MM_MushroomEssenceExtractor": {
+            "Name": "MM_MushroomEssenceExtractor",
+            "DisplayName": "Mushroom Essence Extractor",
+            "Description": "Extracts the essence of poisonous mushrooms.",
+            "Price": 500,
+            "Fragility": 0,
+            "CanBePlacedOutdoors": true,
+            "CanBePlacedIndoors": true,
+            "IsLamp": false,
+            "Texture": "{{ModID}}/Mushroomessenceextractor",
+            "SpriteIndex": 0,
+            "CustomFields": {},
+            "ContextTags": ["is_machine", "machine_input", "machine_output"]
+    }
+    }
+},
+
+//mushroom essence extractor crafting recipe
+
+{
+    "LogName": "Add mushroom essence extractor crafting recipes",
+    "Action": "EditData",
+    "Target": "Data/CraftingRecipes",
+    "Entries": {
+        "MM_MushroomEssenceExtractor": "(O)771 20 (O)388 30 (O)557 1 (O)787 2/Home/(BC)MM_MushroomEssenceExtractor 1/true/default/Mushroom Essence Extractor",
+    }
+},
+///machine outputs
+
+{
+    "LogName": "Add Mushroom Essence Extractor machine output",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries":  {
+      "MM_Flavored_MushroomEssence":
+        {
+           "Name": "MM_Flavored_MushroomEssence",
+           "DisplayName": "{{i18n:MM_Flavored_MushroomEssence.name}}",
+            "Description": "{{i18n:MM_Flavored_MushroomEssence.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/ExtractBottle", 
+            "SpriteIndex": 0, 
+            "ColorOverlayFromNextIndex": true,
+           "Edibility": -300,
+            "IsDrink": false,
+            "ContextTags": [ "mushroom_extract" ],
+       
+        },
+    }
+       
+},
+
+//machine rules
+
+        {
+            "LogName": "Add machine: Mushroom Essence Extractor + Rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC)MM_MushroomEssenceExtractor": {
+                    "OutputRules": [
+
+                    {
+                        "Id": "MM_Flavored_MushroomEssence",
+                        "Triggers": 
+                        [
+                        {
+                        "Trigger": "ItemPlacedInMachine",
+                        "RequiredTags": ["potion_ingredient"],
+                        "RequiredCount": 1
+                        },
+                        ],
+                        "OutputItem": 
+                        [
+                        {
+                            "Id": "MM_Flavored_MushroomEssence",
+                            "ItemId": "MM_Flavored_MushroomEssence",
+                            "ObjectInternalName": "{0} MM_Flavored_MushroomEssence",
+                            "ObjectDisplayName": "[LocalizedText Strings\\Objects:MM_Flavored_MushroomEssence %PRESERVED_DISPLAY_NAME]",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MushroomEssence",
+									"Modification": "Multiply",
+									"Amount": 1.5
+								}
+                            ]
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 200,
+                }
+                
+            ],
+         
+          
+            "WorkingEffects": [
+                {
+                    "Sounds": [ {"Id": "Ship",} ],
+                    
+                }
+            ],
+            "WobbleWhileWorking": true,
+              
+                }
+            }
+        },
+
+     {
+        "LogName": "Strings patch",
+        "Action": "EditData",
+        "Target": "Strings/Objects",
+        "Entries": {
+            "MM_Flavored_MushroomEssence": "{{i18n: MM_Flavored_MushroomEssence}}",
+    },
+}
+    ]
+}

@@ -1,0 +1,191 @@
+{
+    "Changes":  [
+
+      /*   {
+            "LogName": "Load mushroom textures",
+            "Action": "Load",
+            "Target": "{{ModID}}/Mushrooms1, {{ModID}}/Mushrooms2, {{ModID}}/SpritesGlionox, {{ModID}}/MushroomsSsugmi, {{ModID}}/MushroomsPixerelia",
+            "FromFile": "assets/objects/{{TargetWithoutPath}}.png"
+        }, */
+
+        { 
+            "LogName": "Add new imaginary edible mushrooms",
+            "Action": "EditData",
+            "Target": "data/objects",
+            "Entries": 
+            {
+              "MM_BurgerShroom":
+                      {
+                         "Name": "MM_BurgerShroom",
+                         "DisplayName": "{{i18n:MM_BurgerShroom.DisplayName}}",
+                          "Description": "{{i18n:MM_BurgerShroom.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 500, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 2, 
+                         "Edibility": 40,
+                          "IsDrink": false,
+                          "ContextTags": [ "edible_mushroom", "color_brown", "mushroom_item", "preserves_pickle", "borgr", "potion_ingredient" ],
+                         "Buffs": [
+                               {
+                                "Id": "{{ModID}}_BurgerShroomBuff",
+                                "Duration": 200,
+                                "CustomAttributes": {
+                                      "Attack": 2,
+                                      "Defense": 1,
+                                      "MiningLevel": 1
+                                    },
+                                "IsDebuff": false
+                            }
+                         ]
+                      },
+                "MM_ShroomOfTransingYourGender": 
+                      {
+                         "Name": "MM_ShroomOfTransingYourGender",
+                         "DisplayName": "{{i18n:MM_ShroomOfTransingYourGender.DisplayName}}",
+                          "Description": "{{i18n:MM_ShroomOfTransingYourGender.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 200000, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 5, 
+                         "Edibility": 300,
+                          "IsDrink": false,
+                          "ContextTags": [ "edible_mushroom", "color_pink", "mushroom_item", "preserves_pickle", "color_blue", "fck_trfs", "potion_ingredient" ],
+                         "Buffs": [
+                               {
+                                "Id": "{{ModID}}_TransPower",
+                                "BuffId": "statue_of_blessings_1",
+                            "IsDebuff": false,
+                            "Duration": -2,
+                            "IconTexture": "TileSheets\\BuffsIcons",
+                            "IconSpriteIndex": 31,
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "MiningLevel": 3,
+                                "FishingLevel": 5,
+                                "CombatLevel": 5,
+                                "LuckLevel": 5,
+                                "Attack": 5,
+                                "Defense": 5,
+                                "Speed": 3,
+                                "AttackMultiplier": 2,
+                                "CriticalChanceMultiplier": 3,
+                                "CriticalPowerMultiplier": 4
+                                
+                                }
+                            }
+                         ]
+                      
+                      }
+            }
+              
+          
+
+        },
+
+         { 
+            "LogName": "Add new imaginary poisonous mushrooms",
+            "Action": "EditData",
+            "When": { "Include Poisonous Mushrooms": true },
+            "Target": "data/objects",
+            "Entries": 
+            {
+              
+                  "MM_BleedingHeart":
+                      {
+                         "Name": "MM_BleedingHeart",
+                         "DisplayName": "{{i18n:BleedingHeartDisplayName}}",
+                          "Description": "{{i18n:BleedingHeartDescription}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 4000, 
+                         "Texture": "{{ModID}}/SpritesGlionox", 
+                          "SpriteIndex": 10, 
+                         "Edibility": -240,
+                          "IsDrink": false,
+                          "ContextTags": [ "poisonous_mushroom"],
+                         "Buffs": [
+                               {
+                                "Id": "{{ModID}}_BleedingHeartDebuff",
+                                "Duration": 3000,
+                                "CustomAttributes": {
+                                      "Attack": -8.0,
+                                      "Defense": -8.0
+                                    },
+                                "IsDebuff": true
+                            }
+                         ]
+                      },
+                "MM_AllEyes":
+                      {
+                         "Name": "MM_AllEyes",
+                         "DisplayName": "{{i18n:MM_AllEyes.DisplayName}}",
+                          "Description": "{{i18n:MM_AllEyes.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 3000, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 7, 
+                         "Edibility": -200,
+                          "IsDrink": false,
+                          "ContextTags": [ "poisonous_mushroom"],
+                         "Buffs": [
+                                 {
+                            "Id": "{{ModId}}_AllEyesDebuff",
+                            "BuffId": 26,
+                            "IsDebuff": true,
+                            "Duration": 300,
+                            "IconTexture": "TileSheets\\BuffsIcons",
+                            "IconSpriteIndex": 26,
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Speed": -5.0
+                                }
+                            
+                        }
+                         ]
+                      },
+                     
+                   
+
+        }
+
+        },
+
+           { 
+            "LogName": "Add new imaginary inedible mushrooms",
+            "Action": "EditData",
+            "When": { "Include Inedible Mushrooms": true },
+            "Target": "data/objects",
+            "Entries": 
+            {
+
+                  "MM_WaningMoonShroom":
+                {
+                   "Name": "MM_WaningMoonShroom",
+                   "DisplayName": "{{i18n:WaningMoonShroomDisplayName}}",
+                    "Description": "{{i18n:WaningMoonShroomDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 4000, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 4, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_dark_slate_blue", "inedible_mushroom", "potion_ingredient" ],
+                
+                },
+
+                
+        },
+
+        },
+
+    ]
+}

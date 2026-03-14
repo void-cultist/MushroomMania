@@ -1,0 +1,474 @@
+{
+    "Changes":  [
+
+        {
+            "LogName": "Load mushroom textures",
+            "Action": "Load",
+            "Target": "{{ModID}}/Mushrooms1, {{ModID}}/Mushrooms2, {{ModID}}/SpritesGlionox, {{ModID}}/MushroomsSsugmi, {{ModID}}/MushroomsPixerelia",
+            "FromFile": "assets/objects/{{TargetWithoutPath}}.png"
+        },
+
+        { 
+            "LogName": "Add new edible mushrooms",
+            "Action": "EditData",
+            "Target": "data/objects",
+            "Entries": 
+            {
+              
+              "MM_GreatWoodMushroom": //summer + fall
+                {
+                   "Name": "MM_GreatWoodMushroom",
+                   "DisplayName": "{{i18n:GreatWoodMushroomDisplayName}}",
+                    "Description": "{{i18n:GreatWoodMushroomDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 200, 
+                   "Texture": "{{ModID}}/Mushrooms1", 
+                    "SpriteIndex": 1, 
+                   "Edibility": 50,
+                    "IsDrink": false,
+                    "ContextTags": [ "preserves_pickle", "color_brown", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ],
+                
+                },
+               
+                
+              "MM_OrangePeelFungus":
+                {
+                   "Name": "MM_OrangePeelFungus",
+                   "DisplayName": "{{i18n:OrangePeelFungusDisplayName}}",
+                    "Description": "{{i18n:OrangePeelFungusDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 300, 
+                   "Texture": "{{ModID}}/Mushrooms1", 
+                    "SpriteIndex": 2, 
+                   "Edibility": 60,
+                    "IsDrink": false,
+                    "ContextTags": [ "preserves_pickle", "color_orange", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ],
+                
+                },
+
+                       
+              "MM_RubyBolete":
+                {
+                   "Name": "MM_RubyBolete",
+                   "DisplayName": "{{i18n:RubyBoleteDisplayName}}",
+                    "Description": "{{i18n:RubyBoleteDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 600, 
+                   "Texture": "{{ModID}}/Mushrooms1", 
+                    "SpriteIndex": 3, 
+                   "Edibility": 1,
+                    "IsDrink": false,
+                    "ContextTags": [ "color_dark_red", "color_dark_pink", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ],
+                
+                },
+
+                   "MM_OrangeGrisette":
+                {
+                   "Name": "MM_OrangeGrisette",
+                   "DisplayName": "{{i18n:OrangeGrisetteDisplayName}}",
+                    "Description": "{{i18n:OrangeGrisetteDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 360, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 3, 
+                   "Edibility": 25,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_orange", "color_yellow", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ],
+                
+                },
+                "MM_ParasolMushroom":
+                {
+                  "Name": "MM_ParasolMushroom",
+                     "DisplayName": "{{i18n:ParasolMushroomDisplayName}}",
+                    "Description": "{{i18n:ParasolMushroomDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 200, 
+                   "Texture": "{{ModID}}/SpritesGlionox", 
+                    "SpriteIndex": 3, 
+                   "Edibility": 38,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ]
+                },
+                "MM_SaffronMilkcap": 
+                {
+                   "Name": "MM_SaffronMilkcap",
+                     "DisplayName": "{{i18n:MM_SaffronMilkcap.DisplayName}}",
+                    "Description": "{{i18n:MM_SaffronMilkcap.Description}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 200, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 0, 
+                   "Edibility": 50,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_yellow", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ]
+                },
+                  "MM_Champignon": 
+                {
+                   "Name": "MM_Champignon",
+                     "DisplayName": "{{i18n:MM_Champignon.DisplayName}}",
+                    "Description": "{{i18n:MM_Champignon.Description}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 80, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 1, 
+                   "Edibility": 25,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+                "MM_Aspen":
+                  {
+                   "Name": "MM_Aspen",
+                     "DisplayName": "{{i18n:MM_Aspen.DisplayName}}",
+                    "Description": "{{i18n:MM_Aspen.Description}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 250, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 2, 
+                   "Edibility": 50,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+                "MM_RussulaVesca":
+                    {
+                   "Name": "MM_RussulaVesca",
+                     "DisplayName": "{{i18n:MM_RussulaVesca.DisplayName}}",
+                    "Description": "{{i18n:MM_RussulaVesca.Description}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 250, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 3, 
+                   "Edibility": 55,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+                 "MM_GoldenBrittlegill":
+                    {
+                   "Name": "MM_GoldenBrittlegill",
+                     "DisplayName": "{{i18n:MM_GoldenBrittlegill.DisplayName}}",
+                    "Description": "{{i18n:MM_GoldenBrittlegill.Description}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 300, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 4, 
+                   "Edibility": 60,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+                "MM_CaesarsMushroom":
+                  {
+                   "Name": "MM_CaesarsMushroom",
+                     "DisplayName": "{{i18n:MM_CaesarsMushroom.DisplayName}}",
+                    "Description": "{{i18n:MM_CaesarsMushroom.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 1000, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 5, 
+                   "Edibility": 50,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+                  "MM_Enoki":
+                  {
+                   "Name": "MM_Enoki",
+                     "DisplayName": "{{i18n:MM_Enoki.DisplayName}}",
+                    "Description": "{{i18n:MM_Enoki.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 700, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 7, 
+                   "Edibility": 70,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+                "MM_Matsutake":
+                  {
+                   "Name": "MM_Matsutake",
+                     "DisplayName": "{{i18n:MM_Matsutake.DisplayName}}",
+                    "Description": "{{i18n:MM_Matsutake.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 6000, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 8, 
+                   "Edibility": 100,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+                "MM_LobsterMushroom":
+                  {
+                   "Name": "MM_LobsterMushroom",
+                     "DisplayName": "{{i18n:MM_LobsterMushroom.DisplayName}}",
+                    "Description": "{{i18n:MM_LobsterMushroom.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 200, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 11, 
+                   "Edibility": 80,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+              "MM_BlackTrumpet":
+               {
+                   "Name": "MM_BlackTrumpet",
+                     "DisplayName": "{{i18n:MM_BlackTrumpet.DisplayName}}",
+                    "Description": "{{i18n:MM_BlackTrumpet.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 1500, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 13, 
+                   "Edibility": 90,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_black", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                },
+
+      
+               
+                
+        },
+
+
+        },
+//to be added later: pixerelia sprites index 10 inky cap, 11 suillus luteus, 13 penny bun
+
+         { 
+            "LogName": "Add new poisonous mushrooms",
+            "Action": "EditData",
+            "When": { "Include Poisonous Mushrooms": true },
+            "Target": "data/objects",
+            "Entries": 
+            {
+                "MM_DestroyingAngel": //summer + fall
+                {
+                    "Name": "MM_DestroyingAngel",
+                    "DisplayName": "{{i18n:DestroyingAngelDisplayName}}",
+                    "Description": "{{i18n:DestroyingAngelDescription}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 500,
+                    "Texture": "{{ModID}}/Mushrooms1",
+                    "SpriteIndex": 0,
+                    "Edibility": -200,
+                    "IsDrink": false,
+                    "ContextTags": [ "color_white", "poisonous_mushroom"],
+    
+                },
+        
+             
+                 "MM_TheSickener":
+                {
+                   "Name": "MM_TheSickener",
+                   "DisplayName": "{{i18n:TheSickenerDisplayName}}",
+                    "Description": "{{i18n:TheSickenerDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 200, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 2, 
+                   "Edibility": -50,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_dark_red", "color_dark_pink", "color_red", "poisonous_mushroom" ],
+                
+                },
+                "MM_SulfurTuft":  
+                    {
+                       "Name": "MM_SulfurTuft",
+                       "DisplayName": "{{i18n:SulfurTuftDisplayName}}",
+                        "Description": "{{i18n:SulfurTuftDescription}}",
+                      "Type": "Basic",
+                        "Category": -81,
+                        "Price": 60, 
+                       "Texture": "{{ModID}}/SpritesGlionox", 
+                        "SpriteIndex": 0, 
+                       "Edibility": -30,
+                        "IsDrink": false,
+                        "ContextTags": [ "color_yellow", "poisonous_mushroom"],
+                       "Buffs": [
+                            {
+                                "Id": "{{ModID}}_SulfurTuftDebuff",
+                                "Duration": 1000,
+                                "CustomAttributes": {
+                                      "ForagingLevel": -1.0,
+                                      "Defense": -2.0
+                                    },
+                                "IsDebuff": true
+                            }
+                       ]
+                    },
+                 "MM_Deathcap":
+                    {
+                       "Name": "MM_Deathcap",
+                       "DisplayName": "{{i18n:MM_Deathcap.DisplayName}}",
+                        "Description": "{{i18n:MM_Deathcap.Description}}",
+                      "Type": "Basic",
+                        "Category": -81,
+                        "Price": 60, 
+                       "Texture": "{{ModID}}/MushroomsSsugmi", 
+                        "SpriteIndex": 4, 
+                       "Edibility": -100,
+                        "IsDrink": false,
+                        "ContextTags": [ "color_green", "poisonous_mushroom"],
+                       "Buffs": [
+                            {
+                                "Id": "{{ModID}}_DeathcapDebuff",
+                              "BuffId": 25,
+                            "IsDebuff": true,
+                            "Duration": 120000,
+                            "IconTexture": "TileSheets\\BuffsIcons",
+                            "IconSpriteIndex": 25,
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Speed": -3,
+                                "Defense": -5
+                                }
+                            }
+                       ]
+                    },
+
+                "MM_GreyKnight":
+                 {
+                   "Name": "MM_GreyKnight",
+                     "DisplayName": "{{i18n:MM_GreyKnight.DisplayName}}",
+                    "Description": "{{i18n:MM_GreyKnight.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 1000, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 6, 
+                   "Edibility": 1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_grey", "preserves_pickle", "poisonous_mushroom", "mushroom_item", "forage_item" ],
+                    "Buffs": [
+                            {
+                                "Id": "{{ModID}}_DeathcapDebuff",
+                              "BuffId": 25,
+                            "IsDebuff": true,
+                            "Duration": 20000,
+                            "IconTexture": "TileSheets\\BuffsIcons",
+                            "IconSpriteIndex": 25,
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Speed": -3,
+                                "Defense": 1
+                                }
+                            }
+                          ]
+                },
+                     
+                   
+
+        }
+
+        },
+
+           { 
+            "LogName": "Add new inedible mushrooms",
+            "Action": "EditData",
+            "When": { "Include Inedible Mushrooms": true },
+            "Target": "data/objects",
+            "Entries": 
+            {
+
+                "MM_DevilsFingers":
+                {
+                   "Name": "MM_DevilsFingers",
+                   "DisplayName": "{{i18n:DevilsFingersDisplayName}}",
+                    "Description": "{{i18n:DevilsFingersDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 666, 
+                   "Texture": "{{ModID}}/Mushrooms1", 
+                    "SpriteIndex": 4, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_dark_red", "inedible_mushroom", "potion_ingredient" ],
+                
+                },
+
+                 "MM_JubileeWaxcap":
+                {
+                   "Name": "MM_JubileeWaxcap",
+                   "DisplayName": "{{i18n:JubileeWaxcapDisplayName}}",
+                    "Description": "{{i18n:JubileeWaxcapDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 600, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 0, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_pink", "inedible_mushroom", "potion_ingredient" ],
+                
+                },
+
+                 "MM_BluePinkgill": //island
+                {
+                   "Name": "MM_BluePinkgill",
+                   "DisplayName": "{{i18n:BluePinkgillDisplayName}}",
+                    "Description": "{{i18n:BluePinkgillDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 4000, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 1, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_blue", "color_cyan", "color_aquamarine", "inedible_mushroom", "potion_ingredient" ],
+                
+                },
+                
+                  "MM_WaningMoonShroom":
+                {
+                   "Name": "MM_WaningMoonShroom",
+                   "DisplayName": "{{i18n:WaningMoonShroomDisplayName}}",
+                    "Description": "{{i18n:WaningMoonShroomDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 4000, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 4, 
+                   "Edibility": -1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_pale_violet", "color_grey", "inedible_mushroom", "potion_ingredient" ],
+                
+                },
+
+                  "MM_BleedingToothFungus": //mountains
+                {
+                      "Name": "MM_BleedingToothFungus",
+                      "DisplayName": "{{i18n:MM_BleedingToothFungus.DisplayName}}",
+                      "Description": "{{i18n:MM_BleedingToothFungus.Description}}",
+                      "Type": "Basic",
+                      "Category": -81,
+                          "Price": 4000, 
+                         "Texture": "{{ModID}}/SpritesGlionox", 
+                          "SpriteIndex": 4, 
+                         "Edibility": -10,
+                          "IsDrink": false,
+                          "ContextTags": [ "inedible_mushroom", "potion_ingredient", "color_orange" ],
+                        
+                      },
+                
+        },
+
+        },
+
+    ]
+}

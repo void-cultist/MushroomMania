@@ -1,0 +1,37 @@
+{
+    "Changes": [
+
+        {  "LogName": "Monster Mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["FlashShifter.StardewValleyExpandedCP_Monster_Mushroom", "ContextTags"],			//monster mushroom
+		   "Entries": {
+				  "#-1": "edible_mushroom",
+                  "#-2": "mushroom_item"
+		   }
+		},
+
+        {  "LogName": "Mushroom berry rice Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["FlashShifter.StardewValleyExpandedCP_Mushroom_Berry_Rice", "ContextTags"],			//mushroom berry rice
+		   "Entries": {
+				  "#-1": "mushroom_dish"
+		    }
+        },
+
+         {  "LogName": "poison mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["FlashShifter.StardewValleyExpandedCP_Poison_Mushroom", "ContextTags"],			//mushroom berry rice
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		    }
+        },
+
+
+
+
+
+    ]
+}

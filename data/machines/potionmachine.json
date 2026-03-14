@@ -1,0 +1,214 @@
+{
+    "Changes": [
+ {
+            "LogName": "Load potion Machine Textures",
+            "Action": "Load",
+            "Target": "{{ModID}}/Potionmachine, {{ModID}}/PotionsPixerelia, {{ModID}}/BuffsPixerelia",
+            "FromFile": "assets/objects/{{TargetWithoutPath}}.png"
+ },
+
+ //Add BC patch
+        {
+    "LogName": "Add Potion Machines to BigCraftables",
+    "Action": "EditData",
+    "Target": "Data/BigCraftables",
+    "Entries": {
+ 
+        "MM_Potionmachine": {
+            "Name": "MM_Potionmachine",
+            "DisplayName": "Potion Machine",
+            "Description": "Lets you brew potions using mushroom essence and by neutralizing mushroom toxins.",
+            "Price": 800,
+            "Fragility": 0,
+            "CanBePlacedOutdoors": true,
+            "CanBePlacedIndoors": true,
+            "IsLamp": true,
+            "Texture": "{{ModID}}/Potionmachine",
+            "SpriteIndex": 0,
+            "CustomFields": {}
+    }
+    }
+},
+
+//crafting recipes
+{
+    "LogName": "Add potion machine crafting recipes",
+    "Action": "EditData",
+    "Target": "Data/CraftingRecipes",
+    "Entries": {
+         "MM_Potionmachine": "(O)337 5 (O)787 5 (O)MM_Flavored_MushroomEssence 5/Home/(BC)MM_Potionmachine 1/true/default/Potion Machine",
+    }
+},
+
+
+
+//machine rules
+
+
+        {
+            "LogName": "Add machine: Potion Machine Rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "Entries": {
+                "(BC)MM_Potionmachine": {
+                    "OutputRules": [
+
+               
+                    {
+                        "Id": "MM_Foraging_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_greatwoodmushroom" ],                ///FORAGING POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Foraging_Potion",
+                            "ItemId": "MM_Foraging_Potion",
+                            "ObjectInternalName": "MM_Foraging_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Foraging_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)257",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+								"selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:selph.ExtraMachineConfig.RequirementInvalidMsgForagingPotion}}",
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+
+                {
+                        "Id": "MM_Mining_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_aspen" ],                ///MINING POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Mining_Potion",
+                            "ItemId": "MM_Mining_Potion",
+                            "ObjectInternalName": "MM_Mining_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Mining_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)281",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+                {
+                        "Id": "MM_Fishing_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_lobstermushroom" ],                ///Fishing POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Fishing_Potion",
+                            "ItemId": "MM_Fishing_Potion",
+                            "ObjectInternalName": "MM_Fishing_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Fishing_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)404",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+
+
+                
+            ],
+         
+          
+            "WorkingEffects": [
+                {
+                    "Sounds": [ {"Id": "slosh"} ],
+                    "Frames": ["1", "2"]
+                    
+                }
+            ],
+            //"WobbleWhileWorking": true,
+            "LightWhileWorking": {
+                "Radius": 0.5,
+                "Color": "SlateBlue"
+            }
+              
+                }
+            }
+        },
+    ]
+}

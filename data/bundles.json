@@ -1,0 +1,237 @@
+{
+    "Changes": [
+     
+      {
+        "LogName": "First Mushroom Bundle",
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "Entries":{
+            "MM_ShroomCollecting":{
+                "BundleName": "{{i18n:ShroomCollecting_Bundle.name}}",
+               "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"9, 15",
+               "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)404": 10,
+                "(O)257": 5,
+                "(O)281": 3,
+                "(O)420": 5,
+                "(O)422": 3
+                },
+                "DrawQuestionMark": true,
+                "BundleReward": { 
+                    "(O)MM_Foraging_Potion": 1
+                }
+            }
+         }
+      },
+
+      { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased":"MM_ShroomCollecting" //(!)
+         },
+         "Entries":{
+            
+            "MM_TastyShrooms":
+            {
+               "BundleName": "{{i18n:TastyShrooms_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"7, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_Enoki": 3,
+                "(O)MM_Champignon": 5,
+                "(O)MM_GreatWoodMushroom": 3,
+                "(O)MM_RubyBolete": 3,
+                "(O)MM_CaesarsMushroom": 2
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_PizzaFunghi": 1
+
+               }
+            }
+         }
+      },
+
+       { 
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased":"MM_ShroomCollecting",
+            "Include Poisonous Mushrooms": true,
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+         },                                                                                         //SVE + poison mushrooms enabled
+         "Entries":{
+            
+            "MM_PoisonousShrooms":
+            {
+               "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"11, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_DestroyingAngel": 3,
+                "(O)MM_TheSickener": 3,
+                "(O)MM_Deathcap": 3,
+                "(O)MM_SulfurTuft": 3,
+                "(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom": 3,
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
+               }
+            }
+         }
+      },
+
+      
+       { 
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased":"MM_ShroomCollecting",
+            "Include Poisonous Mushrooms": false,
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+         },                                                                         //SVE + no poisn mushrooms
+         "Entries":{
+            
+            "MM_PoisonousShrooms":
+            {
+               "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"11, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 2,
+               "Price": { 
+                "(O)420": 5,
+                "(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom": 4,
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
+               }
+            }
+         }
+      },
+
+            
+       { 
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased":"MM_ShroomCollecting",
+            "Include Poisonous Mushrooms": false,
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+         },                                                                         //no SVE + no poisn mushrooms
+         "Entries":{
+            
+            "MM_PoisonousShrooms":
+            {
+               "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"11, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 1,
+               "Price": { 
+                "(O)420": 10
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
+               }
+            }
+         }
+      },
+
+      { 
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased":"MM_ShroomCollecting",
+            "Include Poisonous Mushrooms": true,
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+         },                                                                                         //no SVE + poison mushrooms enabled
+         "Entries":{
+            
+            "MM_PoisonousShrooms":
+            {
+               "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"11, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_DestroyingAngel": 3,
+                "(O)MM_TheSickener": 3,
+                "(O)MM_Deathcap": 3,
+                "(O)MM_SulfurTuft": 3,
+                "(O)420": 4
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
+               }
+            }
+         }
+      },
+
+
+     { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased |contains=MM_PoisonousShrooms": true,
+            "DLX.Bundles/Purchased |contains=MM_TastyShrooms": true
+         },
+         "Entries":{
+            
+            "MM_Inedible":
+            {
+               "BundleName": "{{i18n:Inedible_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"9, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_Enoki": 3,
+                "(O)MM_Champignon": 5,
+                "(O)MM_GreatWoodMushroom": 3,
+                "(O)MM_RubyBolete": 3,
+                "(O)MM_CaesarsMushroom": 2
+                },
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "ITEM_CONTEXT_TAG Target inedible_mushroom",
+                        "Condition": "{{Include Inedible Mushrooms}}",
+                        "MaxItems": 4,
+                        "MinStack": 1,
+				        "MaxStack": 3
+                    }
+                ],
+               "BundleReward": {
+                "(O)645": 2
+               },
+               "BundleRewardSpawnFields": [
+                {
+                    "ItemId": "(BC)FlashShifter.StardewValleyExpandedCP_Butter_Churner",
+                    "MaxItems": 1,
+                    "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}"
+                },
+                {
+                    "ItemId": "(BC)Cornucopia_CompactMill",
+                    "MaxItems": 1,
+                    "Condition": "{{HasMod |contains=Cornucopia.ArtisanMachines}}"
+
+                }
+               ]
+            }
+         }
+      },
+
+
+
+   ]
+}
+

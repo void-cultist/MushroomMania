@@ -1,0 +1,17 @@
+{
+    "Changes": [
+
+{
+"LogName": "Strings for Mushroom Meadow Map",
+"Action": "EditData",
+"Target": "Strings/StringsFromMaps",
+"Entries": {
+            "MM.000": "{{i18n:MM0}}",
+			"MM.001": "{{i18n:MM1}}",
+			//"MM.002": "{{i18n:MM2}}",
+
+				
+			}
+		},
+    ]
+}

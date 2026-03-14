@@ -1,0 +1,53 @@
+{
+    "Changes": [
+        {  "LogName": "Truffle Oil Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["432", "ContextTags"],			//trufle oil
+		   "Entries": {
+				  "#-1": "oil_item"
+		   }
+		},
+
+         {  "LogName": "Garlic Oil Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["772", "ContextTags"],			//oil of garlic
+		   "Entries": {
+				  "#-1": "oil_item"
+		   }
+		},
+
+         {  "LogName": "Oil Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["742", "ContextTags"],			//oil
+		   "Entries": {
+				  "#-1": "oil_item"
+		   }
+		},
+
+          {  "LogName": "fried mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["205", "ContextTags"],			//Friend mushroom
+		   "Entries": {
+				  "#-1": "mushroom_dish"
+		   }
+		},
+
+          {  "LogName": "Red mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["420", "ContextTags"],			//red mushroom
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+
+        
+        
+        
+    ]
+}

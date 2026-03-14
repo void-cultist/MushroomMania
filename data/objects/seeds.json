@@ -1,0 +1,57 @@
+{
+  "Changes": [
+
+    {
+      "LogName": "Load all eyes sapling texures",
+      "Action": "Load",
+      "Target": "{{ModID}}/AllEyesPlanter, {{ModID}}/AllEyesBush",
+      "FromFile": "assets/crops/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "All Eyes sapling object data",
+      "Action": "EditData",
+      "When": { "Include imaginary Mushrooms": true },
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_AllEyes_Planter": {
+          "Name": "AllEyes_Planter",
+          "DisplayName": "{{i18n: AllEyes_Planter.name}}",
+          "Description": "{{i18n: AllEyes_Planter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/AllEyesPlanter",
+          "SpriteIndex": 0
+        }
+      }
+    },
+    {
+      "LogName": "All Eyes custom bush data",
+      "Action": "EditData",
+      "When": { "Include imaginary Mushrooms": true },
+      "Target": "furyx639.CustomBush/Data",
+      "Entries": {
+        "(O)MM_AllEyes_Planter": {
+          "DisplayName": "All Eyes",   //"{{i18n:AllEyes_Crop.name}}",
+          "AgeToProduce": 25,
+          "ConditionsToProduce": [
+            "SEASON Fall,DAY_OF_MONTH 1 2 3",
+            "SEASON Winter,DAY_OF_MONTH 24 25 26 27 28",
+            "IS_PASSIVE_FESTIVAL_TODAY fall27"  
+          ],
+          "ItemsProduced": [
+            {
+              "ItemId": "(O)MM_AllEyes",
+              "Condition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"IS_PASSIVE_FESTIVAL_TODAY fall27\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\"",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 2
+            },
+          ],
+          "Texture": "{{ModID}}/AllEyesBush",
+          "IndoorTexture":  "{{ModID}}/AllEyesBush",
+          "TextureSpriteRow": 0
+        }
+      }
+    }
+  ]
+}

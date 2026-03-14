@@ -1,0 +1,215 @@
+{
+    "Format": "2.9.0",
+
+    "DynamicTokens": [
+
+
+        //dynamic tokens for spawn rates
+        {
+            "Name": "MinDailyForageSpawn",
+            "Value": 4
+        },
+        {
+            "Name": "MinDailyForageSpawn",
+            "Value": 2,
+            "When": { "SpawnRate": "Lower" }
+        },
+
+        {
+            "Name": "MaxDailyForageSpawn",
+            "Value": 9
+        },
+
+        {
+            "Name": "MaxSpawnedForageAtOnce",
+            "Value": 12
+        },
+        
+        {
+            "Name": "SpringBGM",
+            "Value": "{{ModID}}_SpringBGM"
+        },
+        {
+            "Name": "SpringBGM",
+            "When": { "Music": "vanilla" },
+            "Value": "woodsTheme"
+        },
+        {
+            "Name": "SummerBGM",
+            "Value": "{{ModID}}_SummerBGM"
+        },
+        {
+            "Name": "SummerBGM",
+            "When": { "Music": "vanilla" },
+            "Value": "mermaidSong"
+        },
+        {
+            "Name": "FallBGM",
+            "Value": "{{ModID}}_FallBGM"
+        },
+        {
+            "Name": "FallBGM",
+            "When": { "Music": "vanilla" },
+            "Value": "moonlightJellies"
+        },
+        {
+            "Name": "WinterBGM",
+            "Value": "{{ModID}}_WinterBGM"
+        },
+        {
+            "Name": "WinterBGM",
+            "When": { "Music": "vanilla" },
+            "Value": "night_market"
+        },
+        {
+            "Name": "NightBGM",
+            "Value": "{{ModID}}_NightBGM"
+        },
+        {
+            "Name": "NightBGM",
+            "When": { "Music": "vanilla" },
+            "Value": "junimoKart_whaleMusic"
+        },
+        
+        
+        
+    ],
+
+    
+        "ConfigSchema": {
+            "SpawnRate": 
+            {
+                "AllowValues": "default, lower",
+                "Default": "default",
+                "AllowBlank": false,
+                "Description": "This mod edits the way items spawn. If you find any issues in the amount spawned, change this setting to 'lower'."
+            },
+            "Spawn Rate in Rain":{
+                "AllowBlank": false,
+                "AllowValues": "normal, increased",
+                "Default": "increased",
+                "Description": "Increases the spawn rate for all mushrooms during rainy weather."
+            },
+            "Include imaginary Mushrooms":
+            {
+                "AllowValues": "true, false",
+                "Default": true,
+                "AllowBlank": false,
+                "Description": "Toggle this option if you want to play with real mushrooms that exist in real life only.",
+                "Section": "Mushroom Configs"
+            },
+            "Include Poisonous Mushrooms":
+            {
+                "AllowValues": "true, false",
+                "Default": true,
+                "AllowBlank": false,
+                "Description": "Toggle this option off if you do not want to add poisonous mushrooms to your game.",
+                "Section": "Mushroom configs",
+                },
+
+             "Include Inedible Mushrooms":
+            {
+                "AllowValues": "true, false",
+                "Default": true,
+                "AllowBlank": false,
+                "Description": "Toggle this option off if you do not want to add inedible mushrooms to your game.",
+                "Section": "Mushroom configs",
+            },
+
+            "Music": 
+            {
+                "AllowValues": "custom, vanilla",
+                "Default": "custom",
+                "AllowBlank": false,
+                "Description": "This mod adds custom music tracks. If you prefer the original Stardew Valley music, turn this setting off. Custom music might also slow down your game in some instances, so if you are experiencing lag, disable this config as well.",
+            },
+            
+    },
+     
+
+"Changes": [
+//Blank json load
+
+{
+    "LogName": "Blank json load",
+    "Action": "Load",
+    "Target": "Strings/StringsFromMaps/{{ModID}}_MushroomMeadow",
+    "FromFile": "data/blank.json"
+},
+//includes
+
+{
+    "LogName": "Include mushroom data",
+    "Action": "Include",
+    "FromFile": "data/objects/mushrooms/mushrooms.json"
+},
+{
+    "LogName": "Include imaginary mushrooms",
+    "Action": "Include",
+    "FromFile": "data/objects/mushrooms/mushrooms-imaginary.json",
+    "When": { "Include imaginary Mushrooms": true }
+},
+{
+    "LogName": "Include new dishes",
+    "Action": "Include",
+    "FromFile": "data/objects/cooking.json"
+}, 
+{
+    "LogName": "Include recipe overrides",
+    "Action": "Include",
+    "FromFile": "data/cookingrecipeOverrides.json"
+},
+{
+    "LogName": "Include custom tilesheet",
+    "Action": "Include",
+    "FromFile": "data/tilesheets.json"
+},
+{
+    "LogName": "Include map data and map strings",
+    "Action": "Include",
+    "FromFile": "data/mapdata.json, data/stringsFromMaps.json"
+},
+{
+    "LogName": "Include spawnable forage data",
+    "Action": "Include",
+    "FromFile": "data/spawns/forage.json, data/spawns/forest.json, data/spawns/mushroommeadow.json, data/spawns/island.json, data/spawns/mountain.json, data/spawns/railroad.json, data/spawns/busstop.json"
+},
+{
+    "LogName": "Include machine data",
+    "Action": "Include",
+    "FromFile": "data/machines/mushroomEssenceExtractor.json, data/machines/potionmachine.json"
+},
+{ 
+    "LogName": "Include bundles",
+    "Action": "Include",
+    "FromFile": "data/bundles.json"
+},
+{
+    "LogName": "Include potions",
+    "Action": "Include",
+    "FromFile": "data/objects/potions.json"
+},
+{
+    "LogName": "Include seeds and saplings",
+    "Action": "Include",
+    "FromFile": "data/objects/seeds.json"
+},
+{
+    "LogName": "Include custom music",
+    "Action": "Include",
+    "When": { "Music": "custom" },
+    "FromFile": "data/music.json"
+},
+{
+    "LogName": "Include SVE compat",
+    "Action": "Include",
+    "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true },
+    "FromFile": "data/compat/sve/ContextTags.json"
+}
+
+
+
+
+    
+    ]
+}

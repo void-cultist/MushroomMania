@@ -1,0 +1,112 @@
+{
+    "Changes": [
+
+        {
+    "LogName": "Add potion machine output",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries":  {
+
+      "MM_Foraging_Potion":
+        {
+           "Name": "MM_Foraging_Potion",
+           "DisplayName": "{{i18n:MM_Foraging_Potion.name}}",
+            "Description": "{{i18n:MM_Foraging_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 0, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Foraging_Potion_Buff",
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 0,
+                            "GlowColor": "ForestGreen",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "ForagingLevel": 5,
+                                }
+                            }
+                       ]
+       
+        },
+
+         "MM_Mining_Potion":
+        {
+           "Name": "MM_Mining_Potion",
+           "DisplayName": "{{i18n:MM_Mining_Potion.name}}",
+            "Description": "{{i18n:MM_Mining_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 1, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Mining_Potion_Buff",
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "TileSheets/BuffsIcons",
+                            "IconSpriteIndex": 2,
+                            "GlowColor": "DimGray",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "MiningLevel": 5,
+                                }
+                            }
+                       ]
+       
+        },
+
+        "MM_Fishing_Potion":
+        {
+           "Name": "MM_Fishing_Potion",
+           "DisplayName": "{{i18n:MM_Fishing_Potion.name}}",
+            "Description": "{{i18n:MM_Fishing_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 2, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Fishing_Potion_Buff",
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "TileSheets/BuffsIcons",
+                            "IconSpriteIndex": 1,
+                            "GlowColor": "Aqua",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "FishingLevel": 5,
+                                }
+                            }
+                       ]
+       
+        },
+    }
+       
+},
+    ]
+}

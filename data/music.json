@@ -1,0 +1,56 @@
+{
+    "Changes": [
+         {			
+	"LogName": "Add custom tracks",
+    "Action": "EditData",
+    "Target": "Data/AudioChanges",
+    "Entries": {
+                "{{ModId}}_SpringBGM": 
+				{
+                    "ID": "{{ModId}}_SpringBGM",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/moongate_loop.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModId}}_SummerBGM": 
+				{
+                    "ID": "{{ModId}}_SummerBGM",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/Spooky Forest.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModId}}_FallBGM":
+				{
+                    "ID": "{{ModId}}_FallBGM",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/magic.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModId}}_WinterBGM": 
+				{
+                    "ID": "{{ModId}}_WinterBGM",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/Tundra Biome Sketch.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                },
+                "{{ModId}}_NightBGM": 
+				{
+                    "ID": "{{ModId}}_NightBGM",
+                    "Category": "Music",
+                    "FilePaths": [ "{{AbsoluteFilePath: assets/music/a_midnights_dream.ogg}}" ],
+                    "StreamedVorbis": true,
+                    "Looped": true
+                }
+            
+
+///vanilla: glowshroom grotto as alternative
+
+
+            }
+        }
+    ]
+}

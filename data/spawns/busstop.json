@@ -1,0 +1,42 @@
+{
+    "Changes": [
+        { 
+            "LogName": "Add  mushroom spawns to bus stop map",
+            "Target": "Data/Locations",
+             "Action": "EditData",
+            "TargetField": [ "BusStop", "Forage" ],
+            "Entries": {
+
+                 "{{ModID}}_CommonEdibleMushrooms": //common
+                {
+
+                    "Chance": 0.7,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_GreatWoodMushroom",
+                    "ItemId": "(O)MM_GreatWoodMushroom",
+                    "RandomItemId": [ "(O)MM_GreatWoodMushroom", "(O)MM_OrangePeelFungus", "(O)MM_SaffronMilkcap", "(O)MM_RussulaVesca", "(O)MM_OrangeGrisette", "(O)MM_ParasolMushroom"],
+                    "PerItemCondition": null
+                },
+                "MM_Champignon": //common
+                {
+
+                    "Chance": 0.8,
+                    "Condition": "SEASON fall winter",
+                    "Id": "(O)MM_Champignon",
+                    "ItemId": "(O)MM_Champignon",
+                    "PerItemCondition": null
+                },
+                
+                "MM_BurgerShroom":
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "{{Include imaginary Mushrooms}}",
+                    "Id": "(O)MM_BurgerShroom",
+                    "ItemId": "(O)MM_BurgerShroom",
+                    "PerItemCondition": null
+                },
+             }
+        }
+    ]
+}

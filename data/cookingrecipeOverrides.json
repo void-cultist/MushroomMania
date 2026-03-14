@@ -1,0 +1,207 @@
+{
+    "Changes": [
+        {
+        "LogName": "Space Core cooking recipe overrides",
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+        "Entries": 
+        {
+       
+            "MM_BakedMushroomRisotto":
+            {
+            "ProductQualifiedId": "(O)MM_BakedMushroomRisotto", //or vanilla dish
+            "ProductAmount": 1,
+            "Ingredients": [
+                        {
+                        "Type": "Item",
+                        "Value": "(O)423",
+                        "Amount": 1,
+                        },
+                        {
+                        "Type": "Item",
+                        "Value": "(O)248",
+                        "Amount": 1,
+                        },
+                        {
+                        "Type": "ContextTag",
+                        "Value": "edible_mushroom",
+                        "Amount": 2,
+                        "OverrideText": "Edible Mushroom",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 320,
+                            "Y": 256,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                        },
+            ]
+            },
+        }
+        
+    },
+
+      {
+        "LogName": "Space Core cooking recipe overrides pizza funghi",
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+        "Entries": 
+        {
+
+           "MM_PizzaFunghi": {
+            "ProductQualifiedId": "(O)MM_PizzaFunghi", //or vanilla dish
+            "ProductAmount": 1,
+            "Ingredients": [
+                        {
+                        "Type": "ContextTag",
+                        "Value": "edible_mushroom",
+                        "Amount": 4,
+                        "OverrideText": "Edible Mushroom",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 320,
+                            "Y": 256,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                    },
+                    {
+                        "Type": "ContextTag",
+                        "Value": "cheese_item",
+                        "Amount": 1,
+                        "OverrideText": "Type of cheese",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 256,
+                            "Y": 272,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                    },
+                    {
+                        "Type": "ContextTag",
+                        "Value": "flour_item",
+                        "Amount": 1,
+                        "OverrideText": "Flour Item",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 96,
+                            "Y": 160,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                    },
+                     {
+                        "Type": "Item",
+                        "Value": "(O)256",
+                        "Amount": 2
+                        },
+                    ]
+                }
+            }
+        },
+
+         {
+        "LogName": "Space Core cooking recipe overrides mushroom platter",
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+        "Entries": 
+        {
+
+           "MM_MushroomPlatter": {
+            "ProductQualifiedId": "(O)MM_MushroomPlatter", //or vanilla dish
+            "ProductAmount": 1,
+            "Ingredients": [
+                        {
+                        "Type": "ContextTag",
+                        "Value": "edible_mushroom",
+                        "Amount": 2,
+                        "OverrideText": "Edible Mushroom",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 320,
+                            "Y": 256,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                    },
+                    {
+                        "Type": "ContextTag",
+                        "Value": "oil_item",
+                        "Amount": 1,
+                        "OverrideText": "Any kind of oil",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 112,
+                            "Y": 160,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                    },
+                     {
+                        "Type": "Item",
+                        "Value": "(O)MM_Champignon",
+                        "Amount": 2
+                        },
+                    ]
+                }
+            }
+        },
+
+
+    {
+        "LogName": "Space Core cooking recipe overrides mushroom ramen",
+        "Action": "EditData",
+        "Target": "spacechase0.SpaceCore/CookingRecipeOverrides",
+        "Entries": 
+        {
+
+           "MM_MushroomRamen": {
+            "ProductQualifiedId": "(O)MM_MushroomRamen", //or vanilla dish
+            "ProductAmount": 1,
+            "Ingredients": [
+                        {
+                        "Type": "ContextTag",
+                        "Value": "edible_mushroom",
+                        "Amount": 1,
+                        "OverrideText": "Edible Mushroom",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 320,
+                            "Y": 256,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                    },
+                    {
+                        "Type": "ContextTag",
+                        "Value": "milk_item",
+                        "Amount": 1,
+                        "OverrideText": "Any kind of milk",
+                        "OverrideTexturePath": "Maps/springobjects", //determines which sprite will be used to override the icon in the recipe
+                        "OverrideTextureRect": 
+                            { //this determines the position of the sprite on the spritesheet/tilesheet
+                            "X": 256,
+                            "Y": 112,
+                            "Width": 16,
+                            "Height": 16
+                            },
+                    },
+                     {
+                        "Type": "Item",
+                        "Value": "(O)MM_Enoki",
+                        "Amount": 2
+                        },
+                    ]
+                }
+            }
+        }
+    ]
+}

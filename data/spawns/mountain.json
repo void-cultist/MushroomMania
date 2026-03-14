@@ -1,0 +1,73 @@
+{
+    "Changes": [
+        {
+             "LogName": "Add  mushroom spawns to mountain map",
+            "Target": "Data/Locations",
+            "Action": "EditData",
+            "TargetField": [ "Mountain", "Forage" ],
+            "Entries": {
+                 "MM_BleedingToothFungus": 
+                  {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, {{Include Inedible Mushrooms}}",
+                    "Id": "(O)MM_BleedingToothFungus",
+                    "ItemId": "(O)MM_BleedingToothFungus",
+                    "PerItemCondition": null
+                },
+
+                "MM_BurgerShroom":
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "{{Include imaginary Mushrooms}}",
+                    "Id": "(O)MM_BurgerShroom",
+                    "ItemId": "(O)MM_BurgerShroom",
+                    "PerItemCondition": null
+                },
+
+                  "MM_WaningMoonShroom":
+                {
+
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 6, {{Include imaginary Mushrooms}}",
+                    "Id": "(O)MM_WaningMoonShroom",
+                    "ItemId": "(O)MM_WaningMoonShroom",
+                    "PerItemCondition": null
+                },
+
+                     "MM_CaesarsMushroom": //rare
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, SEASON summer fall",
+                    "Id": "(O)MM_CaesarsMushroom",
+                    "ItemId": "(O)MM_CaesarsMushroom",
+                    "PerItemCondition": null
+                },
+
+                    "MM_Champignon": //common
+                {
+
+                    "Chance": 0.8,
+                    "Condition": "SEASON fall winter",
+                    "Id": "(O)MM_Champignon",
+                    "ItemId": "(O)MM_Champignon",
+                    "PerItemCondition": null
+                },
+                 "{{ModID}}_CommonEdibleMushrooms": //common
+                {
+
+                    "Chance": 0.7,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_GreatWoodMushroom",
+                    "ItemId": "(O)MM_GreatWoodMushroom",
+                    "RandomItemId": [ "(O)MM_GreatWoodMushroom", "(O)MM_OrangePeelFungus", "(O)MM_SaffronMilkcap", "(O)MM_RussulaVesca", "(O)MM_OrangeGrisette", "(O)MM_ParasolMushroom"],
+                    "PerItemCondition": null
+                },
+            
+            }
+        },
+
+    ]
+}

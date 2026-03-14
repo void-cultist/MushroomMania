@@ -1,0 +1,52 @@
+{
+    "Changes": [
+         {
+            "LogName": "Edit universal gift taste data",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Dislike"],
+                    "Value": "mushroom_extract poisonous_mushroom",
+                    "Delimiter": " " 
+                },
+
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Like"],
+                    "Value": "edible_mushroom",
+                    "Delimiter": " " 
+                },
+
+                 {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Neutral"],
+                    "Value": "inedible_mushroom mushroom_potion",
+                    "Delimiter": " " 
+                }
+            ]
+        },
+
+            {
+            "LogName": "Edit Maru gift taste data",
+            "Action": "EditData",
+            
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target":  ["Fields", "Maru", "#1"],
+                    "Value": "mushroom_extract mushroom_potion",
+                    "Delimiter": " " 
+                },
+
+
+            ]
+        }
+
+
+
+
+    ]
+}

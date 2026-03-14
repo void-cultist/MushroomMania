@@ -1,0 +1,184 @@
+{
+    "Changes": [
+            
+            {
+                "LogName": "Load Cooking object textures",
+                "Action": "Load",
+                "Target": "{{ModID}}/Cooking, {{ModID}}/FoodRoleyMoth",
+                "FromFile": "assets/objects/{{TargetWithoutPath}}.png",
+            },
+            
+        
+        {
+            "LogName": "Add new mushroom dishes",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                 // https://stardewvalleywiki.com/Modding:Objects
+                  "MM_BakedMushroomRisotto":
+                    {
+                       "Name": "MM_BakedMushroomRisotto",
+                       "DisplayName": "Baked Mushroom Risotto",
+                        "Description": "A few slices of dried mushroom and their soaking liquor bring an undertone of mushroomy richness to the rice",
+                      "Type": "Cooking",
+                        "Category": -7,
+                        "Price": 500, 
+                       "Texture": "{{ModID}}/Cooking", 
+                        "SpriteIndex": 0, 
+                       "Edibility": 90,
+                        "IsDrink": false,
+                        "ContextTags": [ "mushroom_dish" ],
+                       "Buffs": [
+                            {
+                                "Id": "Food",
+                                "Duration": 1000,
+                                "CustomAttributes": {
+                                    "ForagingLevel": 3.0,
+                                    "LuckLevel": 2.0
+
+                                },
+                                "IsDebuff": false,
+                            }
+                       ]
+                    },
+                
+                "MM_WildMushroomSoup": {  
+                       "Name": "MM_WildMushroomSoup",
+                       "DisplayName": "Wild Mushroom Soup",
+                        "Description": "The simplicity of this soup allows you to appreciate the full flavour of the wild mushrooms you’ve gathered.",
+                      "Type": "Cooking",
+                        "Category": -1,
+                        "Price": 400, 
+                       "Texture": "{{ModID}}/Cooking", 
+                        "SpriteIndex": 1, 
+                       "Edibility": 70,
+                        "IsDrink": false,
+                        "ContextTags": [ "mushroom_dish" ],
+                       "Buffs": [
+                            {
+                                "Id": "Food",
+                                "Duration": 800,
+                                "CustomAttributes": {
+                                    "Attack": 1.0,
+                                    "Defense": 2.0
+                                    },
+                                "IsDebuff": false,
+                            }
+                       ]
+                    },
+
+                "MM_PizzaFunghi": {
+                    "Name": "MM_PizzaFunghi",
+                       "DisplayName": "Pizza Funghi",
+                        "Description": "A beloved classic.",
+                      "Type": "Cooking",
+                        "Category": -1,
+                        "Price": 400, 
+                       "Texture": "{{ModID}}/FoodRoleyMoth", 
+                        "SpriteIndex": 2, 
+                       "Edibility": 60,
+                        "IsDrink": false,
+                        "ContextTags": [ "mushroom_dish" ],
+                       "Buffs": [
+                            {
+                                "Id": "Food",
+                                "Duration": 800,
+                                "CustomAttributes": {
+                                    "MiningLevel": 3.0
+                                    },
+                                "IsDebuff": false,
+                            }
+                       ]
+                    },
+                "MM_MushroomPlatter": {
+                    "Name": "MM_MushroomPlatter",
+                       "DisplayName": "Mushroom Platter",
+                        "Description": "A platter of a variety of oven-baked, marinated mushrooms.",
+                      "Type": "Cooking",
+                        "Category": -1,
+                        "Price": 1000, 
+                       "Texture": "{{ModID}}/FoodRoleyMoth", 
+                        "SpriteIndex": 0, 
+                       "Edibility": 35,
+                        "IsDrink": false,
+                        "ContextTags": [ "mushroom_dish" ],
+                       "Buffs": [
+                            {
+                                "Id": "Food",
+                                "Duration": 800,
+                                "CustomAttributes": {
+                                    "ForagingLevel": 2.0
+                                    },
+                                "IsDebuff": false,
+                            }
+                       ]
+                    },
+                "MM_CauliflowerMushroomSoup": {
+                    "Name": "MM_CauliflowerMushroomSoup",
+                       "DisplayName": "Cauliflower Mushroom Soup",
+                        "Description": "An creamy soup that reminds of a thai hot-and-sour soup with stir-fried cauliflower and mushrooms.",
+                      "Type": "Cooking",
+                        "Category": -1,
+                        "Price": 590, 
+                       "Texture": "{{ModID}}/FoodRoleyMoth", 
+                        "SpriteIndex": 1, 
+                       "Edibility": 75,
+                        "IsDrink": false,
+                        "ContextTags": [ "mushroom_dish" ],
+                       "Buffs": [
+                            {
+                                "Id": "Food",
+                                "Duration": 800,
+                                "CustomAttributes": {
+                                    "FarmingLevel": 2.0
+                                    },
+                                "IsDebuff": false,
+                            }
+                       ]
+                    },
+            "MM_MushroomRamen": {
+                    "Name": "MM_MushroomRamen",
+                       "DisplayName": "Mushroom Ramen",
+                        "Description": "An alternative type of ramen with a mushroom-based broth.",
+                      "Type": "Cooking",
+                        "Category": -1,
+                        "Price": 645, 
+                       "Texture": "{{ModID}}/FoodRoleyMoth", 
+                        "SpriteIndex": 3, 
+                       "Edibility": 80,
+                        "IsDrink": false,
+                        "ContextTags": [ "mushroom_dish" ],
+                       "Buffs": [
+                            {
+                                "Id": "Food",
+                                "Duration": 800,
+                                "CustomAttributes": {
+                                    "LuckLevel": 2.0
+                                    },
+                                "IsDebuff": false,
+                            }
+                       ]
+                    },
+                
+                   
+
+                }
+
+                   
+            },
+
+        {
+        "LogName": "Add cooking recipes",
+        "Action": "EditData",
+        "Target": "Data/CookingRecipes",
+        "Entries": {
+        "MM_BakedMushroomRisotto_Recipe": "(O)MM_GreatWoodMushroom 2 (O)423 (O)248/10 10/MM_BakedMushroomRisotto/none/Baked Mushroom Risotto",
+        "MM_WildMushroomSoup_Recipe": "(O)MM_GreatWoodMushroom 1 (O)404 2 (O)457/25 5/MM_WildMushroomSoup 1/none/Wild Mushroom Soup",
+        "MM_PizzaFunghi_Recipe": "(O)MM_Champignon 4 (O)246 1 (O)256 2 (O)424/10 10/MM_PizzaFunghi 1/none/Pizza Funghi",
+        "MM_MushroomPlatter_Recipe": "(O)MM_Champignon 2 (O)MM_GreatWoodMushroom 2 (O)432 1/10 10/MM_MushroomPlatter 1/none/Mushroom Platter",
+        "MM_CauliflowerMushroomSoup_Recipe": "(O)MM_Enoki 2 (O)190 1 (O)218 1/10 10/MM_CauliflowerMushroomSoup/none/Cauliflower Mushroom Soup",
+        "MM_MushroomRamen_Recipe": "(O)MM_Enoki 2 (O)MM_Matsutake 1 (O)184/10 10/MM_MushroomRamen/none/Mushroom Ramen"
+        }
+        },
+    ]
+}

@@ -1,0 +1,121 @@
+{
+    //Mushrooms
+
+    "DestroyingAngelDisplayName": "Destroying Angel",
+    "DestroyingAngelDescription": "A fairly rare but deadly poisonous mushroom. Causes vomiting, diarrhea and severe problems such as kidney and liver failure if ingested.",
+
+    "GreatWoodMushroomDisplayName": "Great Wood Mushroom",
+    "GreatWoodMushroomDescription": "A great tasting mushroom with flesh that bruises or oxidises red.",
+
+    "OrangePeelFungusDisplayName": "Orange Peel Fungus",
+    "OrangePeelFungusDescription": "An unusual mushroom, with its body forming a rosette sometimes with multiple ‘petals’",
+
+    "RubyBoleteDisplayName": "Ruby Bolete",
+    "RubyBoleteDescription": "A fairly rare mushroom and best left for photographs due to its soapy taste.",
+
+    "DevilsFingersDisplayName": "Devil's Fingers",
+    "DevilsFingersDescription": "An inedible mushroom that smells like rotten meat to attract flies that will spread its spores. Looks as if it is from outer space!",
+
+    "JubileeWaxcapDisplayName": "Jubilee Waxcap",
+    "JubileeWaxcapDescription": "A lilac or pink mushroom with a slimy cap. Inedible.",
+
+    "BluePinkgillDisplayName": "Blue Pinkgill",
+    "BluePinkgillDescription": "The blue colouring of the fruit body is due to azulene pigments; the spores give its gills a pink tint. The Māori name for the mushroom is werewere-kōkako, because its colour is similar to the blue wattle of the kōkako bird. Edibility unknown.",
+
+    "TheSickenerDisplayName": "The Sickener",
+    "TheSickenerDescription": "Also known as 'Brittlegills'. Eating this mushroom is not recommended as it will make one vomit.",
+
+    "OrangeGrisetteDisplayName": "Orange Grisette",
+    "OrangeGrisetteDescription": "A bright, edible mushroom. Its colors can range from pale yellow to dark orange. Edible.",
+
+    "WaningMoonShroomDisplayName": "Waning Moon Shroom",
+    "WaningMoonShroomDescription": "And sometimes, trying your best is not enough and you hate having to deal with it. This mushroom is likely inedible.",
+
+    "SulfurTuftDisplayName": "Sulfur Tuft",
+    "SulfurTuftDescription": "This mushroom is bitter and poisonous; consuming it can cause vomiting, diarrhea and convulsions. Do not confuse it with the edible brick cap!",
+
+    "ParasolMushroomDisplayName": "Parasol Mushroom",
+    "ParasolMushroomDescription": "A great tasting, easy to identify mushroom that is large enough to spot from afar. When young this mushroom looks very similar to some of the deadly amanitas.",
+
+    "BleedingHeartDisplayName": "Bleeding Heart",
+    "BleedingHeartDescription": "Remember the dreams you had? Hold onto them too tightly and you might bleed just like this mushroom when you squeeze it. Highly poisonous.",
+
+    "MM_AllEyes.DisplayName": "All Eyes",
+    "MM_AllEyes.Description": "You could have sworn those eyes were following your movements. Eating this mushroom causes one to lose their sight as well as hallucinations.",
+
+    "MM_BleedingToothFungus.DisplayName": "Bleeding Tooth Fungus",
+"MM_BleedingToothFungus.Description": "This mushroom is not known to be poisonous, but it isn't particularly edible due to its foul taste. This acrid taste persists even in dried specimens.",
+
+"MM_BurgerShroom.DisplayName": "Burger Shroom",
+"MM_BurgerShroom.Description": "A mushroom that suspiciously looks, smells and tastes like a burger.",
+
+"MM_Deathcap.DisplayName": "Deathcap",
+"MM_Deathcap.Description": "An innocuous looking mushroom that is among the most poisonous along with the Destroying Angel. The main poison, alpha-amanitin, kills liver cells and passes through the kidneys to be recirculated and cause more damage.",
+    
+"MM_GreyKnight.DisplayName": "The Grey Knight",
+"MM_GreyKnight.Description": "It was once considered to be an edible mushroom but it has now been discovered that eating a certain weight of these mushrooms, even spread out over a fortnight, can cause kidney failure and is now deemed deadly poisonous",
+
+"MM_SaffronMilkcap.DisplayName": "Saffron Milkcap",
+"MM_SaffronMilkcap.Description": "Good with a crisp texture. Will turn your meal orange.",
+
+"MM_Champignon.DisplayName": "Champignon",
+"MM_Champignon.Description": "Usually referring to the whole genus 'Agaricus', 'Champignon' is also used to refer to the common 'button' mushroom you can get anywhere.",
+
+"MM_Aspen.DisplayName": "Aspen",
+"MM_Aspen.Description": "A very solid and quite tall bolete with a distinctive orange coloured cap and and a pale stem. Needs thorough cooking.",
+
+"MM_RussulaVesca.DisplayName": "Bare-toothed Russula",
+"MM_RussulaVesca.Description": "Also known as russula vesca or 'the flirt'. Considered edible and good, with a mild nutty flavour.",
+
+"MM_GoldenBrittlegill.DisplayName": "Golden Brittlegill",
+"MM_GoldenBrittlegill.Description": "Russula aurea, commonly known as the gilded or golden brittlegill, is considered is edible and mild-tasting unlike other members of the genus.",
+
+"MM_CaesarsMushroom.DisplayName": "Caesar's Mushroom",
+"MM_CaesarsMushroom.Description": "Considered a favorite of early rulers of the Roman Empire, this endangered type of mushroom was found to contain a considerable amount of lead.",
+
+"MM_Enoki.DisplayName": "Enoki",
+"MM_Enoki.Description": "This fungus has a crisp texture and can be refrigerated for approximately one week. It is a common ingredient for soups, but can be used for salads and other dishes.",
+
+"MM_Matsutake.DisplayName": "Matsutake",
+"MM_Matsutake.Description": "Hard to find because of specific growth requirements, rarity of appropriate forest and terrain, and competition from wild animals.",
+
+"MM_LobsterMushroom.DisplayName": "Lobster Mushroom",
+"MM_LobsterMushroom.Description": "Also called Hypomyces lactifluorum; is is in fact not a mushroom but a parasite that attacks them. Despite that, there authors that claim that there have never been any incidents of poisoning.",
+
+"MM_BlackTrumpet.DisplayName": "Black Trumpet",
+"MM_BlackTrumpet.Description": "Also referred to as Black Chanterelle or Trumpet of the Dead. Despite their unpalatable appearance, they are edible.",
+
+
+///Machines and Objects
+"MM_Flavored_MushroomEssence": "{0} Essence", //{0} will be replaced with the input item
+"MM_Flavored_MushroomEssence.name": "Mushroom Essence",
+"MM_Flavored_MushroomEssence.description": "The pure essence extracted from an inedible mushroom",
+
+"MM_Foraging_Potion.name": "Foraging Potion",
+"MM_Foraging_Potion.description": "A potion that remarkably increases your foraging level.",
+"selph.ExtraMachineConfig.RequirementInvalidMsgForagingPotion": "Requires 1 Morel and 1 Poisonous Mushroom",
+
+"MM_Mining_Potion.name": "Mining Potion",
+"MM_Mining_Potion.description": "A potion that remarkably increases your mining level.",
+
+"MM_Fishing_Potion.name": "Fishing Potion",
+"MM_Fishing_Potion.description": "A potion that remarkably increases your Fishing level.",
+
+//seeds and saplings
+"AllEyes_Planter.name": "All Eyes Planter",
+"AllEyes_Planter.description": "Plant these to grow All Eyes mushrooms. Harvest them in Fall and Winter.",
+
+"AllEyes_Crop.name": "All Eyes",
+
+//bundles
+"ShroomCollecting_Bundle.name": "Shroom Collecting",
+"TastyShrooms_Bundle.name": "Tasty Shrooms",
+"PoisonousShrooms_Bundle.name": "Poisonous Shrooms",
+"Inedible_Bundle.name": "Inedible",
+
+//Map strings
+"MM0": "The door is locked.",
+"MM1": "What a strange entryway. Somehow, there is a sinister aura about it.",
+//"MM2": "",
+
+}
