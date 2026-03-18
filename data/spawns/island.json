@@ -4,7 +4,7 @@
              "LogName": "Add inedible mushroom spawns to island east",
             "Target": "Data/Locations",
              "Action": "EditData",
-             "When": { "Include Inedible Mushrooms": true },
+             //"When": { "Include Inedible Mushrooms": true },
             "TargetField": [ "IslandEast", "Forage" ],
             "Entries": {
                    "MM_DevilsFingers": 
@@ -33,7 +33,7 @@
              "LogName": "Add inedible mushroom spawns to island West",
             "Target": "Data/Locations",
              "Action": "EditData",
-             "When": { "Include Inedible Mushrooms": true },
+             //"When": { "Include Inedible Mushrooms": true },
             "TargetField": [ "IslandWest", "Forage" ],
             "Entries": {
                    "MM_DevilsFingers": 

@@ -68,7 +68,7 @@
             "LogName": "Add poisonous mushroom spawns to forest",
             "Action": "EditData",
             "Target": "Data/Locations",
-            "When": { "Include Poisonous Mushrooms": true },
+            //"When": { "Include Poisonous Mushrooms": true },
             "TargetField": [ "Forest", "Forage" ],
             "Entries": {
                 "MM_Deathcap": //common
@@ -122,7 +122,7 @@
 { 
             "LogName": "Spawn inedible imaginary mushrooms in forest map",
             "Action": "EditData",
-            "When": { "Include imaginary Mushrooms": true, "Include Inedible Mushrooms": true },
+            "When": { "Include imaginary Mushrooms": true },
             "Target": "Data/Locations",
             "TargetField": [ "Forest", "Forage" ],
             "Entries": 
@@ -271,7 +271,7 @@
      {
             "LogName": "Add poisonous mushroom spawns to forest during rain",
             "Action": "EditData",
-            "When": { "Weather": "Rain, Storm, GreenRain", "Include Poisonous Mushrooms": true, "Spawn Rate in Rain": "increased" },
+            "When": { "Weather": "Rain, Storm, GreenRain", "Spawn Rate in Rain": "increased" },
             "Target": "Data/Locations",
             "TargetField": [ "Forest", "Forage" ],
             "Entries": {

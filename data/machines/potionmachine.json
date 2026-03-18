@@ -189,6 +189,188 @@
                 },
 
 
+                {
+                        "Id": "MM_Combat_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_caesarsmushroom" ],                ///Combat POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Combat_Potion",
+                            "ItemId": "MM_Combat_Potion",
+                            "ObjectInternalName": "MM_Combat_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Combat_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)MM_GreyKnight",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "milk_item",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+                
+                {
+                        "Id": "MM_Luck_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_waningmoonshroom" ],                ///Luck POTION
+                            "RequiredCount": 1,
+                            "Condition": "{{Include imaginary Mushrooms}}"
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Luck_Potion",
+                            "ItemId": "MM_Luck_Potion",
+                            "ObjectInternalName": "MM_Luck_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Luck_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.5
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)268",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 2.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 650,
+                },
+
+                {
+                        "Id": "MM_Attack_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_bleedingtoothfungus" ],                ///Attack POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Attack_Potion",
+                            "ItemId": "MM_Attack_Potion",
+                            "ObjectInternalName": "MM_Attack_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Attack_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.5
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)MM_DestroyingAngel",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "juice_item",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": 2.0
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+                  {
+                        "Id": "MM_Defense_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_russulavesca" ],                ///Defense POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Defense_Potion",
+                            "ItemId": "MM_Defense_Potion",
+                            "ObjectInternalName": "MM_Defense_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Defense_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.5
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)404",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 2.0
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+
+
+
+
 
                 
             ],

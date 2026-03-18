@@ -161,7 +161,7 @@
             "LogName": "Add poisonous mushroom spawns to Mushroom Meadow",
             "Action": "EditData",
             "Target": "Data/Locations",
-            "When": { "Include Poisonous Mushrooms": true },
+            //"When": { "Include Poisonous Mushrooms": true },
             "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
             "Entries": {
                 "MM_Deathcap": //common
@@ -292,7 +292,7 @@
  { 
             "LogName": "Spawn poisonous imaginary mushrooms in MM map",
             "Action": "EditData",
-            "When": { "Include imaginary Mushrooms": true, "Include Poisonous Mushrooms": true },
+            "When": { "Include imaginary Mushrooms": true},
             "Target": "Data/Locations",
             "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
             "Entries": 
@@ -318,7 +318,7 @@
 { 
             "LogName": "Spawn inedible imaginary mushrooms in MM map",
             "Action": "EditData",
-            "When": { "Include imaginary Mushrooms": true, "Include Inedible Mushrooms": true },
+            "When": { "Include imaginary Mushrooms": true},
             "Target": "Data/Locations",
             "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
             "Entries": 

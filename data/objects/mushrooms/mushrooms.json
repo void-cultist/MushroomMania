@@ -247,7 +247,7 @@
          { 
             "LogName": "Add new poisonous mushrooms",
             "Action": "EditData",
-            "When": { "Include Poisonous Mushrooms": true },
+            //"When": { "Include Poisonous Mushrooms": true },
             "Target": "data/objects",
             "Entries": 
             {
@@ -381,7 +381,7 @@
            { 
             "LogName": "Add new inedible mushrooms",
             "Action": "EditData",
-            "When": { "Include Inedible Mushrooms": true },
+            //"When": { "Include Inedible Mushrooms": true },
             "Target": "data/objects",
             "Entries": 
             {

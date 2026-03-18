@@ -5,8 +5,22 @@
             "LogName": "Load mushroom meadow maps",
             "Action": "Load",
             "Target": "Maps/{{ModID}}_MushroomMeadow",
-            "FromFile": "assets/Maps/MushroomMeadow.tmx",
+            "FromFile": "assets/maps/MushroomMeadow.tmx"
         },
+
+         {
+            "LogName": "Load old shed maps",
+            "Action": "Load",
+            "Target": "Maps/{{ModID}}_old_shed_1",
+            "FromFile": "assets/maps/old_shed_1.tmx"
+        },
+              {
+            "LogName": "Load old shed maps",
+            "Action": "Load",
+            "Target": "Maps/{{ModID}}_old_shed_2",
+            "FromFile": "assets/maps/old_shed_2.tmx"
+        },
+
 
         {
             "LogName": "Create New Location: Mushroom Meadow",
@@ -1635,6 +1649,83 @@
     "MapTiles": [  { "Position": { "X": 34, "Y": 22 }, "Layer": "Back", "SetProperties": { "TouchAction": "MagicWarp Woods 39 57" } } ]
         },
 
+
+/*    _      _      _      _      _      _      _      _      _      _      _      _      _    */
+/*  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  */
+/* (_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _) */
+/*  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  */
+/*    _    $$$$$$\  $$\       $$$$$$$\         $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\      _    */
+/*  _( )_ $$  __$$\ $$ |      $$  __$$\       $$  __$$\ $$ |  $$ |$$  _____|$$  __$$\   _( )_  */
+/* (_ o _)$$ /  $$ |$$ |      $$ |  $$ |      $$ /  \__|$$ |  $$ |$$ |      $$ |  $$ | (_ o _) */
+/*  (_,_) $$ |  $$ |$$ |      $$ |  $$ |      \$$$$$$\  $$$$$$$$ |$$$$$\    $$ |  $$ |  (_,_)  */
+/*    _   $$ |  $$ |$$ |      $$ |  $$ |       \____$$\ $$  __$$ |$$  __|   $$ |  $$ |    _    */
+/*  _( )_ $$ |  $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |  $$ |$$ |      $$ |  $$ |  _( )_  */
+/* (_ o _) $$$$$$  |$$$$$$$$\ $$$$$$$  |      \$$$$$$  |$$ |  $$ |$$$$$$$$\ $$$$$$$  | (_ o _) */
+/*  (_,_)  \______/ \________|\_______/        \______/ \__|  \__|\________|\_______/   (_,_)  */
+/*    _      _      _      _      _      _      _      _      _      _      _      _      _    */
+/*  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  */
+/* (_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _) */
+/*  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  */
+
+
+
+    {
+            "LogName": "Create New Location: Old Shed1",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModID}}_old_shed_1": 
+                {
+                    "DefaultArrivalTile": { "X": 9, "Y": 19 },
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModID}}_old_shed_1"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "T 5 5 #6BEFD3 0.5 4"
+                    }
+            }
+        }
+    },
+        {
+            "LogName": "Create New Location: Old Shed2",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModID}}_old_shed_1": 
+                {
+                    "DefaultArrivalTile": { "X": 10, "Y": 20 },
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModID}}_old_shed_2"
+                    },
+                    "CustomFields": {
+                        "mushymato.MMAP_SteamOverlay": "T 5 5 #550BF4 0.5 4"
+                    }
+            }
+        }
+    },
+
+    {
+    "LogName": "Locked Door Warp",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_MushroomMeadow", 
+	"When": { "Query: {{DLX.Bundles/DaysSincePurchase:MM_Final}} = 0": true
+			},
+    "MapTiles": [ 
+        {
+            "Position": { "X": 50, "Y": 7 }, 
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 9 19 {{ModID}}_old_shed_1 600 2600" 
+            }
+        },
+		{ "Position": { "X": 51, "Y": 7 }, 
+            "Layer": "Buildings",
+            "SetProperties": {
+                "Action": "LockedDoorWarp 9 19 {{ModID}}_old_shed_1 600 2600" 
+			}
+			},
+    ]
+},
 
     
     ]

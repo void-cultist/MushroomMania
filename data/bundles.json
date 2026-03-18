@@ -62,7 +62,6 @@
          "Target":"UnlockableBundles/Bundles",
          "When":{
             "DLX.Bundles/Purchased":"MM_ShroomCollecting",
-            "Include Poisonous Mushrooms": true,
             "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
          },                                                                                         //SVE + poison mushrooms enabled
          "Entries":{
@@ -88,69 +87,14 @@
          }
       },
 
-      
-       { 
-         "Action":"EditData",
-         "Target":"UnlockableBundles/Bundles",
-         "When":{
-            "DLX.Bundles/Purchased":"MM_ShroomCollecting",
-            "Include Poisonous Mushrooms": false,
-            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
-         },                                                                         //SVE + no poisn mushrooms
-         "Entries":{
-            
-            "MM_PoisonousShrooms":
-            {
-               "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
-                "Location":"{{ModID}}_MushroomMeadow",
-               "ShopPosition":"11, 15",
-                "ShopType": "CCMagicBook",
-               "BundleSlots": 2,
-               "Price": { 
-                "(O)420": 5,
-                "(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom": 4,
-                },
-               "BundleReward": {
-                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
-               }
-            }
-         }
-      },
 
-            
-       { 
-         "Action":"EditData",
-         "Target":"UnlockableBundles/Bundles",
-         "When":{
-            "DLX.Bundles/Purchased":"MM_ShroomCollecting",
-            "Include Poisonous Mushrooms": false,
-            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
-         },                                                                         //no SVE + no poisn mushrooms
-         "Entries":{
-            
-            "MM_PoisonousShrooms":
-            {
-               "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
-                "Location":"{{ModID}}_MushroomMeadow",
-               "ShopPosition":"11, 15",
-                "ShopType": "CCMagicBook",
-               "BundleSlots": 1,
-               "Price": { 
-                "(O)420": 10
-                },
-               "BundleReward": {
-                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
-               }
-            }
-         }
-      },
+
 
       { 
          "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
             "DLX.Bundles/Purchased":"MM_ShroomCollecting",
-            "Include Poisonous Mushrooms": true,
             "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
          },                                                                                         //no SVE + poison mushrooms enabled
          "Entries":{
@@ -186,29 +130,26 @@
          },
          "Entries":{
             
-            "MM_Inedible":
+            "MM_InedibleShrooms":
             {
                "BundleName": "{{i18n:Inedible_Bundle.name}}",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"9, 15",
                 "ShopType": "CCMagicBook",
-               "BundleSlots": 3,
-               "Price": { 
-                "(O)MM_Enoki": 3,
-                "(O)MM_Champignon": 5,
-                "(O)MM_GreatWoodMushroom": 3,
-                "(O)MM_RubyBolete": 3,
-                "(O)MM_CaesarsMushroom": 2
-                },
+               "BundleSlots": 4,
+              
+              
                 "PriceSpawnFields": [
 
                     {
-                        "ItemId": "ITEM_CONTEXT_TAG Target inedible_mushroom",
-                        "Condition": "{{Include Inedible Mushrooms}}",
-                        "MaxItems": 4,
-                        "MinStack": 1,
-				        "MaxStack": 3
-                    }
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MinItems": 5,
+                        "MaxItems": 5,
+                        "MinStack": 3,
+                        "MaxStack": 5,
+                        "PerItemCondition": "ITEM_CONTEXT_TAG Target inedible_mushroom",
+                      
+                        }
                 ],
                "BundleReward": {
                 "(O)645": 2
@@ -229,6 +170,80 @@
             }
          }
       },
+
+   { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased |contains=MM_InedibleShrooms": true
+         },
+         "Entries":{
+            
+            "MM_MoreMushroomStuff":
+            {
+               "BundleName": "{{i18n:Inedible_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"11, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+                "Price": { 
+                "(O)DriedMushrooms": 5,
+                "(O)851": 3,
+                "(O)891": 4,
+                "(O)205": 3,
+                "(UB.AP)MM.PickledMushrooms_BundleItem": 5
+                },
+              
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "ALL_ITEMS (O)",
+                        "MaxStack": 5,
+                        "PerItemCondition": "ITEM_CONTEXT_TAG Target edible_mushroom, ITEM_ID_PREFIX Target Cornucopia_",
+                        "Condition": "{{HasMod |contains=Cornucopia.MoreCrops}}"
+
+                      
+                        }
+                ],
+               "BundleReward": {
+                "(O)MM_Mining_Potion": 2,
+                "(O)GoldenMysteryBox": 5
+               },
+               "BundleRewardSpawnFields": [
+                {
+                    "ItemId": "(UB.Recipe)(BC)MM_MushroomEssenceExtractor",
+                    "MaxItems": 1,
+                  
+                }
+               ]
+            }
+         }
+      },
+
+
+
+/////////////////ADVANCED PRICING ITEMS FOR BUNDLES
+
+{  "LogName": "Advanced pricing pickled mushrooms",
+	"Action": "EditData",
+	"Target": "UnlockableBundles/AdvancedPricing",
+	"Entries": {
+                //The item key should not contain spaces or colons
+                //it has to be unique
+		"MM.PickledMushrooms_BundleItem": { 
+			"Name": "Pickled Mushrooms", //Overwriting the item Name
+			"ContextTags": [ 
+				"id_(o)342", //ItemId = (O)348 Wine
+				"edible_mushroom"
+				
+			],
+			"ItemCopy": "(O)342", //Copy image, Description and Name from (O)348 Wine
+			"SubItemCopy": "(O)404", //Draw a (O)400 Strawberry on the top left
+			"ItemTypes": [ "(O)"] //Needed for CCBundle Hightlighting
+		}
+	}
+},
+
 
 
 

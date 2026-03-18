@@ -10,7 +10,7 @@
                   {
 
                     "Chance": 0.2,
-                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, {{Include Inedible Mushrooms}}",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6",
                     "Id": "(O)MM_BleedingToothFungus",
                     "ItemId": "(O)MM_BleedingToothFungus",
                     "PerItemCondition": null
@@ -20,7 +20,7 @@
                 {
 
                     "Chance": 0.2,
-                    "Condition": "{{Include imaginary Mushrooms}}",
+                
                     "Id": "(O)MM_BurgerShroom",
                     "ItemId": "(O)MM_BurgerShroom",
                     "PerItemCondition": null
@@ -30,7 +30,7 @@
                 {
 
                     "Chance": 0.1,
-                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 6, {{Include imaginary Mushrooms}}",
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 6",
                     "Id": "(O)MM_WaningMoonShroom",
                     "ItemId": "(O)MM_WaningMoonShroom",
                     "PerItemCondition": null

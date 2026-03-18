@@ -89,7 +89,7 @@
             "ContextTags": [ "magic_potion", "mushroom_potion" ],
             "Buffs": [
                             {
-                            "Id": "{{ModID}}_Fishing_Potion_Buff",
+                            "Id": "{{ModID}}_Fishing_Potion_Buff", 
                             "IsDebuff": false,
                             "Duration": 1300,
                             "IconTexture": "TileSheets/BuffsIcons",
@@ -100,6 +100,173 @@
                             "CustomAttributes": 
                                 {
                                 "FishingLevel": 5,
+                                }
+                            }
+                       ]
+       
+        },
+
+        
+        "MM_Combat_Potion":
+        {
+           "Name": "MM_Combat_Potion",
+           "DisplayName": "{{i18n:MM_Combat_Potion.name}}",
+            "Description": "{{i18n:MM_Combat_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 3, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Combat_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "TileSheets/BuffsIcons",
+                            "IconSpriteIndex": 20,
+                            "GlowColor": "WhiteSmoke",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "CombatLevel": 5,
+                                }
+                            }
+                       ]
+       
+        },
+
+        "MM_Luck_Potion":
+          {
+           "Name": "MM_Luck_Potion",
+           "DisplayName": "{{i18n:MM_Luck_Potion.name}}",
+            "Description": "{{i18n:MM_Luck_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 4, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Luck_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 2,
+                            "GlowColor": "Gold",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "LuckLevel": 5,
+                                }
+                            }
+                       ]
+       
+        },
+
+        "MM_Attack_Potion":
+          {
+           "Name": "MM_Attack_Potion",
+           "DisplayName": "{{i18n:MM_Attack_Potion.name}}",
+            "Description": "{{i18n:MM_Attack_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 5, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Attack_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 2,
+                            "GlowColor": "DarkRed",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Attack": 5
+                                }
+                            }
+                       ]
+       
+        },
+
+         "MM_Defense_Potion":
+          {
+           "Name": "MM_Defense_Potion",
+           "DisplayName": "{{i18n:MM_Defense_Potion.name}}",
+            "Description": "{{i18n:MM_Defense_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 6, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Defense_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 3,
+                            "GlowColor": "Moccasin",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Defense": 5
+                                }
+                            }
+                       ]
+       
+        },
+
+        
+         "MM_Speed_Potion":
+          {
+           "Name": "MM_Speed_Potion",
+           "DisplayName": "{{i18n:MM_Speed_Potion.name}}",
+            "Description": "{{i18n:MM_Speed_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 7, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Speed_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 4,
+                            "GlowColor": "LightBlue",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Speed": 5
                                 }
                             }
                        ]
