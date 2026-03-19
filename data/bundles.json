@@ -155,17 +155,7 @@
                 "(O)645": 2
                },
                "BundleRewardSpawnFields": [
-                {
-                    "ItemId": "(BC)FlashShifter.StardewValleyExpandedCP_Butter_Churner",
-                    "MaxItems": 1,
-                    "Condition": "{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}"
-                },
-                {
-                    "ItemId": "(BC)Cornucopia_CompactMill",
-                    "MaxItems": 1,
-                    "Condition": "{{HasMod |contains=Cornucopia.ArtisanMachines}}"
-
-                }
+               
                ]
             }
          }
@@ -175,13 +165,14 @@
          "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
-            "DLX.Bundles/Purchased |contains=MM_InedibleShrooms": true
+            "DLX.Bundles/Purchased |contains=MM_InedibleShrooms": true,
+            "HasMod |contains=Cornucopia.MoreCrops": false
          },
          "Entries":{
             
             "MM_MoreMushroomStuff":
             {
-               "BundleName": "{{i18n:Inedible_Bundle.name}}",
+               "BundleName": "{{i18n:MoreMushroomStuff_Bundle.name}}",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"11, 15",
                 "ShopType": "CCMagicBook",
@@ -194,19 +185,8 @@
                 "(UB.AP)MM.PickledMushrooms_BundleItem": 5
                 },
               
-                "PriceSpawnFields": [
-
-                    {
-                        "ItemId": "ALL_ITEMS (O)",
-                        "MaxStack": 5,
-                        "PerItemCondition": "ITEM_CONTEXT_TAG Target edible_mushroom, ITEM_ID_PREFIX Target Cornucopia_",
-                        "Condition": "{{HasMod |contains=Cornucopia.MoreCrops}}"
-
-                      
-                        }
-                ],
                "BundleReward": {
-                "(O)MM_Mining_Potion": 2,
+                "(O)MM_Mining_Potion": 3,
                 "(O)GoldenMysteryBox": 5
                },
                "BundleRewardSpawnFields": [
@@ -216,7 +196,73 @@
                   
                 }
                ]
-            }
+            },
+
+                "MM_ForestForage":
+            {
+               "BundleName": "{{i18n:ForestForage_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition": "7, 15",
+                "ShopType": "CCMagicBook",
+                "ShopColor": "Lavender",
+               "BundleSlots": 3,
+                "Price": { 
+                "(O)259": 6,
+                "(O)282": 5,
+                "(UB.AP)MM.PickledMushrooms_BundleItem": 5
+                },
+
+                
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 2,
+                        "MinStack": 5,
+                        "MaxStack": 13,
+                        "PerItemCondition": "ITEM_ID Target (o)296 (o)309 (o)406 (o)408",
+                      
+                        },
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 2,
+                        "MinStack": 3,
+                        "MaxStack": 8,
+                        "PerItemCondition": "ITEM_ID Target (o)FlashShifter.StardewValleyExpandedCP_Bearberrys (o)FlashShifter.StardewValleyExpandedCP_Ancient_Fiber (o)FlashShifter.StardewValleyExpandedCP_Salal_Berry",
+                        "Condition": "{{HasMod:| contains=FlashShifter.StardewValleyExpandedCP}}",
+                      
+                        },
+
+                  {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 2,
+                        "MinStack": 3,
+                        "MaxStack": 8,
+                        "PerItemCondition": "ITEM_ID Target (o)Cornucopia_Raspberry (o)Cornucopia_JuniperBerries (o)Cornucopia_Elderberries",
+                        "Condition": "{{HasMod:| contains=Cornucopia_MoreCrops}}",
+                      
+                        }
+                ],
+              
+               "BundleReward": {
+                "(O)MM_Mining_Potion": 3,
+                "(O)GoldenMysteryBox": 5
+               },
+               "BundleRewardSpawnFields": [
+                {
+                    "ItemId": "(UB.Recipe)(BC)MM_MushroomEssenceExtractor",
+                    "MaxItems": 1,
+                  
+                }
+               ]
+            },
+
+
+            
+
+
+
          }
       },
 

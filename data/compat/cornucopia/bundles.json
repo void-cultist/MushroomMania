@@ -1,0 +1,61 @@
+{
+    "Changes": [
+           { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased |contains=MM_InedibleShrooms": true,
+            "HasMod |contains=Cornucopia.MoreCrops": true
+         },
+         "Entries":{
+            
+            "MM_MoreMushroomStuff":
+            {
+               "BundleName": "{{i18n:MoreMushroomStuff_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"11, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 4,
+                "Price": { 
+                "(O)DriedMushrooms": 5,
+                "(O)851": 3,
+                "(O)891": 4,
+                "(O)205": 3,
+                "(UB.AP)MM.PickledMushrooms_BundleItem": 5
+                },
+              
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "ALL_ITEMS (O)",
+                        "MaxStack": 5,
+                        "PerItemCondition": "ITEM_CONTEXT_TAG Target edible_mushroom, ITEM_ID_PREFIX Target Cornucopia_"
+
+                      
+                        }
+                ],
+               "BundleReward": {
+                "(O)MM_Mining_Potion": 2,
+                "(O)GoldenMysteryBox": 5
+               },
+               "BundleRewardSpawnFields": [
+                {
+                    "ItemId": "(UB.Recipe)(BC)MM_MushroomEssenceExtractor",
+                    "MaxItems": 1,
+                  
+                },
+
+                 {
+                    "ItemId": "(BC)Cornucopia_CompactMill",
+                    "MaxItems": 1,
+                    "Condition": "{{HasMod |contains=Cornucopia.ArtisanMachines}}"
+
+                }
+               ]
+            },
+
+        }
+    }
+
+    ]
+}

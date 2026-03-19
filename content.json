@@ -70,6 +70,16 @@
             "When": { "Music": "vanilla" },
             "Value": "junimoKart_whaleMusic"
         },
+
+        //fish pond rewards
+        {
+            "Name": "RadiationBiterInput",
+            "Value": "MM_AllEyes"
+        },
+        {
+            "Name": "RadiationBiterInput",
+            "Value": "MM_Matsutake"
+        }
         
         
         
@@ -98,7 +108,7 @@
                 "Description": "Toggle this option if you want to play with real mushrooms that exist in real life only.",
                 "Section": "Mushroom Configs"
             },
-            "Include Poisonous Mushrooms":
+            /* "Include Poisonous Mushrooms":
             {
                 "AllowValues": "true, false",
                 "Default": true,
@@ -114,7 +124,7 @@
                 "AllowBlank": false,
                 "Description": "Toggle this option off if you do not want to add inedible mushrooms to your game.",
                 "Section": "Mushroom configs",
-            },
+            }, */
 
             "Music": 
             {
@@ -205,6 +215,11 @@
     "Action": "Include",
     "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true },
     "FromFile": "data/compat/sve/ContextTags.json"
+},
+{
+    "LogName": "Include fish data",
+    "Action": "Include",
+    "FromFile": "data/objects/fish.json"
 }
 
 

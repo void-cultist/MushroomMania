@@ -22,7 +22,7 @@
                         "Description": "A few slices of dried mushroom and their soaking liquor bring an undertone of mushroomy richness to the rice",
                       "Type": "Cooking",
                         "Category": -7,
-                        "Price": 500, 
+                        "Price": 1000, 
                        "Texture": "{{ModID}}/Cooking", 
                         "SpriteIndex": 0, 
                        "Edibility": 90,

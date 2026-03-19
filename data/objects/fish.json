@@ -1,0 +1,318 @@
+{
+    "Changes": [
+        {
+            "LogName": "Load fish textures",
+            "Action": "Load",
+            "Target": "{{ModID}}/FishGlionox",
+            "FromFile": "assets/objects/{{TargetWithoutPath}}.png"
+        },
+
+        {
+            "LogName": "Add fish object data",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "MM_RadiationBiter": {
+                    "Name": "MM_RadiationBiter",
+                    "DisplayName": "{{i18n:MM_RadiationBiter.Name}}",
+                    "Description": "{{i18n:MM_RadiationBiter.Description}}",
+                    "Edibility": "-299",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 3500,
+                    "Texture": "{{ModID}}\\FishGlionox",
+                    "SpriteIndex": 0,
+                    "ContextTags": [
+                        "color_sea_green", "fish_swamp", "fish_item", "season_winter"
+                    ]
+                },
+                "MM_ForestSardine": {
+                    "Name": "MM_ForestSardine",
+                    "DisplayName": "{{i18n:MM_ForestSardine.Name}}",
+                    "Description": "{{i18n:MM_ForestSardine.Description}}",
+                    "Edibility": "15",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 240,
+                    "Texture": "{{ModID}}\\FishGlionox",
+                    "SpriteIndex": 1,
+                    "ContextTags": [
+                        "color_yellow_green", "fish_river", "fish_item", "season_spring"
+                    ]
+                },
+                  "MM_ShroomHead": {
+                    "Name": "MM_ShroomHead",
+                    "DisplayName": "{{i18n:MM_ShroomHead.Name}}",
+                    "Description": "{{i18n:MM_ShroomHead.Description}}",
+                    "Edibility": "35",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 1500,
+                    "Texture": "{{ModID}}\\FishGlionox",
+                    "SpriteIndex": 1,
+                    "ContextTags": [
+                        "color_dark_red", "fish_pond", "fish_item", "season_fall"
+                    ]
+                },
+            }
+        },
+
+        {
+            "LogName": "Add in new fish species' data",
+            "Action": "EditData",
+            "Target": "Data/Fish",
+            "Entries": {
+                "MM_RadiationBiter": "Radiation Biter/40/mixed/30/36/1800 2200/winter/both/690 .4 685 .1/3/.1/.3/7/false",
+                "MM_ForestSardine": "Forest Sardine/20/smooth/3/8/600 1000 1600 2000/spring/sunny/690 .4 685 .1/1/.4/.1/3/false",
+                "MM_ShroomHead": "Shroom Head/30/dart/10/20/1200 1800/summer fall/rainy/690 .4 685 .1/2/.2/.2/5/false"
+            }
+        },
+
+
+/////////////FISH PONDS/////////////////
+
+{
+            "LogName": "Add Fish Pond Data",
+            "Action": "EditData",
+            "Target": "Data/FishPondData",
+            "Entries": {
+
+
+                "MM_RadiationBiter": {
+                    "Id": "MM_RadiationBiter",
+                    "RequiredTags": [ "id_o_mm_radiationbiter" ],
+                    "Precedence": 0,
+                    "PopulationGates": {
+                        "4": [ "mm_deathcap 5"],
+                        "6": [ "MM_Flavored_MushroomEssence 5"],
+                        "8": [ "mm_luck_potion 1 3"],
+                        "10": [ "{{RadiationBiterInput}} 2 4"]
+                    },
+                    "BaseMinProduceChance": 0.3,
+                    "BaseMaxProduceChance": 0.5,
+                    "WaterColor": [
+                        {
+                            "Id": "FewRadiationBiters",
+                            "Color": "DarkSeaGreen",
+                            "MinPopulation": 1
+                        },
+                        {
+                            "Id": "SomeRadiationBiters",
+                            "Color": "OliveDrab",
+                            "MinPopulation": 4
+                        },
+                        {
+                            "Id": "ManyRadiationBiters",
+                            "Color": "DarkOliveGreen",
+                            "MinPopulation": 8
+                        }
+                    ],
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.15,
+                            "ItemID": "(O)909", //radioactive ore
+                            "MinQuantity": 2,
+                            "MaxQuantity": 5
+                        },
+                         {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.1,
+                            "ItemID": "(O)910", //radioactive ingot
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 8,
+                            "Chance": 0.1,
+                            "ItemId": "(O)857", //tiger slime egg
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        },
+                        {
+                            "RequiredPopulation": 8,
+                            "Chance": 0.2,
+                            "RandomItemId": [ "(O)MM_GreyKnight", "(O)852", "(O)MM_Mining_Potion" ],
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                        {
+                            "RequiredPopulation": 4,
+                            "Chance": 0.4,
+                            "RandomItemId": [ "(O)mm_deathcap", "(o)MM_SulfurTuft", "(o)MM_DestroyingAngel" ],
+                            "MinQuantity": 1,
+                            "MaxQuantity": 3
+                        },
+                        {
+                            "RequiredPopulation": 1,
+                            "Chance": 1.0,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                },
+
+                "MM_ForestSardine": {
+                    "Id": "MM_ForestSardine",
+                    "RequiredTags": [ "id_o_mm_ForestSardine" ],
+                    "Precedence": 0,
+                    "PopulationGates": {
+                        "5": [ "MM_Champignon 6"],
+                        "8": [ "422 2 5"],
+                        "10": [ "MM_WildMushroomSoup 2"]
+                    },
+                    "BaseMinProduceChance": 0.5,
+                    "BaseMaxProduceChance": 1.0,
+                    "WaterColor": [
+                        {
+                            "Id": "FewForestSardines",
+                            "Color": "PaleGreen",
+                            "MinPopulation": 1
+                        },
+                        {
+                            "Id": "SomeForestSardines",
+                            "Color": "GreenYellow",
+                            "MinPopulation": 4
+                        },
+                        {
+                            "Id": "ManyForestSardines",
+                            "Color": "YellowGreen",
+                            "MinPopulation": 8
+                        }
+                    ],
+                    "ProducedItems": [
+                        {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.05,
+                            "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Prismatic_Pop" ,
+                            "Condition": "{{HasMod:| contains=FlashShifter.StardewValleyExpandedCP}}",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                          {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.2,
+                            "ItemId": "(O)279", 
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                        
+                         {
+                            "RequiredPopulation": 8,
+                            "Chance": 0.3,
+                            "ItemId": "(O)BlueGrassStarter",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 3
+                        },
+
+                        {
+                            "RequiredPopulation": 8,
+                            "Chance": 0.35,
+                            "RandomItemId": [ "(O)Cornucopia_PickledFish", "(O)Cornucopia_FishSauce" ],
+                            "MinQuantity": 1,
+                            "MaxQuantity": 3
+                        },
+                       
+                        {
+                            "RequiredPopulation": 5,
+                            "Chance": 0.4,
+                            "RandomItemId": [ "(O)Cornucopia_FishOil", "(O)MM_RubyBolete", "(O)774" ],
+                            "MinQuantity": 1,
+                            "MaxQuantity": 3
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.5,
+                            "RandomItemId": [ "(O)MM_BurgerShroom", "(O)MM_Enoki", "(O)Cornucopia_Shiitake", "(O)StardewValleyExpandedCP_Mushroom_Colony" ],
+                            "MinQuantity": 1,
+                            "MaxQuantity": 3
+                        },
+                        {
+                            "RequiredPopulation": 1,
+                            "Chance": 1.0,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                },
+
+
+                "MM_ShroomHead": {
+                    "Id": "MM_ShroomHead",
+                    "RequiredTags": [ "id_o_mm_ShroomHead" ],
+                    "Precedence": 0,
+                    "PopulationGates": {
+                        "5": [ "MM_JubileeWaxcap 3"],
+                        "8": [ "420 5 10"],
+                        "10": [ "MM_Flavored_MushroomEssence 2 5"]
+                    },
+                    "BaseMinProduceChance": 0.5,
+                    "BaseMaxProduceChance": 1.0,
+                    "WaterColor": [
+                        {
+                            "Id": "FewShroomHeads",
+                            "Color": "Salmon",
+                            "MinPopulation": 1
+                        },
+                        {
+                            "Id": "SomeShroomHeads",
+                            "Color": "DarkSalmon",
+                            "MinPopulation": 4
+                        },
+                        {
+                            "Id": "ManyShroomHeads",
+                            "Color": "IndianRed",
+                            "MinPopulation": 8
+                        }
+                    ],
+                    "ProducedItems": [
+                      
+                          {
+                            "RequiredPopulation": 10,
+                            "Chance": 0.1,
+                            "RandomItemId": [ "(O)MM_Attack_Potion", "(O)MM_Defense_Potion" ],
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+            
+                        {
+                            "RequiredPopulation": 8,
+                            "Chance": 0.15,
+                            "RandomItemId": [ "(O)MM_Foraging_Potion", "(O)MM_Fishing_Potion" ],
+                            "MinQuantity": 1,
+                            "MaxQuantity": 2
+                        },
+                       
+                        {
+                            "RequiredPopulation": 4,
+                            "Chance": 0.4,
+                            "RandomItemId": [ "(O)770", "(O)MixedFlowerSeeds", "(O)MysticTreeSeed" ],
+                            "MinQuantity": 2,
+                            "MaxQuantity": 3
+                        },
+                        {
+                            "RequiredPopulation": 3,
+                            "Chance": 0.5,
+                            "ItemId": "(O)420",
+                            "MinQuantity": 2,
+                            "MaxQuantity": 3
+                        },
+                        {
+                            "RequiredPopulation": 1,
+                            "Chance": 1.0,
+                            "ItemID": "(O)812",
+                            "MinQuantity": 1,
+                            "MaxQuantity": 1
+                        }
+                    ],
+                },
+
+
+
+            }
+}
+
+    ]
+}
