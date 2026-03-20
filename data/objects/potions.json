@@ -14,7 +14,7 @@
             "Description": "{{i18n:MM_Foraging_Potion.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 3000, 
            "Texture": "{{ModID}}/PotionsPixerelia", 
             "SpriteIndex": 0, 
             "ColorOverlayFromNextIndex": false,
@@ -47,7 +47,7 @@
             "Description": "{{i18n:MM_Mining_Potion.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 3000, 
            "Texture": "{{ModID}}/PotionsPixerelia", 
             "SpriteIndex": 1, 
             "ColorOverlayFromNextIndex": false,
@@ -80,7 +80,7 @@
             "Description": "{{i18n:MM_Fishing_Potion.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 3000, 
            "Texture": "{{ModID}}/PotionsPixerelia", 
             "SpriteIndex": 2, 
             "ColorOverlayFromNextIndex": false,
@@ -114,7 +114,7 @@
             "Description": "{{i18n:MM_Combat_Potion.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 3000, 
            "Texture": "{{ModID}}/PotionsPixerelia", 
             "SpriteIndex": 3, 
             "ColorOverlayFromNextIndex": false,
@@ -147,7 +147,7 @@
             "Description": "{{i18n:MM_Luck_Potion.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 3000, 
            "Texture": "{{ModID}}/PotionsPixerelia", 
             "SpriteIndex": 4, 
             "ColorOverlayFromNextIndex": false,
@@ -180,7 +180,7 @@
             "Description": "{{i18n:MM_Attack_Potion.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 3000, 
            "Texture": "{{ModID}}/PotionsPixerelia", 
             "SpriteIndex": 5, 
             "ColorOverlayFromNextIndex": false,
@@ -213,7 +213,7 @@
             "Description": "{{i18n:MM_Defense_Potion.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 3000, 
            "Texture": "{{ModID}}/PotionsPixerelia", 
             "SpriteIndex": 6, 
             "ColorOverlayFromNextIndex": false,
@@ -247,7 +247,7 @@
             "Description": "{{i18n:MM_Speed_Potion.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 3000, 
            "Texture": "{{ModID}}/PotionsPixerelia", 
             "SpriteIndex": 7, 
             "ColorOverlayFromNextIndex": false,
@@ -272,6 +272,43 @@
                        ]
        
         },
+
+        
+         "MM_LeviathansGrace":
+          {
+           "Name": "MM_LeviathansGrace",
+           "DisplayName": "{{i18n:MM_LeviathansGrace.name}}",
+            "Description": "{{i18n:MM_LeviathansGrace.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 5000, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 22, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 40,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_LeviathansGrace_Buff", 
+                            "IsDebuff": false,
+                            "Duration": -2,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 5,
+                            "GlowColor": "Aqua",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "FishingLevel": 5,
+                                "LuckLevel": 5,
+                                }
+                            }
+                       ]
+       
+        },
+
+        
     }
        
 },

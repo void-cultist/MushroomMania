@@ -28,6 +28,8 @@
       },
 
       { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+
+      "LogName": "Shroom Collecting Bundle",
          "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
@@ -58,6 +60,7 @@
       },
 
        { 
+        "LogName": "Poisnous Shrooms Bundle",
          "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
@@ -91,6 +94,7 @@
 
 
       { 
+         "LogName": "Poisnous Shrooms Bundle no SVE",
          "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
@@ -122,7 +126,9 @@
 
 
      { //This bundle will be placed the morning after its prerequisite bundle has been purchased
-         "Action":"EditData",
+         
+       "LogName": "Inedible shrooms bundle",
+     "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
             "DLX.Bundles/Purchased |contains=MM_PoisonousShrooms": true,
@@ -162,11 +168,11 @@
       },
 
    { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+        "LogName": "Three more bundles",
          "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
             "DLX.Bundles/Purchased |contains=MM_InedibleShrooms": true,
-            "HasMod |contains=Cornucopia.MoreCrops": false
          },
          "Entries":{
             
@@ -191,7 +197,7 @@
                },
                "BundleRewardSpawnFields": [
                 {
-                    "ItemId": "(UB.Recipe)(BC)MM_MushroomEssenceExtractor",
+                    "ItemId": "(BC)MM_MushroomEssenceExtractor",
                     "MaxItems": 1,
                   
                 }
@@ -234,15 +240,6 @@
                       
                         },
 
-                  {
-                        "ItemId": "RANDOM_ITEMS (O)",
-                        "MaxItems": 2,
-                        "MinStack": 3,
-                        "MaxStack": 8,
-                        "PerItemCondition": "ITEM_ID Target (o)Cornucopia_Raspberry (o)Cornucopia_JuniperBerries (o)Cornucopia_Elderberries",
-                        "Condition": "{{HasMod:| contains=Cornucopia_MoreCrops}}",
-                      
-                        }
                 ],
               
                "BundleReward": {
@@ -251,11 +248,56 @@
                },
                "BundleRewardSpawnFields": [
                 {
-                    "ItemId": "(UB.Recipe)(BC)MM_MushroomEssenceExtractor",
+                    "ItemId": "(UB.Recipe)(O)MM_MushroomPlatter",
                     "MaxItems": 1,
                   
                 }
                ]
+            },
+
+              "MM_ForestFish":
+            {
+               "BundleName": "{{i18n:ForestFish_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition": "9, 15",
+                "ShopType": "CCMagicBook",
+                "ShopColor": "Aqua",
+              "BundleCompletedMail": "{{i18n:BundleCompletedMail.text}} %item craftingRecipe MM_MushroomEssenceExtractor%%[#]{{i18n:BundleCompletedMail.title}}",
+               "BundleSlots": 5,
+                "Price": { 
+                "(O)MM_ForestSardine": 3,
+                "(O)MM_ShroomHead": 2,
+                "(O)MM_RadiationBiter": 1
+                },
+
+                
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 3,
+                        "MinStack": 1,
+                        "MaxStack": 3,
+                        "PerItemCondition": "ITEM_ID Target (o)734 (o)139 (o)158 (o)721 (o)796",
+                      
+                        },
+
+                    {
+                        "ItemId": "ALL_ITEMS (O)",
+                        "MinStack": 1,
+                        "MaxStack": 3,
+                        "PerItemCondition": "ITEM_ID Target (o)FlashShifter.StardewValleyExpandedCP_Frog (o)FlashShifter.StardewValleyExpandedCP_Grass_Carp (o)FlashShifter.StardewValleyExpandedCP_Tadpole",
+                        "Condition": "{{HasMod:| contains=FlashShifter.StardewValleyExpandedCP}}",
+                      
+                        },
+
+                ],
+              
+               "BundleReward": {
+                "(BC)254": 1,
+                "(BC)FishSmoker": 3,
+               },
+              
             },
 
 

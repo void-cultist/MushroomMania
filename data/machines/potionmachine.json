@@ -368,6 +368,51 @@
                 },
 
 
+                {
+                        "Id": "MM_LeviathansGrace",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_bluepinkgill" ],                ///leviathan's grace
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_LeviathansGrace",
+                            "ItemId": "MM_LeviathansGrace",
+                            "ObjectInternalName": "MM_LeviathansGrace",
+                            "ObjectDisplayName": "{{i18n:MM_LeviathansGrace.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.5
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "{{LeviGraceRequirement}}",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "preserve_sheet_index_mm_radiationbiter",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 2,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 2.0
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+
 
 
 
@@ -385,7 +430,7 @@
             ],
             //"WobbleWhileWorking": true,
             "LightWhileWorking": {
-                "Radius": 0.5,
+                "Radius": 0.2,
                 "Color": "SlateBlue"
             }
               

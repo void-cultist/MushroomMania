@@ -49,7 +49,7 @@
                     "Category": -4,
                     "Price": 1500,
                     "Texture": "{{ModID}}\\FishGlionox",
-                    "SpriteIndex": 1,
+                    "SpriteIndex": 2,
                     "ContextTags": [
                         "color_dark_red", "fish_pond", "fish_item", "season_fall"
                     ]

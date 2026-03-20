@@ -1889,9 +1889,7 @@
                         "CreateOnLoad": {
                             "MapPath": "Maps/{{ModID}}_old_shed_1"
                     },
-                    "CustomFields": {
-                        "mushymato.MMAP_SteamOverlay": "T 5 5 #6BEFD3 0.5 4"
-                    }
+                    //"CustomFields": {}
             }
         }
     },
@@ -1905,10 +1903,8 @@
                     "DefaultArrivalTile": { "X": 10, "Y": 20 },
                         "CreateOnLoad": {
                             "MapPath": "Maps/{{ModID}}_old_shed_2"
-                    },
-                    "CustomFields": {
-                        "mushymato.MMAP_SteamOverlay": "T #b4a7d6 0.2 4"
                     }
+                   
             }
         }
     },

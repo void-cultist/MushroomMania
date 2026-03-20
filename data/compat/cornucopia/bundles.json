@@ -1,11 +1,179 @@
 {
     "Changes": [
-           { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+
+          {
+        "LogName": "First Mushroom Bundle",
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "Entries":{
+            "MM_ShroomCollecting":{
+                "BundleName": "{{i18n:ShroomCollecting_Bundle.name}}",
+               "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"9, 15",
+               "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)404": 10,
+                "(O)257": 5,
+                "(O)281": 3,
+                "(O)420": 5,
+                "(O)422": 3
+                },
+                "DrawQuestionMark": true,
+                "BundleReward": { 
+                    "(O)MM_Foraging_Potion": 1
+                }
+            }
+         }
+      },
+
+      { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+         
+      "LogName": "Shroom Collecting Bundle",
+      "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased":"MM_ShroomCollecting" //(!)
+         },
+         "Entries":{
+            
+            "MM_TastyShrooms":
+            {
+               "BundleName": "{{i18n:TastyShrooms_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"7, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_Enoki": 3,
+                "(O)MM_Champignon": 5,
+                "(O)MM_GreatWoodMushroom": 3,
+                "(O)MM_RubyBolete": 3,
+                "(O)MM_CaesarsMushroom": 2
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_PizzaFunghi": 1
+
+               }
+            }
+         }
+      },
+
+       { 
+        "LogName": "Poisnous Shrooms Bundle",
+       "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased":"MM_ShroomCollecting",
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+         },                                                                                         //SVE + poison mushrooms enabled
+         "Entries":{
+            
+            "MM_PoisonousShrooms":
+            {
+               "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"11, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_DestroyingAngel": 3,
+                "(O)MM_TheSickener": 3,
+                "(O)MM_Deathcap": 3,
+                "(O)MM_SulfurTuft": 3,
+                "(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom": 3,
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
+               }
+            }
+         }
+      },
+
+
+
+
+      { 
+        "LogName": "Poisnous Shrooms Bundle no SVE",
          "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
-            "DLX.Bundles/Purchased |contains=MM_InedibleShrooms": true,
-            "HasMod |contains=Cornucopia.MoreCrops": true
+            "DLX.Bundles/Purchased":"MM_ShroomCollecting",
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+         },                                                                                         //no SVE + poison mushrooms enabled
+         "Entries":{
+            
+            "MM_PoisonousShrooms":
+            {
+               "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"11, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_DestroyingAngel": 3,
+                "(O)MM_TheSickener": 3,
+                "(O)MM_Deathcap": 3,
+                "(O)MM_SulfurTuft": 3,
+                "(O)420": 4
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
+               }
+            }
+         }
+      },
+
+
+     { //This bundle will be placed the morning after its prerequisite bundle has been purchased
+     "LogName": "Inedible shrooms bundle",
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased |contains=MM_PoisonousShrooms": true,
+            "DLX.Bundles/Purchased |contains=MM_TastyShrooms": true
+         },
+         "Entries":{
+            
+            "MM_InedibleShrooms":
+            {
+               "BundleName": "{{i18n:Inedible_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"9, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 4,
+              
+              
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MinItems": 5,
+                        "MaxItems": 5,
+                        "MinStack": 3,
+                        "MaxStack": 5,
+                        "PerItemCondition": "ITEM_CONTEXT_TAG Target inedible_mushroom",
+                      
+                        }
+                ],
+               "BundleReward": {
+                "(O)645": 2
+               },
+               "BundleRewardSpawnFields": [ {
+                    "ItemId": "(BC)MM_MushroomEssenceExtractor",
+                    "MaxItems": 1,
+                  
+                } ]
+            }
+         }
+      },
+ { 
+         "LogName": "Three more bundles",
+        "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+            "DLX.Bundles/Purchased |contains=MM_InedibleShrooms": true
+         
          },
          "Entries":{
             
@@ -48,14 +216,152 @@
                  {
                     "ItemId": "(BC)Cornucopia_CompactMill",
                     "MaxItems": 1,
-                    "Condition": "{{HasMod |contains=Cornucopia.ArtisanMachines}}"
-
+                    
                 }
                ]
             },
 
-        }
-    }
+             "MM_ForestForage":
+            {
+               "BundleName": "{{i18n:ForestForage_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition": "7, 15",
+                "ShopType": "CCMagicBook",
+                "ShopColor": "Lavender",
+               "BundleSlots": 4,
+                "Price": { 
+                "(O)259": 6,
+                "(O)282": 5,
+                "(UB.AP)MM.PickledMushrooms_BundleItem": 5
+                },
+
+                
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 2,
+                        "MinStack": 5,
+                        "MaxStack": 13,
+                        "PerItemCondition": "ITEM_ID Target (o)296 (o)309 (o)406 (o)408",
+                      
+                        },
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 2,
+                        "MinStack": 3,
+                        "MaxStack": 8,
+                        "PerItemCondition": "ITEM_ID Target (o)FlashShifter.StardewValleyExpandedCP_Bearberrys (o)FlashShifter.StardewValleyExpandedCP_Ancient_Fiber (o)FlashShifter.StardewValleyExpandedCP_Salal_Berry",
+                        "Condition": "{{HasMod:| contains=FlashShifter.StardewValleyExpandedCP}}",
+                      
+                        },
+
+                  {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 2,
+                        "MinStack": 3,
+                        "MaxStack": 8,
+                        "PerItemCondition": "ITEM_ID Target (o)Cornucopia_Raspberry (o)Cornucopia_JuniperBerries (o)Cornucopia_Elderberries",
+
+                      
+                        }
+                ],
+              
+               "BundleReward": {
+                "(O)MM_Mining_Potion": 3,
+                "(O)GoldenMysteryBox": 5
+               },
+              
+               "BundleRewardSpawnFields": [
+                {
+                    "ItemId": "(UB.Recipe)(O)MM_MushroomPlatter",
+                    "MaxItems": 1,
+                  
+                }
+            ]
+            },
+
+
+              "MM_ForestFish":
+            {
+               "BundleName": "{{i18n:ForestFish_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition": "9, 15",
+                "ShopType": "CCMagicBook",
+                "ShopColor": "Aqua",
+              "BundleCompletedMail": "{{i18n:BundleCompletedMail.text}} %item craftingRecipe MM_MushroomEssenceExtractor%%[#]{{i18n:BundleCompletedMail.title}}",
+               "BundleSlots": 5,
+                "Price": { 
+                "(O)MM_ForestSardine": 3,
+                "(O)MM_ShroomHead": 2,
+                "(O)MM_RadiationBiter": 1
+                },
+
+                
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 3,
+                        "MinStack": 1,
+                        "MaxStack": 3,
+                        "PerItemCondition": "ITEM_ID Target (o)734 (o)139 (o)158 (o)721 (o)796",
+                      
+                        },
+
+                    {
+                        "ItemId": "ALL_ITEMS (O)",
+                        "MinStack": 1,
+                        "MaxStack": 3,
+                        "PerItemCondition": "ITEM_ID Target (o)FlashShifter.StardewValleyExpandedCP_Frog (o)FlashShifter.StardewValleyExpandedCP_Grass_Carp (o)FlashShifter.StardewValleyExpandedCP_Tadpole",
+                        "Condition": "{{HasMod:| contains=FlashShifter.StardewValleyExpandedCP}}",
+                      
+                        },
+
+                ],
+              
+               "BundleReward": {
+                "(BC)254": 1,
+                "(BC)Cornucopia_DeluxeSmoker": 2
+               },
+              
+            },
+
+
+            
+
+
+
+         }
+      },
+
+
+
+/////////////////ADVANCED PRICING ITEMS FOR BUNDLES
+
+{  "LogName": "Advanced pricing pickled mushrooms",
+	"Action": "EditData",
+	"Target": "UnlockableBundles/AdvancedPricing",
+	"Entries": {
+                //The item key should not contain spaces or colons
+                //it has to be unique
+		"MM.PickledMushrooms_BundleItem": { 
+			"Name": "Pickled Mushrooms", //Overwriting the item Name
+			"ContextTags": [ 
+				"id_(o)342", //ItemId = (O)348 Wine
+				"edible_mushroom"
+				
+			],
+			"ItemCopy": "(O)342", //Copy image, Description and Name from (O)348 Wine
+			"SubItemCopy": "(O)404", //Draw a (O)400 Strawberry on the top left
+			"ItemTypes": [ "(O)"] //Needed for CCBundle Hightlighting
+		}
+	}
+},
+
+
+
 
     ]
 }

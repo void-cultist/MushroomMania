@@ -74,12 +74,59 @@
         //fish pond rewards
         {
             "Name": "RadiationBiterInput",
-            "Value": "MM_AllEyes"
+            "Value": "MM_AllEyes",
+            "When": { "Include imaginary Mushrooms": true }
         },
         {
             "Name": "RadiationBiterInput",
             "Value": "MM_Matsutake"
-        }
+        },
+
+        //cornucopia packs
+        {
+            "Name": "CornucopiaArtisan",
+            "Value": "Cornucopia.ArtisanMachines",
+            "When": { "Cornucopia Compatibility": true}
+        },
+          {
+            "Name": "CornucopiaFlowers",
+            "Value": "Cornucopia.MoreFlowers",
+            "When": { "Cornucopia Compatibility": true}
+        },
+          {
+            "Name": "CornucopiaCrops",
+            "Value": "Cornucopia.MoreCrops",
+            "When": { "Cornucopia Compatibility": true}
+        },
+          {
+            "Name": "CornucopiaCooking",
+            "Value": "Cornucopia.CookingRecipes",
+            "When": { "Cornucopia Compatibility": true}
+        },
+
+        //leviathans grace item requirements
+
+        {
+            "Name": "LeviGraceRequirement",
+            "Value": "(O)MM_BleedingHeart",
+            "When": { "Include imaginary Mushrooms": true },
+        },
+
+        {
+            "Name": "LeviGraceRequirement",
+            "Value": "(O)FlashShifter.StardewValleyExpandedCP_Dewdrop_Berry",
+            "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "Include imaginary Mushrooms": false },
+        },
+
+        
+        {
+            "Name": "LeviGraceRequirement",
+            "Value": "(O)MM_GreyKnight"
+        },
+
+
+
         
         
         
@@ -133,6 +180,12 @@
                 "AllowBlank": false,
                 "Description": "This mod adds custom music tracks. If you prefer the original Stardew Valley music, turn this setting off. Custom music might also slow down your game in some instances, so if you are experiencing lag, disable this config as well.",
             },
+            "Cornucopia Compatibility":
+            {
+                "AllowValues": "true, false",
+                "Default": false,
+                "Description": "If you use all four Cornucopia mod packs, toggle this setting for maximum compatibility. Doesn't do anything if none or not all Cornucopia packs are installed."
+            }
             
     },
      
@@ -220,6 +273,12 @@
     "LogName": "Include fish data",
     "Action": "Include",
     "FromFile": "data/objects/fish.json"
+},
+{
+    "LogName": "Include Cornucopia compat",
+    "Action": "Include",
+    "When": { "Cornucopia Compatibility": true,    "HasMod |contains={{Merge: {{CornucopiaArtisan}}, {{CornucopiaFlowers}}, {{CornucopiaCrops}}, {{CornucopiaCooking}} }}": true},
+    "FromFile": "data/compat/cornucopia/bundles.json"
 }
 
 
