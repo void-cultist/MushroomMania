@@ -3,9 +3,12 @@ Licensed under https://creativecommons.org/licenses/by/4.0/legalcode.en (CC BY 4
 
 https://bigwander.itch.io/
 https://itch.io/profile/glionox mushrooms
-https://pixerelia.itch.io/ mushrooms
+https://pixerelia.itch.io/ mushrooms, potions
 https://ninjikin.itch.io/ trees (big non-vanilla mushroom trees, slightly edited in color)
 https://ssugmi.itch.io/ mushrooms
+https://roleymoth.itch.io/ food sprites, seed packets
+https://alexkovacsart.itch.io/90-free-16x16-pixel-art-potions sprite for mushroom extract vial
+bush sprites have been taken from cornucopia and edited for own crops
 
 # Music
 

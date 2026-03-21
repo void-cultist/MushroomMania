@@ -59,7 +59,7 @@
 "MM_SaffronMilkcap.Description": "Good with a crisp texture. Will turn your meal orange.",
 
 "MM_Champignon.DisplayName": "Champignon",
-"MM_Champignon.Description": "Usually referring to the whole genus 'Agaricus', 'Champignon' is also used to refer to the common 'button' mushroom you can get anywhere.",
+"MM_Champignon.Description": "Agaricus bisporus, commonly known as the cultivated mushroom. Usually referring to the whole genus 'Agaricus', 'Champignon' is also used to refer to the common 'button' mushroom you can get anywhere.",
 
 "MM_Aspen.DisplayName": "Aspen",
 "MM_Aspen.Description": "A very solid and quite tall bolete with a distinctive orange coloured cap and and a pale stem. Needs thorough cooking.",
@@ -101,17 +101,70 @@
 "MM_Fishing_Potion.name": "Fishing Potion",
 "MM_Fishing_Potion.description": "A potion that remarkably increases your Fishing level.",
 
+"MM_Combat_Potion.name": "Combat Potion",
+"MM_Combat_Potion.description": "A potion that remarkably increases your Combat level.",
+
+"MM_Luck_Potion.name": "Luck Potion",
+"MM_Luck_Potion.description": "A potion that remarkably increases your Luck level.",
+
+"MM_Attack_Potion.name": "Attack Potion",
+"MM_Attack_Potion.description": "A potion that remarkably increases your Attack.",
+
+"MM_Defense_Potion.name": "Defense Potion",
+"MM_Defense_Potion.description": "A potion that remarkably increases your Defense.",
+
+"MM_Speed_Potion.name": "Speed Potion",
+"MM_Speed_Potion.description": "A potion that remarkably increases your Speed.",
+
+"MM_LeviathansGrace.name": "Leviathan's Grace",
+"MM_LeviathansGrace.description": "An incredibly useful potion if you want to spend the day fishing.",
+
 //seeds and saplings
 "AllEyes_Planter.name": "All Eyes Planter",
 "AllEyes_Planter.description": "Plant these to grow All Eyes mushrooms. Harvest them in Fall and Winter.",
 
 "AllEyes_Crop.name": "All Eyes",
 
+"ChampignonStarter.name": "Champignon Starter",
+"ChampignonStarter.description": "Plant these in tilled soil to grow champignons in Spring or Fall. Takes 5 days to grow and yields multiple mushrooms at harvest.",
+
+"ParasolMushroomStarter.name": "Parasol Mushroom Starter",
+"ParasolMushroomStarter.description":  "Plant this in tilled soil in Summer or Fall to grow parasol mushrooms. Takes 6 days to grow.",
+
+"BurgerShroomStarter.name": "Burger Shroom Starter",
+"BurgerShroomStarter.description": "Plant these in tilled soil to grow burger shrooms during Spring. Takes 10 days to grow.",
+
+"SickenerPlanter.name": "The Sickener Planter",
+"SickenerPlanter.description": "Plant this to grow sickeners.",
+
+"EnokiPlanter.name": "Enoki Planter",
+"EnokiPlanter.description": "Plant this to grow enoki mushrooms. Harvest them in late Fall, all Winter when it's not snowing and early Spring.",
+
+"GreatWoodMushroomStarter.name": "Great Wood Mushroom Starter",
+"GreatWoodMushroomStarter.description": "Plant this in tilled soil in Summer or Fall to grow great wood mushrooms. Takes 9 days to grow.",
+
+//fish
+"MM_RadiationBiter.Name": "Radiation Biter",
+"MM_RadiationBiter.Description": "A strange fish that has evolved in radiation poisoned swamps and loves the cold. Eating it or its roe is highly advised against. Don't let it bite you!",
+
+"MM_ForestSardine.Name": "Forest Sardine",
+"MM_ForestSardine.Description": "A small fish that is most commonly found in rivers in forests with an abundance of mushrooms.",
+
+"MM_ShroomHead.Name": "Shroom Head",
+"MM_ShroomHead.Description": "This fish's head is the result of mutations which caused it to swell to such a big size. The mushroom-looking head contains toxins.",
+
 //bundles
 "ShroomCollecting_Bundle.name": "Shroom Collecting",
 "TastyShrooms_Bundle.name": "Tasty Shrooms",
 "PoisonousShrooms_Bundle.name": "Poisonous Shrooms",
 "Inedible_Bundle.name": "Inedible",
+"MoreMushroomStuff_Bundle.name": "More mushroom stuff",
+"ForestForage_Bundle.name": "Forest Forage",
+"ForestFish_Bundle.name": "Forest Fish",
+"MushroomDishes_Bundle.name": "Mushroom Dishes",
+
+"BundleCompletedMail.title": "Forest Fish Bundle complete!",
+"BundleCompletedMail.text": "Hey there!^ The spirits of the mushroom meadow have noticed your efforts in completing that forest fish bundle. That must have been tough! As a reward, take this recipe for a machine that extracts the essence of mushrooms.",
 
 //Map strings
 "MM0": "The door is locked.",
