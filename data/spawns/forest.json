@@ -142,7 +142,7 @@
 
 ///DURING RAINY DAYS
 
-{
+/* {
             "LogName": "Add edible mushroom spawns to forest",
             "Action": "EditData",
             "Target": "Data/Locations",
@@ -271,7 +271,7 @@
      {
             "LogName": "Add poisonous mushroom spawns to forest during rain",
             "Action": "EditData",
-            "When": { "Weather": "Rain, Storm, GreenRain", "Spawn Rate in Rain": "increased" },
+            "When": { "Weather": "Rain, Storm, GreenRain"},
             "Target": "Data/Locations",
             "TargetField": [ "Forest", "Forage" ],
             "Entries": {
@@ -358,7 +358,7 @@
                 },
             }
         }
-
+ */
 
     
     ]

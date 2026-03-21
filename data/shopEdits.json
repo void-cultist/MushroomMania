@@ -1,0 +1,33 @@
+{
+    "Changes": [
+
+        { 
+        "LogName": "Saloon Edit",
+		"Action": "EditData",
+		"Target":  "Data/Shops",
+            "TargetField": [
+                "Saloon",
+                "Items"
+            ],
+            "Entries": {
+                    "MM_BakedMushroomRisotto_Recipe": {
+                    
+                    "Id": "MM_BakedMushroomRisotto_Recipe",
+                    "ItemId": "(O)MM_BakedMushroomRisotto",
+                    "IsRecipe": true,
+                    "ObjectInternalName": "MM_BakedMushroomRisotto",
+                    "Price": 1500
+                    
+                    }
+                    
+                },
+            "MoveEntries": [
+                    {
+                    "ID": "MM_BakedMushroomRisotto",
+                    "ToPosition": "Bottom"
+                    } 
+                ]
+
+}
+    ]
+}

@@ -125,6 +125,18 @@
             "Value": "(O)MM_GreyKnight"
         },
 
+        //exclude seeds from random sale
+        {
+            "Name": "ExcludeFromRandomSale",
+            "Value": true,
+            "When": {  "DLX.Bundles/Purchased |contains=MM_FinalBundle": true}
+        },
+
+          {
+            "Name": "ExcludeFromRandomSale",
+            "Value": false,
+        }
+
 
 
         
@@ -141,12 +153,12 @@
                 "AllowBlank": false,
                 "Description": "This mod edits the way items spawn. If you find any issues in the amount spawned, change this setting to 'lower'."
             },
-            "Spawn Rate in Rain":{
+            /* "Spawn Rate in Rain":{
                 "AllowBlank": false,
                 "AllowValues": "normal, increased",
                 "Default": "increased",
                 "Description": "Increases the spawn rate for all mushrooms during rainy weather."
-            },
+            }, */
             "Include imaginary Mushrooms":
             {
                 "AllowValues": "true, false",
@@ -278,7 +290,17 @@
     "LogName": "Include Cornucopia compat",
     "Action": "Include",
     "When": { "Cornucopia Compatibility": true,    "HasMod |contains={{Merge: {{CornucopiaArtisan}}, {{CornucopiaFlowers}}, {{CornucopiaCrops}}, {{CornucopiaCooking}} }}": true},
-    "FromFile": "data/compat/cornucopia/bundles.json"
+    "FromFile": "data/compat/cornucopia/bundles.json, data/compat/cornucopia/cookingOverrides.json"
+},
+{
+    "LogName": "include traction",
+    "Action": "Include",
+    "FromFile": "data/tractions.json"
+},
+{
+    "LogName": "include shop edits",
+    "Action": "Include",
+    "FromFile": "data/shopEdits.json"
 }
 
 

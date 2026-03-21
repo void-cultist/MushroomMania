@@ -84,7 +84,8 @@
                 "(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom": 3,
                 },
                "BundleReward": {
-                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
+                "(UB.Recipe)(O)MM_WildMushroomSoup": 1,
+                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1
                }
             }
          }
@@ -118,7 +119,8 @@
                 "(O)420": 4
                 },
                "BundleReward": {
-                "(UB.Recipe)(O)MM_WildMushroomSoup": 1
+                "(UB.Recipe)(O)MM_WildMushroomSoup": 1,
+                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1
                }
             }
          }
@@ -327,6 +329,48 @@
                },
               
             },
+
+
+             "MM_MushroomDishes":
+            {
+               "BundleName": "{{i18n:MushroomDishes_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition": "49, 8",
+                "ShopType": "CCMagicBook",
+                "ShopColor": "MistyRose",
+               "BundleSlots": 5,
+                "Price": { 
+                "(O)MM_BakedMushroomRisotto": 3,
+                "(O)MM_WildMushroomSoup": 3,
+                "(O)MM_PizzaFunghi": 4,
+                "(O)MM_MushroomPlatter": 4,
+                "(O)205": 4
+               
+                },
+
+                
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 3,
+                        "MinStack": 1,
+                        "MaxStack": 3,
+                        "PerItemCondition": "ITEM_ID Target (O)Cornucopia_CottageBreakfast (O)Cornucopia_HarGow (O)Cornucopia_Japchae (O)Cornucopia_MotleyMushrooms (O)Cornucopia_MushroomBurger (O)Cornucopia_MushroomSoup Cornucopia_StuffedMushrooms",
+                      
+                        },
+
+                    
+
+                ],
+              
+               "BundleReward": {
+               "(BC)MM_PotionMachine": 1,
+               "(BC)Cornucopia_YogurtJar": 1 
+               },
+              
+            },
+
 
 
             

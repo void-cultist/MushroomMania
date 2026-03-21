@@ -2,11 +2,29 @@
   "Changes": [
 
     {
-      "LogName": "Load all eyes sapling texures",
+      "LogName": "Load mushroom crops texures",
       "Action": "Load",
-      "Target": "{{ModID}}/AllEyesPlanter, {{ModID}}/AllEyesBush",
+      "Target": "{{ModID}}/AllEyesPlanter, {{ModID}}/MushroomCrops, {{ModID}}/MushroomSeeds, {{ModID}}/MushroomBushes",
       "FromFile": "assets/crops/{{TargetWithoutPath}}.png"
     },
+
+
+/*  .--..--..--..--..--..--..--..--..--..--..--..--..--.  */
+/* / .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \ */
+/* \ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ / */
+/*  \/ /`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\/ /  */
+/*  / /\                              d8b           / /\  */
+/* / /\ \                             88P          / /\ \ */
+/* \ \/ /                            d88           \ \/ / */
+/*  \/ /   .d888b, d8888b d8888b d888888   .d888b,  \/ /  */
+/*  / /\   ?8b,   d8b_,dPd8b_,dPd8P' ?88   ?8b,     / /\  */
+/* / /\ \    `?8b 88b    88b    88b  ,88b    `?8b  / /\ \ */
+/* \ \/ / `?888P' `?888P'`?888P'`?88P'`88b`?888P'  \ \/ / */
+/*  \/ /                                            \/ /  */
+/*  / /\.--..--..--..--..--..--..--..--..--..--..--./ /\  */
+/* / /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \ */
+/* \ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' / */
+/*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */
     {
       "LogName": "All Eyes sapling object data",
       "Action": "EditData",
@@ -20,10 +38,157 @@
           "Type": "Basic",
           "Category": -74,
           "Texture": "{{ModID}}/AllEyesPlanter",
-          "SpriteIndex": 0
+          "SpriteIndex": 0,
+          "Price": 10000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
         }
       }
     },
+
+    
+     {
+      "LogName": "sickener planter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_SickenerPlanter": {
+          "Name": "SickenerPlanter",
+          "DisplayName": "{{i18n: SickenerPlanter.name}}",
+          "Description": "{{i18n: SickenerPlanter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 1,
+          "Price": 6000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+   {
+      "LogName": "enoku planter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_EnokiPlanter": {
+          "Name": "EnokiPlanter",
+          "DisplayName": "{{i18n: EnokiPlanter.name}}",
+          "Description": "{{i18n: EnokiPlanter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 5,
+          "Price": 5000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+     {
+      "LogName": "champignon starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_ChampignonStarter": {
+          "Name": "ChampignonStarter",
+          "DisplayName": "{{i18n: ChampignonStarter.name}}",
+          "Description": "{{i18n: ChampignonStarter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 0,
+          "Price": 90,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [ "mushroom_starter_item" ]
+        }
+      }
+    },
+
+    {
+      "LogName": "parasol mushroom starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_ParasolMushroomStarter": {
+          "Name": "ParasolMushroomStarter",
+          "DisplayName": "{{i18n: ParasolMushroomStarter.name}}",
+          "Description": "{{i18n: ParasolMushroomStarter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 2,
+          "Price": 120,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [ "mushroom_starter_item" ]
+        }
+      }
+    },
+
+    
+    {
+      "LogName": "burger shroom starter object data",
+      "Action": "EditData",
+      "When": { "Include imaginary Mushrooms": true },
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_BurgerShroomStarter": {
+          "Name": "BurgerShroomStarter",
+          "DisplayName": "{{i18n: BurgerShroomStarter.name}}",
+          "Description": "{{i18n: BurgerShroomStarter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 4,
+          "Price": 200,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_starter_item" ]
+        }
+      }
+    },
+
+    
+    {
+      "LogName": "great wood mushroom starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_GreatWoodMushroomStarter": {
+          "Name": "GreatWoodMushroomStarter",
+          "DisplayName": "{{i18n: GreatWoodMushroomStarter.name}}",
+          "Description": "{{i18n: GreatWoodMushroomStarter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 3,
+          "Price": 140,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item" ]
+        }
+      }
+    },
+
+
+
+  /*  .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.  */
+/* / .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \ */
+/* \ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ / */
+/*  \/ /`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\/ /  */
+/*  / /\   d8b                        d8b                       / /\  */
+/* / /\ \  ?88                        ?88                      / /\ \ */
+/* \ \/ /   88b                        88b                     \ \/ / */
+/*  \/ /    888888b ?88   d8P .d888b,  888888b  d8888b .d888b,  \/ /  */
+/*  / /\    88P `?8bd88   88  ?8b,     88P `?8bd8b_,dP ?8b,     / /\  */
+/* / /\ \  d88,  d88?8(  d88    `?8b  d88   88P88b       `?8b  / /\ \ */
+/* \ \/ / d88'`?88P'`?88P'?8b`?888P' d88'   88b`?888P'`?888P'  \ \/ / */
+/*  \/ /                                                        \/ /  */
+/*  / /\.--..--..--..--..--..--..--..--..--..--..--..--..--..--./ /\  */
+/* / /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \ */
+/* \ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' / */
+/*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */
+
     {
       "LogName": "All Eyes custom bush data",
       "Action": "EditData",
@@ -31,7 +196,7 @@
       "Target": "furyx639.CustomBush/Data",
       "Entries": {
         "(O)MM_AllEyes_Planter": {
-          "DisplayName": "All Eyes",   //"{{i18n:AllEyes_Crop.name}}",
+          "DisplayName": "{{i18n:AllEyes_Crop.name}}",   //"{{i18n:AllEyes_Crop.name}}",
           "AgeToProduce": 25,
           "ConditionsToProduce": [
             "SEASON Fall,DAY_OF_MONTH 1 2 3",
@@ -41,17 +206,226 @@
           "ItemsProduced": [
             {
               "ItemId": "(O)MM_AllEyes",
-              "Condition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"IS_PASSIVE_FESTIVAL_TODAY fall27\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\"",
+              "Condition": "SEASON Fall,DAY_OF_MONTH 1 2 3",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 2
+            },
+             {
+              "ItemId": "(O)MM_AllEyes",
+              "Condition": "IS_PASSIVE_FESTIVAL_TODAY fall27",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 2
+            },
+            {
+              "ItemId": "(O)MM_AllEyes",
+              "Condition": "SEASON Winter,DAY_OF_MONTH 24 25 26 27 28",
               "Chance": 1.0,
               "MinStack": 1,
               "MaxStack": 2
             },
           ],
-          "Texture": "{{ModID}}/AllEyesBush",
-          "IndoorTexture":  "{{ModID}}/AllEyesBush",
+          "Texture": "{{ModID}}/MushroomBushes",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes",
           "TextureSpriteRow": 0
         }
       }
-    }
+    },
+
+   {
+      "LogName": "sickener custom bush data",
+      "Action": "EditData",
+      "Target": "furyx639.CustomBush/Data",
+      "Entries": {
+        "(O)MM_TheSickener": {
+          "DisplayName": "{{i18n:TheSickenerDisplayName}}",   
+          "AgeToProduce": 20,
+          "ConditionsToProduce": [
+            "SEASON Summer,DAY_OF_MONTH 15 16 17 18 19 20 21 22 23 24 25 26 27 28",
+            "SEASON Fall,DAY_OF_MONTH 1 2 3 4 5 6 7 8 9 10",
+          ],
+          "ItemsProduced": [
+            {
+              "ItemId": "(O)MM_TheSickener",
+              "Condition": "SEASON Summer,DAY_OF_MONTH 15 16 17 18 19 20 21 22 23 24 25 26 27 28",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 3
+            },
+             {
+              "ItemId": "(O)MM_TheSickener",
+              "Condition": "SEASON Fall,DAY_OF_MONTH 1 2 3 4 5 6 7 8 9 10",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 3
+            },
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes",
+          "TextureSpriteRow": 1
+        }
+      }
+    },
+
+    {
+      "LogName": "enoki custom bush data",
+      "Action": "EditData",
+      "Target": "furyx639.CustomBush/Data",
+      "Entries": {
+        "(O)MM_Enoki": {
+          "DisplayName": "{{i18n:EnokiDisplayName}}",   
+          "AgeToProduce": 20,
+          "ConditionsToProduce": [
+            "SEASON Fall,DAY_OF_MONTH 26 27 28",
+            "SEASON Winter",
+            "SEASON Spring,DAY_OF_MONTH 1 2 3"
+          ],
+          "ItemsProduced": [
+            {
+              "ItemId": "(O)MM_Enoki",
+              "Condition": "SEASON Fall,DAY_OF_MONTH 26 27 28",
+              "Chance": 1.0,
+              "MinStack": 2,
+              "MaxStack": 3
+            },
+             {
+              "ItemId": "(O)MM_Enoki",
+              "Condition": "SEASON Winter,!WEATHER Target Snow",
+              "Chance": 1.0,
+              "MinStack": 2,
+              "MaxStack": 4
+            },
+             {
+              "ItemId": "(O)MM_Enoki",
+              "Condition": "SEASON Spring,DAY_OF_MONTH 1 2 3",
+              "Chance": 1.0,
+              "MinStack": 2,
+              "MaxStack": 3
+            },
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes",
+          "TextureSpriteRow": 2
+        }
+      }
+    },
+
+
+/*  .--..--..--..--..--..--..--..--..--..--..--..--..--..--.  */
+/* / .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \ */
+/* \ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ / */
+/*  \/ /`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\/ /  */
+/*  / /\                                                / /\  */
+/* / /\ \   d8888b  88bd88b d8888b ?88,.d88b, .d888b,  / /\ \ */
+/* \ \/ /  d8P' `P  88P'  `d8P' ?88`?88'  ?88 ?8b,     \ \/ / */
+/*  \/ /   88b     d88     88b  d88  88b  d8P   `?8b    \/ /  */
+/*  / /\   `?888P'd88'     `?8888P'  888888P'`?888P'    / /\  */
+/* / /\ \                            88P'              / /\ \ */
+/* \ \/ /                           d88                \ \/ / */
+/*  \/ /                            ?8P                 \/ /  */
+/*  / /\.--..--..--..--..--..--..--..--..--..--..--..--./ /\  */
+/* / /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \ */
+/* \ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' / */
+/*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */
+   {	
+            "LogName": "Add in great wood mushroom crop",
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_GreatWoodMushroomStarter": { 
+                    "Seasons": [
+                        "summer", "fall"
+                    ],
+                    "DaysInPhase": 
+                       [ 1, 4, 4  ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 2,
+                    "HarvestItemId": "MM_GreatWoodMushroom",
+                    "Texture": "{{ModId}}/MushroomCrops",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.01
+                }
+            }
+        },
+
+     {	
+            "LogName": "Add in champignon crop",
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_ChampignonStarter": { 
+                    "Seasons": [
+                        "spring", "fall"
+                    ],
+                    "DaysInPhase": 
+                       [ 1, 1, 1, 1, 1 ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 2,
+                    "HarvestMaxStack": 4,
+                    "HarvestItemId": "MM_Champignon",
+                    "Texture": "{{ModId}}/MushroomCrops",
+                    "SpriteIndex": 1,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.3
+                }
+            }
+        },
+
+          {	
+            "LogName": "Add in parasola mushroom crop",
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_ParasolMushroomStarter": { 
+                    "Seasons": [
+                        "summer", "fall"
+                    ],
+                    "DaysInPhase": 
+                       [ 1, 1, 1, 1, 2 ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_ParasolMushroom",
+                    "Texture": "{{ModId}}/MushroomCrops",
+                    "SpriteIndex": 3 ,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true
+                }
+            }
+        },
+
+       {	
+            "LogName": "Add in burger shroom crop",
+            "When": { "Include imaginary Mushrooms": true },
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_BurgerShroomStarter": { 
+                    "Seasons": [
+                        "spring"
+                    ],
+                    "DaysInPhase": 
+                       [ 1, 2, 2, 2, 3 ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_BurgerShroom",
+                    "Texture": "{{ModId}}/MushroomCrops",
+                    "SpriteIndex": 2,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.001
+                }
+            }
+        },
+
+
   ]
 }

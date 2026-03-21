@@ -270,7 +270,7 @@
 
 ///DURING RAINY DAYS
 
-{
+/* {
             "LogName": "Add edible mushroom spawns to Woods",
             "Action": "EditData",
             "Target": "Data/Locations",
@@ -497,7 +497,7 @@
             }
         }
 
-
+ */
     
     ]
 }

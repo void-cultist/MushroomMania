@@ -1,0 +1,22 @@
+{
+    "Changes": [
+
+        {
+            "LogName": "ramen recipe traction",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_RamenUnlock":
+                {
+                    "Id": "{{ModID}}_RamenUnlock",
+                    "Trigger": "DayEnding",
+                    "Condition": "Spiderbuttons.BETAS_PLAYER_HAS_COOKED_ITEM Current MM_WildMushroomSoup 1, Spiderbuttons.BETAS_PLAYER_HAS_COOKED_ITEM Current MM_CauliflowerMushroomSoup 1",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_Message \"After cooking two kinds of mushroom soup, you suddenly thought that you could also try your hand at making mushroom ramen! Check your recipes!\"",
+                        "MarkCookingRecipeKnown Current MM_MushroomRamen_Recipe"
+                    ]
+                }
+            }
+        }
+    ]
+}
