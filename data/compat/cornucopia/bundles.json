@@ -21,7 +21,8 @@
                 },
                 "DrawQuestionMark": true,
                 "BundleReward": { 
-                    "(O)MM_Foraging_Potion": 1
+                    "(O)MM_Foraging_Potion": 1,
+                    "(O)MM_ChampignonStarter": 3
                 }
             }
          }
@@ -52,7 +53,8 @@
                 "(O)MM_CaesarsMushroom": 2
                 },
                "BundleReward": {
-                "(UB.Recipe)(O)MM_PizzaFunghi": 1
+                "(UB.Recipe)(O)MM_PizzaFunghi": 1,
+                "(O)MM_EnokiPlanter": 1
 
                }
             }
@@ -85,7 +87,8 @@
                 },
                "BundleReward": {
                 "(UB.Recipe)(O)MM_WildMushroomSoup": 1,
-                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1
+                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1,
+                "(O)MM_ParasolMushroomStarter": 3
                }
             }
          }
@@ -120,7 +123,8 @@
                 },
                "BundleReward": {
                 "(UB.Recipe)(O)MM_WildMushroomSoup": 1,
-                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1
+                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1,
+                  "(O)MM_ParasolMushroomStarter": 3
                }
             }
          }
@@ -161,11 +165,12 @@
                "BundleReward": {
                 "(O)645": 2
                },
-               "BundleRewardSpawnFields": [ {
+               "BundleRewardSpawnFields": [
+                   {
                     "ItemId": "(BC)MM_MushroomEssenceExtractor",
                     "MaxItems": 1,
-                  
-                } ]
+                    },
+               ]
             }
          }
       },
@@ -368,6 +373,37 @@
                "(BC)MM_PotionMachine": 1,
                "(BC)Cornucopia_YogurtJar": 1 
                },
+              
+            },
+
+                 "MM_MushroomEssence":
+            {
+               "BundleName": "{{i18n:MushroomEssence_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition": "52, 8",
+                "ShopType": "CCMagicBook",
+                "ShopColor": "SlateBlue",
+               "BundleSlots": 5,
+
+                
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 8,
+                        "MinStack": 2,
+                        "MaxStack": 4,
+                        "PerItemCondition": "ITEM_ID Target MM_Flavored_MushroomEssence"
+                      
+                        },
+
+                    
+
+                ],
+              
+               "BundleReward": {
+               "(O)MM_SaffronMilkcapStarter": 3
+               }
               
             },
 

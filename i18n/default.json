@@ -116,8 +116,32 @@
 "MM_Speed_Potion.name": "Speed Potion",
 "MM_Speed_Potion.description": "A potion that remarkably increases your Speed.",
 
+"MM_Critical_Potion.name": "Critical Potion",
+"MM_Critical_Potion.description:": "A potion that remarkably increases your Crit Chance and Crit Power.",
+
+"MM_Immunity_Potion.name": "Immunity Potion",
+"MM_Immunity_Potion.description:": "A potion that remarkably increases your Immunity.",
+
+"MM_WeaponStat_Potion.name": "Weapon Stats Potion",
+"MM_WeaponStat_Potion.description": "A potion that remarkably increases your weapon's precision and speed.",
+
 "MM_LeviathansGrace.name": "Leviathan's Grace",
 "MM_LeviathansGrace.description": "An incredibly useful potion if you want to spend the day fishing.",
+
+"MM_Shield_Potion.name": "Shield Potion",
+"MM_Shield_Potion.description": "An incredibly useful potion that makes your defenses nearly impenetrable.",
+
+"MM_AbyssalRage.name": "Abyssal Rage",
+"MM_AbyssalRage.description": "Drinking this potion will turn you into a nightmarish berserker for a short time.",
+
+"MM_Heroic_Potion.name": "Heroic Potion",
+"MM_Heroic_Potion.description": "This potion improves your capabilities in combat.",
+
+"MM_LuckySeven.name": "Lucky Seven",
+"MM_LuckySeven.description": "The souls of seven brave people bestow the luckiest of days upon you.",
+
+"MM_BlessingOfHermes.name": "Blessing of Hermes",
+"MM_BlessingOfHermes.description": "A beverage for all associates of Hermes who wish to travel swiftly.",
 
 //seeds and saplings
 "AllEyes_Planter.name": "All Eyes Planter",
@@ -135,13 +159,20 @@
 "BurgerShroomStarter.description": "Plant these in tilled soil to grow burger shrooms during Spring. Takes 10 days to grow.",
 
 "SickenerPlanter.name": "The Sickener Planter",
-"SickenerPlanter.description": "Plant this to grow sickeners.",
+"SickenerPlanter.description": "Plant this to grow sickeners. Harvest in mid summer through mid fall.",
 
 "EnokiPlanter.name": "Enoki Planter",
 "EnokiPlanter.description": "Plant this to grow enoki mushrooms. Harvest them in late Fall, all Winter when it's not snowing and early Spring.",
 
 "GreatWoodMushroomStarter.name": "Great Wood Mushroom Starter",
 "GreatWoodMushroomStarter.description": "Plant this in tilled soil in Summer or Fall to grow great wood mushrooms. Takes 9 days to grow.",
+
+"SaffronMilkcapStarter.name": "Saffron Milkcap Starter",
+"SaffronMilkcapStarter.description": "Plant this in tilled soil in Summer or Fall to grow saffron milkcaps. Takes 8 days to grow.",
+
+"MatsutakePlanter.name": "Matsutake Planter",
+"MatsutakePlanter.description":  "Plant this to grow matsutake. Harvest in the last week of fall during rainy weather.",
+
 
 //fish
 "MM_RadiationBiter.Name": "Radiation Biter",
@@ -162,6 +193,8 @@
 "ForestForage_Bundle.name": "Forest Forage",
 "ForestFish_Bundle.name": "Forest Fish",
 "MushroomDishes_Bundle.name": "Mushroom Dishes",
+"MushroomEssence_Bundle.name": "Mushroom Essence",
+"Final_Bundle.name": "Final Bundle",
 
 "BundleCompletedMail.title": "Forest Fish Bundle complete!",
 "BundleCompletedMail.text": "Hey there!^ The spirits of the mushroom meadow have noticed your efforts in completing that forest fish bundle. That must have been tough! As a reward, take this recipe for a machine that extracts the essence of mushrooms.",

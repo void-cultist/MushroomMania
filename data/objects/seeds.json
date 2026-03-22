@@ -87,6 +87,26 @@
       }
     },
 
+   {
+      "LogName": "matsutake planter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_MatsutakePlanter": {
+          "Name": "MatsutakePlanter",
+          "DisplayName": "{{i18n: MatsutakePlanter.name}}",
+          "Description": "{{i18n: MatsutakePlanter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 7,
+          "Price": 5000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
      {
       "LogName": "champignon starter object data",
       "Action": "EditData",
@@ -164,6 +184,26 @@
           "Texture": "{{ModID}}/MushroomSeeds",
           "SpriteIndex": 3,
           "Price": 140,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item" ]
+        }
+      }
+    },
+
+      {
+      "LogName": "saffron milkcap starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_SaffronMilkcapStarter": {
+          "Name": "SaffronMilkcapStarter",
+          "DisplayName": "{{i18n: SaffronMilkcapStarter.name}}",
+          "Description": "{{i18n: SaffronMilkcapStarter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 6,
+          "Price": 340,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
           "ContextTags": [  "mushroom_starter_item" ]
         }
@@ -264,7 +304,7 @@
           ],
           "Texture": "{{ModID}}/MushroomBushes",
           "IndoorTexture":  "{{ModID}}/MushroomBushes",
-          "TextureSpriteRow": 1
+          "TextureSpriteRow": 2
         }
       }
     },
@@ -275,7 +315,7 @@
       "Target": "furyx639.CustomBush/Data",
       "Entries": {
         "(O)MM_Enoki": {
-          "DisplayName": "{{i18n:EnokiDisplayName}}",   
+          "DisplayName": "{{i18n:MM_EnokiDisplayName}}",   
           "AgeToProduce": 20,
           "ConditionsToProduce": [
             "SEASON Fall,DAY_OF_MONTH 26 27 28",
@@ -308,10 +348,40 @@
           ],
           "Texture": "{{ModID}}/MushroomBushes",
           "IndoorTexture":  "{{ModID}}/MushroomBushes",
-          "TextureSpriteRow": 2
+          "TextureSpriteRow": 4
         }
       }
     },
+
+    {
+      "LogName": "Matsutake custom bush data",
+      "Action": "EditData",
+      "Target": "furyx639.CustomBush/Data",
+      "Entries": {
+        "(O)MM_Matsutake": {
+          "DisplayName": "{{i18n:MM_MatsutakeDisplayName}}",   
+          "AgeToProduce": 21,
+          "ConditionsToProduce": [
+            "SEASON Fall,DAY_OF_MONTH 24 25 26 27 28",
+            "WEATHER Target Rain",
+          ],
+          "ItemsProduced": [
+            {
+              "ItemId": "(O)MM_Matsutake",
+              "Condition": "SEASON Fall,DAY_OF_MONTH 24 25 26 27 28",
+              "Chance": 1.0,
+              "MinStack": 2,
+              "MaxStack": 3
+            }
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes",
+          "TextureSpriteRow": 6
+        }
+      }
+    },
+
 
 
 /*  .--..--..--..--..--..--..--..--..--..--..--..--..--..--.  */
@@ -394,7 +464,7 @@
                     "HarvestMaxStack": 1,
                     "HarvestItemId": "MM_ParasolMushroom",
                     "Texture": "{{ModId}}/MushroomCrops",
-                    "SpriteIndex": 3 ,
+                    "SpriteIndex": 3,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true
                 }
@@ -419,6 +489,31 @@
                     "HarvestItemId": "MM_BurgerShroom",
                     "Texture": "{{ModId}}/MushroomCrops",
                     "SpriteIndex": 2,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.001
+                }
+            }
+        },
+      
+             {	
+            "LogName": "Add in saffron milkcap crop",
+
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_SaffronMilkcapStarter": { 
+                    "Seasons": [
+                        "summer", "fall"
+                    ],
+                    "DaysInPhase": 
+                       [ 1, 1, 2, 4 ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_SaffronMilkcap",
+                    "Texture": "{{ModId}}/MushroomCrops",
+                    "SpriteIndex":4,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
                     "ExtraHarvestChance": 0.001

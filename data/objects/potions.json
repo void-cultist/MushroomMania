@@ -199,7 +199,8 @@
                             "ActionsOnApply": null,
                             "CustomAttributes": 
                                 {
-                                "Attack": 5
+                                "Attack": 5,
+                                "AttackMultiplier": 2
                                 }
                             }
                        ]
@@ -273,6 +274,183 @@
        
         },
 
+
+                
+         "MM_Critical_Potion":
+          {
+           "Name": "MM_Critical_Potion",
+           "DisplayName": "{{i18n:MM_Critical_Potion.name}}",
+            "Description": "{{i18n:MM_Critical_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 3000, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 8, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Critical_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 6,
+                            "GlowColor": "LightBlue",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "CriticalChanceMultiplier": 3.0,
+                                "CriticalPowerMultiplier": 3.0
+                                }
+                            }
+                       ]
+       
+        },
+
+        "MM_Immunity_Potion":
+          {
+           "Name": "MM_Immunity_Potion",
+           "DisplayName": "{{i18n:MM_Immunity_Potion.name}}",
+            "Description": "{{i18n:MM_Immunity_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 3000, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 9, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Immunity_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 7,
+                            "GlowColor": "HotPink",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Immunity": 5.0
+                                }
+                            }
+                       ]
+       
+        },
+
+        "MM_Heroic_Potion":
+          {
+           "Name": "MM_Heroic_Potion",
+           "DisplayName": "{{i18n:MM_Heroic_Potion.name}}",
+            "Description": "{{i18n:MM_Heroic_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 3000, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 11, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 30,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Heroic_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 11,
+                            "GlowColor": "MonoGameOrange",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "CombatLevel": 4.0,
+                                "Attack": 2.5,
+                                "CriticalChanceMultiplier": 1.5,
+                                "WeaponSpeedMultiplier": 2.0
+                                }
+                            }
+                       ]
+       
+        },
+
+        "MM_LuckySeven":
+          {
+           "Name": "MM_LuckySeven",
+           "DisplayName": "{{i18n:MM_LuckySeven.name}}",
+            "Description": "{{i18n:MM_LuckySeven.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 10000, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 20, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 30,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_LuckySeven_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 777,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 12,
+                            "GlowColor": "Turquoise",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "LuckLevel": 7.0,
+                                "FishingLevel": 2.0,
+                                "ForagingLevel": 2.0,
+                                "Speed": 1.2
+                                
+                                }
+                            }
+                       ]
+       
+        },
+
+
+          "MM_WeaponStat_Potion":
+          {
+           "Name": "MM_WeaponStat_Potion",
+           "DisplayName": "{{i18n:MM_WeaponStat_Potion.name}}",
+            "Description": "{{i18n:MM_WeaponStat_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 3000, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 9, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 20,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_WeaponStat_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1300,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 8,
+                            "GlowColor": "Yellow",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "WeaponPrecisionMultiplier": 4.0,
+                                "WeaponSpeedMultiplier": 4.0
+                                }
+                            }
+                       ]
+       
+        },
+
         
          "MM_LeviathansGrace":
           {
@@ -302,6 +480,118 @@
                                 {
                                 "FishingLevel": 5,
                                 "LuckLevel": 5,
+                                }
+                            }
+                       ]
+       
+        },
+
+            "MM_BlessingOfHermes":
+          {
+           "Name": "MM_BlessingOfHermes",
+           "DisplayName": "{{i18n:MM_BlessingOfHermes.name}}",
+            "Description": "{{i18n:MM_BlessingOfHermes.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 7500, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 41, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 30,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_BlessingOfHermes_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 800,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 13,
+                            "GlowColor": "Orange",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                
+                                "Speed": 7.0,
+                                "LuckLevel": 2.0
+                                
+                                }
+                            }
+                       ]
+       
+        },
+
+        
+          "MM_Shield_Potion":
+          {
+           "Name": "MM_Shield_Potion",
+           "DisplayName": "{{i18n:MM_Shield_Potion.name}}",
+            "Description": "{{i18n:MM_Shield_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 5000, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 31, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 40,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_Shield_Potion_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 1000,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 9,
+                            "GlowColor": "Gold",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Immunity": 5.0,
+                                "Defense": 5.0,
+                                "KnockbackMultiplier": 1.5
+                                }
+                            }
+                       ]
+       
+        },
+
+      "MM_AbyssalRage":
+          {
+           "Name": "MM_AbyssalRage",
+           "DisplayName": "{{i18n:MM_AbyssalRage.name}}",
+            "Description": "{{i18n:MM_AbyssalRage.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": 9000, 
+           "Texture": "{{ModID}}/PotionsPixerelia", 
+            "SpriteIndex": 19, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 40,
+            "IsDrink": true,
+            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "Buffs": [
+                            {
+                            "Id": "{{ModID}}_AbyssalRage_Buff", 
+                            "IsDebuff": false,
+                            "Duration": 500,
+                            "IconTexture": "{{ModID}}\\BuffsPixerelia",
+                            "IconSpriteIndex": 10,
+                            "GlowColor": "Black",
+                            "Effects": null,
+                            "ActionsOnApply": null,
+                            "CustomAttributes": 
+                                {
+                                "Immunity": 2.5,
+                                "WeaponPrecisionMultiplier": 2.0,
+                                "WeaponSpeedMultiplier": 2.0,
+                                "CriticalChanceMultiplier": 4.0,
+                                "CriticalPowerMultiplier": 5.0,
+                                "AttackMultiplier": 2.0,
+                                "Attack": 5.0
+                               
                                 }
                             }
                        ]

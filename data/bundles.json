@@ -21,7 +21,8 @@
                 },
                 "DrawQuestionMark": true,
                 "BundleReward": { 
-                    "(O)MM_Foraging_Potion": 1
+                    "(O)MM_Foraging_Potion": 1,
+                    "(O)MM_ChampignonStarter": 3
                 }
             }
          }
@@ -52,7 +53,8 @@
                 "(O)MM_CaesarsMushroom": 2
                 },
                "BundleReward": {
-                "(UB.Recipe)(O)MM_PizzaFunghi": 1
+                "(UB.Recipe)(O)MM_PizzaFunghi": 1,
+                "(O)MM_EnokiPlanter": 1
 
                }
             }
@@ -85,7 +87,8 @@
                 },
                "BundleReward": {
                 "(UB.Recipe)(O)MM_WildMushroomSoup": 1,
-                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1
+                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1,
+               "(O)MM_ParasolMushroomStarter": 3
                }
             }
          }
@@ -120,7 +123,8 @@
                 },
                "BundleReward": {
                 "(UB.Recipe)(O)MM_WildMushroomSoup": 1,
-                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1
+                "(UB.Recipe)(O)MM_CauliflowerMushroomSoup": 1,
+                  "(O)MM_ParasolMushroomStarter": 3
                 
                }
             }
@@ -171,7 +175,7 @@
       },
 
    { 
-        "LogName": "Three more bundles",
+        "LogName": "Some more bundles",
          "Action":"EditData",
          "Target":"UnlockableBundles/Bundles",
          "When":{
@@ -336,10 +340,79 @@
               
                "BundleReward": {
                "(BC)MM_PotionMachine": 1,
-               "(BC)248"
+               "(BC)248": 1
                }
               
             },
+
+            
+              "MM_MushroomEssencesBundle":
+            {
+               "BundleName": "{{i18n:MushroomEssence_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition": "52, 8",
+                "ShopType": "CCMagicBook",
+                "ShopColor": "SlateBlue",
+               "BundleSlots": 5,
+
+                
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 8,
+                        "MinStack": 2,
+                        "MaxStack": 4,
+                        "PerItemCondition": "ITEM_ID Target MM_Flavored_MushroomEssence"
+                      
+                        },
+
+                    
+
+                ],
+              
+               "BundleReward": {
+               "(O)MM_SaffronMilkcapStarter": 3
+               }
+              
+            },
+
+      { 
+      "LogName": "Final Bundle",
+         "Action":"EditData",
+         "Target":"UnlockableBundles/Bundles",
+         "When":{
+              "DLX.Bundles/Purchased |contains=MM_MoreMushroomStuff": true,
+            "DLX.Bundles/Purchased |contains=MM_ForestFish": true,
+            "DLX.Bundles/Purchased |contains=MM_MushroomDishes": true,
+            "DLX.Bundles/Purchased |contains=MM_MushroomEssencesBundle": true,
+         },
+         "Entries":{
+            
+            "MM_Final":
+            {
+               "BundleName": "{{i18n:Final_Bundle.name}}",
+                "Location":"{{ModID}}_MushroomMeadow",
+               "ShopPosition":"7, 15",
+                "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_Enoki": 3,
+                "(O)MM_Champignon": 5,
+                "(O)MM_GreatWoodMushroom": 3,
+                "(O)MM_RubyBolete": 3,
+                "(O)MM_CaesarsMushroom": 2
+                },
+               "BundleReward": {
+                "(UB.Recipe)(O)MM_PizzaFunghi": 1,
+                "(O)MM_EnokiPlanter": 1
+
+               }
+            }
+         }
+      },
+
+      
 
             
 
