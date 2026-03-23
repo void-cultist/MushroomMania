@@ -5,7 +5,7 @@
 		   "Target": "Data/Objects",
 		   "TargetField": ["432", "ContextTags"],			//trufle oil
 		   "Entries": {
-				  "#-1": "oil_item"
+				  "#-1": "cooking_oil_item"
 		   }
 		},
 
@@ -14,7 +14,7 @@
 		   "Target": "Data/Objects",
 		   "TargetField": ["772", "ContextTags"],			//oil of garlic
 		   "Entries": {
-				  "#-1": "oil_item"
+				  "#-1": "cooking_oil_item"
 		   }
 		},
 
@@ -23,7 +23,7 @@
 		   "Target": "Data/Objects",
 		   "TargetField": ["742", "ContextTags"],			//oil
 		   "Entries": {
-				  "#-1": "oil_item"
+				  "#-1": "cooking_oil_item"
 		   }
 		},
 
@@ -44,6 +44,69 @@
 				  "#-1": "poisonous_mushroom"
 		   }
 		},
+
+			{  "LogName": "morel Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["257", "ContextTags"],			//morel
+		   "Entries": {
+				  "#-1": "extractor_input",
+				  "#-2": "edible_mushroom"
+		   }
+		},
+
+		{  "LogName": "chanterelle Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["281", "ContextTags"],			//chanterelle
+		   "Entries": {
+				  "#-1": "extractor_input",
+				  "#-2": "edible_mushroom"
+		   }
+		},
+
+		{  "LogName": "common mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["404", "ContextTags"],			//common mushroom
+		   "Entries": {
+				  "#-1": "extractor_input",
+				  "#-2": "edible_mushroom"
+		   }
+		},
+
+		{  "LogName": "purple mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["422", "ContextTags"],			//purple mushroom
+		   "Entries": {
+				  "#-1": "extractor_input",
+				  "#-2": "edible_mushroom"
+		   }
+		},
+
+		
+          {  "LogName": "truffle Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["430", "ContextTags"],			//truffle
+		   "Entries": {
+				  "#-1": "extractor_input",
+				  "#-2": "edible_mushroom"
+		   }
+		},
+
+		  {  "LogName": "magma cap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["851", "ContextTags"],			//truffle
+		   "Entries": {
+				  "#-1": "extractor_input",
+				  "#-2": "edible_mushroom"
+		   }
+		},
+
+
 
 
         

@@ -89,11 +89,17 @@
 ///Machines and Objects
 "MM_Flavored_MushroomEssence": "{0} Essence", //{0} will be replaced with the input item
 "MM_Flavored_MushroomEssence.name": "Mushroom Essence",
-"MM_Flavored_MushroomEssence.description": "The pure essence extracted from an inedible mushroom",
+"MM_Flavored_MushroomEssence.description": "The pure essence extracted from a mushroom",
+
+"MM_Flavored_Potion": "{0} Potion",
+"MM_Flavored_Potion.name": "Magic Potion",
+"MM_Flavored_Potion.description": "A potion  made of mushroom extract and  poisonous mushrooms.",
+"selph.ExtraMachineConfig.RequirementInvalidMsg": "Potions require at least 1 Mushroom Extract and 1 Poisonous Mushroom.",
+"Potion": "Potion",
 
 "MM_Foraging_Potion.name": "Foraging Potion",
 "MM_Foraging_Potion.description": "A potion that remarkably increases your foraging level.",
-"selph.ExtraMachineConfig.RequirementInvalidMsgForagingPotion": "Requires 1 Morel and 1 Poisonous Mushroom",
+
 
 "MM_Mining_Potion.name": "Mining Potion",
 "MM_Mining_Potion.description": "A potion that remarkably increases your mining level.",
@@ -195,6 +201,14 @@
 "MushroomDishes_Bundle.name": "Mushroom Dishes",
 "MushroomEssence_Bundle.name": "Mushroom Essence",
 "Final_Bundle.name": "Final Bundle",
+
+"MM.PickledMushrooms_BundleItem": "Pickled Common Mushrooms",
+"MM.TruffleEssence_BundleItem": "Truffle Essence",
+"MM.MagmaCapEssence_BundleItem": "Magma Cap Essence",
+"MM.AspenEssence_BundleItem": "Aspen Essence",
+"MM.ChampignonEssence_BundleItem": "Champignon Essence",
+"MM.GreatWoodMushroomEssence_BundleItem": "Great Wood Mushroom Essence",
+"MM.BlackTrumpetMushroomEssence_BundleItem": "Black Trumpet Essence",
 
 "BundleCompletedMail.title": "Forest Fish Bundle complete!",
 "BundleCompletedMail.text": "Hey there!^ The spirits of the mushroom meadow have noticed your efforts in completing that forest fish bundle. That must have been tough! As a reward, take this recipe for a machine that extracts the essence of mushrooms.",

@@ -16,7 +16,7 @@
         "MM_MushroomEssenceExtractor": {
             "Name": "MM_MushroomEssenceExtractor",
             "DisplayName": "Mushroom Essence Extractor",
-            "Description": "Extracts the essence of poisonous mushrooms.",
+            "Description": "Extracts the essence of various mushrooms.",
             "Price": 500,
             "Fragility": 0,
             "CanBePlacedOutdoors": true,
@@ -54,11 +54,11 @@
             "Description": "{{i18n:MM_Flavored_MushroomEssence.description}}",
           "Type": "Basic",
             "Category": -26,
-            "Price": -1, 
+            "Price": 20, 
            "Texture": "{{ModID}}/ExtractBottle", 
             "SpriteIndex": 0, 
             "ColorOverlayFromNextIndex": true,
-           "Edibility": -300,
+           "Edibility": 2,
             "IsDrink": false,
             "ContextTags": [ "mushroom_extract" ],
        
@@ -83,7 +83,7 @@
                         [
                         {
                         "Trigger": "ItemPlacedInMachine",
-                        "RequiredTags": ["potion_ingredient"],
+                        "RequiredTags": ["extractor_input"],
                         "RequiredCount": 1
                         },
                         ],
@@ -104,9 +104,12 @@
                                 {
 									"Id": "MushroomEssence",
 									"Modification": "Multiply",
-									"Amount": 1.5
+									"Amount": 2.0
 								}
-                            ]
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.InputEdibilityMultiplier": 2.0
+                            }
                           
 
                         }
@@ -130,7 +133,7 @@
         },
 
      {
-        "LogName": "Strings patch",
+        "LogName": "Strings patch - mushroom essence",
         "Action": "EditData",
         "Target": "Strings/Objects",
         "Entries": {

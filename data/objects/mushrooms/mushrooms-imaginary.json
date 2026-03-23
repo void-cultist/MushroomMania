@@ -26,7 +26,7 @@
                           "SpriteIndex": 2, 
                          "Edibility": 40,
                           "IsDrink": false,
-                          "ContextTags": [ "edible_mushroom", "color_brown", "mushroom_item", "preserves_pickle", "borgr", "potion_ingredient" ],
+                          "ContextTags": [ "edible_mushroom", "color_brown", "mushroom_item", "preserves_pickle", "borgr", "extractor_input" ],
                          "Buffs": [
                                {
                                 "Id": "{{ModID}}_BurgerShroomBuff",
@@ -52,7 +52,7 @@
                           "SpriteIndex": 5, 
                          "Edibility": 300,
                           "IsDrink": false,
-                          "ContextTags": [ "edible_mushroom", "color_pink", "mushroom_item", "preserves_pickle", "color_blue", "fck_trfs", "potion_ingredient" ],
+                          "ContextTags": [ "edible_mushroom", "color_pink", "mushroom_item", "preserves_pickle", "color_blue", "fck_trfs", "extractor_input" ],
                          "Buffs": [
                                {
                                 "Id": "{{ModID}}_TransPower",
@@ -107,7 +107,7 @@
                           "SpriteIndex": 10, 
                          "Edibility": -240,
                           "IsDrink": false,
-                          "ContextTags": [ "poisonous_mushroom"],
+                          "ContextTags": [ "poisonous_mushroom", "extractor_input" ],
                          "Buffs": [
                                {
                                 "Id": "{{ModID}}_BleedingHeartDebuff",
@@ -132,7 +132,7 @@
                           "SpriteIndex": 7, 
                          "Edibility": -200,
                           "IsDrink": false,
-                          "ContextTags": [ "poisonous_mushroom"],
+                          "ContextTags": [ "poisonous_mushroom", "extractor_input" ],
                          "Buffs": [
                                  {
                             "Id": "{{ModId}}_AllEyesDebuff",
@@ -178,7 +178,7 @@
                     "SpriteIndex": 4, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_dark_slate_blue", "inedible_mushroom", "potion_ingredient" ],
+                    "ContextTags": [  "color_dark_slate_blue", "inedible_mushroom", "extractor_input" ],
                 
                 },
 

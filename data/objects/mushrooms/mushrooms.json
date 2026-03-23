@@ -27,7 +27,7 @@
                     "SpriteIndex": 1, 
                    "Edibility": 50,
                     "IsDrink": false,
-                    "ContextTags": [ "preserves_pickle", "color_brown", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ],
+                    "ContextTags": [ "preserves_pickle", "color_brown", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input"  ],
                 
                 },
                
@@ -44,7 +44,7 @@
                     "SpriteIndex": 2, 
                    "Edibility": 60,
                     "IsDrink": false,
-                    "ContextTags": [ "preserves_pickle", "color_orange", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ],
+                    "ContextTags": [ "preserves_pickle", "color_orange", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input"  ],
                 
                 },
 
@@ -61,7 +61,7 @@
                     "SpriteIndex": 3, 
                    "Edibility": 1,
                     "IsDrink": false,
-                    "ContextTags": [ "color_dark_red", "color_dark_pink", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ],
+                    "ContextTags": [ "color_dark_red", "color_dark_pink", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input"  ],
                 
                 },
 
@@ -77,7 +77,7 @@
                     "SpriteIndex": 3, 
                    "Edibility": 25,
                     "IsDrink": false,
-                    "ContextTags": [  "color_orange", "color_yellow", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ],
+                    "ContextTags": [  "color_orange", "color_yellow", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input"  ],
                 
                 },
                 "MM_ParasolMushroom":
@@ -92,7 +92,7 @@
                     "SpriteIndex": 3, 
                    "Edibility": 38,
                     "IsDrink": false,
-                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ]
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input"  ]
                 },
                 "MM_SaffronMilkcap": 
                 {
@@ -106,7 +106,7 @@
                     "SpriteIndex": 0, 
                    "Edibility": 50,
                     "IsDrink": false,
-                    "ContextTags": [  "color_yellow", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient"  ]
+                    "ContextTags": [  "color_yellow", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input"  ]
                 },
                   "MM_Champignon": 
                 {
@@ -120,7 +120,7 @@
                     "SpriteIndex": 1, 
                    "Edibility": 25,
                     "IsDrink": false,
-                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
                 "MM_Aspen":
                   {
@@ -134,7 +134,7 @@
                     "SpriteIndex": 2, 
                    "Edibility": 50,
                     "IsDrink": false,
-                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
                 "MM_RussulaVesca":
                     {
@@ -148,7 +148,7 @@
                     "SpriteIndex": 3, 
                    "Edibility": 55,
                     "IsDrink": false,
-                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
                  "MM_GoldenBrittlegill":
                     {
@@ -162,7 +162,7 @@
                     "SpriteIndex": 4, 
                    "Edibility": 60,
                     "IsDrink": false,
-                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
                 "MM_CaesarsMushroom":
                   {
@@ -176,7 +176,7 @@
                     "SpriteIndex": 5, 
                    "Edibility": 50,
                     "IsDrink": false,
-                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
                   "MM_Enoki":
                   {
@@ -190,7 +190,7 @@
                     "SpriteIndex": 7, 
                    "Edibility": 70,
                     "IsDrink": false,
-                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
                 "MM_Matsutake":
                   {
@@ -204,7 +204,7 @@
                     "SpriteIndex": 8, 
                    "Edibility": 100,
                     "IsDrink": false,
-                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
                 "MM_LobsterMushroom":
                   {
@@ -218,7 +218,7 @@
                     "SpriteIndex": 11, 
                    "Edibility": 80,
                     "IsDrink": false,
-                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
               "MM_BlackTrumpet":
                {
@@ -232,7 +232,7 @@
                     "SpriteIndex": 13, 
                    "Edibility": 90,
                     "IsDrink": false,
-                    "ContextTags": [  "color_black", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "potion_ingredient" ]
+                    "ContextTags": [  "color_black", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
 
       
@@ -352,7 +352,7 @@
                     "SpriteIndex": 6, 
                    "Edibility": 1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_grey", "preserves_pickle", "poisonous_mushroom", "mushroom_item", "forage_item" ],
+                    "ContextTags": [  "color_grey", "extractor_input", "poisonous_mushroom", "mushroom_item", "forage_item" ],
                     "Buffs": [
                             {
                                 "Id": "{{ModID}}_DeathcapDebuff",
@@ -398,7 +398,7 @@
                     "SpriteIndex": 4, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_dark_red", "inedible_mushroom", "potion_ingredient" ],
+                    "ContextTags": [  "color_dark_red", "inedible_mushroom", "extractor_input" ],
                 
                 },
 
@@ -414,7 +414,7 @@
                     "SpriteIndex": 0, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_pink", "inedible_mushroom", "potion_ingredient" ],
+                    "ContextTags": [  "color_pink", "inedible_mushroom", "extractor_input" ],
                 
                 },
 
@@ -430,7 +430,7 @@
                     "SpriteIndex": 1, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_blue", "color_cyan", "color_aquamarine", "inedible_mushroom", "potion_ingredient" ],
+                    "ContextTags": [  "color_blue", "color_cyan", "color_aquamarine", "inedible_mushroom", "extractor_input" ],
                 
                 },
                 
@@ -446,7 +446,7 @@
                     "SpriteIndex": 4, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_pale_violet", "color_grey", "inedible_mushroom", "potion_ingredient" ],
+                    "ContextTags": [  "color_pale_violet", "color_grey", "inedible_mushroom", "extractor_input" ],
                 
                 },
 
@@ -462,7 +462,7 @@
                           "SpriteIndex": 4, 
                          "Edibility": -10,
                           "IsDrink": false,
-                          "ContextTags": [ "inedible_mushroom", "potion_ingredient", "color_orange" ],
+                          "ContextTags": [ "inedible_mushroom", "extractor_input", "color_orange" ],
                         
                       },
                 

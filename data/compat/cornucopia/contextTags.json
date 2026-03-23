@@ -1,0 +1,25 @@
+{
+    "Changes": [
+        {  "LogName": "chicken of the woods Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Cornucopia_ChickenoftheWoods", "ContextTags"],			//chicken of the woods
+		   "Entries": {
+				  "#-1": "edible_mushroom",
+                  "#-2": "mushroom_item",
+				  "#-3": "extractor_input"
+		   }
+		},
+
+         {  "LogName": "shiitake Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Cornucopia_Shiitake", "ContextTags"],			//shiitake
+		   "Entries": {
+				  "#-1": "edible_mushroom",
+                  "#-2": "mushroom_item",
+				  "#-3": "extractor_input"
+		   }
+		},
+    ]
+}

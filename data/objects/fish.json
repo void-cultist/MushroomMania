@@ -23,7 +23,7 @@
                     "Texture": "{{ModID}}\\FishGlionox",
                     "SpriteIndex": 0,
                     "ContextTags": [
-                        "color_sea_green", "fish_swamp", "fish_item", "season_winter"
+                        "color_sea_green", "fish_swamp", "fish_item", "season_winter", "fish_has_roe"
                     ]
                 },
                 "MM_ForestSardine": {
@@ -37,7 +37,7 @@
                     "Texture": "{{ModID}}\\FishGlionox",
                     "SpriteIndex": 1,
                     "ContextTags": [
-                        "color_yellow_green", "fish_river", "fish_item", "season_spring"
+                        "color_yellow_green", "fish_river", "fish_item", "season_spring", "fish_has_roe"
                     ]
                 },
                   "MM_ShroomHead": {
@@ -51,7 +51,7 @@
                     "Texture": "{{ModID}}\\FishGlionox",
                     "SpriteIndex": 2,
                     "ContextTags": [
-                        "color_dark_red", "fish_pond", "fish_item", "season_fall"
+                        "color_dark_red", "fish_pond", "fish_item", "season_fall", "fish_has_roe"
                     ]
                 },
             }

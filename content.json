@@ -104,7 +104,8 @@
             "When": { "Cornucopia Compatibility": true}
         },
 
-        //leviathans grace item requirements
+        ////////////////////////////////potion machine item requirements//////////////////////////////
+        ////////leviathans grace
 
         {
             "Name": "LeviGraceRequirement",
@@ -119,17 +120,102 @@
                 "Include imaginary Mushrooms": false },
         },
 
-        
         {
             "Name": "LeviGraceRequirement",
             "Value": "(O)MM_GreyKnight"
+        },
+
+        ///////////blessing of hermes
+
+        {
+            "Name": "HermesRequirement",
+            "Value": "(O)FlashShifter.StardewValleyExpandedCP_Monster_Mushroom",
+            "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true, },
+        },
+
+        
+        {
+            "Name": "HermesRequirement",
+            "Value": "(O)Cornucopia_FlavoredYogurt",
+            "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+            "HasMod |contains={{Merge: {{CornucopiaArtisan}}, {{CornucopiaFlowers}}, {{CornucopiaCrops}}, {{CornucopiaCooking}} }}": true },
+        },
+
+        {
+            "Name": "HermesRequirement",
+            "Value": "(O)438", //large goat milk
+            
+        },
+
+         ////////abyssal rage
+
+        {
+            "Name": "AbyssalRageEssence",
+            "Value": "alleyes",
+            "When": { "Include imaginary Mushrooms": true },
+        },
+
+         {
+            "Name": "AbyssalRageEssence",
+            "Value": "devilsfingers",
+            
+        },
+
+         {
+            "Name": "AbyssalRageReq",
+            "Value": "(O)MM_BleedingHeart",
+            "When": { "Include imaginary Mushrooms": true },
+        },
+
+         {
+            "Name": "AbyssalRageReq",
+            "Value": "(O)MM_BluePinkgill",
+            
+        },
+
+        ///////////////heroic potion
+             {
+            "Name": "HeroicEssence",
+            "Value": "burgershroom",
+            "When": { "Include imaginary Mushrooms": true },
+        },
+
+         {
+            "Name": "HeroicEssence",
+            "Value": "orangepeelfungus",
+            
+        },
+
+         {
+            "Name": "HeroicReq",
+            "Value": "(O)Cornucopia_Ginseng",
+            "When": { "HasMod |contains={{Merge: {{CornucopiaArtisan}}, {{CornucopiaFlowers}}, {{CornucopiaCrops}}, {{CornucopiaCooking}} }}": true },
+        },
+
+         {
+            "Name": "HeroicReq",
+            "Value": "(O)MysticSyrup",
+
+        },
+        ////////////////Lucky seven
+
+        {
+            "Name": "HeroicReq",
+            "Value": "yogurt_item, preserve_sheet_index_268",
+            "When": { "HasMod |contains={{Merge: {{CornucopiaArtisan}}, {{CornucopiaFlowers}}, {{CornucopiaCrops}}, {{CornucopiaCooking}} }}": true },
+        },
+
+         {
+            "Name": "HeroicReq",
+            "Value": "jelly_item, preserve_sheet_index_268",
+        
         },
 
         //exclude seeds from random sale
         {
             "Name": "ExcludeFromRandomSale",
             "Value": true,
-            "When": {  "DLX.Bundles/Purchased |contains=MM_FinalBundle": true}
+            "When": {  "DLX.Bundles/Purchased |contains=MM_Final": true}
         },
 
           {
@@ -290,7 +376,7 @@
     "LogName": "Include Cornucopia compat",
     "Action": "Include",
     "When": { "Cornucopia Compatibility": true,    "HasMod |contains={{Merge: {{CornucopiaArtisan}}, {{CornucopiaFlowers}}, {{CornucopiaCrops}}, {{CornucopiaCooking}} }}": true},
-    "FromFile": "data/compat/cornucopia/bundles.json, data/compat/cornucopia/cookingOverrides.json"
+    "FromFile": "data/compat/cornucopia/bundles.json, data/compat/cornucopia/cookingOverrides.json, data/compat/cornucopia/contextTags.json"
 },
 {
     "LogName": "include traction",
@@ -301,6 +387,11 @@
     "LogName": "include shop edits",
     "Action": "Include",
     "FromFile": "data/shopEdits.json"
+},
+{
+    "LogName": "Include context tag patches to vanilla items",
+    "Action": "Include",
+    "FromFile": "data/contexttags.json"
 }
 
 

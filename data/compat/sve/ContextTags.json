@@ -7,7 +7,8 @@
 		   "TargetField": ["FlashShifter.StardewValleyExpandedCP_Monster_Mushroom", "ContextTags"],			//monster mushroom
 		   "Entries": {
 				  "#-1": "edible_mushroom",
-                  "#-2": "mushroom_item"
+                  "#-2": "mushroom_item",
+				  "#-3": "extractor_input"
 		   }
 		},
 
@@ -23,11 +24,23 @@
          {  "LogName": "poison mushroom Context tags edit",
 		   "Action": "EditData",
 		   "Target": "Data/Objects",
-		   "TargetField": ["FlashShifter.StardewValleyExpandedCP_Poison_Mushroom", "ContextTags"],			//mushroom berry rice
+		   "TargetField": ["FlashShifter.StardewValleyExpandedCP_Poison_Mushroom", "ContextTags"],			//poison mushroom rice
 		   "Entries": {
-				  "#-1": "poisonous_mushroom"
+				  "#-1": "poisonous_mushroom",
+				  "#-2": "mushroom_item"
 		    }
         },
+
+		{  "LogName": " Mushroom colony Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["FlashShifter.StardewValleyExpandedCP_Mushroom_Colony", "ContextTags"],			//mushroom colony
+		   "Entries": {
+				  "#-1": "edible_mushroom",
+                  "#-2": "mushroom_item",
+				  "#-3": "extractor_input"
+		   }
+		},
 
 
 

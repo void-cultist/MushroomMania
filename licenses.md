@@ -7,7 +7,7 @@ https://pixerelia.itch.io/ mushrooms, potions
 https://ninjikin.itch.io/ trees (big non-vanilla mushroom trees, slightly edited in color)
 https://ssugmi.itch.io/ mushrooms
 https://roleymoth.itch.io/ food sprites, seed packets
-https://alexkovacsart.itch.io/90-free-16x16-pixel-art-potions sprite for mushroom extract vial
+https://alexkovacsart.itch.io/90-free-16x16-pixel-art-potions sprite for mushroom extract vial and flavored potion bottle
 bush sprites have been taken from cornucopia and edited for own crops
 
 # Music

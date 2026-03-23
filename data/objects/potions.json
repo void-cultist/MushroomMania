@@ -5,7 +5,26 @@
     "LogName": "Add potion machine output",
     "Action": "EditData",
     "Target": "Data/Objects",
-    "Entries":  {
+    "Entries":  
+    {
+
+      "MM_Flavored_Potion":
+        {
+           "Name": "MM_Flavored_Potion",
+           "DisplayName": "{{i18n:MM_Flavored_Potion.name}}",
+            "Description": "{{i18n:MM_Flavored_Potion.description}}",
+          "Type": "Basic",
+            "Category": -26,
+            "Price": -1, 
+           "Texture": "{{ModID}}/PotionBottle", 
+            "SpriteIndex": 0, 
+            "ColorOverlayFromNextIndex": true,
+           "Edibility": 50,
+            "IsDrink": true,
+            "ContextTags": [  "magic_potion", "mushroom_potion" ],
+       
+        },
+   
 
       "MM_Foraging_Potion":
         {
@@ -372,7 +391,8 @@
                                 "CombatLevel": 4.0,
                                 "Attack": 2.5,
                                 "CriticalChanceMultiplier": 1.5,
-                                "WeaponSpeedMultiplier": 2.0
+                                "WeaponSpeedMultiplier": 2.0,
+                                "Defense": -0.2
                                 }
                             }
                        ]
@@ -600,7 +620,8 @@
 
         
     }
-       
-},
+        }
+        
+   
     ]
 }

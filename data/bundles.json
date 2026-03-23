@@ -354,28 +354,26 @@
                 "ShopType": "CCMagicBook",
                 "ShopColor": "SlateBlue",
                "BundleSlots": 5,
+                "Price": { 
+                "(UB.AP)MM.TruffleEssence_BundleItem": 3,
+                "(UB.AP)MM.MagmaCapEssence_BundleItem": 3,
+                "(UB.AP)MM.AspenEssence_BundleItem": 3,
+                "(UB.AP)MM.ChampignonEssence_BundleItem": 3,
+                "(UB.AP)MM.GreatWoodMushroomEssence_BundleItem": 3,
+                "(UB.AP)MM.BlackTrumpetMushroomEssence_BundleItem": 3
+              
+                }, 
 
                 
-                "PriceSpawnFields": [
-
-                    {
-                        "ItemId": "RANDOM_ITEMS (O)",
-                        "MaxItems": 8,
-                        "MinStack": 2,
-                        "MaxStack": 4,
-                        "PerItemCondition": "ITEM_ID Target MM_Flavored_MushroomEssence"
-                      
-                        },
-
-                    
-
-                ],
               
                "BundleReward": {
-               "(O)MM_SaffronMilkcapStarter": 3
+               "(O)MM_SaffronMilkcapStarter": 3,
+               "(BC)MM_PotionMachine": 1,
                }
               
             },
+         }
+   },
 
       { 
       "LogName": "Final Bundle",
@@ -397,15 +395,24 @@
                 "ShopType": "CCMagicBook",
                "BundleSlots": 3,
                "Price": { 
-                "(O)MM_Enoki": 3,
+                
                 "(O)MM_Champignon": 5,
-                "(O)MM_GreatWoodMushroom": 3,
-                "(O)MM_RubyBolete": 3,
-                "(O)MM_CaesarsMushroom": 2
+              
                 },
+
+                "PriceSpawnFields": [
+
+                    {
+                        "ItemId": "RANDOM_ITEMS (O)",
+                        "MaxItems": 3,
+                        "MinStack": 2,
+                        "MaxStack": 4,
+                        "PerItemCondition": "ITEM_ID Target (O)MM_Critical_Potion (O)MM_Attack_Potion (O)MM_Defense_Potion (O)MM_Shield_Potion (O)MM_AbyssalRage (O)MM_Heroic_Potion (O)MM_WeaponStat_Potion (O)MM_Immunity_Potion (O)MM_Luck_Potion (O)MM_LuckySeven (O)MM_Speed_Potion"
+                      
+                        },
+                     ], 
                "BundleReward": {
-                "(UB.Recipe)(O)MM_PizzaFunghi": 1,
-                "(O)MM_EnokiPlanter": 1
+                "(UB.Recipe)(BC)MM_PotionMachine": 1
 
                }
             }
@@ -418,8 +425,7 @@
 
 
 
-         }
-      },
+         
 
 
 
@@ -432,7 +438,7 @@
                 //The item key should not contain spaces or colons
                 //it has to be unique
 		"MM.PickledMushrooms_BundleItem": { 
-			"Name": "Pickled Mushrooms", //Overwriting the item Name
+			"Name": "{{i18n:MM.PickledMushrooms_BundleItem}}", //Overwriting the item Name
 			"ContextTags": [ 
 				"id_(o)342", //ItemId = (O)348 Wine
 				"edible_mushroom"
@@ -444,6 +450,97 @@
 		}
 	}
 },
+
+{
+   "LogName": "Advanced pricing items for mushroom essences bundle",
+	"Action": "EditData",
+	"Target": "UnlockableBundles/AdvancedPricing",
+	"Entries": {
+              
+		"MM.TruffleEssence_BundleItem":
+       { 
+			"Name": "{{i18n:MM.TruffleEssence_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_MushroomEssence", 
+				"preserve_sheet_index_430", //
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
+			"SubItemCopy": "(O)430", 
+			"ItemTypes": [ "(O)"] 
+		},
+
+      	"MM.MagmaCapEssence_BundleItem":
+       { 
+			"Name": "{{i18n:MM.MagmaCapEssence_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_MushroomEssence", 
+				"preserve_sheet_index_851", //
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
+			"SubItemCopy": "(O)851", 
+			"ItemTypes": [ "(O)"] 
+		},
+
+      	"MM.AspenEssence_BundleItem":
+       { 
+			"Name": "{{i18n:MM.AspenEssence_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_MushroomEssence", 
+				"preserve_sheet_index_mm_aspen", //
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
+			"SubItemCopy": "(O)MM_Aspen", 
+			"ItemTypes": [ "(O)"] 
+		},
+
+      "MM.ChampignonEssence_BundleItem":
+       { 
+			"Name": "{{i18n:MM.ChampignonEssence_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_MushroomEssence", 
+				"preserve_sheet_index_mm_Champignon", //
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
+			"SubItemCopy": "(O)MM_Champignon", 
+			"ItemTypes": [ "(O)"] 
+		},
+
+       "MM.GreatWoodMushroomEssence_BundleItem":
+       { 
+			"Name": "{{i18n:MM.GreatWoodMushroomEssence_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_MushroomEssence", 
+				"preserve_sheet_index_mm_GreatWoodMushroom", //
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
+			"SubItemCopy": "(O)MM_GreatWoodMushroom", 
+			"ItemTypes": [ "(O)"] 
+		},
+
+      "MM.BlackTrumpetEssence_BundleItem":
+       { 
+			"Name": "{{i18n:MM.BlackTrumpetEssence_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_MushroomEssence", 
+				"preserve_sheet_index_mm_BlackTrumpet", //
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
+			"SubItemCopy": "(O)MM_BlackTrumpet", 
+			"ItemTypes": [ "(O)"] 
+		},
+
+
+
+
+	}
+},
+
 
 
 

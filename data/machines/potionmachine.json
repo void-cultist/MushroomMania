@@ -3,7 +3,7 @@
  {
             "LogName": "Load potion Machine Textures",
             "Action": "Load",
-            "Target": "{{ModID}}/Potionmachine, {{ModID}}/PotionsPixerelia, {{ModID}}/BuffsPixerelia",
+            "Target": "{{ModID}}/Potionmachine, {{ModID}}/PotionsPixerelia, {{ModID}}/BuffsPixerelia, {{ModID}}/PotionBottle",
             "FromFile": "assets/objects/{{TargetWithoutPath}}.png"
  },
 
@@ -412,6 +412,425 @@
                        "MinutesUntilReady": 600,
                 },
 
+                {
+                        "Id": "MM_BlessingOfHermes",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_jubileewaxcap" ],                ///blessing of hermes
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_BlessingOfHermes",
+                            "ItemId": "MM_BlessingOfHermes",
+                            "ObjectInternalName": "MM_BlessingOfHermes",
+                            "ObjectDisplayName": "{{i18n:MM_BlessingOfHermes.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.5
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "{{HermesRequirement}}",
+                                "selph.ExtraMachineConfig.RequirementId.2": "(O)253", //triple shot
+								"selph.ExtraMachineConfig.RequirementCount.1": 2,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 3,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": 2.0
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 800,
+                },
+
+
+                {
+                        "Id": "MM_Shield_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_bleedingtoothfungus" ],                ///shield potion
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Shield_Potion",
+                            "ItemId": "MM_Shield_Potion",
+                            "ObjectInternalName": "MM_Shield_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Shield_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.5
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)807", //dino mayo
+                                 "selph.ExtraMachineConfig.RequirementId.2": "(O)236", //pumpkin soup
+								"selph.ExtraMachineConfig.RequirementCount.1": 2,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 2.0
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 800,
+                },
+
+                 {
+                        "Id": "MM_AbyssalRage",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_{{AbyssalRageEssence}}" ],                ///abyssal rage
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_AbyssalRage",
+                            "ItemId": "MM_AbyssalRage",
+                            "ObjectInternalName": "MM_AbyssalRage",
+                            "ObjectDisplayName": "{{i18n:MM_AbyssalRage.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 3
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "{{AbyssalRageReq}}", 
+                                 "selph.ExtraMachineConfig.RequirementId.2": "(O)74", //prismatic shard,
+                                  "selph.ExtraMachineConfig.RequirementTags.3": "wine_item, preserve_sheet_index_268, quality_iridium", //iridium quality starfruit wine
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                 "selph.ExtraMachineConfig.RequirementCount.3": 3,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 2.0
+                            } 
+                          
+
+                        }
+                     ],
+                       "DaysUntilReady": 5,
+                },
+
+            {
+                        "Id": "MM_Critical_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_goldenbrittlegill" ],                ///Critical POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Critical_Potion",
+                            "ItemId": "MM_Critical_Potion",
+                            "ObjectInternalName": "MM_Critical_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Critical_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)344", //jelly
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 2,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+                
+            {
+                        "Id": "MM_Immunity_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_blacktrumpet" ],                ///Immunity POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Immunity_Potion",
+                            "ItemId": "MM_Immunity_Potion",
+                            "ObjectInternalName": "MM_Immunity_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Immunity_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                              
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)350", //jelly
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 2,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+                  {
+                        "Id": "MM_Heroic_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_{{HeroicEssence}}" ],                ///Heroic POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Heroic_Potion",
+                            "ItemId": "MM_Heroic_Potion",
+                            "ObjectInternalName": "MM_Heroic_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Heroic_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+
+                                "selph.ExtraMachineConfig.RequirementTags.1": "juice_item, preserve_sheet_index_276", //pumpkin juice
+                                "selph.ExtraMachineConfig.RequirementId.2": "(O)MM_GreyKnight",
+                                "selph.ExtraMachineConfig.RequirementId.3": "{{HeroicReq}}", 
+								"selph.ExtraMachineConfig.RequirementCount.1": 2,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.3": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "DaysUntilReady": 4,
+                },
+
+                 {
+                        "Id": "MM_LuckySeven",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_matsutake" ],                ///lucky seven
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_LuckySeven",
+                            "ItemId": "MM_LuckySeven",
+                            "ObjectInternalName": "MM_LuckySeven",
+                            "ObjectDisplayName": "{{i18n:MM_LuckySeven.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+
+                                "selph.ExtraMachineConfig.RequirementTags.1": "jelly_item, preserve_sheet_index_268", //starfruit jelly or starfruit yogurt
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+                                "selph.ExtraMachineConfig.RequirementId.3": "(O)204", 
+								"selph.ExtraMachineConfig.RequirementCount.1": 2,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.3": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 2.0
+                            } 
+                          
+
+                        }
+                     ],
+                       "DaysUntilReady": 5,
+                },
+
+
+            {
+                        "Id": "MM_WeaponStat_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_champignon" ],                ///WeaponStat POTION
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_WeaponStat_Potion",
+                            "ItemId": "MM_WeaponStat_Potion",
+                            "ObjectInternalName": "MM_WeaponStat_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_WeaponStat_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                              
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)768", //solar essence
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 2,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+////////////////////////////"FLAVORED" POTION
+     {
+                        "Id": "MM_Flavored_Potion",
+                        "Triggers": 
+                        [
+                        {
+                        "Trigger": "ItemPlacedInMachine",
+                        "RequiredTags": ["mushroom_extract"],
+                        "RequiredCount": 1
+                        },
+                        ],
+                        "OutputItem": 
+                        [
+                        {
+                            "Id": "MM_Flavored_Potion",
+                            "ItemId": "MM_Flavored_Potion",
+                            "ObjectInternalName": "PRESERVE_ID PRESERVE_ID 1 Potion",
+                            "PreserveId": "DROP_IN",
+                            "ObjectDisplayName": "%PRESERVED_DISPLAY_NAME %EXTRA_PRESERVED_DISPLAY_NAME_1 {{i18n:Potion}}",
+                            "ModData": 
+                            {
+                                "selph.ExtraMachineConfig.ExtraPreserveId.1": "DROP_IN_PRESERVE_1",
+                            },
+                            
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                
+                                {
+									"Id": "mushroom_extractPrice",
+									"Modification": "Add",
+									"Amount": 600
+								}
+                            ],
+
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "poisonous_mushroom",
+                                "selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.1": 2.0,
+                                "selph.ExtraMachineConfig.RequirementInvalidMsg": "{{i18n:selph.ExtraMachineConfig.RequirementInvalidMsg}}",
+                                "selph.ExtraMachineConfig.InputEdibilityMultiplier": 2.0
+                            }
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 500,
+                }
+
+
+
 
 
 
@@ -437,5 +856,15 @@
                 }
             }
         },
+
+
+{
+        "LogName": "Strings patch - potion",
+        "Action": "EditData",
+        "Target": "Strings/Objects",
+        "Entries": {
+            "MM_Flavored_Potion": "{{i18n: MM_Flavored_Potion}}",
+    },
+}
     ]
 }
