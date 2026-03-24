@@ -1,7 +1,7 @@
 {
   "Name": "Mushroom Mania FTM",
   "Author": "voidcultist",
-  "Version": "1.0.0",
+  "Version": "0.0.1",
   "Description": "FTM part of Mushroom Mania",
   "UniqueID": "void.MM.FTM",
   "MinimumApiVersion": "4.0.0",

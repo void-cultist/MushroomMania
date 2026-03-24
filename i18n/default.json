@@ -85,6 +85,30 @@
 "MM_BlackTrumpet.DisplayName": "Black Trumpet",
 "MM_BlackTrumpet.Description": "Also referred to as Black Chanterelle or Trumpet of the Dead. Despite their unpalatable appearance, they are edible.",
 
+"MM_GhastlyButton.DisplayName": "Ghastly Button",
+"MM_GhastlyButton.Description": "A mushroom that tastes too sweet to be true.",
+
+"MM_CandyTongue.DisplayName": "Candy Tongue",
+"MM_CandyTongue.Description": "This strange-looking mushroom tastes like gummy worms but leaves a numb feeling on your tongue.",
+
+"MM_HypnoShroom.DisplayName": "Hypno Shroom",
+"MM_HypnoShroom.Description": "You could swear that the ring on its cap is moving...",
+
+"MM_NightHorn.DisplayName": "Night Horn",
+"MM_NightHorn.Description": "It is not recommended to inhale the spores of this deadly poisonous mushroom.",
+
+"MM_HealthShroom.DisplayName": "Health Shroom",
+"MM_HealthShroom.Description": "This shroom with its very obvious name is known for its rejuvenating properties.",
+
+"MM_GloomShroom.DisplayName": "Gloom Shroom",
+"MM_GloomShroom.Description": "",
+
+"WitchesButterDisplayName": "Witches' Butter",
+"WitchesButterDescription": "Often described as inedible because it has so little substance and is flavourless. According to legends, if this fungus appeared on the gate or door of a house it meant that a witch had cast a spell on the family living there.",
+
+"PixiesParasolDisplayName": "Pixie's Parasol",
+"PixiesParasolDescription": "The pixie's parasol appears in small colonies on rotting, moist wood in rainforests, and in beech or eucalypt forests. Edibility unknown.",
+
 
 ///Machines and Objects
 "MM_Flavored_MushroomEssence": "{0} Essence", //{0} will be replaced with the input item
@@ -95,7 +119,7 @@
 "MM_Flavored_Potion.name": "Magic Potion",
 "MM_Flavored_Potion.description": "A potion  made of mushroom extract and  poisonous mushrooms.",
 "selph.ExtraMachineConfig.RequirementInvalidMsg": "Potions require at least 1 Mushroom Extract and 1 Poisonous Mushroom.",
-"Potion": "Potion",
+"Potion": "{0} {1} Potion",
 
 "MM_Foraging_Potion.name": "Foraging Potion",
 "MM_Foraging_Potion.description": "A potion that remarkably increases your foraging level.",

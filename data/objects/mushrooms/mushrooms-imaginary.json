@@ -40,6 +40,39 @@
                             }
                          ]
                       },
+                    
+                "MM_GhastlyButton":
+                      {
+                         "Name": "MM_GhastlyButton",
+                         "DisplayName": "{{i18n:MM_GhastlyButton.DisplayName}}",
+                          "Description": "{{i18n:MM_GhastlyButton.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 500, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 0, 
+                         "Edibility": 40,
+                          "IsDrink": false,
+                          "ContextTags": [ "edible_mushroom", "color_indigo_blue", "mushroom_item", "preserves_pickle", "extractor_input" ],
+                        
+                      },
+
+                   "MM_HealthShroom":
+                      {
+                         "Name": "MM_HealthShroom",
+                         "DisplayName": "{{i18n:MM_HealthShroom.DisplayName}}",
+                          "Description": "{{i18n:MM_HealthShroom.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 2400, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 8, 
+                         "Edibility": 161,
+                          "IsDrink": false,
+                          "ContextTags": [ "edible_mushroom", "color_light_cyan", "mushroom_item", "preserves_pickle", "extractor_input" ],
+                        
+                      },
+
                 "MM_ShroomOfTransingYourGender": 
                       {
                          "Name": "MM_ShroomOfTransingYourGender",
@@ -151,6 +184,39 @@
                         }
                          ]
                       },
+
+                  
+                  "MM_NightHorn":
+                      {
+                         "Name": "MM_NightHorn",
+                         "DisplayName": "{{i18n:MM_NightHorn.DisplayName}}",
+                          "Description": "{{i18n:MM_NightHorn.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 600, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 6, 
+                         "Edibility": -90,
+                          "IsDrink": false,
+                          "ContextTags": [ "poisonous_mushroom", "color_dark_blue", "mushroom_item" ],
+                          "Buffs": [
+                               {
+                                "Id": "{{ModID}}_NightHornDebuff",
+                                "BuffId": 26,
+                                "IsDebuff": true,
+                                "Duration": 200,
+                                "IconTexture": "TileSheets\\BuffsIcons",
+                                "IconSpriteIndex": 26,
+                                "Effects": null,
+                                "ActionsOnApply": null,
+                                "CustomAttributes": 
+                                    {
+                                    "Speed": -2
+                                    }
+                            }
+                         ]
+                        
+                      },
                      
                    
 
@@ -181,6 +247,77 @@
                     "ContextTags": [  "color_dark_slate_blue", "inedible_mushroom", "extractor_input" ],
                 
                 },
+
+                        "MM_CandyTongue":
+                      {
+                         "Name": "MM_CandyTongue",
+                         "DisplayName": "{{i18n:MM_CandyTongue.DisplayName}}",
+                          "Description": "{{i18n:MM_CandyTongue.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 700, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 1, 
+                         "Edibility": 40,
+                          "IsDrink": false,
+                          "ContextTags": [ "inedible_mushroom", "color_pink", "mushroom_item",  "extractor_input" ],
+                          "Buffs": [
+                               {
+                                "Id": "{{ModID}}_CandyTongueDebuff",
+                                "Duration": 30,
+                                "CustomAttributes": {
+                                      "Speed": -2
+                                    },
+                                "IsDebuff": true
+                            }
+                         ]
+                        
+                      },
+
+                  
+                        "MM_HypnoShroom":
+                      {
+                         "Name": "MM_HypnoShroom",
+                         "DisplayName": "{{i18n:MM_HypnoShroom.DisplayName}}",
+                          "Description": "{{i18n:MM_HypnoShroom.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 600, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 3, 
+                         "Edibility": 40,
+                          "IsDrink": false,
+                          "ContextTags": [ "inedible_mushroom", "color_dark_purple", "mushroom_item",  "extractor_input" ],
+                          "Buffs": [
+                               {
+                                "Id": "{{ModID}}_HypnoShroomDebuff",
+                                "Duration": 30,
+                                "CustomAttributes": {
+                                      "Speed": -2,
+                                      "Attack": -2
+                                    },
+                                "IsDebuff": true
+                            }
+                         ]
+                        
+                      },
+                      
+                    
+                   "MM_GloomShroom":
+                      {
+                         "Name": "MM_GloomShroom",
+                         "DisplayName": "{{i18n:MM_GloomShroom.DisplayName}}",
+                          "Description": "{{i18n:MM_GloomShroom.Description}}",
+                        "Type": "Basic",
+                          "Category": -81,
+                          "Price": 2400, 
+                         "Texture": "{{ModID}}/MushroomsSsugmi", 
+                          "SpriteIndex": 8, 
+                         "Edibility": 161,
+                          "IsDrink": false,
+                          "ContextTags": [ "inedible_mushroom", "color_light_cyan", "mushroom_item", "extractor_input" ],
+                        
+                      },
 
                 
         },

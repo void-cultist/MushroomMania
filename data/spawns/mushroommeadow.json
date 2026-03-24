@@ -256,6 +256,8 @@
                     "ItemId": "(O)Cornucopia_Rafflesia",
                     "PerItemCondition": null
                 },
+
+                 
             }
         },
 
@@ -285,6 +287,29 @@
                     "ItemId": "(O)MM_ShroomOfTransingYourGender",
                     "PerItemCondition": null
                 },
+                
+                 "MM_HealthShroom": 
+                  {
+
+                    "Chance": 0.25,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5",
+                    "Season": "Spring",
+                    "Id": "(O)MM_HealthShroom",
+                    "ItemId": "(O)MM_HealthShroom",
+                    "PerItemCondition": null
+                },
+
+                 "MM_GhastlyButton": 
+                  {
+
+                    "Chance": 0.25,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, !WEATHER Sun",
+                    "Season": "Winter",
+                    "Id": "(O)MM_GhastlyButton",
+                    "ItemId": "(O)MM_GhastlyButton",
+                    "PerItemCondition": null
+                },
+                
 
             }
         },
@@ -312,6 +337,15 @@
                     "Id": "(O)MM_AllEyes",
                     "ItemId": "(O)MM_AllEyes",
                     "PerItemCondition": null
+                },
+                  "MM_NightHorn":
+                  {
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FARMING_LEVEL Any 3",
+                    "Season": "Winter",
+                    "Id": "(O)MM_NightHorn",
+                    "ItemId": "(O)MM_NightHorn",
+                    "PerItemCondition": null
                 }
             }
         },
@@ -325,13 +359,35 @@
             {
                 "MM_WaningMoonShroom":
                   {
-                    "Chance": 0.2,
+                    "Chance": 0.1,
                     "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 5",
                     "Season": "Winter",
                     "Id": "(O)MM_WaningMoonShroom",
                     "ItemId": "(O)MM_WaningMoonShroom",
                     "PerItemCondition": null
-                }
+                },
+
+                    "MM_HypnoShroom": 
+                  {
+
+                    "Chance": 0.4,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4",
+                    "Season": "Summer",
+                    "Id": "(O)MM_HypnoShroom",
+                    "ItemId": "(O)MM_HypnoShroom",
+                    "PerItemCondition": null
+                },
+
+                  "MM_CandyTongue": 
+                  {
+
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4",
+                    "Season": "Spring",
+                    "Id": "(O)MM_CandyTongue",
+                    "ItemId": "(O)MM_CandyTongue",
+                    "PerItemCondition": null
+                },
             }
         },
 

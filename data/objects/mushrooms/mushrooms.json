@@ -434,21 +434,6 @@
                 
                 },
                 
-                  "MM_WaningMoonShroom":
-                {
-                   "Name": "MM_WaningMoonShroom",
-                   "DisplayName": "{{i18n:WaningMoonShroomDisplayName}}",
-                    "Description": "{{i18n:WaningMoonShroomDescription}}",
-                  "Type": "Basic",
-                    "Category": -81,
-                    "Price": 4000, 
-                   "Texture": "{{ModID}}/Mushrooms2", 
-                    "SpriteIndex": 4, 
-                   "Edibility": -1,
-                    "IsDrink": false,
-                    "ContextTags": [  "color_pale_violet", "color_grey", "inedible_mushroom", "extractor_input" ],
-                
-                },
 
                   "MM_BleedingToothFungus": //mountains
                 {
@@ -465,6 +450,38 @@
                           "ContextTags": [ "inedible_mushroom", "extractor_input", "color_orange" ],
                         
                       },
+
+               "MM_WitchesButter": 
+                {
+                   "Name": "MM_WitchesButter",
+                   "DisplayName": "{{i18n:WitchesButterDisplayName}}",
+                    "Description": "{{i18n:WitchesButterDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 900, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 5, 
+                   "Edibility": 1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_yellow", "inedible_mushroom", "extractor_input" ],
+                
+                },
+
+                 "MM_PixiesParasol": 
+                {
+                   "Name": "MM_PixiesParasol",
+                   "DisplayName": "{{i18n:PixiesParasolDisplayName}}",
+                    "Description": "{{i18n:PixiesParasolDescription}}",
+                  "Type": "Basic",
+                    "Category": -81,
+                    "Price": 4200, 
+                   "Texture": "{{ModID}}/Mushrooms2", 
+                    "SpriteIndex": 6, 
+                   "Edibility": 1,
+                    "IsDrink": false,
+                    "ContextTags": [  "color_cyan", "inedible_mushroom", "extractor_input" ],
+                
+                },
                 
         },
 

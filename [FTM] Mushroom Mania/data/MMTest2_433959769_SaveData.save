@@ -1,0 +1,263 @@
+{
+  "WeatherForYesterday": "Rain",
+  "LNOSCounter": {},
+  "ExistingObjectLocations": {
+    "Farm large object area 1": [
+      "4,43;4,43",
+      "8,47;8,47",
+      "13,36;13,36",
+      "14,48;14,48",
+      "18,43;18,43",
+      "36,32;36,32",
+      "36,40;36,40",
+      "37,19;37,19",
+      "39,42;39,42",
+      "40,12;40,12",
+      "47,41;47,41",
+      "50,37;50,37",
+      "51,45;51,45",
+      "54,41;54,41",
+      "56,38;56,38",
+      "58,43;58,43",
+      "61,40;61,40",
+      "67,30;67,30",
+      "73,25;73,25"
+    ]
+  },
+  "SavedObjects": [
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "257",
+      "Tile": "46, 30",
+      "Type": "Forage",
+      "ID": "257",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "257",
+      "Tile": "20, 4",
+      "Type": "Forage",
+      "ID": "257",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "MM_SulfurTuft",
+      "Tile": "25, 31",
+      "Type": "Forage",
+      "ID": "MM_SulfurTuft",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "MM_BurgerShroom",
+      "Tile": "5, 26",
+      "Type": "Forage",
+      "ID": "MM_BurgerShroom",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "MM_Enoki",
+      "Tile": "24, 24",
+      "Type": "Forage",
+      "ID": "MM_Enoki",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "MM_LobsterMushroom",
+      "Tile": "20, 1",
+      "Type": "Forage",
+      "ID": "MM_LobsterMushroom",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "430",
+      "Tile": "37, 11",
+      "Type": "Forage",
+      "ID": "430",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "MM_BurgerShroom",
+      "Tile": "36, 6",
+      "Type": "Forage",
+      "ID": "MM_BurgerShroom",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "422",
+      "Tile": "52, 27",
+      "Type": "Forage",
+      "ID": "422",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "422",
+      "Tile": "58, 21",
+      "Type": "Forage",
+      "ID": "422",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "MM_Enoki",
+      "Tile": "35, 5",
+      "Type": "Forage",
+      "ID": "MM_Enoki",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "430",
+      "Tile": "49, 0",
+      "Type": "Forage",
+      "ID": "430",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "430",
+      "Tile": "1, 8",
+      "Type": "Forage",
+      "ID": "430",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "422",
+      "Tile": "19, 3",
+      "Type": "Forage",
+      "ID": "422",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "MM_BurgerShroom",
+      "Tile": "6, 14",
+      "Type": "Forage",
+      "ID": "MM_BurgerShroom",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "257",
+      "Tile": "57, 28",
+      "Type": "Forage",
+      "ID": "257",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "257",
+      "Tile": "30, 14",
+      "Type": "Forage",
+      "ID": "257",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "void.MM_MushroomMeadow",
+      "Name": "422",
+      "Tile": "24, 18",
+      "Type": "Forage",
+      "ID": "422",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "object"
+      },
+      "MonType": null
+    }
+  ]
+}

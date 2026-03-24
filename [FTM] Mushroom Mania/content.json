@@ -11,6 +11,8 @@
           "MM_Enoki",
           "MM_SulfurTuft",
           "MM_BurgerShroom",
+          "MM_HealthShroom",
+          "MM_CandyTongue",
           422,
           430,
           257
@@ -36,6 +38,7 @@
           "MM_GreatWoodMushroom",
           "MM_DevilsFingers",
           "MM_TheSickener",
+          "MM_BleedingHeart",
           420,
           422,
           430,
@@ -43,6 +46,9 @@
         ],
         "WinterItemIndex": [
           "MM_WaningMoonShroom",
+          "MM_GhastlyButton",
+          "MM_BleedingHeart",
+          "MM_AllEyes",
           420,
           422,
           430,
