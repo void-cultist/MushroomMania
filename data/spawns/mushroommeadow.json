@@ -303,7 +303,7 @@
                   {
 
                     "Chance": 0.25,
-                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, !WEATHER Sun",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, !WEATHER Target Sun",
                     "Season": "Winter",
                     "Id": "(O)MM_GhastlyButton",
                     "ItemId": "(O)MM_GhastlyButton",

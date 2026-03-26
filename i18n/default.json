@@ -111,6 +111,12 @@
 
 
 ///Machines and Objects
+"MM_MushroomEssenceExtractor.DisplayName": "Mushroom Essence Extractor",
+"MM_MushroomEssenceExtractor.Description": "Extracts the essence of various mushrooms.",
+
+"MM_Potionmachine.DisplayName": "Potion Machine",
+"MM_Potionmachine.Description": "Lets you brew potions using mushroom essence and by neutralizing poisonous mushrooms' toxins.",
+
 "MM_Flavored_MushroomEssence": "{0} Essence", //{0} will be replaced with the input item
 "MM_Flavored_MushroomEssence.name": "Mushroom Essence",
 "MM_Flavored_MushroomEssence.description": "The pure essence extracted from a mushroom",
@@ -119,7 +125,7 @@
 "MM_Flavored_Potion.name": "Magic Potion",
 "MM_Flavored_Potion.description": "A potion  made of mushroom extract and  poisonous mushrooms.",
 "selph.ExtraMachineConfig.RequirementInvalidMsg": "Potions require at least 1 Mushroom Extract and 1 Poisonous Mushroom.",
-"Potion": "{0} {1} Potion",
+"Potion": "{0} & {1} Potion",
 
 "MM_Foraging_Potion.name": "Foraging Potion",
 "MM_Foraging_Potion.description": "A potion that remarkably increases your foraging level.",
@@ -180,13 +186,13 @@
 "AllEyes_Crop.name": "All Eyes",
 
 "ChampignonStarter.name": "Champignon Starter",
-"ChampignonStarter.description": "Plant these in tilled soil to grow champignons in Spring or Fall. Takes 5 days to grow and yields multiple mushrooms at harvest.",
+"ChampignonStarter.description": "Plant these in tilled soil to grow champignons in Spring or Fall. Takes 4 days to grow and yields multiple mushrooms at harvest.",
 
 "ParasolMushroomStarter.name": "Parasol Mushroom Starter",
-"ParasolMushroomStarter.description":  "Plant this in tilled soil in Summer or Fall to grow parasol mushrooms. Takes 6 days to grow.",
+"ParasolMushroomStarter.description":  "Plant this in tilled soil in Summer or Fall to grow parasol mushrooms. Takes 4 days to grow.",
 
 "BurgerShroomStarter.name": "Burger Shroom Starter",
-"BurgerShroomStarter.description": "Plant these in tilled soil to grow burger shrooms during Spring. Takes 10 days to grow.",
+"BurgerShroomStarter.description": "Plant these in tilled soil to grow burger shrooms during Spring. Takes 7 days to grow.",
 
 "SickenerPlanter.name": "The Sickener Planter",
 "SickenerPlanter.description": "Plant this to grow sickeners. Harvest in mid summer through mid fall.",
@@ -198,10 +204,13 @@
 "GreatWoodMushroomStarter.description": "Plant this in tilled soil in Summer or Fall to grow great wood mushrooms. Takes 9 days to grow.",
 
 "SaffronMilkcapStarter.name": "Saffron Milkcap Starter",
-"SaffronMilkcapStarter.description": "Plant this in tilled soil in Summer or Fall to grow saffron milkcaps. Takes 8 days to grow.",
+"SaffronMilkcapStarter.description": "Plant this in tilled soil in Summer or Fall to grow saffron milkcaps. Takes 4 days to grow.",
 
 "MatsutakePlanter.name": "Matsutake Planter",
 "MatsutakePlanter.description":  "Plant this to grow matsutake. Harvest in the last week of fall during rainy weather.",
+
+"OrangeGrisetteStarter.name": "Orange Grisette Starter",
+"OrangeGrisetteStarter.description": "Plant this in Summer to grow Orange Grisettes. Takes 5 days to grow.",
 
 
 //fish
@@ -216,15 +225,29 @@
 
 //bundles
 "ShroomCollecting_Bundle.name": "Shroom Collecting",
+"ShroomCollecting_Bundle.description": "???",
+
+
 "TastyShrooms_Bundle.name": "Tasty Shrooms",
+"TastyShrooms_Bundle.description": "Unlocks a tasty recipe.",
+
 "PoisonousShrooms_Bundle.name": "Poisonous Shrooms",
+"PoisonousShrooms_Bundle.description": "This bundle will reward you with delicacies.",
+
 "Inedible_Bundle.name": "Inedible",
+"Inedible_Bundle.description": "Complete this bundle and you will be granted a machine for your farm.",
+
 "MoreMushroomStuff_Bundle.name": "More mushroom stuff",
+"MoreMushroomStuff_Bundle.description": "Reward: Crafting Recipe",
+
 "ForestForage_Bundle.name": "Forest Forage",
+"ForestForage_Bundle.description": "Reward: Cooking Recipe",
+
 "ForestFish_Bundle.name": "Forest Fish",
 "MushroomDishes_Bundle.name": "Mushroom Dishes",
 "MushroomEssence_Bundle.name": "Mushroom Essence",
 "Final_Bundle.name": "Final Bundle",
+"Final_Bundle.description": "Reward: Old Shed Unlock + new crafting recipe",
 
 "MM.PickledMushrooms_BundleItem": "Pickled Common Mushrooms",
 "MM.TruffleEssence_BundleItem": "Truffle Essence",
@@ -233,9 +256,23 @@
 "MM.ChampignonEssence_BundleItem": "Champignon Essence",
 "MM.GreatWoodMushroomEssence_BundleItem": "Great Wood Mushroom Essence",
 "MM.BlackTrumpetMushroomEssence_BundleItem": "Black Trumpet Essence",
+"MM.ChampignonDestroyingAngelPotion_BundleItem": "Champignon Destroying Angel Potion",
+"MM.PurpleRedMushroomPotion_BundleItem": "Purple Mushroom Red Mushroom Potion",
+"MM.CandyTongueNightHornPotion_BundleItem": "Candy Tongue Night Horn Potion",
+"MM.PixiesParasolDeathcapPotion_BundleItem": "Pixie's Parasol Deathcap Potion",
+"MM.EnokiAllEyesPotion_BundleItem": "Enoki All Eyes Potion",
+"MM.MatsutakeSickenerPotion_BundleItem": "Matsutake Sickener Potion",
+"MM.ShiitakeBleedingHeartPotion_BundleItem": "Shiitake Bleeding Heart Potion",
+"MM.DevilsFingersEssence_BundleItem": "Devil's Fingers Essence",
+"MM.RubyBoleteEssence_BundleItem": "Ruby Bolete Essence",
 
 "BundleCompletedMail.title": "Forest Fish Bundle complete!",
 "BundleCompletedMail.text": "Hey there!^ The spirits of the mushroom meadow have noticed your efforts in completing that forest fish bundle. That must have been tough! As a reward, take this recipe for a machine that extracts the essence of mushrooms.",
+
+//other strings
+
+"RamenUnlock": "After cooking two kinds of mushroom soup, you suddenly thought that you could also try your hand at making mushroom ramen! Check your recipes!",
+"MMUnlock": "Upon gaining enough farming and foraging experience, you feel a shift in the Secret Woods... maybe you should check it out.",
 
 //Map strings
 "MM0": "The door is locked.",

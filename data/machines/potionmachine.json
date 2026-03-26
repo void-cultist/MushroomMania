@@ -16,8 +16,8 @@
  
         "MM_Potionmachine": {
             "Name": "MM_Potionmachine",
-            "DisplayName": "Potion Machine",
-            "Description": "Lets you brew potions using mushroom essence and by neutralizing mushroom toxins.",
+            "DisplayName": "{{i18n:MM_Potionmachine.DisplayName}}",
+            "Description": "{{i18n:MM_Potionmachine.Description}}",
             "Price": 800,
             "Fragility": 0,
             "CanBePlacedOutdoors": true,

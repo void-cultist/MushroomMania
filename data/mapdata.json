@@ -1722,7 +1722,9 @@
         {
             "LogName": "Add warp patch to woods",
             "Action": "EditMap",
-            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": false },
+            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": false
+                      
+                     },
             "Target": "Maps/Woods",
             "PatchMode": "Overlay",
             "FromFile": "assets/Maps/WoodsWarpToMushroomMeadow.tmx",

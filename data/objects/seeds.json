@@ -4,7 +4,7 @@
     {
       "LogName": "Load mushroom crops texures",
       "Action": "Load",
-      "Target": "{{ModID}}/AllEyesPlanter, {{ModID}}/MushroomCrops, {{ModID}}/MushroomSeeds, {{ModID}}/MushroomBushes",
+      "Target": "{{ModID}}/AllEyesPlanter, {{ModID}}/MushroomSeeds, {{ModID}}/burgershroom, {{ModID}}/champignon, {{ModID}}/saffron, {{ModID}}/orangegrisette, {{ModID}}/greatwoodmushroom, {{ModID}}/parasol, {{ModID}}/MushroomBushes, {{ModID}}/MushroomBushes_1",
       "FromFile": "assets/crops/{{TargetWithoutPath}}.png"
     },
 
@@ -210,6 +210,27 @@
       }
     },
 
+    
+      {
+      "LogName": "orange grisette starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_OrangeGrisetteStarter": {
+          "Name": "OrangeGrisetteStarter",
+          "DisplayName": "{{i18n: OrangeGrisetteStarter.name}}",
+          "Description": "{{i18n: OrangeGrisetteStarter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 7,
+          "Price": 340,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item" ]
+        }
+      }
+    },
+
 
 
   /*  .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.  */
@@ -235,6 +256,7 @@
       "When": { "Include imaginary Mushrooms": true },
       "Target": "furyx639.CustomBush/Data",
       "Entries": {
+       
         "(O)MM_AllEyes_Planter": {
           "DisplayName": "{{i18n:AllEyes_Crop.name}}",   //"{{i18n:AllEyes_Crop.name}}",
           "AgeToProduce": 25,
@@ -269,16 +291,10 @@
           "Texture": "{{ModID}}/MushroomBushes",
           "IndoorTexture":  "{{ModID}}/MushroomBushes",
           "TextureSpriteRow": 0
-        }
-      }
-    },
+        },
+    
 
-   {
-      "LogName": "sickener custom bush data",
-      "Action": "EditData",
-      "Target": "furyx639.CustomBush/Data",
-      "Entries": {
-        "(O)MM_TheSickener": {
+        "(O)MM_SickenerPlanter": {
           "DisplayName": "{{i18n:TheSickenerDisplayName}}",   
           "AgeToProduce": 20,
           "ConditionsToProduce": [
@@ -305,17 +321,10 @@
           "Texture": "{{ModID}}/MushroomBushes",
           "IndoorTexture":  "{{ModID}}/MushroomBushes",
           "TextureSpriteRow": 2
-        }
-      }
-    },
-
-    {
-      "LogName": "enoki custom bush data",
-      "Action": "EditData",
-      "Target": "furyx639.CustomBush/Data",
-      "Entries": {
-        "(O)MM_Enoki": {
-          "DisplayName": "{{i18n:MM_EnokiDisplayName}}",   
+        },
+     
+        "(O)MM_EnokiPlanter": {
+          "DisplayName": "{{i18n:MM_Enoki.DisplayName}}",   
           "AgeToProduce": 20,
           "ConditionsToProduce": [
             "SEASON Fall,DAY_OF_MONTH 26 27 28",
@@ -349,17 +358,11 @@
           "Texture": "{{ModID}}/MushroomBushes",
           "IndoorTexture":  "{{ModID}}/MushroomBushes",
           "TextureSpriteRow": 4
-        }
-      }
-    },
+        },
+      
 
-    {
-      "LogName": "Matsutake custom bush data",
-      "Action": "EditData",
-      "Target": "furyx639.CustomBush/Data",
-      "Entries": {
-        "(O)MM_Matsutake": {
-          "DisplayName": "{{i18n:MM_MatsutakeDisplayName}}",   
+        "(O)MM_MatsutakePlanter": {
+          "DisplayName": "{{i18n:MM_Matsutake.DisplayName}}",   
           "AgeToProduce": 21,
           "ConditionsToProduce": [
             "SEASON Fall,DAY_OF_MONTH 24 25 26 27 28",
@@ -381,6 +384,7 @@
         }
       }
     },
+      
 
 
 
@@ -415,7 +419,7 @@
                     "HarvestMinStack": 1,
                     "HarvestMaxStack": 2,
                     "HarvestItemId": "MM_GreatWoodMushroom",
-                    "Texture": "{{ModId}}/MushroomCrops",
+                    "Texture": "{{ModId}}/greatwoodmushroom",
                     "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
@@ -434,13 +438,13 @@
                         "spring", "fall"
                     ],
                     "DaysInPhase": 
-                       [ 1, 1, 1, 1, 1 ],
+                       [ 1, 1, 1, 1 ],
                     "RegrowDays": -1,
                     "HarvestMinStack": 2,
                     "HarvestMaxStack": 4,
                     "HarvestItemId": "MM_Champignon",
-                    "Texture": "{{ModId}}/MushroomCrops",
-                    "SpriteIndex": 1,
+                    "Texture": "{{ModId}}/champignon",
+                    "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
                     "ExtraHarvestChance": 0.3
@@ -458,13 +462,13 @@
                         "summer", "fall"
                     ],
                     "DaysInPhase": 
-                       [ 1, 1, 1, 1, 2 ],
+                       [ 1, 1, 1, 1  ],
                     "RegrowDays": -1,
                     "HarvestMinStack": 1,
                     "HarvestMaxStack": 1,
                     "HarvestItemId": "MM_ParasolMushroom",
-                    "Texture": "{{ModId}}/MushroomCrops",
-                    "SpriteIndex": 3,
+                    "Texture": "{{ModId}}/parasol",
+                    "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true
                 }
@@ -482,13 +486,13 @@
                         "spring"
                     ],
                     "DaysInPhase": 
-                       [ 1, 2, 2, 2, 3 ],
+                       [ 1, 2, 2, 2 ],
                     "RegrowDays": -1,
                     "HarvestMinStack": 1,
                     "HarvestMaxStack": 1,
                     "HarvestItemId": "MM_BurgerShroom",
-                    "Texture": "{{ModId}}/MushroomCrops",
-                    "SpriteIndex": 2,
+                    "Texture": "{{ModId}}/burgershroom",
+                    "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
                     "ExtraHarvestChance": 0.001
@@ -507,16 +511,41 @@
                         "summer", "fall"
                     ],
                     "DaysInPhase": 
-                       [ 1, 1, 2, 4 ],
+                       [ 1, 1, 2 ],
                     "RegrowDays": -1,
                     "HarvestMinStack": 1,
                     "HarvestMaxStack": 1,
                     "HarvestItemId": "MM_SaffronMilkcap",
-                    "Texture": "{{ModId}}/MushroomCrops",
-                    "SpriteIndex":4,
+                    "Texture": "{{ModId}}/saffron",
+                    "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
                     "ExtraHarvestChance": 0.001
+                }
+            }
+        },
+
+        {	
+            "LogName": "Add in orange grisetet crop",
+
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_OrangeGrisetteStarter": { 
+                    "Seasons": [
+                        "summer", "fall"
+                    ],
+                    "DaysInPhase": 
+                       [ 1, 1, 3 ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_OrangeGrisette",
+                    "Texture": "{{ModId}}/orangegrisette",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.01
                 }
             }
         },

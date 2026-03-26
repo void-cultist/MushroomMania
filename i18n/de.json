@@ -1,0 +1,148 @@
+{
+
+    ///////PILZE
+     "DestroyingAngelDisplayName": "Kegelhütiger Knollenblätterpilz",
+    "DestroyingAngelDescription": "Ein relativ seltener, aber tödlich giftiger Pilz. Verursacht bei Verzehr Erbrechen, Durchfall und schwerwiegende Komplikationen wie Nieren- und Leberversagen.",
+
+    "GreatWoodMushroomDisplayName": "Großer Waldchampignon",
+    "GreatWoodMushroomDescription": "Ein sehr schmackhafter Pilz, dessen Fruchtfleisch bei Berührung blau wird oder sich rot verfärbt.",
+
+    "OrangePeelFungusDisplayName": "Gemeiner Orangebecherling",
+    "OrangePeelFungusDescription": "Ein ungewöhnlicher Pilz, dessen Fruchtkörper eine Rosette bildet, manchmal mit mehreren ‚Blütenblättern‘",
+
+    "RubyBoleteDisplayName": "Blutroter Filzröhrling",
+    "RubyBoleteDescription": "Ein recht seltener Pilz, der man wegen seines seifigen Geschmacks besser nur fotografieren sollte.",
+
+    "DevilsFingersDisplayName": "Tintenfischpilz",
+    "DevilsFingersDescription": "Ein ungenießbarer Pilz, der nach verdorbenem Fleisch riecht, um Fliegen anzulocken, die seine Sporen verbreiten. Sieht aus, als käme er aus dem Weltall!",
+
+    "JubileeWaxcapDisplayName": "Gliophorus reginae",
+    "JubileeWaxcapDescription": "Ein lila- oder rosafarbener Pilz mit einer schleimigen Kappe. Ungenießbar.",
+
+    "BluePinkgillDisplayName": "Entoloma hochstetteri",
+    "BluePinkgillDescription": "Die blaue Färbung des Fruchtkörpers ist auf Azulen-Pigmente zurückzuführen; die Sporen verleihen seinen Lamellen einen rosa Schimmer. Der Maori-Name für den Pilz lautet werewere kokako, da seine Farbe der blauen Kehle des Kokako-Vogels ähnelt. Essbarkeit unbekannt.",
+
+    "TheSickenerDisplayName": "Kirschroter Spei-Täubling",
+    "TheSickenerDescription": "Auch bekannt als Russula emetica. Der Verzehr dieses Pilzes wird nicht empfohlen, da er Erbrechen auslöst.",
+
+    "OrangeGrisetteDisplayName": "Orangegelber Scheidenstreifling",
+    "OrangeGrisetteDescription": "Ein leuchtender, essbarer Pilz. Seine Farben können blassgelb bis dunkelorange sein.",
+
+    "WaningMoonShroomDisplayName": "Pilz des abnehmenden Mondes",
+    "WaningMoonShroomDescription": "Und manchmal reicht es einfach nicht aus, sein Bestes zu geben, und man hasst es, damit fertig werden zu müssen. Dieser Pilz ist wahrscheinlich ungenießbar.",
+
+    "SulfurTuftDisplayName": "Grünblättriger Schwefelkopf",
+    "SulfurTuftDescription": "Dieser Pilz ist bitter und giftig; sein Verzehr kann zu Erbrechen, Durchfall und Krämpfen führen.",
+
+    "ParasolMushroomDisplayName": "Sonnenschirmpilz",
+    "ParasolMushroomDescription": "Ein köstlicher, leicht zu identifizierender Pilz, der groß genug ist, um schon von Weitem gesehen zu werden. In jungem Zustand sieht dieser Pilz einigen der tödlichen Fliegenpilze sehr ähnlich.",
+
+    "BleedingHeartDisplayName": "Blutendes Herz",
+    "BleedingHeartDescription": "Erinnerst du dich an die Träume, die du hattest? Wenn du zu fest an ihnen festhältst, könntest du bluten, genau wie dieser Pilz, wenn man ihn drückt. Hochgiftig.",
+
+    "MM_AllEyes.DisplayName": "All-Sehender",
+    "MM_AllEyes.Description": "Du hättest schwören können, dass diese Augen deine Bewegungen verfolgten. Der Verzehr dieses Pilzes führt zu Sehverlust und Halluzinationen.",
+
+    "MM_BleedingToothFungus.DisplayName": "Teufelszahn",
+"MM_BleedingToothFungus.Description": "Dieser Pilz ist zwar nicht giftig, aber aufgrund seines widerlichen Geschmacks nicht besonders essbar. Dieser beißende Geschmack bleibt auch bei getrockneten Exemplaren bestehen.",
+
+"MM_BurgerShroom.DisplayName": "Burger-Pilz",
+"MM_BurgerShroom.Description": "Ein Pilz, der verdächtig nach einem Burger aussieht, riecht und schmeckt.",
+
+"MM_Deathcap.DisplayName": "Knollenblätterpilz",
+"MM_Deathcap.Description": "Ein harmlos aussehender Pilz, der neben dem Vernichtenden Engel zu den giftigsten Pilzen zählt. Das Hauptgift, Alpha-Amanitin, tötet Leberzellen ab und wird über die Nieren wieder in den Kreislauf zurückgeführt, wo es weiteren Schaden anrichtet.",
+    
+"MM_GreyKnight.DisplayName": "Gemeiner Erdritterling",
+"MM_GreyKnight.Description": "Er galt einst als essbarer Pilz, doch mittlerweile hat man herausgefunden, dass der Verzehr einer bestimmten Menge dieser Pilze, selbst über zwei Wochen verteilt, zu Nierenversagen führen kann, weshalb er nun als tödlich giftig gilt",
+
+"MM_SaffronMilkcap.DisplayName": "Edel-Reizker",
+"MM_SaffronMilkcap.Description": "Schmeckt gut und hat eine knackige Konsistenz. Färbt dein Essen orange.",
+
+"MM_Champignon.DisplayName": "Champignon",
+"MM_Champignon.Description": "Agaricus bisporus, allgemein bekannt als Zuchtpilz. Meistens bezieht sich ‚Champignon‘ auf die gesamte Gattung ‚Agaricus‘, wird aber auch für den gewöhnlichen ‚Knopfpilz‘ verwendet, den man überall bekommen kann.",
+
+"MM_Aspen.DisplayName": "Espen-Rotkappe",
+"MM_Aspen.Description": "Ein sehr fester und recht hoher Röhrling mit einer charakteristischen orangefarbenen Kappe und einem blassen Stiel. Muss gründlich gekocht werden.",
+
+"MM_RussulaVesca.DisplayName": "Fleischroter Speise-Täubling",
+"MM_RussulaVesca.Description": "Auch bekannt als Russula vesca. Gilt als essbar und schmackhaft, mit einem milden, nussigen Geschmack.",
+
+"MM_GoldenBrittlegill.DisplayName": "Gold-Täubling",
+"MM_GoldenBrittlegill.Description": "Russula aurea, allgemein bekannt als Gold-Brittlegill, gilt im Gegensatz zu anderen Vertretern der Gattung als essbar und mild im Geschmack.",
+
+"MM_CaesarsMushroom.DisplayName": "Kaiserling",
+"MM_CaesarsMushroom.Description": "Diese vom Aussterben bedrohte Pilzart, die als Lieblingsspeise der frühen Herrscher des Römischen Reiches galt, enthält nachweislich eine beträchtliche Menge Blei.",
+
+"MM_Enoki.DisplayName": "Enoki",
+"MM_Enoki.Description": "Dieser Pilz hat eine knackige Konsistenz und ist im Kühlschrank etwa eine Woche lang haltbar. Er ist eine beliebte Zutat für Suppen, kann aber auch für Salate und andere Gerichte verwendet werden.",
+
+"MM_Matsutake.DisplayName": "Matsutake",
+"MM_Matsutake.Description": "Schwer zu finden aufgrund sehr spezieller Wachstumsbedingungen, der Seltenheit geeigneter Wälder und Gelände sowie der Konkurrenz durch Wildtiere.",
+
+"MM_LobsterMushroom.DisplayName": "Hummerpilz",
+"MM_LobsterMushroom.Description": "Auch Hypomyces lactifluorum genannt; es handelt sich dabei eigentlich nicht um einen Pilz, sondern um einen Parasiten, der Pilze befällt. Dennoch gibt es Autoren, die behaupten, dass es noch nie zu Vergiftungen gekommen sei.",
+
+"MM_BlackTrumpet.DisplayName": "Herbsttrompete",
+"MM_BlackTrumpet.Description": "Auch als Totentrompete bekannt. Trotz ihres unappetitlichen Aussehens sind sie essbar.",
+
+"MM_GhastlyButton.DisplayName": "Spukknopf",
+"MM_GhastlyButton.Description": "Ein Pilz, der so süß schmeckt, dass man es kaum glauben kann.",
+
+"MM_CandyTongue.DisplayName": "Saure Zunge",
+"MM_CandyTongue.Description": "Dieser seltsam aussehende Pilz schmeckt wie Gummiwürmchen, hinterlässt aber ein taubes Gefühl auf der Zunge.",
+
+"MM_HypnoShroom.DisplayName": "Hypno-Pilz",
+"MM_HypnoShroom.Description": "Man könnte schwören, dass sich der Ring auf seiner Kappe bewegt...",
+
+"MM_NightHorn.DisplayName": "Nacht-Horn",
+"MM_NightHorn.Description": "Es wird nicht empfohlen, die Sporen dieses tödlich giftigen Pilzes einzuatmen.",
+
+"MM_HealthShroom.DisplayName": "Heilpilz",
+"MM_HealthShroom.Description": "Dieser Pilz mit seinem sehr eindeutigen Namen ist für seine verjüngenden Eigenschaften bekannt.",
+
+"MM_GloomShroom.DisplayName": "Gloom Shroom",
+"MM_GloomShroom.Description": "",
+
+"WitchesButterDisplayName": "Goldgelber Zitterling",
+"WitchesButterDescription": "Wird oft als ungenießbar beschrieben, da er eine eigenartige Konsistenz hat und geschmacksneutral ist. Der Legende nach bedeutete das Erscheinen dieses Pilzes an der Tür eines Hauses, dass eine Hexe die dort lebende Familie verflucht hatte.",
+
+"PixiesParasolDisplayName": "Mycena interrupta",
+"PixiesParasolDescription": "Dieser Pilz wächst in kleinen Kolonien auf verrottendem, feuchtem Holz in Regenwäldern sowie in Buchen- oder Eukalyptuswäldern. Essbarkeit unbekannt.",
+
+///Maschinen und Objekte
+"MM_MushroomEssenceExtractor.DisplayName": "Pilzessenz-Extraktor",
+"MM_MushroomEssenceExtractor.Description": "Extrahiert die Essenz verschiedener Pilze.",
+
+"MM_Potionmachine.DisplayName": "Tränkemaschine",
+"MM_Potionmachine.Description": "Ermöglicht es dir, Tränke aus Pilzessenz zu brauen und die Giftstoffe giftiger Pilze zu neutralisieren.",
+
+"MM_Flavored_MushroomEssence": "{0} Essenz", //{0} wird durch den eingegebenen Gegenstand ersetzt
+"MM_Flavored_MushroomEssence.name": "Pilzessenz",
+"MM_Flavored_MushroomEssence.description": "Die aus einem Pilz extrahierte, konzentrierte Essenz.",
+
+"MM_Flavored_Potion": "{0} Trank",
+"MM_Flavored_Potion.name": "Zaubertrank",
+"MM_Flavored_Potion.description": "Ein Trank  aus Pilzextrakt und  giftigen Pilzen.",
+"selph.ExtraMachineConfig.RequirementInvalidMsg": "Für Tränke sind mindestens 1 Pilzextrakt und 1 giftiger Pilz erforderlich.",
+"Potion": "{0} & {1} Trank",
+
+"MM_Foraging_Potion.name": "Sammel-Trank",
+"MM_Foraging_Potion.description": "Ein Trank, der dein Sammel-Level deutlich erhöht.",
+
+
+"MM_Mining_Potion.name": "Minenarbeits-Trank",
+"MM_Mining_Potion.description": "Ein Trank, der dein Minenarbeits-Level deutlich erhöht.",
+
+"MM_Fishing_Potion.name": "Angeltrank",
+"MM_Fishing_Potion.description": "Ein Trank, der dein Fischen-Level erheblich steigert.",
+
+"MM_Combat_Potion.name": "Kampftrank",
+"MM_Combat_Potion.description": "Ein Trank, der dein Kampf-Level erheblich steigert.",
+
+
+
+
+
+
+
+}

@@ -8,6 +8,9 @@
          "Entries":{
             "MM_ShroomCollecting":{
                 "BundleName": "{{i18n:ShroomCollecting_Bundle.name}}",
+                "BundleDescription": "{{i18n:ShroomCollecting_Bundle.description}}",
+                "BundleIcon": "Mushrooms",
+                "BundleCompletedRibbon": "Raccoon",
                "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"9, 15",
                "ShopType": "CCMagicBook",
@@ -41,6 +44,9 @@
             "MM_TastyShrooms":
             {
                "BundleName": "{{i18n:TastyShrooms_Bundle.name}}",
+               "BundleDescription": "{{i18n:TastyShrooms_Bundle.description}}",
+               "BundleCompletedRibbon": "Raccoon",
+               "BundleIcon": "Mushrooms",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"7, 15",
                 "ShopType": "CCMagicBook",
@@ -74,6 +80,9 @@
             "MM_PoisonousShrooms":
             {
                "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
+               "BundleDescription": "{{i18n:PoisonousShrooms_Bundle.description}}",
+               "BundleIcon": "Mushrooms",
+               "BundleCompletedRibbon": "Raccoon",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"11, 15",
                 "ShopType": "CCMagicBook",
@@ -110,6 +119,9 @@
             "MM_PoisonousShrooms":
             {
                "BundleName": "{{i18n:PoisonousShrooms_Bundle.name}}",
+               "BundleDescription": "{{i18n:PoisonousShrooms_Bundle.description}}",
+               "BundleIcon": "Mushrooms",
+               "BundleCompletedRibbon": "Raccoon",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"11, 15",
                 "ShopType": "CCMagicBook",
@@ -144,9 +156,14 @@
             "MM_InedibleShrooms":
             {
                "BundleName": "{{i18n:Inedible_Bundle.name}}",
+               "BundleDescription": "{{i18n:Inedible_Bundle.description}}",
+               "BundleIcon": "Mushrooms",
+               "BundleCompletedRibbon": "Raccoon",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"9, 15",
                 "ShopType": "CCMagicBook",
+                "ShopTexture": "UnlockableBundles/ShopTextures/MagicBook_Green",
+               "JunimoNoteTexture": "UnlockableBundles/UI/MagicBookJunimoNote_Green",
                "BundleSlots": 4,
               
               
@@ -187,6 +204,11 @@
             "MM_MoreMushroomStuff":
             {
                "BundleName": "{{i18n:MoreMushroomStuff_Bundle.name}}",
+               "BundleDescription": "{{i18n:MoreMushroomStuff_Bundle.description}}",
+               "BundleIcon": "Mushrooms",
+               "BundleCompletedRibbon": "Raccoon",
+               "ShopTexture": "UnlockableBundles/ShopTextures/MagicBook_Brown",
+               "JunimoNoteTexture": "UnlockableBundles/UI/MagicBookJunimoNote_Brown",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"11, 15",
                 "ShopType": "CCMagicBook",
@@ -196,7 +218,7 @@
                 "(O)851": 3,
                 "(O)891": 4,
                 "(O)205": 3,
-                "(UB.AP)MM.PickledMushrooms_BundleItem": 5
+                "(UB.Flavored)Pickle.(O)404": 5
                 },
               
                 "PriceSpawnFields": [
@@ -231,6 +253,9 @@
              "MM_ForestForage":
             {
                "BundleName": "{{i18n:ForestForage_Bundle.name}}",
+               "BundleDescription": "{{i18n:ForestForage_Bundle.description}}",
+               "BundleCompletedRibbon": "Standard",
+               "BundleIcon": "Leafes",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition": "7, 15",
                 "ShopType": "CCMagicBook",
@@ -293,6 +318,9 @@
               "MM_ForestFish":
             {
                "BundleName": "{{i18n:ForestFish_Bundle.name}}",
+               "BundleDescription": "{{i18n:Inedible_Bundle.description}}",
+               "BundleIcon": "Master_Fisher",
+               "BundleCompletedRibbon": "Standard",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition": "9, 15",
                 "ShopType": "CCMagicBook",
@@ -339,6 +367,9 @@
              "MM_MushroomDishes":
             {
                "BundleName": "{{i18n:MushroomDishes_Bundle.name}}",
+               "BundleDescription": "{{i18n:Inedible_Bundle.description}}",
+               "BundleCompletedRibbon": "Raccoon",
+               "BundleIcon": "Home_Cook",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition": "49, 8",
                 "ShopType": "CCMagicBook",
@@ -370,7 +401,7 @@
                 ],
               
                "BundleReward": {
-               "(BC)MM_PotionMachine": 1,
+               "(BC)MM_Potionmachine": 1,
                "(BC)Cornucopia_YogurtJar": 1 
                },
               
@@ -379,18 +410,23 @@
                    "MM_MushroomEssencesBundle":
             {
                "BundleName": "{{i18n:MushroomEssence_Bundle.name}}",
+               "BundleDescription": "{{i18n:Inedible_Bundle.description}}",
+               "BundleCompletedRibbon": "Raccoon",
+               "BundleIcon": "Junimo",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition": "52, 8",
                 "ShopType": "CCMagicBook",
                 "ShopColor": "SlateBlue",
                "BundleSlots": 5,
                 "Price": { 
-                "(UB.AP)MM.TruffleEssence_BundleItem": 3,
-                "(UB.AP)MM.MagmaCapEssence_BundleItem": 3,
-                "(UB.AP)MM.AspenEssence_BundleItem": 3,
-                "(UB.AP)MM.ChampignonEssence_BundleItem": 3,
-                "(UB.AP)MM.GreatWoodMushroomEssence_BundleItem": 3,
-                "(UB.AP)MM.BlackTrumpetMushroomEssence_BundleItem": 3
+               "(UB.AP)DLX.MM.TruffleEssence_BundleItem": 3,
+                "(UB.AP)DLX.MM.MagmaCapEssence_BundleItem": 3,
+                "(UB.AP)DLX.MM.AspenEssence_BundleItem": 3,
+                "(UB.AP)DLX.MM.ChampignonEssence_BundleItem": 3,
+                "(UB.AP)DLX.MM.GreatWoodMushroomEssence_BundleItem": 3,
+                "(UB.AP)DLX.MM.BlackTrumpetEssence_BundleItem": 3,
+                "(UB.AP)DLX.MM.DevilsFingersEssence_BundleItem": 3,
+                "(UB.AP)DLX.MM.RubyBoleteEssence_BundleItem": 3
               
                 }, 
 
@@ -398,7 +434,7 @@
               
                "BundleReward": {
                "(O)MM_SaffronMilkcapStarter": 3,
-               "(BC)MM_PotionMachine": 1,
+               "(BC)MM_Potionmachine": 1,
                }
               
             },
@@ -420,15 +456,29 @@
             "MM_Final":
             {
                "BundleName": "{{i18n:Final_Bundle.name}}",
+               "BundleDescription": "{{i18n:Final_Bundle.description}}",
+               "BundleCompletedRibbon": "Raccoon",
+               "BundleIcon": "Wild_Medicine",
                 "Location":"{{ModID}}_MushroomMeadow",
                "ShopPosition":"7, 15",
-                "ShopType": "CCMagicBook",
-               "BundleSlots": 3,
+                "ShopType": "StarrySky",
+               "BundleSlots": 8,
                "Price": { 
                 
-                "(O)MM_Champignon": 5,
+                "(O)MM_ShroomOfTransingYourGender": 5,
+                "(O)MM_BluePinkgill": 5,
+               "(UB.AP)DLX.MM.ChampignonDestroyingAngelPotion_BundleItem": 3,
+                "(UB.AP)DLX.MM.PurpleRedMushroomPotion_BundleItem": 3,
+               "(UB.AP)DLX.MM.CandyTongueNightHornPotion_BundleItem": 3,
+               "(UB.AP)DLX.MM.PixiesParasolDeathcapPotion_BundleItem": 3,
+               "(UB.AP)DLX.MM.EnokiAllEyesPotion_BundleItem": 3,
+               "(UB.AP)DLX.MM.MatsutakeSickenerPotion_BundleItem": 3,
+               "(UB.AP)DLX.MM.ShiitakeBleedingHeartPotion_BundleItem": 3
+
+
               
                 },
+           
 
                 "PriceSpawnFields": [
 
@@ -442,9 +492,11 @@
                         },
                      ], 
                "BundleReward": {
-                "(UB.Recipe)(BC)MM_PotionMachine": 1
+                "(UB.Recipe)(BC)MM_Potionmachine": 1
 
-               }
+               },
+               "EditMap": "{{InternalAssetKey: assets/maps/doorPatch.tmx}}",
+               "EditMapPosition": "50, 6"
             }
          }
       },
@@ -485,7 +537,7 @@
 	"Target": "UnlockableBundles/AdvancedPricing",
 	"Entries": {
               
-		"MM.TruffleEssence_BundleItem":
+		"DLX.MM.TruffleEssence_BundleItem":
        { 
 			"Name": "{{i18n:MM.TruffleEssence_BundleItem}}",
 			"ContextTags": [ 
@@ -498,12 +550,12 @@
 			"ItemTypes": [ "(O)"] 
 		},
 
-      	"MM.MagmaCapEssence_BundleItem":
+      	"DLX.MM.MagmaCapEssence_BundleItem":
        { 
 			"Name": "{{i18n:MM.MagmaCapEssence_BundleItem}}",
 			"ContextTags": [ 
 				"id_(o)MM_Flavored_MushroomEssence", 
-				"preserve_sheet_index_851", //
+				"preserve_sheet_index_851", 
 				
 			],
 			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
@@ -511,38 +563,38 @@
 			"ItemTypes": [ "(O)"] 
 		},
 
-      	"MM.AspenEssence_BundleItem":
+      	"DLX.MM.AspenEssence_BundleItem":
        { 
 			"Name": "{{i18n:MM.AspenEssence_BundleItem}}",
 			"ContextTags": [ 
 				"id_(o)MM_Flavored_MushroomEssence", 
-				"preserve_sheet_index_mm_aspen", //
+				"preserve_sheet_index_mm_aspen", 
 				
 			],
 			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
 			"SubItemCopy": "(O)MM_Aspen", 
-			"ItemTypes": [ "(O)"] 
+			"ItemTypes": ["(O)"] 
 		},
 
-      "MM.ChampignonEssence_BundleItem":
+      "DLX.MM.ChampignonEssence_BundleItem":
        { 
 			"Name": "{{i18n:MM.ChampignonEssence_BundleItem}}",
 			"ContextTags": [ 
 				"id_(o)MM_Flavored_MushroomEssence", 
-				"preserve_sheet_index_mm_Champignon", //
+				"preserve_sheet_index_mm_Champignon", 
 				
 			],
 			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
 			"SubItemCopy": "(O)MM_Champignon", 
-			"ItemTypes": [ "(O)"] 
+			"ItemTypes": ["(O)"] 
 		},
 
-       "MM.GreatWoodMushroomEssence_BundleItem":
+       "DLX.MM.GreatWoodMushroomEssence_BundleItem":
        { 
 			"Name": "{{i18n:MM.GreatWoodMushroomEssence_BundleItem}}",
 			"ContextTags": [ 
 				"id_(o)MM_Flavored_MushroomEssence", 
-				"preserve_sheet_index_mm_GreatWoodMushroom", //
+				"preserve_sheet_index_mm_GreatWoodMushroom", 
 				
 			],
 			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
@@ -550,7 +602,7 @@
 			"ItemTypes": [ "(O)"] 
 		},
 
-      "MM.BlackTrumpetEssence_BundleItem":
+      "DLX.MM.BlackTrumpetEssence_BundleItem":
        { 
 			"Name": "{{i18n:MM.BlackTrumpetEssence_BundleItem}}",
 			"ContextTags": [ 
@@ -562,6 +614,150 @@
 			"SubItemCopy": "(O)MM_BlackTrumpet", 
 			"ItemTypes": [ "(O)"] 
 		},
+
+      
+      "DLX.MM.DevilsFingersEssence_BundleItem":
+       { 
+			"Name": "{{i18n:MM.DevilsFingersEssence_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_MushroomEssence", 
+				"preserve_sheet_index_mm_devilsfingers", //
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
+			"SubItemCopy": "(O)MM_DevilsFingers", 
+			"ItemTypes": [ "(O)"] 
+		},
+
+      "DLX.MM.RubyBoleteEssence_BundleItem":
+       { 
+			"Name": "{{i18n:MM.RubyBoleteEssence_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_MushroomEssence", 
+				"preserve_sheet_index_mm_rubybolete", //
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_MushroomEssence", 
+			"SubItemCopy": "(O)MM_RubyBolete", 
+			"ItemTypes": [ "(O)"] 
+		},
+
+      
+
+      ////////////final bundle AP items
+      "DLX.MM.ChampignonDestroyingAngelPotion_BundleItem":
+      {
+         "Name": "{{i18n:MM.ChampignonDestroyingAngelPotion_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_Potion", 
+				"preserve_sheet_index_mm_champignon",
+            "extra_preserve_sheet_index_1_mm_destroyingangel"
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_Potion", 
+			"SubItemCopy": "(O)MM_Champignon", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+       "DLX.MM.PurpleRedMushroomPotion_BundleItem":
+      {
+         "Name": "{{i18n:MM.PurpleRedMushroomPotion_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_Potion", 
+				"preserve_sheet_index_422",
+            "extra_preserve_sheet_index_1_420"
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_Potion", 
+			"SubItemCopy": "(O)422", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+       "DLX.MM.CandyTongueNightHornPotion_BundleItem":
+      {
+         "Name": "{{i18n:MM.CandyTongueNightHornPotion_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_Potion", 
+				"preserve_sheet_index_mm_candytongue",
+            "extra_preserve_sheet_index_1_mm_nighthorn"
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_Potion", 
+			"SubItemCopy": "(O)MM_CandyTongue", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+       "DLX.MM.PixiesParasolDeathcapPotion_BundleItem":
+      {
+         "Name": "{{i18n:MM.PixiesParasolDeathcapPotion_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_Potion", 
+				"preserve_sheet_index_mm_pixiesparasol",
+            "extra_preserve_sheet_index_1_mm_deathcap"
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_Potion", 
+			"SubItemCopy": "(O)MM_PixiesParasol", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+        "DLX.MM.WitchesButterSulfurTuftPotion_BundleItem":
+      {
+         "Name": "{{i18n:MM.WitchesButterSulfurTuftPotion_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_Potion", 
+				"preserve_sheet_index_mm_witchesbutter",
+            "extra_preserve_sheet_index_1_mm_sulfurtuft"
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_Potion", 
+			"SubItemCopy": "(O)MM_WitchesButter", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+        "DLX.MM.EnokiAllEyesPotion_BundleItem":
+      {
+         "Name": "{{i18n:MM.EnokiAllEyesPotion_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_Potion", 
+				"preserve_sheet_index_mm_enoki",
+            "extra_preserve_sheet_index_1_mm_alleyes"
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_Potion", 
+			"SubItemCopy": "(O)MM_Enoki", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+        "DLX.MM.MatsutakeSickenerPotion_BundleItem":
+      {
+         "Name": "{{i18n:MM.MatsutakeSickenerPotion_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_Potion", 
+				"preserve_sheet_index_mm_matsutake",
+            "extra_preserve_sheet_index_1_mm_thesickener"
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_Potion", 
+			"SubItemCopy": "(O)MM_Matsutake", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+      "DLX.MM.ShiitakeBleedingHeartPotion_BundleItem":
+      {
+         "Name": "{{i18n:MM.ShiitakeBleedingHeartPotion_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_Flavored_Potion", 
+				"preserve_sheet_index_cornucopia_shiitake",
+            "extra_preserve_sheet_index_1_mm_bleedingheart"
+				
+			],
+			"ItemCopy": "(O)MM_Flavored_Potion", 
+			"SubItemCopy": "(O)Cornucopia_Shiitake", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+
 
 
 

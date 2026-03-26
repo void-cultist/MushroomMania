@@ -15,8 +15,8 @@
     "Entries": {
         "MM_MushroomEssenceExtractor": {
             "Name": "MM_MushroomEssenceExtractor",
-            "DisplayName": "Mushroom Essence Extractor",
-            "Description": "Extracts the essence of various mushrooms.",
+            "DisplayName": "{{i18n:MM_MushroomEssenceExtractor.DisplayName}}",
+            "Description": "{{i18n:MM_MushroomEssenceExtractor.Description}}",
             "Price": 500,
             "Fragility": 0,
             "CanBePlacedOutdoors": true,
