@@ -1,0 +1,108 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add mushroom forageables to vanilla maps - max spawns Woods",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "Woods" ],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        },
+
+
+        {   "LogName": "Add mushroom forageables to vanilla maps - max spawns Backwoods",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": ["Backwoods"],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        },
+
+        {   "LogName": "Add mushroom forageables to vanilla maps - max spawns Bus stop",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": ["BusStop"],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        },
+        {   "LogName": "Add mushroom forageables to vanilla maps - max spawns Mountain",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": ["Mountain"],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        },
+
+        {
+            "LogName": "Add mushroom forageables to vanilla maps - max spawns railroad",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": ["Railroad"],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        },
+
+        {
+            "LogName": "Add mushroom forageables to vanilla maps - max spawns witch swamp",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": ["WitchSwamp"],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        },
+
+        {
+            "LogName": "Add mushroom forageables to vanilla maps - max spawns beach",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": ["Beach"],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        },
+
+        {
+            "LogName": "Add mushroom forageables to vanilla maps - max spawns island east",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": ["IslandEast"],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        },
+
+        {
+            "LogName": "Add mushroom forageables to vanilla maps - max spawns island west",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": ["IslandWest"],
+            "Entries": {
+                "MinDailyForageSpawn": "{{MinDailyForageSpawn}}",
+                "MaxDailyForageSpawn": "{{MaxDailyForageSpawn}}",
+                "MaxSpawnedForageAtOnce": "{{MaxSpawnedForageAtOnce}}"
+            }
+        }
+    ]
+}

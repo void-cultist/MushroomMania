@@ -12,7 +12,12 @@
         {
             "Name": "MinDailyForageSpawn",
             "Value": 2,
-            "When": { "SpawnRate": "Lower" }
+            "When": { "SpawnRate": "lower" }
+        },
+          {
+            "Name": "MinDailyForageSpawn",
+            "Value": 8,
+            "When": { "SpawnRate": "higher" }
         },
 
         {
@@ -20,9 +25,30 @@
             "Value": 9
         },
 
+         {
+            "Name": "MaxDailyForageSpawn",
+            "Value": 6,
+            "When": { "SpawnRate": "lower" }
+        },
+          {
+            "Name": "MaxDailyForageSpawn",
+            "Value": 13,
+            "When": { "SpawnRate": "higher" }
+        },
+
         {
             "Name": "MaxSpawnedForageAtOnce",
             "Value": 12
+        },
+          {
+            "Name": "MaxSpawnedForageAtOnce",
+            "Value": 7,
+            "When": { "SpawnRate": "lower" }
+        },
+          {
+            "Name": "MaxSpawnedForageAtOnce",
+            "Value": 14,
+            "When": { "SpawnRate": "higher" }
         },
         
         {
@@ -221,7 +247,18 @@
           {
             "Name": "ExcludeFromRandomSale",
             "Value": false,
-        }
+        },
+
+        //including imaginary shrooms
+        {
+            "Name": "IncludeImaginary",
+            "Value": "imaginary"
+        },
+        {
+            "Name": "IncludeImaginary",
+            "Value": "realistic",
+            "When": { "Include imaginary Mushrooms": false }
+        },
 
 
 
@@ -234,7 +271,7 @@
         "ConfigSchema": {
             "SpawnRate": 
             {
-                "AllowValues": "default, lower",
+                "AllowValues": "default, lower, higher",
                 "Default": "default",
                 "AllowBlank": false,
                 "Description": "This mod edits the way items spawn. If you find any issues in the amount spawned, change this setting to 'lower'."
@@ -333,7 +370,7 @@
 {
     "LogName": "Include spawnable forage data",
     "Action": "Include",
-    "FromFile": "data/spawns/forage.json, data/spawns/forest.json, data/spawns/mushroommeadow.json, data/spawns/island.json, data/spawns/mountain.json, data/spawns/railroad.json, data/spawns/busstop.json"
+    "FromFile": "data/spawns/{{IncludeImaginary}}/forage.json, data/spawns/{{IncludeImaginary}}/forest.json, data/spawns/{{IncludeImaginary}}/mushroommeadow.json, data/spawns/{{IncludeImaginary}}/island.json, data/spawns/{{IncludeImaginary}}/mountain.json, data/spawns/{{IncludeImaginary}}/railroad.json, data/spawns/{{IncludeImaginary}}/busstop.json, data/spawns/{{IncludeImaginary}}/backwoods.json"
 },
 {
     "LogName": "Include machine data",

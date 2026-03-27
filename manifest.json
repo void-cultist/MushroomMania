@@ -35,7 +35,15 @@
                 "IsRequired": true
             },
             {
+                "UniqueID": "Bogs.WitchyTilesheets",
+                "IsRequired": true
+            },
+            {
                 "UniqueID": "Lumisteria.TtilesheetsOutdoor",
+                "IsRequired": true
+            },
+            {
+                "UniqueID": "KaileyStardew.Tilesheets",
                 "IsRequired": true
             },
             {

@@ -1,0 +1,395 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add edible mushroom spawns to Mushroom Meadow",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
+            "Entries": {
+
+                  "{{ModID}}_CommonEdibleMushrooms": //common
+                {
+
+                    "Chance": 0.7,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_GreatWoodMushroom",
+                    "ItemId": "(O)MM_GreatWoodMushroom",
+                    "RandomItemId": [ "(O)MM_GreatWoodMushroom", "(O)MM_OrangePeelFungus", "(O)MM_SaffronMilkcap", "(O)MM_RussulaVesca", "(O)MM_OrangeGrisette", "(O)MM_ParasolMushroom", "(O)257", "(O)281", "(O)422"],
+                    "PerItemCondition": null
+                },
+
+                "MM_Aspen": //rare
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, SEASON summer fall",
+                    "Id": "(O)MM_Aspen",
+                    "ItemId": "(O)MM_Aspen",
+                    "PerItemCondition": null
+                },
+                "MM_BlackTrumpet": //uncommon
+                {
+                    "Chance": 0.3,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall",
+                    "Id": "(O)MM_BlackTrumpet",
+                    "ItemId": "(O)MM_BlackTrumpet",
+
+                },
+
+                  "MM_CaesarsMushroom": //rare
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, SEASON summer fall",
+                    "Id": "(O)MM_CaesarsMushroom",
+                    "ItemId": "(O)MM_CaesarsMushroom",
+                    "PerItemCondition": null
+                },
+
+                    "MM_Champignon": //common
+                {
+
+                    "Chance": 0.8,
+                    "Condition": "SEASON fall winter",
+                    "Id": "(O)MM_Champignon",
+                    "ItemId": "(O)MM_Champignon",
+                    "PerItemCondition": null
+                },
+
+                "MM_Enoki": //common
+                {
+                    "Chance": 0.5,
+                    "Season": "Spring",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5",
+                    "Id": "(O)MM_Enoki",
+                    "ItemId": "(O)MM_Enoki",
+                    "PerItemCondition": null
+                },
+                
+
+                "MM_GoldenBrittlegill": //uncommon
+                {
+                    "Chance": 0.3,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_GoldenBrittlegill",
+                    "ItemId": "(O)MM_GoldenBrittlegill",
+
+                },
+                
+                "MM_LobsterMushroom": //uncommon
+                {
+                    "Chance": 0.4,
+                    "Season": null,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7",
+                    "Id": "(O)MM_LobsterMushroom",
+                    "ItemId": "(O)MM_LobsterMushroom",
+                    "PerItemCondition": null
+                },
+                "MM_Matsutake": //rare
+                {
+                    "Chance": 0.1,
+                    "Season": "Fall",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 9",
+                    "Id": "(O)MM_Matsutake",
+                    "ItemId": "(O)MM_Matsutake",
+                    "PerItemCondition": null
+                },
+                 "MM_RubyBolete": //rare
+                {
+
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 8, SEASON summer fall",
+                    "Id": "(O)MM_RubyBolete",
+                    "ItemId": "(O)MM_RubyBolete",
+                    "PerItemCondition": null
+                },
+                "FlashShifter.StardewValleyExpandedCP_Mushroom_Colony":
+                {
+
+                    "Chance": 0.4,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 2, SEASON spring fall",
+                    "Id": "(O)FlashShifter.StardewValleyExpandedCP_Mushroom_Colony",
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Mushroom_Colony",
+                    "PerItemCondition": null
+                },
+                "FlashShifter.StardewValleyExpandedCP_Monster_Mushroom":
+                {
+
+                    "Chance": 0.4,
+                    "Season": "Spring",
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 7",
+                    "Id": "(O)FlashShifter.StardewValleyExpandedCP_Monster_Mushroom",
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Monster_Mushroom",
+                    "PerItemCondition": null
+                },
+                 "FlashShifter.StardewValleyExpandedCP_Mega_Purple_Mushroom":
+                {
+
+                    "Chance": 0.05,
+                    "Season": "Fall",
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 10",
+                    "Id": "(O)FlashShifter.StardewValleyExpandedCP_Mega_Purple_Mushroom",
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Mega_Purple_Mushroom",
+                    "PerItemCondition": null
+                },
+                 "Cornucopia_Shiitake":
+                {
+
+                    "Chance": 0.1,
+                    "Season": "Spring",
+                    "Id": "(O)Cornucopia_Shiitake",
+                    "ItemId": "(O)Cornucopia_Shiitake",
+                    "PerItemCondition": null
+                },
+                 "Cornucopia_ChickenofTheWoods":
+                {
+
+                    "Chance": 0.2,
+                    "Season": "Fall",
+                    "Id": "(O)Cornucopia_ChickenoftheWoods",
+                    "ItemId": "(O)Cornucopia_ChickenoftheWoods",
+                    "PerItemCondition": null
+                },
+                
+                
+
+            
+            }
+        },
+
+        {
+            "LogName": "Add poisonous mushroom spawns to Mushroom Meadow",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            //"When": { "Include Poisonous Mushrooms": true },
+            "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
+            "Entries": {
+                "MM_Deathcap": //common
+                {
+                    "Chance": 0.5,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_Deathcap",
+                    "ItemId": "(O)MM_Deathcap",
+                    "PerItemCondition": null
+                },
+
+                  "MM_DestroyingAngel": //common
+                {
+                    "Chance": 0.5,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall",
+                    "Id": "(O)MM_DestroyingAngel",
+                    "ItemId": "(O)MM_DestroyingAngel",
+                    "PerItemCondition": null
+                },
+
+                 "MM_GreyKnight": //common
+                {
+                    "Chance": 0.5,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_GreyKnight",
+                    "ItemId": "(O)MM_GreyKnight",
+                    "PerItemCondition": null
+                },
+
+                  "MM_SulfurTuft": //common
+                {
+                    "Chance": 0.7,
+                    "Season": null,
+                    "Id": "(O)MM_SulfurTuft",
+                    "ItemId": "(O)MM_SulfurTuft",
+                    "PerItemCondition": null
+                },
+
+                "MM_TheSickener":
+                 {
+                    "Chance": 0.6,
+                    "Condition": "SEASON summer fall",
+                    "Id": "(O)MM_TheSickener",
+                    "ItemId": "(O)MM_TheSickener",
+                    "PerItemCondition": null
+                },
+
+                "FlashShifter.StardewValleyExpandedCP_Poison_Mushroom":
+                {
+                    "Chance": 0.4,
+                    "Condition": "SEASON spring winter",
+                    "Id": "(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom",
+                    "ItemId": "(O)FlashShifter.StardewValleyExpandedCP_Poison_Mushroom",
+                    "PerItemCondition": null
+                },
+
+            }
+        },
+
+         {
+             "LogName": "Add inedible mushroom spawns to Woods",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
+            "Entries": {
+                   "MM_DevilsFingers": //uncommon
+                  {
+
+                    "Chance": 0.3,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5, SEASON summer fall",
+                    "Id": "(O)MM_DevilsFingers",
+                    "ItemId": "(O)MM_DevilsFingers",
+                    "PerItemCondition": null
+                },
+
+                 "MM_JubileeWaxcap": //uncommon
+                  {
+
+                    "Chance": 0.3,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall",
+                    "Id": "(O)MM_JubileeWaxcap",
+                    "ItemId": "(O)MM_JubileeWaxcap",
+                    "PerItemCondition": null
+                },
+                  "Cornucopia_Rafflesia": //uncommon
+                  {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4",
+                    "Season": "Summer",
+                    "Id": "(O)Cornucopia_Rafflesia",
+                    "ItemId": "(O)Cornucopia_Rafflesia",
+                    "PerItemCondition": null
+                },
+
+                 
+            }
+        },
+
+////Spawn imaginary shrooms
+ {
+            "LogName": "Spawn edbile imaginary mushrooms in MM map",
+            "Action": "EditData",
+            "When": { "Include imaginary Mushrooms": true },
+            "Target": "Data/Locations",
+            "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
+            "Entries": {
+                "MM_BurgerShroom":
+                {
+                    "Chance": 0.4,
+                    "Season": "Spring",
+                    "Condition": "PLAYER_BASE_MINING_LEVEL Any 3",
+                    "Id": "(O)MM_BurgerShroom",
+                    "ItemId": "(O)MM_BurgerShroom",
+                    "PerItemCondition": null
+                },
+                "MM_ShroomOfTransingYourGender":
+                  {
+                    "Chance": 0.05,
+                    "Season": null,
+                    "Condition": "PLAYER_BASE_FARMING_LEVEL Any 6",
+                    "Id": "(O)MM_ShroomOfTransingYourGender",
+                    "ItemId": "(O)MM_ShroomOfTransingYourGender",
+                    "PerItemCondition": null
+                },
+                
+                 "MM_HealthShroom": 
+                  {
+
+                    "Chance": 0.25,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5",
+                    "Season": "Spring",
+                    "Id": "(O)MM_HealthShroom",
+                    "ItemId": "(O)MM_HealthShroom",
+                    "PerItemCondition": null
+                },
+
+                 "MM_GhastlyButton": 
+                  {
+
+                    "Chance": 0.25,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, !WEATHER Target Sun",
+                    "Season": "Winter",
+                    "Id": "(O)MM_GhastlyButton",
+                    "ItemId": "(O)MM_GhastlyButton",
+                    "PerItemCondition": null
+                },
+                
+
+            }
+        },
+
+ { 
+            "LogName": "Spawn poisonous imaginary mushrooms in MM map",
+            "Action": "EditData",
+            "When": { "Include imaginary Mushrooms": true},
+            "Target": "Data/Locations",
+            "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
+            "Entries": 
+            {
+                "MM_BleedingHeart":
+                  {
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 9, SEASON fall winter",
+                    "Id": "(O)MM_BleedingHeart",
+                    "ItemId": "(O)MM_BleedingHeart",
+                    "PerItemCondition": null
+                },
+                "MM_AllEyes":
+                  {
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FARMING_LEVEL Any 9, SEASON fall winter",
+                    "Id": "(O)MM_AllEyes",
+                    "ItemId": "(O)MM_AllEyes",
+                    "PerItemCondition": null
+                },
+                  "MM_NightHorn":
+                  {
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FARMING_LEVEL Any 3",
+                    "Season": "Winter",
+                    "Id": "(O)MM_NightHorn",
+                    "ItemId": "(O)MM_NightHorn",
+                    "PerItemCondition": null
+                }
+            }
+        },
+{ 
+            "LogName": "Spawn inedible imaginary mushrooms in MM map",
+            "Action": "EditData",
+            "When": { "Include imaginary Mushrooms": true},
+            "Target": "Data/Locations",
+            "TargetField": [ "{{ModID}}_MushroomMeadow", "Forage" ],
+            "Entries": 
+            {
+                "MM_WaningMoonShroom":
+                  {
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 5",
+                    "Season": "Winter",
+                    "Id": "(O)MM_WaningMoonShroom",
+                    "ItemId": "(O)MM_WaningMoonShroom",
+                    "PerItemCondition": null
+                },
+
+                    "MM_HypnoShroom": 
+                  {
+
+                    "Chance": 0.4,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4",
+                    "Season": "Summer",
+                    "Id": "(O)MM_HypnoShroom",
+                    "ItemId": "(O)MM_HypnoShroom",
+                    "PerItemCondition": null
+                },
+
+                  "MM_CandyTongue": 
+                  {
+
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4",
+                    "Season": "Spring",
+                    "Id": "(O)MM_CandyTongue",
+                    "ItemId": "(O)MM_CandyTongue",
+                    "PerItemCondition": null
+                },
+            }
+        },
+
+    ]
+}

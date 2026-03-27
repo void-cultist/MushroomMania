@@ -85,7 +85,7 @@
                           "SpriteIndex": 5, 
                          "Edibility": 300,
                           "IsDrink": false,
-                          "ContextTags": [ "edible_mushroom", "color_pink", "mushroom_item", "preserves_pickle", "color_blue", "fck_trfs", "extractor_input" ],
+                          "ContextTags": [ "edible_mushroom", "color_pink", "mushroom_item", "preserves_pickle", "color_blue", "fck_trfs", "extractor_input", "rain_exclude" ],
                          "Buffs": [
                                {
                                 "Id": "{{ModID}}_TransPower",
@@ -113,20 +113,8 @@
                             }
                          ]
                       
-                      }
-            }
-              
-          
-
-        },
-
-         { 
-            "LogName": "Add new imaginary poisonous mushrooms",
-            "Action": "EditData",
-            //"When": { "Include Poisonous Mushrooms": true },
-            "Target": "data/objects",
-            "Entries": 
-            {
+                      },
+  
               
                   "MM_BleedingHeart":
                       {
@@ -140,7 +128,7 @@
                           "SpriteIndex": 10, 
                          "Edibility": -240,
                           "IsDrink": false,
-                          "ContextTags": [ "poisonous_mushroom", "extractor_input" ],
+                          "ContextTags": [ "poisonous_mushroom", "extractor_input", "mushroom_item", "rain_exclude" ],
                          "Buffs": [
                                {
                                 "Id": "{{ModID}}_BleedingHeartDebuff",
@@ -165,7 +153,7 @@
                           "SpriteIndex": 7, 
                          "Edibility": -200,
                           "IsDrink": false,
-                          "ContextTags": [ "poisonous_mushroom", "extractor_input" ],
+                          "ContextTags": [ "poisonous_mushroom", "extractor_input", "mushroom_item", "rain_exclude", "season_winter" ],
                          "Buffs": [
                                  {
                             "Id": "{{ModId}}_AllEyesDebuff",
@@ -218,19 +206,6 @@
                         
                       },
                      
-                   
-
-        }
-
-        },
-
-           { 
-            "LogName": "Add new imaginary inedible mushrooms",
-            "Action": "EditData",
-            //"When": { "Include Inedible Mushrooms": true },
-            "Target": "data/objects",
-            "Entries": 
-            {
 
                   "MM_WaningMoonShroom":
                 {
@@ -244,7 +219,7 @@
                     "SpriteIndex": 4, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_dark_slate_blue", "inedible_mushroom", "extractor_input" ],
+                    "ContextTags": [  "color_dark_slate_blue", "inedible_mushroom", "extractor_input", "mushroom_item", "rain_exclude" ],
                 
                 },
 
@@ -315,7 +290,7 @@
                           "SpriteIndex": 8, 
                          "Edibility": 161,
                           "IsDrink": false,
-                          "ContextTags": [ "inedible_mushroom", "color_light_cyan", "mushroom_item", "extractor_input" ],
+                          "ContextTags": [ "inedible_mushroom", "color_light_cyan", "mushroom_item", "extractor_input", "rain_exclude" ],
                         
                       },
 

@@ -1,0 +1,62 @@
+{
+    "Changes": [
+        { 
+            "LogName": "Add  mushroom spawns to backwoods map",
+            "Target": "Data/Locations",
+             "Action": "EditData",
+            "TargetField": [ "Backwoods", "Forage" ],
+            "Entries": {
+
+                 "{{ModID}}_CommonEdibleMushrooms": //common
+                {
+
+                    "Chance": 0.7,
+                    "Condition": "SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_GreatWoodMushroom",
+                    "ItemId": "(O)MM_GreatWoodMushroom",
+                    "RandomItemId": [ "(O)MM_GreatWoodMushroom", "(O)MM_OrangePeelFungus", "(O)MM_SaffronMilkcap", "(O)MM_RussulaVesca", "(O)MM_OrangeGrisette", "(O)MM_ParasolMushroom"],
+                    "PerItemCondition": null
+                },
+                "MM_Champignon": //common
+                {
+
+                    "Chance": 0.8,
+                    "Condition": "SEASON fall winter",
+                    "Id": "(O)MM_Champignon",
+                    "ItemId": "(O)MM_Champignon",
+                    "PerItemCondition": null
+                },
+            
+
+                 "MM_Deathcap": //common
+                {
+                    "Chance": 0.5,
+                    "Condition": "SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_Deathcap",
+                    "ItemId": "(O)MM_Deathcap",
+                    "PerItemCondition": null
+                },
+
+                  "MM_DestroyingAngel": //common
+                {
+                    "Chance": 0.5,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_DestroyingAngel",
+                    "ItemId": "(O)MM_DestroyingAngel",
+                    "PerItemCondition": null
+                },
+        
+
+                //mushrooms during rain
+
+                "MM_SpawnDuringRain":
+                {
+                    "Chance": 0.9,
+                    "Condition": "WEATHER Target Rain GreenRain Storm",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_item, !ITEM_CONTEXT_TAG Target rain_exclude"
+                },
+             }
+        }
+    ]
+}

@@ -120,7 +120,7 @@
                     "SpriteIndex": 1, 
                    "Edibility": 25,
                     "IsDrink": false,
-                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
+                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input", "rain_exclude" ]
                 },
                 "MM_Aspen":
                   {
@@ -263,7 +263,7 @@
                     "SpriteIndex": 0,
                     "Edibility": -200,
                     "IsDrink": false,
-                    "ContextTags": [ "color_white", "poisonous_mushroom"],
+                    "ContextTags": [ "color_white", "poisonous_mushroom", "mushroom_item"],
     
                 },
         
@@ -295,7 +295,7 @@
                         "SpriteIndex": 0, 
                        "Edibility": -30,
                         "IsDrink": false,
-                        "ContextTags": [ "color_yellow", "poisonous_mushroom"],
+                        "ContextTags": [ "color_yellow", "poisonous_mushroom", "mushroom_item"],
                        "Buffs": [
                             {
                                 "Id": "{{ModID}}_SulfurTuftDebuff",
@@ -320,7 +320,7 @@
                         "SpriteIndex": 4, 
                        "Edibility": -100,
                         "IsDrink": false,
-                        "ContextTags": [ "color_green", "poisonous_mushroom"],
+                        "ContextTags": [ "color_green", "poisonous_mushroom", "mushroom_item"],
                        "Buffs": [
                             {
                                 "Id": "{{ModID}}_DeathcapDebuff",
@@ -398,7 +398,7 @@
                     "SpriteIndex": 4, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_dark_red", "inedible_mushroom", "extractor_input" ],
+                    "ContextTags": [  "color_dark_red", "inedible_mushroom", "extractor_input", "mushroom_item" ],
                 
                 },
 
@@ -414,7 +414,7 @@
                     "SpriteIndex": 0, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_pink", "inedible_mushroom", "extractor_input" ],
+                    "ContextTags": [  "color_pink", "inedible_mushroom", "extractor_input", "mushroom_item" ],
                 
                 },
 
@@ -430,7 +430,7 @@
                     "SpriteIndex": 1, 
                    "Edibility": -1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_blue", "color_cyan", "color_aquamarine", "inedible_mushroom", "extractor_input" ],
+                    "ContextTags": [  "color_blue", "color_cyan", "color_aquamarine", "inedible_mushroom", "extractor_input", "mushroom_item", "rain_exclude" ],
                 
                 },
                 
@@ -447,7 +447,7 @@
                           "SpriteIndex": 4, 
                          "Edibility": -10,
                           "IsDrink": false,
-                          "ContextTags": [ "inedible_mushroom", "extractor_input", "color_orange" ],
+                          "ContextTags": [ "inedible_mushroom", "extractor_input", "color_orange", "mushroom_item" ],
                         
                       },
 
@@ -463,7 +463,7 @@
                     "SpriteIndex": 5, 
                    "Edibility": 1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_yellow", "inedible_mushroom", "extractor_input" ],
+                    "ContextTags": [  "color_yellow", "inedible_mushroom", "extractor_input", "mushroom_item" ],
                 
                 },
 
@@ -479,7 +479,7 @@
                     "SpriteIndex": 6, 
                    "Edibility": 1,
                     "IsDrink": false,
-                    "ContextTags": [  "color_cyan", "inedible_mushroom", "extractor_input" ],
+                    "ContextTags": [  "color_cyan", "inedible_mushroom", "extractor_input", "mushroom_item", "rain_exclude" ],
                 
                 },
                 
