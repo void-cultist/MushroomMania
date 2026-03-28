@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <tileset version="1.10" tiledversion="2026.02.12" name="kailey_animations" tilewidth="16" tileheight="16" tilecount="7770" columns="42">
- <image source="../../../../../../../../../../Users/User/Documents/SDVModding/Content (unpacked)/Maps/Custom tilesheets/[CP] Kailey's Tilesheets/assets/Outdoors/BlueGrass/kailey_animations.png" width="672" height="2960"/>
+ <image source="kailey_animations.png" width="672" height="2960"/>
  <tile id="2142">
   <animation>
    <frame tileid="2142" duration="200"/>
