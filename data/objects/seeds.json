@@ -4,7 +4,7 @@
     {
       "LogName": "Load mushroom crops texures",
       "Action": "Load",
-      "Target": "{{ModID}}/AllEyesPlanter, {{ModID}}/MushroomSeeds, {{ModID}}/burgershroom, {{ModID}}/champignon, {{ModID}}/saffron, {{ModID}}/orangegrisette, {{ModID}}/greatwoodmushroom, {{ModID}}/parasol, {{ModID}}/MushroomBushes, {{ModID}}/MushroomBushes_1",
+      "Target": "{{ModID}}/AllEyesPlanter, {{ModID}}/MushroomSeeds, {{ModID}}/burgershroom, {{ModID}}/champignon, {{ModID}}/saffron, {{ModID}}/orangegrisette, {{ModID}}/greatwoodmushroom, {{ModID}}/parasol, {{ModID}}/MushroomBushes, {{ModID}}/MushroomBushes2, {{ModID}}/MushroomPlanters",
       "FromFile": "assets/crops/{{TargetWithoutPath}}.png"
     },
 
@@ -25,7 +25,9 @@
 /* / /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \ */
 /* \ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' / */
 /*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */
-    {
+  /////////bushes
+
+{
       "LogName": "All Eyes sapling object data",
       "Action": "EditData",
       "When": { "Include imaginary Mushrooms": true },
@@ -37,9 +39,9 @@
           "Description": "{{i18n: AllEyes_Planter.description}}",
           "Type": "Basic",
           "Category": -74,
-          "Texture": "{{ModID}}/AllEyesPlanter",
-          "SpriteIndex": 0,
-          "Price": 10000,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 6,
+          "Price": 15000,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
           "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
         }
@@ -58,8 +60,8 @@
           "Description": "{{i18n: SickenerPlanter.description}}",
           "Type": "Basic",
           "Category": -74,
-          "Texture": "{{ModID}}/MushroomSeeds",
-          "SpriteIndex": 1,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 4,
           "Price": 6000,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
           "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
@@ -78,8 +80,8 @@
           "Description": "{{i18n: EnokiPlanter.description}}",
           "Type": "Basic",
           "Category": -74,
-          "Texture": "{{ModID}}/MushroomSeeds",
-          "SpriteIndex": 5,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 8,
           "Price": 5000,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
           "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
@@ -88,6 +90,26 @@
     },
 
    {
+      "LogName": "WitchesButter planter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_WitchesButterPlanter": {
+          "Name": "WitchesButterPlanter",
+          "DisplayName": "{{i18n: WitchesButterPlanter.name}}",
+          "Description": "{{i18n: WitchesButterPlanter.description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 0,
+          "Price": 9000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+    {
       "LogName": "matsutake planter object data",
       "Action": "EditData",
       "Target": "Data/Objects",
@@ -98,7 +120,111 @@
           "Description": "{{i18n: MatsutakePlanter.description}}",
           "Type": "Basic",
           "Category": -74,
-          "Texture": "{{ModID}}/MushroomSeeds",
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 9,
+          "Price": 25000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+     {
+      "LogName": "Night Horn planter object data",
+       "When": { "Include imaginary Mushrooms": true },
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_NightHornPlanter": {
+          "Name": "NightHornPlanter",
+          "DisplayName": "{{i18n:NightHornPlanter.DisplayName}}",
+          "Description": "{{i18n:NightHornPlanter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 1,
+          "Price": 7000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+
+      {
+      "LogName": "Aspen planter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_AspenPlanter": {
+          "Name": "AspenPlanter",
+          "DisplayName": "{{i18n:MM_AspenPlanter.DisplayName}}",
+          "Description": "{{i18n:MM_AspenPlanter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 2,
+          "Price": 4000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+      {
+      "LogName": "CandyTongue planter object data",
+      "Action": "EditData",
+      "When": { "Include imaginary Mushrooms": true },
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_CandyTonguePlanter": {
+          "Name": "CandyTonguePlanter",
+          "DisplayName": "{{i18n:MM_CandyTonguePlanter.DisplayName}}",
+          "Description": "{{i18n:MM_CandyTonguePlanter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 3,
+          "Price": 5500,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+     {
+      "LogName": "Deathcap planter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_DeathcapPlanter": {
+          "Name": "DeathcapPlanter",
+          "DisplayName": "{{i18n:MM_DeathcapPlanter.DisplayName}}",
+          "Description": "{{i18n:MM_DeathcapPlanter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 5,
+          "Price": 2600,
+          "ExcludeFromRandomSale": false,
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+    {
+      "LogName": "HealthShroom planter object data",
+      "Action": "EditData",
+      "When": { "Include imaginary Mushrooms": true },
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_HealthShroomPlanter": {
+          "Name": "HealthShroomPlanter",
+          "DisplayName": "{{i18n:MM_HealthShroomPlanter.DisplayName}}",
+          "Description": "{{i18n:MM_HealthShroomPlanter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomPlanters",
           "SpriteIndex": 7,
           "Price": 5000,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
@@ -107,6 +233,9 @@
       }
     },
 
+
+
+////normal crops
      {
       "LogName": "champignon starter object data",
       "Action": "EditData",
@@ -251,47 +380,81 @@
 /*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */
 
     {
-      "LogName": "All Eyes custom bush data",
+      "LogName": "custom bush data",
       "Action": "EditData",
-      "When": { "Include imaginary Mushrooms": true },
       "Target": "furyx639.CustomBush/Data",
       "Entries": {
        
-        "(O)MM_AllEyes_Planter": {
+        /* "(O)MM_AllEyes_Planter": {
           "DisplayName": "{{i18n:AllEyes_Crop.name}}",   //"{{i18n:AllEyes_Crop.name}}",
           "AgeToProduce": 25,
           "ConditionsToProduce": [
             "SEASON Fall,DAY_OF_MONTH 1 2 3",
             "SEASON Winter,DAY_OF_MONTH 24 25 26 27 28",
-            "IS_PASSIVE_FESTIVAL_TODAY fall27"  
+
           ],
           "ItemsProduced": [
             {
               "ItemId": "(O)MM_AllEyes",
-              "Condition": "SEASON Fall,DAY_OF_MONTH 1 2 3",
               "Chance": 1.0,
               "MinStack": 1,
               "MaxStack": 2
+            },
+            
+            {
+              "ItemId": "(O)MM_Eye",
+              "Chance": 0.5,
+              "MinStack": 2,
+              "MaxStack": 4,
+              "ObjectColor": "Aqua",
+              
+            },
+              {
+              "ItemId": "(O)MM_Eye",
+              "Chance": 0.5,
+              "MinStack": 2,
+              "MaxStack": 4,
+              "ObjectColor": "Gold",
+              
+            },
+              {
+              "ItemId": "(O)MM_Eye",
+              "Chance": 0.5,
+              "MinStack": 2,
+              "MaxStack": 4,
+              "ObjectColor": "ForestGreen",
+              
+            },
+
+              {
+              "ItemId": "(O)MM_DemonicEye",
+              "Chance": 0.1,
+              "MinStack": 1,
+              "MaxStack": 2,
+              "ObjectColor": "DarkRed"
+              
             },
              {
-              "ItemId": "(O)MM_AllEyes",
-              "Condition": "IS_PASSIVE_FESTIVAL_TODAY fall27",
-              "Chance": 1.0,
+              "ItemId": "(O)MM_DemonicEye",
+              "Chance": 0.1,
               "MinStack": 1,
-              "MaxStack": 2
+              "MaxStack": 2,
+              "ObjectColor": "Yellow"
+              
             },
             {
-              "ItemId": "(O)MM_AllEyes",
-              "Condition": "SEASON Winter,DAY_OF_MONTH 24 25 26 27 28",
-              "Chance": 1.0,
+              "ItemId": "(O)MM_DemonicEye",
+              "Chance": 0.1,
               "MinStack": 1,
-              "MaxStack": 2
+              "MaxStack": 2,
+              "ObjectColor": "Fuchsia"
+              
             },
           ],
           "Texture": "{{ModID}}/MushroomBushes",
           "IndoorTexture":  "{{ModID}}/MushroomBushes",
           "TextureSpriteRow": 0
-        },
+        }, */
     
 
         "(O)MM_SickenerPlanter": {
@@ -304,14 +467,6 @@
           "ItemsProduced": [
             {
               "ItemId": "(O)MM_TheSickener",
-              "Condition": "SEASON Summer,DAY_OF_MONTH 15 16 17 18 19 20 21 22 23 24 25 26 27 28",
-              "Chance": 1.0,
-              "MinStack": 1,
-              "MaxStack": 3
-            },
-             {
-              "ItemId": "(O)MM_TheSickener",
-              "Condition": "SEASON Fall,DAY_OF_MONTH 1 2 3 4 5 6 7 8 9 10",
               "Chance": 1.0,
               "MinStack": 1,
               "MaxStack": 3
@@ -334,25 +489,11 @@
           "ItemsProduced": [
             {
               "ItemId": "(O)MM_Enoki",
-              "Condition": "SEASON Fall,DAY_OF_MONTH 26 27 28",
               "Chance": 1.0,
               "MinStack": 2,
               "MaxStack": 3
             },
-             {
-              "ItemId": "(O)MM_Enoki",
-              "Condition": "SEASON Winter,!WEATHER Target Snow",
-              "Chance": 1.0,
-              "MinStack": 2,
-              "MaxStack": 4
-            },
-             {
-              "ItemId": "(O)MM_Enoki",
-              "Condition": "SEASON Spring,DAY_OF_MONTH 1 2 3",
-              "Chance": 1.0,
-              "MinStack": 2,
-              "MaxStack": 3
-            },
+             
     
           ],
           "Texture": "{{ModID}}/MushroomBushes",
@@ -366,12 +507,11 @@
           "AgeToProduce": 21,
           "ConditionsToProduce": [
             "SEASON Fall,DAY_OF_MONTH 24 25 26 27 28",
-            "WEATHER Target Rain",
+            "WEATHER Target Rain"
           ],
           "ItemsProduced": [
             {
               "ItemId": "(O)MM_Matsutake",
-              "Condition": "SEASON Fall,DAY_OF_MONTH 24 25 26 27 28",
               "Chance": 1.0,
               "MinStack": 2,
               "MaxStack": 3
@@ -381,10 +521,144 @@
           "Texture": "{{ModID}}/MushroomBushes",
           "IndoorTexture":  "{{ModID}}/MushroomBushes",
           "TextureSpriteRow": 6
-        }
+        },
+
+        "(O)MM_WitchesButterPlanter": {
+          "DisplayName": "{{i18n:WitchesButterDisplayName}}",   
+          "AgeToProduce": 12,
+          "ConditionsToProduce": [
+            "SEASON Fall",
+            "!WEATHER Target Sun",
+          ],
+          "ItemsProduced": [
+            {
+              "ItemId": "(O)MM_WitchesButter",
+              "Chance": 1.0,
+              "MinStack": 2,
+              "MaxStack": 3
+            }
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes2",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes2",
+          "TextureSpriteRow": 0
+        },
+
+         "(O)MM_NightHornPlanter": {
+          "DisplayName": "{{i18n:MM_NightHorn.DisplayName}}",   
+          "AgeToProduce": 10,
+          "ConditionsToProduce": [
+            "SEASON Winter"
+            
+          ],
+          "ItemsProduced": [
+            {
+              "ItemId": "(O)MM_NightHorn",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 3
+            }
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes2",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes2",
+          "TextureSpriteRow": 2
+        },
+
+
+         "(O)MM_DeathcapPlanter": {
+          "DisplayName": "{{i18n:MM_Deathcap.DisplayName}}",   
+          "AgeToProduce": 6,
+          "ConditionsToProduce": [
+            "SEASON Summer,DAY_OF_MONTH  22 23 24 25 26 27 28",
+            "SEASON Fall,DAY_OF_MONTH 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19"
+          ],
+          "ItemsProduced": [
+              {
+              "ItemId": "(O)MM_Deathcap",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 3
+            },
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes2",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes2",
+          "TextureSpriteRow": 4
+        },
+
+
+         "(O)MM_CandyTonguePlanter": {
+          "DisplayName": "{{i18n:MM_CandyTongue.DisplayName}}",   
+          "AgeToProduce": 15,
+          "ConditionsToProduce": [
+            "SEASON Winter", "SEASON Spring"
+            
+          ],
+          "ItemsProduced": [
+            {
+              "ItemId": "(O)MM_CandyTongue",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 2
+            },
+           
+          ],
+          "Texture": "{{ModID}}/MushroomBushes2",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes2",
+          "TextureSpriteRow": 6
+        },
+
+
+          "(O)MM_HealthShroomPlanter": {
+          "DisplayName": "{{i18n:MM_HealthShroom.DisplayName}}",   
+          "AgeToProduce": 25,
+          "ConditionsToProduce": [true],
+          "ItemsProduced": [
+            {
+              "ItemId": "(O)MM_HealthShroom",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 2
+            }
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes2",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes2",
+          "TextureSpriteRow": 8
+        },
+
+        "(O)MM_AspenPlanter": {
+          "DisplayName": "{{i18n:MM_Aspen.DisplayName}}",   
+          "AgeToProduce": 13,
+          "ConditionsToProduce": [
+           "SEASON Summer,DAY_OF_MONTH  22 23 24 25 26 27 28",
+           "SEASON Fall",
+            
+          ],
+          "ItemsProduced": [
+               {
+              "ItemId": "(O)MM_Aspen", 
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 2
+            }
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes2",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes2",
+          "TextureSpriteRow": 10
+        },
+
+        
+
+
       }
     },
       
+
+
+
 
 
 
@@ -423,7 +697,8 @@
                     "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
-                    "ExtraHarvestChance": 0.01
+                    "ExtraHarvestChance": 0.01,
+                    "HarvestMethod": "Grab"
                 }
             }
         },
@@ -447,7 +722,8 @@
                     "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
-                    "ExtraHarvestChance": 0.3
+                    "ExtraHarvestChance": 0.3,
+                    "HarvestMethod": "Grab"
                 }
             }
         },
@@ -470,7 +746,8 @@
                     "Texture": "{{ModId}}/parasol",
                     "SpriteIndex": 0,
                     "CountForMonoculture": true,
-                    "CountForPolyculture": true
+                    "CountForPolyculture": true,
+                    "HarvestMethod": "Grab"
                 }
             }
         },
@@ -495,7 +772,8 @@
                     "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
-                    "ExtraHarvestChance": 0.001
+                    "ExtraHarvestChance": 0.001,
+                    "HarvestMethod": "Grab"
                 }
             }
         },
@@ -520,7 +798,8 @@
                     "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
-                    "ExtraHarvestChance": 0.001
+                    "ExtraHarvestChance": 0.001,
+                    "HarvestMethod": "Grab"
                 }
             }
         },
@@ -545,10 +824,154 @@
                     "SpriteIndex": 0,
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
-                    "ExtraHarvestChance": 0.01
+                    "ExtraHarvestChance": 0.01,
+                    "HarvestMethod": "Grab"
                 }
             }
         },
+
+         {	
+            "LogName": "Add in all eyes crop",
+            "When": { "Include imaginary Mushrooms": true },
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_AllEyes_Planter": { 
+                    "Seasons": [
+                        "fall", "winter"
+                    ],
+                    "DaysInPhase": 
+                       [ 10, 2, 3, 5, 5 ],
+                    "RegrowDays": 3,
+                    "NeedsWatering": false,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_AllEyes",
+                    "IsRaised": true,
+                    "Texture": "{{InternalAssetKey:assets/crops/alleyes.png}}",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.2,
+                    "HarvestMethod": "Grab"
+                }
+            }
+        },
+
+
+  {
+      "LogName": "Multiple yields champignon",
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CropExtensionData",
+			"Entries": {
+				"MM_ChampignonStarter": {
+					"YieldOverrides": {
+						"4": { //number of phase which you harvest to get this (0=seed)
+							"IgnoreDefaultDrops": true,
+							"Drops": [
+								{
+									"Id": "Champignon1",
+									"ItemId": "(O)MM_Champignon",
+									"PerItemCondition": "RANDOM 0.5",
+                  "ObjectColor": "Ivory",
+                  "QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+                  "MinStack": 1,
+                  "MaxStack": 1
+								},
+                {
+									"Id": "Champignon2",
+									"ItemId": "(O)MM_Champignon",
+									"PerItemCondition": "RANDOM 0.5",
+                  "ObjectColor": "#9f7450",
+                  "QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+                  "MinStack": 1,
+                  "MaxStack": 1
+								},
+               
+							]
+						}
+					}
+				}
+			}
+		},
+  
+
+    {
+      "LogName": "Multiple yields all eyes",
+      "When": { "Include imaginary Mushrooms": true },
+			"Action": "EditData",
+			"Target": "spacechase0.SpaceCore/CropExtensionData",
+			"Entries": {
+				"MM_AllEyes_Planter": {
+					"YieldOverrides": {
+						"5": { //number of phase which you harvest to get this (0=seed)
+							"IgnoreDefaultDrops": false,
+              "RegrowDays": 3,
+							"Drops": [
+								{
+									"Id": "Eye1",
+									"ItemId": "(O)MM_Eye",
+									"PerItemCondition": "RANDOM 0.1",
+                  "QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+                  "ObjectColor": "Aqua",
+                  "MinStack": 2,
+                  "MaxStack": 4
+								},
+                {
+									"Id": "Eye2",
+									"ItemId": "(O)MM_Eye",
+									"PerItemCondition": "RANDOM 0.1",
+                  "QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+                  "ObjectColor":  "Gold", 
+                  "MinStack": 2,
+                  "MaxStack": 4
+								},
+                {
+									"Id": "Eye3",
+									"ItemId": "(O)MM_Eye",
+									"PerItemCondition": "RANDOM 0.1",
+                  "QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+                  "ObjectColor":  "ForestGreen", 
+                  "MinStack": 2,
+                  "MaxStack": 4
+								},
+
+                {
+									"Id": "DemonicEye1",
+									"ItemId": "(O)MM_DemonicEye",
+									"PerItemCondition": "RANDOM 0.05",
+                  "QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+                  "ObjectColor":  "Fuchsia",
+                  "MinStack": 1,
+                  "MaxStack": 2
+								},
+
+                {
+									"Id": "DemonicEye2",
+									"ItemId": "(O)MM_DemonicEye",
+									"PerItemCondition": "RANDOM 0.05",
+                  "QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+                  "ObjectColor":   "Yellow", 
+                  "MinStack": 1,
+                  "MaxStack": 2
+								},
+
+                {
+									"Id": "DemonicEye3",
+									"ItemId": "(O)MM_DemonicEye",
+									"PerItemCondition": "RANDOM 0.05",
+                  "QualityModifiers": [{"Modification": "Add", "RandomAmount": [0, 0, 0, 0, 1, 1, 1, 2, 2, 4],}],
+                  "ObjectColor":  "DarkRed",
+                  "MinStack": 1,
+                  "MaxStack": 2
+								},
+
+							]
+						}
+					}
+				}
+			}
+		},
 
 
   ]
