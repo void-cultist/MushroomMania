@@ -68,7 +68,7 @@
 "MM_RussulaVesca.Description": "Auch bekannt als Russula vesca. Gilt als essbar und schmackhaft, mit einem milden, nussigen Geschmack.",
 
 "MM_GoldenBrittlegill.DisplayName": "Gold-Täubling",
-"MM_GoldenBrittlegill.Description": "Russula aurea, allgemein bekannt als Gold-Brittlegill, gilt im Gegensatz zu anderen Vertretern der Gattung als essbar und mild im Geschmack.",
+"MM_GoldenBrittlegill.Description": "Russula aurea gilt im Gegensatz zu anderen Vertretern der Gattung Russula als essbar und mild im Geschmack.",
 
 "MM_CaesarsMushroom.DisplayName": "Kaiserling",
 "MM_CaesarsMushroom.Description": "Diese vom Aussterben bedrohte Pilzart, die als Lieblingsspeise der frühen Herrscher des Römischen Reiches galt, enthält nachweislich eine beträchtliche Menge Blei.",
@@ -113,10 +113,10 @@
 "MM_MushroomEssenceExtractor.DisplayName": "Pilzessenz-Extraktor",
 "MM_MushroomEssenceExtractor.Description": "Extrahiert die Essenz verschiedener Pilze.",
 
-"MM_Potionmachine.DisplayName": "Tränkemaschine",
+"MM_Potionmachine.DisplayName": "Zaubertrankmaschine",
 "MM_Potionmachine.Description": "Ermöglicht es dir, Tränke aus Pilzessenz zu brauen und die Giftstoffe giftiger Pilze zu neutralisieren.",
 
-"MM_Flavored_MushroomEssence": "{0} Essenz", //{0} wird durch den eingegebenen Gegenstand ersetzt
+"MM_Flavored_MushroomEssence": "{0}-Essenz", 
 "MM_Flavored_MushroomEssence.name": "Pilzessenz",
 "MM_Flavored_MushroomEssence.description": "Die aus einem Pilz extrahierte, konzentrierte Essenz.",
 
@@ -124,11 +124,10 @@
 "MM_Flavored_Potion.name": "Zaubertrank",
 "MM_Flavored_Potion.description": "Ein Trank  aus Pilzextrakt und  giftigen Pilzen.",
 "selph.ExtraMachineConfig.RequirementInvalidMsg": "Für Tränke sind mindestens 1 Pilzextrakt und 1 giftiger Pilz erforderlich.",
-"Potion": "{0} & {1} Trank",
+"Potion": "{0}-{1}-Trank",
 
 "MM_Foraging_Potion.name": "Sammel-Trank",
 "MM_Foraging_Potion.description": "Ein Trank, der dein Sammel-Level deutlich erhöht.",
-
 
 "MM_Mining_Potion.name": "Minenarbeits-Trank",
 "MM_Mining_Potion.description": "Ein Trank, der dein Minenarbeits-Level deutlich erhöht.",
@@ -138,6 +137,153 @@
 
 "MM_Combat_Potion.name": "Kampftrank",
 "MM_Combat_Potion.description": "Ein Trank, der dein Kampf-Level erheblich steigert.",
+
+"MM_Luck_Potion.name": "Glückstrank",
+"MM_Luck_Potion.description": "Ein Trank, der deine Glücksstufe deutlich erhöht.",
+
+"MM_Attack_Potion.name": "Angriffstrank",
+"MM_Attack_Potion.description": "Ein Trank, der deinen Angriff deutlich erhöht.",
+
+"MM_Defense_Potion.name": "Verteidigungstrank",
+"MM_Defense_Potion.description": "Ein Trank, der deine Verteidigung deutlich erhöht.",
+
+"MM_Speed_Potion.name": "Geschwindigkeitstrank",
+"MM_Speed_Potion.description": "Ein Trank, der deine Geschwindigkeit deutlich erhöht.",
+
+"MM_Critical_Potion.name": "Kritischer Trank",
+"MM_Critical_Potion.description:": "Ein Trank, der deine Volltrefferchance und -kraft deutlich erhöht.",
+
+"MM_Immunity_Potion.name": "Immunitätstrank",
+"MM_Immunity_Potion.description:": "Ein Trank, der deine Immunität erheblich erhöht.",
+
+"MM_WeaponStat_Potion.name": "Waffenschärfungs-Trank",
+"MM_WeaponStat_Potion.description": "Ein Trank, der die Genauigkeit und Geschwindigkeit deiner Angriffe erheblich erhöht.",
+
+"MM_LeviathansGrace.name": "Leviathans Gnade",
+"MM_LeviathansGrace.description": "Ein unglaublich nützlicher Trank, wenn du den Tag mit Angeln verbringen möchtest.",
+
+"MM_Shield_Potion.name": "Schildtrank",
+"MM_Shield_Potion.description": "Ein unglaublich nützlicher Trank, der deine Verteidigung nahezu undurchdringlich macht.",
+
+"MM_AbyssalRage.name": "Zorn der Hölle",
+"MM_AbyssalRage.description": "Wenn du diesen Trank trinkst, verwandelst du dich für kurze Zeit in einen albtraumhaften Berserker.",
+
+"MM_Heroic_Potion.name": "Helden-Trank",
+"MM_Heroic_Potion.description": "Dieser Trank verbessert deine Fähigkeiten im Kampf.",
+
+"MM_LuckySeven.name": "Lucky Seven",
+"MM_LuckySeven.description": "Die Seelen von sieben tapferen Menschen bescheren dir den glücklichsten aller Tage." ,
+
+"MM_BlessingOfHermes.name": "Segen des Hermes",
+"MM_BlessingOfHermes.description": "Ein Getränk für alle Freunde des Gottes Hermes auf der Suche nach der schnellsten Route.",
+
+//Samen und Setzlinge
+"AllEyes_Planter.name": "All-Sehenden-Pflanzkasten",
+"AllEyes_Planter.description": "Stelle diesen Pflanzkasten auf, um All-Sehende-Pilze zu züchten. Ernte sie im Herbst und Winter.",
+
+"AllEyes_Crop.name": "All Sehender",
+
+"ChampignonStarter.name": "Champignon-Setzling",
+"ChampignonStarter.description": "Pflanze diese in gepflügten Boden, um im Frühling oder Herbst Champignons zu züchten. Die Wachstumszeit beträgt 4 Tage und es können mehrere Pilze geerntet werden.",
+
+"ParasolMushroomStarter.name": "Sonnenschirmpilz-Setzling",
+"ParasolMushroomStarter.description":  "Pflanze diesen Setzling im Sommer oder Herbst in gepflügtem Boden, um Sonnenschirmpilze zu züchten. Die Wachstumszeit beträgt 4 Tage.",
+
+"BurgerShroomStarter.name": "Burger-Pilz-Setzling",
+"BurgerShroomStarter.description": "Pflanze diesen Setzling in gepflügtem Boden, um im Frühling Burger-Pilze zu ernten. Die Wachstumszeit beträgt 7 Tage.",
+
+"SickenerPlanter.name": "Der Spei-Täubling-Pflanzkasten",
+"SickenerPlanter.description": "Stelle diesen Pflanzkasten auf, um Kirschrote Spei-Täublinge zu züchten. Ernte von Mitte Sommer bis Mitte Herbst.",
+
+"EnokiPlanter.name": "Enoki-Pflanzkasten",
+"EnokiPlanter.description": "Stelle diesen Pflanzkasten auf, um Enoki-Pilze zu züchten. Ernte sie im Spätherbst, den ganzen Winter über (wenn es nicht schneit) und zu Frühlingsbeginn.",
+
+"GreatWoodMushroomStarter.name": "Waldchampignon-Setzling",
+"GreatWoodMushroomStarter.description": "Pflanze diesen Setzling im Sommer oder Herbst in gepflügtem Boden, um Große Waldchampignons zu züchten. Die Wachstumszeit beträgt 9 Tage.",
+
+"SaffronMilkcapStarter.name": "Edel-Reizker-Setzling",
+"SaffronMilkcapStarter.description": "Pflanze im Sommer oder Herbst in aufgelockerte Erde, um Edel-Reizker zu züchten. Die Wachstumszeit beträgt 4 Tage.",
+
+"MatsutakePlanter.name": "Matsutake-Pflanzkasten",
+"MatsutakePlanter.description":  "Stelle diesen Pflanzkasten auf, um Matsutake zu züchten. Ernte in der letzten Herbstwoche bei regnerischem Wetter.",
+
+"OrangeGrisetteStarter.name": "Scheidenstreifling-Setzling",
+"OrangeGrisetteStarter.description": "Pflanze dies im Sommer, um Orangegelbe Scheidenstreiflinge zu züchten. Die Wachstumszeit beträgt 5 Tage.",
+
+"WitchesButterPlanter.name": "Zitterling-Pflanzkasten",
+"WitchesButterPlanter.description": "Pflanze dies, um Witches' Butter-Pilze zu züchten. Es dauert 12 Tage, bis nach dem ersten Einpflanzen im Herbst die ersten erntefähigen Pilze wachsen.",
+
+"NightHornPlanter.DisplayName": "Night Horn Planter",
+"NightHornPlanter.Description": "Stelle diesen Pflanzkasten auf, um Goldgelbe Ziterrlinge zu züchten. Im Winter kannst du die Pilze ernten.",
+
+"MM_AspenPlanter.DisplayName": "Espen-Rotkappen-Pflanzkasten",
+"MM_AspenPlanter.Description": "Stelle diesen Pflanzkasten auf, um Espen-Rotkappen zu züchten. Es dauert 13 Tage, bis nach dem ersten Einpflanzen erstmals Pilze wachsen, die von Spätsommer bis Herbst geerntet werden können.",
+
+"MM_CandyTonguePlanter.DisplayName": "Saure-Zungen-Pflanzkasten",
+"MM_CandyTonguePlanter.Description": "Stelle diesen Pflanzkasten auf, um Saure Zungen zu züchten. Es dauert 15 Tage, bis nach dem ersten Einpflanzen erstmals Pilze wachsen, die im Frühling und Winter geerntet werden können.",
+
+"MM_DeathcapPlanter.DisplayName": "Knollenblätterpilz-Pflanzkasten",
+"MM_DeathcapPlanter.Description": "Stelle diesen Pflanzkasten auf, um Knollenblätterpilze zu züchten. Es dauert 6 Tage, bis nach dem Pflanzen erstmals Pilze wachsen, die von Spätsommer bis Mitte Herbst geerntet werden können.",
+
+"MM_HealthShroomPlanter.DisplayName": "Heilpilz-Pflanzkasten",
+"MM_HealthShroomPlanter.Description": "Stelle diesen Pflanzkasten auf, um Heilpilze zu züchten. Es dauert 25 Tage, bis nach dem ersten Pflanzen die ersten Pilze wachsen, die das ganze Jahr über geerntet werden können.",
+
+//Fische
+"MM_RadiationBiter.Name": "Strahlungsschnapper",
+"MM_RadiationBiter.Description": "Ein seltsamer Fisch, der sich in strahlenverseuchten Sümpfen entwickelt hat und die Kälte liebt. Vom Verzehr des Fisches oder seines Rogen wird dringend abgeraten. Lass dich nicht von ihm beißen!",
+
+"MM_ForestSardine.Name": "Waldsardine",
+"MM_ForestSardine.Description": "Ein kleiner Fisch, der am häufigsten in Flüssen in pilzreichen Wäldern anzutreffen ist.",
+
+"MM_ShroomHead.Name": "Pilzkopf",
+"MM_ShroomHead.Description": "Der Kopf dieses Fisches ist das Ergebnis von Mutationen, die dazu führten, dass er auf diese außergewöhnliche Größe anschwoll. Der pilzartig aussehende Kopf enthält Giftstoffe.",
+
+//bundles
+"ShroomCollecting_Bundle.name": "Pilzsammler",
+"ShroomCollecting_Bundle.description": "???",
+
+
+"TastyShrooms_Bundle.name": "Leckere Pilze",
+"TastyShrooms_Bundle.description": "Schaltet ein leckeres Rezept frei.",
+
+"PoisonousShrooms_Bundle.name": "Giftige Pilze",
+"PoisonousShrooms_Bundle.description": "Belohnung: leckere Speisen.",
+
+"Inedible_Bundle.name": "Ungenießbare Pilze",
+"Inedible_Bundle.description": "Belohnung: eine Maschine für deine Farm.",
+
+"MoreMushroomStuff_Bundle.name": "Mehr Pilzkram",
+"MoreMushroomStuff_Bundle.description": "Belohnung: Bauplan",
+
+"ForestForage_Bundle.name": "Waldbeute",
+"ForestForage_Bundle.description": "Belohnung: Kochrezept",
+
+"ForestFish_Bundle.name": "Waldfische",
+"MushroomDishes_Bundle.name": "Pilzgerichte",
+"MushroomEssence_Bundle.name": "Pilzextrakte",
+"Final_Bundle.name": "Das Finale",
+"Final_Bundle.description": "Belohnung: Freischaltung des alten Schuppens + neuer Bauplan",
+
+"MM.PickledMushrooms_BundleItem": "Eingelegte Pilze",
+"MM.TruffleEssence_BundleItem": "Trüffelessenz",
+"MM.MagmaCapEssence_BundleItem": "",
+"MM.AspenEssence_BundleItem": "Espen-Essenz",
+"MM.ChampignonEssence_BundleItem": "Champignon-Essenz",
+"MM.GreatWoodMushroomEssence_BundleItem": "Großer-Waldchampignon-Essenz",
+"MM.BlackTrumpetMushroomEssence_BundleItem": "Herbsttrompetenessenz",
+"MM.ChampignonDestroyingAngelPotion_BundleItem": "Champignon-Kegelhütiger-Knollenblätterpilz-Trank",
+"MM.PurpleRedMushroomPotion_BundleItem": "Trank aus violetten und roten Pilzen",
+"MM.CandyTongueNightHornPotion_BundleItem": "Saure-Zungen-Nachthorn-Trank",
+"MM.PixiesParasolDeathcapPotion_BundleItem": "Mycena-interrupta-Knollenblätterpilz-Trank",
+"MM.EnokiAllEyesPotion_BundleItem": "Enoki-All-Sehender-Trank",
+"MM.MatsutakeSickenerPotion_BundleItem": "Matsutake-Speitäublings-Trank",
+"MM.ShiitakeBleedingHeartPotion_BundleItem": "Shiitake-Blutendes-Herz-Trank",
+"MM.DevilsFingersEssence_BundleItem": "Tintenfischpilz-Essenz",
+"MM.RubyBoleteEssence_BundleItem": "Filzröhrling-Essenz",
+
+"BundleCompletedMail.title": "Waldfisch-Challenge geschafft!",
+"BundleCompletedMail.text": "Hallo!^ Die Geister der Pilzwiese haben deine Bemühungen beim Fertigstellen dieses Waldfisch-Pakets bemerkt. Das muss hart gewesen sein! Als Belohnung nimm dieses Rezept für eine Maschine, die die Essenz von Pilzen extrahiert.",
+
 
 
 

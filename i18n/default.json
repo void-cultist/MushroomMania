@@ -181,7 +181,7 @@
 
 //seeds and saplings
 "AllEyes_Planter.name": "All Eyes Planter",
-"AllEyes_Planter.description": "Plant these to grow All Eyes mushrooms. Harvest them in Fall and Winter.",
+"AllEyes_Planter.description": "Plant in Fall and Winter. Needs 25 days to grow and will produce new mushrooms every 3 days after. No watering required.",
 
 "AllEyes_Crop.name": "All Eyes",
 
@@ -212,6 +212,23 @@
 "OrangeGrisetteStarter.name": "Orange Grisette Starter",
 "OrangeGrisetteStarter.description": "Plant this in Summer to grow Orange Grisettes. Takes 5 days to grow.",
 
+"WitchesButterPlanter.name": "Witches' Butter Planter",
+"WitchesButterPlanter.description": "Plant this to grow Witches' Butter mushrooms. Takes 12 days to first produce mushrooms harvestable in Fall after first being planted.",
+
+"NightHornPlanter.DisplayName": "Night Horn Planter",
+"NightHornPlanter.Description": "Plant this to grow Night Horns. Takes 10 days to first produce mushrooms harvestable in Winter after first being planted.",
+
+"MM_AspenPlanter.DisplayName": "Aspen Planter",
+"MM_AspenPlanter.Description": "Plant this to grow Aspen mushrooms. Takes 13 days to first produce mushrooms harvestable in late Summer through Fall after first being planted.",
+
+"MM_CandyTonguePlanter.DisplayName": "Candy Tongue Planter",
+"MM_CandyTonguePlanter.Description": "Plant this to grow Candy Tongues. Takes 15 days to first produce mushrooms harvestable in Spring and Winter after first being planted.",
+
+"MM_DeathcapPlanter.DisplayName": "Deathcap Planter",
+"MM_DeathcapPlanter.Description": "Plant this to grow Deathcap mushrooms. Takes 6 days to first produce mushrooms harvestable in later Summer through mid Fall after first being planted.",
+
+"MM_HealthShroomPlanter.DisplayName": "Health Shroom Planter",
+"MM_HealthShroomPlanter.Description": "Plant this to grow Health Shrooms. Takes 25 days to first produce mushrooms harvestable all year after first being planted.",
 
 //fish
 "MM_RadiationBiter.Name": "Radiation Biter",
