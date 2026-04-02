@@ -6,71 +6,247 @@
   "Forage_Spawn_Settings": {
     "Areas": [
       {
-        "SpringItemIndex": [
-          "MM_LobsterMushroom",
-          "MM_Enoki",
-          "MM_SulfurTuft",
-          "MM_BurgerShroom",
-          "MM_HealthShroom",
-          "MM_CandyTongue",
-          422,
-          430,
-          257
+        "SpringItemIndex": [],
+        "SummerItemIndex": [],
+        "FallItemIndex": [],
+        "WinterItemIndex": [
+          {
+            "Category": "Buried",
+            "contents": [
+              "Bearberrys"
+            ]
+          }
         ],
+        "UniqueAreaID": "Bearberrys Spawns",
+        "MapName": "Woods",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,46;34,46",
+          "35,54;35,54",
+          "41,60;41,60",
+          "45,62;45,62",
+          "47,58;47,58",
+          "52,61;52,61",
+          "58,55;58,55",
+          "60,49;60,49",
+          "58,57;58,57",
+          "65,35;65,35",
+          "61,31;61,31",
+          "66,29;66,29",
+          "68,26;68,26",
+          "60,14;60,14",
+          "66,10;66,10",
+          "42,28;42,28",
+          "40,23;40,23",
+          "29,21;29,21",
+          "29,6;29,6",
+          "26,7;26,7",
+          "34,46;34,46",
+          "55,22;55,22"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Winter"
+          ],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [],
         "SummerItemIndex": [
-          "MM_RubyBolete",
-          "MM_GoldenBrittlegill",
-          "MM_BlackTrumpet",
-          "MM_Aspen",
-          "MM_GreatWoodMushroom",
+          "MM_WitchesButter",
+          "MM_Deathcap",
+          "MM_RussulaVesca",
+          "MM_LobsterMushroom",
           "MM_DevilsFingers",
-          "MM_TheSickener",
-          420,
-          422,
-          430,
-          257
+          "MM_JubileeWaxcap",
+          "MM_OrangePeelFungus"
         ],
         "FallItemIndex": [
-          "MM_RubyBolete",
-          "MM_GoldenBrittlegill",
-          "MM_BlackTrumpet",
-          "MM_Aspen",
-          "MM_GreatWoodMushroom",
-          "MM_DevilsFingers",
-          "MM_TheSickener",
-          "MM_BleedingHeart",
           "MM_WitchesButter",
-          420,
-          422,
-          430,
-          257
+          "MM_Deathcap",
+          "MM_RussulaVesca",
+          "MM_LobsterMushroom",
+          "MM_DevilsFingers",
+          "MM_JubileeWaxcap",
+          "MM_OrangePeelFungus"
         ],
         "WinterItemIndex": [
-          "MM_WaningMoonShroom",
-          "MM_GhastlyButton",
-          "MM_BleedingHeart",
-          "MM_AllEyes",
-          420,
-          422,
-          430,
-          257
+          "Bearberrys"
         ],
-        "UniqueAreaID": "SVE Woods spawns",
+        "UniqueAreaID": "Woods forage area 1",
         "MapName": "Woods",
-        "MinimumSpawnsPerDay": -1,
-        "MaximumSpawnsPerDay": 10,
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "55,25;36,20",
+          "35,24;28,18",
+          "23,21;14,16",
+          "10,17;8,8",
+          "85,25;65,23"
+        ],
+        "ExcludeCoordinates": [
+          "23,47;0,0",
+          "62,41;61,38"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Winter"
+          ],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "Smelly Rafflesia",
+          "MM_WitchesButter",
+          "MM_Deathcap",
+          "MM_RussulaVesca",
+          "MM_BurgerShroom"
+        ],
+        "SummerItemIndex": [
+          "Smelly Rafflesia",
+          "MM_WitchesButter",
+          "MM_Deathcap",
+          "MM_RussulaVesca",
+          "MM_LobsterMushroom",
+          "MM_DevilsFingers",
+          "MM_JubileeWaxcap",
+          "MM_OrangePeelFungus",
+          "MM_NightHorn",
+          "MM_GreatWoodMushroom"
+        ],
+        "FallItemIndex": [
+          "Smelly Rafflesia",
+          "MM_WitchesButter",
+          "MM_Deathcap",
+          "MM_RussulaVesca",
+          "MM_LobsterMushroom",
+          "MM_DevilsFingers",
+          "MM_JubileeWaxcap",
+          "MM_OrangePeelFungus",
+          "MM_HypnoShroom"
+        ],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "Smelly Rafflesia spawns",
+        "MapName": "Woods",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
         "IncludeTerrainTypes": [
-          "Grass",
           "Diggable"
         ],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-           "63,63;35,45",
-          "67,34;54,11",
-          "45,28;35,20"
+          "55,25;36,20",
+          "35,24;28,18",
+          "23,21;14,16",
+          "10,17;8,8",
+          "85,25;65,23"
+        ],
+        "ExcludeCoordinates": [
+          "62,41;61,38",
+          "23,47;0,0"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Spring",
+            "Summer",
+            "Fall"
+          ],
+          "Days": [
+            "4",
+            "8",
+            "11",
+            "14",
+            "17",
+            "21",
+            "25"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [],
+        "SummerItemIndex": [
+          "Red Baneberry"
+        ],
+        "FallItemIndex": [],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "Poison berry spawns",
+        "MapName": "Woods",
+        "MinimumSpawnsPerDay": 4,
+        "MaximumSpawnsPerDay": 8,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "19,59;11,59",
+          "12,61;9,60",
+          "18,60;16,60",
+          "16,63;12,62",
+          "13,65;13,64",
+          "17,65;17,64"
         ],
         "ExcludeCoordinates": [],
-        "StrictTileChecking": "Maximum",
+        "StrictTileChecking": "High",
         "SpawnTiming": {
           "StartTime": 600,
           "EndTime": 600,
@@ -86,15 +262,250 @@
           "WeatherYesterday": [],
           "WeatherToday": [],
           "WeatherTomorrow": [],
-          "GameStateQueries": ["{{HasMod |contains=FlashShifter.StardewValleyExpandedCP}}"],
+          "GameStateQueries": [],
           "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
-        "DaysUntilSpawnsExpire": 3
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "MM_Deathcap"
+        ],
+        "SummerItemIndex": [
+          "Poison Mushroom",
+          "MM_Deathcap",
+          "MM_RussulaVesca",
+          "MM_SulfurTuft"
+        ],
+        "FallItemIndex": [
+          "Poison Mushroom",
+          "MM_Deathcap",
+          "MM_RussulaVesca",
+          "MM_DestroyingAngel",
+          "MM_GreyKnight"
+        ],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "poison mushroom spawns",
+        "MapName": "Woods",
+        "MinimumSpawnsPerDay": 0,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "63,56;24,5",
+          "60,60;36,57"
+        ],
+        "ExcludeCoordinates": [
+          "62,41;61,38",
+          "23,47;0,0"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Summer",
+            "Fall"
+          ],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "Swamp Flower",
+          "Poison Mushroom",
+          404,
+          420,
+          422,
+          281,
+          257,
+          {
+            "category": "Object",
+            "SpawnWeight": 25,
+            "Name": "MM_JubileeWaxcap"
+          },
+          {
+            "category": "Object",
+            "SpawnWeight": 25,
+            "Name": "MM_BleedingToothFungus"
+          }
+        ],
+        "SummerItemIndex": [
+          "Swamp Flower",
+          "Poison Mushroom",
+          404,
+          420,
+          422,
+          281,
+          257,
+          {
+            "category": "Object",
+            "SpawnWeight": 5,
+            "Name": "MM_JubileeWaxcap"
+          },
+          {
+            "category": "Object",
+            "SpawnWeight": 5,
+            "Name": "MM_BleedingToothFungus"
+          }
+        ],
+        "FallItemIndex": [
+          "Swamp Flower",
+          "Poison Mushroom",
+          404,
+          420,
+          422,
+          281,
+          257,
+          {
+            "category": "Object",
+            "SpawnWeight": 5,
+            "Name": "MM_JubileeWaxcap"
+          },
+          {
+            "category": "Object",
+            "SpawnWeight": 5,
+            "Name": "MM_BleedingToothFungus"
+          }
+        ],
+        "WinterItemIndex": [
+          "Swamp Flower",
+          "Poison Mushroom",
+          404,
+          420,
+          422,
+          281,
+          257,
+          {
+            "category": "Object",
+            "SpawnWeight": 5,
+            "Name": "MM_JubileeWaxcap"
+          },
+          {
+            "category": "Object",
+            "SpawnWeight": 5,
+            "Name": "MM_BleedingToothFungus"
+          }
+        ],
+        "UniqueAreaID": "Forbidden Maze swamp forage Spawns",
+        "MapName": "Custom_ForbiddenMaze",
+        "MinimumSpawnsPerDay": 70,
+        "MaximumSpawnsPerDay": 100,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,155;0,0",
+          "133,135;35,0",
+          "147,151;49,136",
+          "152,135;134,21"
+        ],
+        "ExcludeCoordinates": [
+          "124,19;107,0",
+          "91,19;86,16",
+          "20,16;15,13",
+          "24,12;23,10",
+          "12,17;11,15",
+          "55,62;48,59",
+          "60,130;57,127",
+          "82,144;79,141",
+          "127,52;126,50",
+          "134,53;131,50",
+          "142,72;140,69",
+          "83,21;82,19"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 100,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "MM_BurgerShroom",
+          "MM_DestroyingAngel"
+        ],
+        "SummerItemIndex": [
+          "MM_GoldenBrittlegill",
+          "MM_Deathcap"
+        ],
+        "FallItemIndex": [
+          "MM_ParasolMushroom",
+          "MM_BlackTrumpet"
+        ],
+        "WinterItemIndex": [
+          "MM_Champignon",
+          "MM_GhastlyButton"
+        ],
+        "UniqueAreaID": "ShearwaterBridge forage area 1",
+        "MapName": "Custom_ShearwaterBridge",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Grass",
+          "Diggable"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
       }
     ],
-    "PercentExtraSpawnsPerForagingLevel": 5,
+    "PercentExtraSpawnsPerForagingLevel": 0,
     "SpringItemIndex": [
       16,
       20,
@@ -114,12 +525,7 @@
       422
     ],
     "WinterItemIndex": [],
-    "CustomTileIndex": [
-      8,
-      9,
-      22,
-      23
-    ]
+    "CustomTileIndex": []
   },
   "Large_Object_Spawn_Settings": {
     "Areas": [
@@ -447,6 +853,59 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [],
+        "UniqueAreaID": "SVE MM spawns",
+        "MapName": "void.MM_MushroomMeadow",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Grass",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "55,25;36,20",
+          "35,24;28,18",
+          "23,21;14,16",
+          "10,17;8,8",
+          "85,25;65,23"
+        ],
+        "ExcludeCoordinates": [
+          "62,41;61,38",
+          "23,47;0,0"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [
+            "4",
+            "8",
+            "11",
+            "14",
+            "17",
+            "21",
+            "25"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
       }
     ],
     "CustomTileIndex": []
@@ -469,6 +928,8 @@
     "FarmTypes": [],
     "FarmerNames": [],
     "SaveFileNames": [],
-    "OtherMods": {}
+    "OtherMods": {
+      "FlashShifter.StardewValleyExpandedCP": true
+    }
   }
 }
