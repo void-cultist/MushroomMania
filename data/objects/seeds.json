@@ -34,7 +34,7 @@
       "Target": "Data/Objects",
       "Entries": {
         "MM_AllEyes_Planter": {
-          "Name": "AllEyes_Planter",
+          "Name": "AllEyes_{{AllEyesPlant}}",
           "DisplayName": "{{i18n: AllEyes_Planter.name}}",
           "Description": "{{i18n: AllEyes_Planter.description}}",
           "Type": "Basic",
@@ -233,6 +233,47 @@
       }
     },
 
+     {
+      "LogName": "HealthShroom planter object data",
+      "Action": "EditData",
+      "When": { "Include imaginary Mushrooms": true },
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_HealthShroomPlanter": {
+          "Name": "HealthShroomPlanter",
+          "DisplayName": "{{i18n:MM_HealthShroomPlanter.DisplayName}}",
+          "Description": "{{i18n:MM_HealthShroomPlanter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 7,
+          "Price": 5000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
+    {
+      "LogName": "Ruby bolete planter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_RubyBoletePlanter": {
+          "Name": "RubyBoletePlanter",
+          "DisplayName": "{{i18n:MM_RubyBoletePlanter.DisplayName}}",
+          "Description": "{{i18n:MM_RubyBoletePlanter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomPlanters",
+          "SpriteIndex": 10,
+          "Price": 6000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [ "seedmaker_banned", "mushroom_planter_item" ]
+        }
+      }
+    },
+
 
 
 ////normal crops
@@ -251,7 +292,7 @@
           "SpriteIndex": 0,
           "Price": 90,
           "ExcludeFromRandomSale": false,
-          "ContextTags": [ "mushroom_starter_item" ]
+          "ContextTags": [ "mushroom_starter_item", "edible_mushroom_starter" ]
         }
       }
     },
@@ -271,7 +312,7 @@
           "SpriteIndex": 2,
           "Price": 120,
           "ExcludeFromRandomSale": false,
-          "ContextTags": [ "mushroom_starter_item" ]
+          "ContextTags": [ "mushroom_starter_item", "edible_mushroom_starter" ]
         }
       }
     },
@@ -293,7 +334,7 @@
           "SpriteIndex": 4,
           "Price": 200,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
-          "ContextTags": [ "seedmaker_banned", "mushroom_starter_item" ]
+          "ContextTags": [ "seedmaker_banned", "mushroom_starter_item", "edible_mushroom_starter" ]
         }
       }
     },
@@ -314,7 +355,7 @@
           "SpriteIndex": 3,
           "Price": 140,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
-          "ContextTags": [  "mushroom_starter_item" ]
+          "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
         }
       }
     },
@@ -334,7 +375,7 @@
           "SpriteIndex": 6,
           "Price": 340,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
-          "ContextTags": [  "mushroom_starter_item" ]
+          "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
         }
       }
     },
@@ -355,11 +396,151 @@
           "SpriteIndex": 7,
           "Price": 340,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
-          "ContextTags": [  "mushroom_starter_item" ]
+          "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
         }
       }
     },
 
+        {
+      "LogName": "orange peel starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_OrangePeelFungusStarter": {
+          "Name": "OrangePeelFungusStarter",
+          "DisplayName": "{{i18n:MM_OrangePeelFungusStarter.DisplayName}}",
+          "Description": "{{i18n:MM_OrangePeelFungusStarter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 1,
+          "Price": 357,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
+        }
+      }
+    },
+
+    
+        {
+      "LogName": "devils finger starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_DevilsFingersStarter": {
+          "Name": "DevilsFingersStarter",
+          "DisplayName": "{{i18n:MM_DevilsFingersStarter.DisplayName}}",
+          "Description": "{{i18n:MM_DevilsFingersStarter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 5,
+          "Price": 400,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item", "inedible_mushroom_starter" ]
+        }
+      }
+    },
+
+         {
+      "LogName": "golden brittlegill starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_GoldenBrittlegillStarter": {
+          "Name": "GoldenBrittlegillStarter",
+          "DisplayName": "{{i18n:MM_GoldenBrittlegillStarter.DisplayName}}",
+          "Description": "{{i18n:MM_GoldenBrittlegillStarter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{InternalAssetKey:assets/crops/MushroomSeeds2.png}}",
+          "SpriteIndex": 1,
+          "Price": 400,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
+        }
+      }
+    },
+  {
+      "LogName": "ghastly button starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_GhastlyButtonStarter": {
+          "Name": "GhastlyButtonStarter",
+          "DisplayName": "{{i18n:MM_GhastlyButtonStarter.DisplayName}}",
+          "Description": "{{i18n:MM_GhastlyButtonStarter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 7,
+          "Price": 400,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
+        }
+      }
+    },
+
+      {
+      "LogName": "caesar mushroom starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_CaesarsMushroomStarter": {
+          "Name": "CaesarsMushroomStarter",
+          "DisplayName": "{{i18n:MM_CaesarsMushroomStarter.DisplayName}}",
+          "Description": "{{i18n:MM_CaesarsMushroomStarter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{InternalAssetKey:assets/crops/MushroomSeeds2.png}}",
+          "SpriteIndex": 0,
+          "Price": 800,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
+        }
+      }
+    },
+    {
+      "LogName": "blue pinkgill starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_BluePinkgillStarter": {
+          "Name": "BluePinkgillStarter",
+          "DisplayName": "{{i18n:MM_BluePinkgillStarter.DisplayName{{PinkgillCrop}}}}",
+          "Description": "{{i18n:MM_BluePinkgillStarter.Description{{PinkgillCrop}}}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{ModID}}/MushroomSeeds",
+          "SpriteIndex": 7,
+          "Price": 1000,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item", "inedible_mushroom_starter" ]
+        }
+      }
+    },
+
+    
+      {
+      "LogName": "jubilee waxcap starter object data",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "MM_JubileeWaxcapStarter": {
+          "Name": "JubileeWaxcapStarter",
+          "DisplayName": "{{i18n:MM_JubileeWaxcapStarter.DisplayName}}",
+          "Description": "{{i18n:MM_JubileeWaxcapStarter.Description}}",
+          "Type": "Basic",
+          "Category": -74,
+          "Texture": "{{InternalAssetKey:assets/crops/MushroomSeeds2.png}}",
+          "SpriteIndex": 2,
+          "Price": 1200,
+          "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
+          "ContextTags": [  "mushroom_starter_item", "inedible_mushroom_starter" ]
+        }
+      }
+    },
+  
 
 
   /*  .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--.  */
@@ -380,12 +561,13 @@
 /*  `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'  */
 
     {
-      "LogName": "custom bush data",
+      "LogName": "custom bush data all eyes",
       "Action": "EditData",
+       "When": { "Include imaginary Mushrooms": true, "All Eyes Planter": "Bush" },
       "Target": "furyx639.CustomBush/Data",
       "Entries": {
        
-        /* "(O)MM_AllEyes_Planter": {
+        "(O)MM_AllEyes_Planter": {
           "DisplayName": "{{i18n:AllEyes_Crop.name}}",   //"{{i18n:AllEyes_Crop.name}}",
           "AgeToProduce": 25,
           "ConditionsToProduce": [
@@ -454,9 +636,16 @@
           "Texture": "{{ModID}}/MushroomBushes",
           "IndoorTexture":  "{{ModID}}/MushroomBushes",
           "TextureSpriteRow": 0
-        }, */
+        },
+      }
+    },
     
 
+    {
+      "LogName": "custom bush data all eyes",
+      "Action": "EditData",
+      "Target": "furyx639.CustomBush/Data",
+      "Entries": {
         "(O)MM_SickenerPlanter": {
           "DisplayName": "{{i18n:TheSickenerDisplayName}}",   
           "AgeToProduce": 20,
@@ -650,12 +839,66 @@
           "TextureSpriteRow": 10
         },
 
+          "(O)MM_RubyBoletePlanter": {
+          "DisplayName": "{{i18n:MM_RubyBolete.DisplayName}}",   
+          "AgeToProduce": 10,
+          "ConditionsToProduce": [
+           "SEASON Summer",
+           "SEASON Fall",
+           "DAY_OF_WEEK Mon"
+            
+          ],
+          "ItemsProduced": [
+               {
+              "ItemId": "(O)MM_RubyBolete", 
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 3
+            }
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes2",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes2",
+          "TextureSpriteRow": 12
+        },
+
         
 
 
       }
     },
-      
+     
+  
+    {
+      "LogName": "custom bush data blue pinkgill",
+      "Action": "EditData",
+       "When": {  "Blue Pinkgill Planter": "Bush" },
+      "Target": "furyx639.CustomBush/Data",
+      "Entries": {
+
+        "(O)MM_BluePinkgillPlanter": {
+          "DisplayName": "{{i18n:BluePinkgillDisplayName}}",   
+          "AgeToProduce": 15,
+          "ConditionsToProduce": [
+            "SEASON Summer"
+          ],
+          "ItemsProduced": [
+              {
+              "ItemId": "(O)MM_BluePinkgill",
+              "Chance": 1.0,
+              "MinStack": 1,
+              "MaxStack": 2,
+              "PerItemCondition": "ANY \"SEASON summer\" \"LOCATION_CONTEXT Target Island\""
+            },
+    
+          ],
+          "Texture": "{{ModID}}/MushroomBushes2",
+          "IndoorTexture":  "{{ModID}}/MushroomBushes2",
+          "TextureSpriteRow": 14
+        },
+
+      }
+    },
 
 
 
@@ -832,11 +1075,11 @@
 
          {	
             "LogName": "Add in all eyes crop",
-            "When": { "Include imaginary Mushrooms": true },
+            "When": { "Include imaginary Mushrooms": true, "All Eyes Planter": "Crop" },
             "Action": "EditData",
             "Target": "Data/Crops",
             "Entries": {
-                "MM_AllEyes_Planter": { 
+                "MM_AllEyes_Starter": { 
                     "Seasons": [
                         "fall", "winter"
                     ],
@@ -853,6 +1096,201 @@
                     "CountForMonoculture": true,
                     "CountForPolyculture": true,
                     "ExtraHarvestChance": 0.2,
+                    "HarvestMethod": "Grab"
+                }
+            }
+        },
+
+        {	
+            "LogName": "Add in blue pinkgill crop",
+            "When": { "Blue Pinkgill Planter": "Crop" },
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_BluePinkgillStarter": { 
+                    "Seasons": [
+                      "summer"
+                    ],
+                    "DaysInPhase": 
+                       [ 5,5,5 ],
+                    "RegrowDays": 2,
+                    "NeedsWatering": false,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 2,
+                    "HarvestItemId": "MM_BluePinkgill",
+                    "IsRaised": true,
+                    "Texture": "{{InternalAssetKey:assets/crops/bluepinkgill.png}}",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.2,
+                    "HarvestMethod": "Grab",
+                    "PlantableLocationRules": 
+                    [
+                      {
+                        "ID": "PinkgillCondition",
+                      "Result": "Default",
+                      "Condition": "ANY \"LOCATION_CONTEXT Target Island\" \"SEASON summer\"",
+                      "PlantedIn": "Dirt",
+                      "DeniedMessage": "{{i18n:BluePinkgillDeniedMessage}}"
+                      
+                      }
+
+
+                    ]
+                }
+            }
+        },
+
+         {	
+            "LogName": "Add in jubilee waxcap crop",
+            
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_JubileeWaxcapStarter": { 
+                    "Seasons": [
+                      "summer"
+                    ],
+                    "DaysInPhase": 
+                       [ 7,7,7 ],
+                    "RegrowDays": 5,
+                    "NeedsWatering": true,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 2,
+                    "HarvestItemId": "MM_JubileeWaxcap",
+                    "IsRaised": true,
+                    "Texture": "{{InternalAssetKey:assets/crops/jubileewaxcap.png}}",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.2,
+                    "HarvestMethod": "Grab",
+                  
+                }
+            }
+        },
+
+     {	
+            "LogName": "Add in caesars mushroom crop", 
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_CaesarsMushroomStarter": { 
+                    "Seasons": [
+                        "summer", "fall"
+                    ],
+                    "DaysInPhase": 
+                       [ 1, 3, 4, 7 ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_CaesarsMushroom",
+                    "Texture": "{{InternalAssetKey:assets/crops/caesar.png}}",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.01,
+                    "HarvestMethod": "Grab"
+                }
+            }
+        },
+
+        {	
+            "LogName": "Add in devils fingers crop", 
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_DevilsFingersStarter": { 
+                    "Seasons": [
+                        "summer", "fall"
+                    ],
+                    "DaysInPhase": 
+                       [ 4, 4, 4  ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_DevilsFingers",
+                    "Texture": "{{InternalAssetKey:assets/crops/devilsfingers.png}}",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.01,
+                    "HarvestMethod": "Grab"
+                }
+            }
+        },
+
+        {	
+            "LogName": "Add in ghastly button crop", 
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_GhastlyButtonStarter": { 
+                    "Seasons": [
+                        "fall", "winter"
+                    ],
+                    "DaysInPhase": 
+                       [ 3, 3, 3  ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 2,
+                    "HarvestItemId": "MM_GhastlyButton",
+                    "Texture": "{{InternalAssetKey:assets/crops/ghastlybutton.png}}",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.5,
+                    "HarvestMethod": "Grab"
+                }
+            }
+        },
+
+        
+        {	
+            "LogName": "Add in golden brittlegill crop", 
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_GoldenBrittlegillStarter": { 
+                    "Seasons": [
+                        "fall", "winter"
+                    ],
+                    "DaysInPhase": 
+                       [ 3, 3, 3  ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_GoldenBrittlegill",
+                    "Texture": "{{InternalAssetKey:assets/crops/goldenbrittlegill.png}}",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.01,
+                    "HarvestMethod": "Grab"
+                }
+            }
+        },
+    {	
+            "LogName": "Add in orange peel crop", 
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "MM_OrangePeelFungusStarter": { 
+                    "Seasons": [
+                        "summer", "fall"
+                    ],
+                    "DaysInPhase": 
+                       [ 2, 2, 4 ],
+                    "RegrowDays": -1,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestItemId": "MM_OrangePeelFungus",
+                    "Texture": "{{InternalAssetKey:assets/crops/orangepeel.png}}",
+                    "SpriteIndex": 0,
+                    "CountForMonoculture": true,
+                    "CountForPolyculture": true,
+                    "ExtraHarvestChance": 0.01,
                     "HarvestMethod": "Grab"
                 }
             }
@@ -898,7 +1336,8 @@
 
     {
       "LogName": "Multiple yields all eyes",
-      "When": { "Include imaginary Mushrooms": true },
+
+      "When": { "Include imaginary Mushrooms": true, "All Eyes Plant": "Crop" },
 			"Action": "EditData",
 			"Target": "spacechase0.SpaceCore/CropExtensionData",
 			"Entries": {
