@@ -1,9 +1,9 @@
 {
-  "Name": "Mushroom Mania FTM",
+  "Name": "Mushroom Mania FTM Wildflour",
   "Author": "voidcultist",
   "Version": "0.0.1",
   "Description": "FTM part of Mushroom Mania",
-  "UniqueID": "void.MM.RatA",
+  "UniqueID": "void.MM.FTM.RatA",
   "MinimumApiVersion": "4.0.0",
   "UpdateKeys": [],
   "ContentPackFor": {

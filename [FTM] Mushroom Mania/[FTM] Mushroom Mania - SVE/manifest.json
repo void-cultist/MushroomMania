@@ -3,7 +3,7 @@
   "Author": "voidcultist",
   "Version": "0.0.1",
   "Description": "FTM SVE part of Mushroom Mania",
-  "UniqueID": "void.MMSVE.FTM",
+  "UniqueID": "void.MM.FTM.SVE",
   "MinimumApiVersion": "4.0.0",
   "UpdateKeys": [],
   "ContentPackFor": {

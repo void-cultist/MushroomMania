@@ -140,6 +140,150 @@
       },
       {
         "SpringItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_JubileeWaxcapStarter",
+                "SpawnWeight": 10
+              }
+            ]
+          },
+          {
+            "category": "Object",
+            "SpawnWeight": 1,
+            "Name": "MM_Matsutake"
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_DeathcapPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          "MM_LobsterMushroom"
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_CaesarsMushroomStarter",
+                "SpawnWeight": 10
+              }
+            ]
+          },
+          {
+            "category": "Object",
+            "SpawnWeight": 1,
+            "Name": "MM_Matsutake"
+          },
+          "MM_LobsterMushroom",
+          "MM_BlackTrumpet",
+          "MM_SulfurTuft",
+          "MM_WitchesButter",
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_DevilsFingersStarter",
+                "SpawnWeight": 10
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_OrangePeelFungusStarter",
+                "SpawnWeight": 10
+              }
+            ]
+          },
+          {
+            "category": "Object",
+            "SpawnWeight": 1,
+            "Name": "(O)MM_BleedingHeart"
+          },
+          "MM_BlackTrumpet",
+          "MM_DestroyingAngel",
+          "MM_Deathcap",
+          "MM_SulfurTuft",
+          "MM_BleedingToothFungus",
+          "MM_WitchesButter"
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_GhastlyButtonStarter",
+                "SpawnWeight": 10
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_GoldenBrittlegillStarter",
+                "SpawnWeight": 10
+              }
+            ]
+          },
+          "MM_Champignon",
+          "MM_HypnoShroom"
+        ],
+        "UniqueAreaID": "SVE Forest West",
+        "MapName": "Custom_ForestWest",
+        "MinimumSpawnsPerDay": 4,
+        "MaximumSpawnsPerDay": 8,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "149,132;8,35",
+          "152,35,76,5",
+          "151,37;80,9",
+          "65,150;57,144",
+          "81,148;73,142"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
           "Smelly Rafflesia",
           "MM_WitchesButter",
           "MM_Deathcap",

@@ -7,7 +7,6 @@
     "Areas": [
       {
         "SpringItemIndex": [
-          
           {
             "Category": "Buried",
             "Contents": [
@@ -28,7 +27,6 @@
               }
             ]
           },
-  
           {
             "Category": "Buried",
             "Contents": [
@@ -58,10 +56,9 @@
                 "SpawnWeight": 5
               }
             ]
-          },
+          }
         ],
         "SummerItemIndex": [
-        
           {
             "Category": "Buried",
             "Contents": [
@@ -72,7 +69,6 @@
               }
             ]
           },
-          
           {
             "Category": "Buried",
             "Contents": [
@@ -102,11 +98,9 @@
                 "SpawnWeight": 8
               }
             ]
-          },
-          
+          }
         ],
         "FallItemIndex": [
-          
           {
             "Category": "Buried",
             "Contents": [
@@ -127,7 +121,6 @@
               }
             ]
           },
-        
           {
             "Category": "Buried",
             "Contents": [
@@ -157,11 +150,9 @@
                 "SpawnWeight": 8
               }
             ]
-          },
-          
+          }
         ],
         "WinterItemIndex": [
-         
           {
             "Category": "Buried",
             "Contents": [
@@ -182,7 +173,6 @@
               }
             ]
           },
-         
           {
             "Category": "Buried",
             "Contents": [
@@ -212,8 +202,7 @@
                 "SpawnWeight": 8
               }
             ]
-          },
-          
+          }
         ],
         "UniqueAreaID": "Mushroom Meadow forage grass area 1",
         "MapName": "void.MM_MushroomMeadow",
@@ -631,7 +620,6 @@
     "OtherMods": {
       "Cornucopia.MoreCrops": true,
       "Cornucopia.GrowableForage": true
-
     }
   }
 }

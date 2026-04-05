@@ -7,8 +7,6 @@
     "Areas": [
       {
         "SpringItemIndex": [
-          
-         
           {
             "Category": "Buried",
             "Contents": [
@@ -38,12 +36,9 @@
                 "SpawnWeight": 12
               }
             ]
-          },
-          
+          }
         ],
         "SummerItemIndex": [
-         
-         
           {
             "Category": "Buried",
             "Contents": [
@@ -73,11 +68,9 @@
                 "SpawnWeight": 12
               }
             ]
-          },
-          
+          }
         ],
         "FallItemIndex": [
-         
           {
             "Category": "Buried",
             "Contents": [
@@ -107,12 +100,9 @@
                 "SpawnWeight": 12
               }
             ]
-          },
-          
+          }
         ],
         "WinterItemIndex": [
-          
-          
           {
             "Category": "Buried",
             "Contents": [
@@ -142,8 +132,7 @@
                 "SpawnWeight": 12
               }
             ]
-          },
-          
+          }
         ],
         "UniqueAreaID": "Mushroom Meadow forage grass area 1",
         "MapName": "void.MM_MushroomMeadow",
@@ -558,6 +547,8 @@
     "FarmTypes": [],
     "FarmerNames": [],
     "SaveFileNames": [],
-    "OtherMods": { "ZoeyHoshi.ForageCrops": true }
+    "OtherMods": {
+      "ZoeyHoshi.ForageCrops": true
+    }
   }
 }
