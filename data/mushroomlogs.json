@@ -1,0 +1,135 @@
+{
+  
+  "Changes": [
+    {
+
+    "LogName": "Mush log oak",
+      "Action": "EditData",
+      "Target": "BarleyZP.MushroomLogFramework/ProduceRules",
+      "TargetField": [ "(BC)MushroomLog", "SpecificTreeOutputs" ],
+      "Entries": {
+        "{{ModId}}_MushroomsOak": {
+          "Id": "{{ModId}}_MushroomsOak",
+          "TreeId": "1",
+          "Outputs": [
+            {
+              "ItemId": "RANDOM_ITEMS (O)",
+               "PerItemCondition": "ITEM_CONTEXT_TAG Target inedible_mushroom, !ITEM_ID Target (o)MM_WaningMoonShroom (o)MM_PixiesParasol (O)MM_BluePinkgill",
+              "Precedence": -1,  // this entry is checked before the Vanilla entries with Precedence of 0
+              "Chance": 0.2,  // 30% chance
+              "MinStack": 1,
+              "MaxStack": 5,
+              "AllowQualityModifications": false,  // mystery boxes should only be normal quality
+              "AllowQuantityModifications": false  // we set the stack above, so we shouldn't allow further modifications
+            }
+          ]
+        }
+      }
+    },
+
+     {
+      "LogName": "Mush log maple",
+      "Action": "EditData",
+      "Target": "BarleyZP.MushroomLogFramework/ProduceRules",
+      "TargetField": [ "(BC)MushroomLog", "SpecificTreeOutputs" ],
+      "Entries": {
+        "{{ModId}}_MushroomsMaple": {
+          "Id": "{{ModId}}_MushroomsMaple",
+          "TreeId": "2",
+          "Outputs": [
+            {
+              "ItemId": "RANDOM_ITEMS (O)",
+               "PerItemCondition": "ITEM_CONTEXT_TAG Target edible_mushroom, !ITEM_ID Target (o)MM_ShroomOfTransingYourGender (o)MM_Matsutake",
+              "Precedence": -1,  // this entry is checked before the Vanilla entries with Precedence of 0
+              "Chance": 0.2,  // 30% chance
+              "MinStack": 1,
+              "MaxStack": 5,
+              "AllowQualityModifications": false,  // mystery boxes should only be normal quality
+              "AllowQuantityModifications": false  // we set the stack above, so we shouldn't allow further modifications
+            }
+          ]
+        }
+      }
+    },
+
+    {
+        "LogName": "Mush log pine",
+      "Action": "EditData",
+      "Target": "BarleyZP.MushroomLogFramework/ProduceRules",
+      "TargetField": [ "(BC)MushroomLog", "SpecificTreeOutputs" ],
+      "Entries": {
+        "{{ModId}}_MushroomsPine": {
+          "Id": "{{ModId}}_MushroomsPine",
+          "TreeId": "3",
+          "Outputs": [
+            {
+              "ItemId": "RANDOM_ITEMS (O)",
+               "PerItemCondition": "ITEM_CONTEXT_TAG Target poisonous_mushroom, !ITEM_ID Target (o)MM_AllEyes (o)MM_BleedingHeart",
+              "Precedence": -1,  // this entry is checked before the Vanilla entries with Precedence of 0
+              "Chance": 0.2,  // 30% chance
+              "MinStack": 1,
+              "MaxStack": 5,
+              "AllowQualityModifications": false,  // mystery boxes should only be normal quality
+              "AllowQuantityModifications": false  // we set the stack above, so we shouldn't allow further modifications
+            }
+          ]
+        }
+      }
+    },
+
+     {
+        "LogName": "Mush log mush tree",
+      "Action": "EditData",
+      "Target": "BarleyZP.MushroomLogFramework/ProduceRules",
+      "TargetField": [ "(BC)MushroomLog", "SpecificTreeOutputs" ],
+      "Entries": {
+        "{{ModId}}_MushroomsMushTree": {
+          "Id": "{{ModId}}_MushroomsMushTree",
+          "TreeId": "7",
+          "Outputs": [
+            {
+              "ItemId": "RANDOM_ITEMS (O)",
+               "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_item, !ITEM_ID Target (o)MM_AllEyes (o)MM_BleedingHeart (o)MM_ShroomOfTransingYourGender (o)MM_WaningMoonShroom (o)MM_PixiesParasol (O)MM_BluePinkgill",
+              "Precedence": -1,  // this entry is checked before the Vanilla entries with Precedence of 0
+              "Chance": 0.1,  // 30% chance
+              "MinStack": 1,
+              "MaxStack": 3,
+              "AllowQualityModifications": false,  // mystery boxes should only be normal quality
+              "AllowQuantityModifications": false  // we set the stack above, so we shouldn't allow further modifications
+            }
+          ]
+        }
+      }
+    },
+
+
+    {
+        "LogName": "Mush log mystic tree",
+      "Action": "EditData",
+      "Target": "BarleyZP.MushroomLogFramework/ProduceRules",
+      "TargetField": [ "(BC)MushroomLog", "SpecificTreeOutputs" ],
+      "Entries": {
+        "{{ModId}}_MushroomsMysticTree": {
+          "Id": "{{ModId}}_MushroomsMysticTree",
+          "TreeId": "13",
+          "Outputs": [
+            {
+              "RandomItemId": ["(O)MM_BleedingHeart", "(O)MM_AllEyes", "(O)MM_BluePinkgill", "(O)MM_PixiesParasol"],
+              "Precedence": -1,  // this entry is checked before the Vanilla entries with Precedence of 0
+              "Chance": 0.05,  
+              "MinStack": 1,
+              "MaxStack": 1,
+              "AllowQualityModifications": false,  // mystery boxes should only be normal quality
+              "AllowQuantityModifications": false  // we set the stack above, so we shouldn't allow further modifications
+            }
+          ]
+        }
+      }
+    },
+
+
+
+
+
+  ]
+}

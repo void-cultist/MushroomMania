@@ -32,7 +32,7 @@
         },
           {
             "Name": "MaxDailyForageSpawn",
-            "Value": 13,
+            "Value": 18,
             "When": { "SpawnRate": "higher" }
         },
 
@@ -45,12 +45,65 @@
             "Value": 7,
             "When": { "SpawnRate": "lower" }
         },
-          {
+        {
             "Name": "MaxSpawnedForageAtOnce",
-            "Value": 14,
+            "Value": 20,
             "When": { "SpawnRate": "higher" }
         },
+
+         {
+            "Name": "SpawnChance",
+            "Value": "+0.25",
+            "When": { "Mushroom Spawn Chance": "higher" }
+        },
+         {
+            "Name": "SpawnChance",
+            "Value": "* 0.7",
+            "When": { "Mushroom Spawn Chance": "lower" }
+        },
+         {
+            "Name": "SpawnChance",
+            "Value": "",
+            "When": { "Mushroom Spawn Chance": "default" }
+        },
+
+         {
+            "Name": "RareSpawnChance",
+            "Value": "+0.1",
+            "When": { "Mushroom Spawn Chance": "higher" }
+        },
+         {
+            "Name": "RareSpawnChance",
+            "Value": "* 0.9",
+            "When": { "Mushroom Spawn Chance": "lower" }
+        },
+         {
+            "Name": "RareSpawnChance",
+            "Value": "",
+            "When": { "Mushroom Spawn Chance": "default" }
+        },
+
+          /* {
+            "Name": "SyncedRandom",
+            "Value": "* 2 + 0.1",
+            "When": { "Mushroom Spawn Chance": "higher" }
+        },
+         {
+            "Name": "SyncedRandom",
+            "Value": "* 0.8",
+            "When": { "Mushroom Spawn Chance": "lower" }
+        },
+         {
+            "Name": "SyncedRandom",
+            "Value": "",
+            "When": { "Mushroom Spawn Chance": "default" }
+        }, */
+
+
+
         
+
+        ////MUSIC
         {
             "Name": "SpringBGM",
             "Value": "{{ModID}}_SpringBGM"
@@ -128,6 +181,18 @@
             "Name": "CornucopiaCooking",
             "Value": "Cornucopia.CookingRecipes",
             "When": { "Cornucopia Compatibility": true}
+        },
+
+        //wildflour packs
+        {
+            "Name": "RatA",
+            "Value": "Wildflour.SASS",
+            "When": { "Wildflour Mods Compatibility": true}
+        },
+        {
+            "Name": "WAG",
+            "Value": "Wildflour.AtelierGoods",
+            "When": { "Wildflour Mods Compatibility": true}
         },
 
         ////////////////////////////////potion machine item requirements//////////////////////////////
@@ -260,6 +325,52 @@
             "When": { "Include imaginary Mushrooms": false }
         },
 
+        //crop or bush
+        {
+            "Name": "AllEyesPlant",
+            "Value": "Planter",
+            "When": { "All Eyes Planter": "Bush" }
+        },
+        {
+            "Name": "AllEyesPlant",
+            "Value": "Starter",
+           
+        },
+
+           {
+            "Name": "PinkgillCrop",
+            "Value": ".Planter",
+            "When": { "Blue Pinkgill Planter": "Bush" }
+        },
+        {
+            "Name": "PinkgillCrop",
+            "Value": "",
+           
+        },
+
+        //pefection toggles
+        {
+            "Name": "PerfectionToggle",
+            "Value": false
+        },
+        {
+            "Name": "PerfectionToggle",
+            "Value": true,
+            "When": { "Mushroom Perfection Toggle": "false" }
+        },
+
+        {
+            "Name": "PerfectionToggle2",
+            "Value": false
+        },
+        {
+            "Name": "PerfectionToggle2",
+            "Value": true,
+            "When": { "Potion Perfection Toggle": "false" }
+        },
+
+        
+
 
 
         
@@ -274,7 +385,8 @@
                 "AllowValues": "default, lower, higher",
                 "Default": "default",
                 "AllowBlank": false,
-                "Description": "This mod edits the way items spawn. If you find any issues in the amount spawned, change this setting to 'lower'."
+                "Description": "This mod edits the way items spawn. If you find any issues in the amount spawned, change this setting to 'lower'.",
+                "Section": "Spawns",
             },
             /* "Spawn Rate in Rain":{
                 "AllowBlank": false,
@@ -289,6 +401,35 @@
                 "AllowBlank": false,
                 "Description": "Toggle this option if you want to play with real mushrooms that exist in real life only.",
                 "Section": "Mushroom Configs"
+            },
+            "All Eyes Planter":
+            {
+                "AllowValues": "Bush, Crop",
+                "Default": "Bush",
+                "Description": "Change whether you want the All Eyes planter to be a bush or a normal plantable crop.",
+                "Section": "Mushroom Configs"
+            },
+
+             "Blue Pinkgill Planter":
+            {
+                "AllowValues": "Bush, Crop",
+                "Default": "Bush",
+                "Description": "Change whether you want the Blue Pinkgill planter to be a bush or a normal plantable crop.",
+                "Section": "Mushroom Configs"
+            },
+              "Cornucopia Compatibility":
+            {
+                "AllowValues": "true, false",
+                "Default": false,
+                "Description": "If you use all four Cornucopia mod packs, toggle this setting for maximum compatibility. Doesn't do anything if none or not all Cornucopia packs are installed.",
+                "Section": "Compatibility"
+            },
+              "Wildflour Mods Compatibility":
+            {
+                "AllowValues": "true, false",
+                "Default": false,
+                "Description": "If you use both 'Rose and the Alchemist' and 'Wildflour Atelier Goods' by Wildflour , toggle this setting for maximum compatibility. Doesn't do anything if none or only one of these mod packs are installed.",
+                "Section": "Compatibility"
             },
             /* "Include Poisonous Mushrooms":
             {
@@ -315,13 +456,36 @@
                 "AllowBlank": false,
                 "Description": "This mod adds custom music tracks. If you prefer the original Stardew Valley music, turn this setting off. Custom music might also slow down your game in some instances, so if you are experiencing lag, disable this config as well.",
             },
-            "Cornucopia Compatibility":
+            "Mushroom Perfection Toggle":
             {
                 "AllowValues": "true, false",
-                "Default": false,
-                "Description": "If you use all four Cornucopia mod packs, toggle this setting for maximum compatibility. Doesn't do anything if none or not all Cornucopia packs are installed."
-            }
-            
+                "Default": true,
+                "AllowBlank": false,
+                "Description": "By default, mushrooms count towards the perfection achievement (shipping collection). Disable this setting if you don't want this."
+            },
+            "Potion Perfection Toggle":
+            {
+                "AllowValues": "true, false",
+                "Default": true,
+                "AllowBlank": false,
+                "Description": "By default, potions count towards the perfection achievement (shipping collection). Disable this setting if you don't want this."
+            }, 
+            "Mushroom Spawn Chance":
+            {
+               "AllowValues": "default, lower, higher",
+                "Default": "default",
+                "AllowBlank": false,
+                "Description": "Change the setting to enable higher or lower mushroom spawn rates.",
+                "Section": "Spawns",
+            },
+            "Mushroom Log Output":
+            {
+               "AllowValues": "default, custom",
+                "Default": "default",
+                "AllowBlank": false,
+                "Description": "Allows custom mushrooms to be produced by mushroom logs. Mushroom Log Framework required.",
+               
+            },
     },
      
 
@@ -415,6 +579,21 @@
     "When": { "Cornucopia Compatibility": true,    "HasMod |contains={{Merge: {{CornucopiaArtisan}}, {{CornucopiaFlowers}}, {{CornucopiaCrops}}, {{CornucopiaCooking}} }}": true},
     "FromFile": "data/compat/cornucopia/bundles.json, data/compat/cornucopia/cookingOverrides.json, data/compat/cornucopia/contextTags.json"
 },
+
+{
+    "LogName": "Include wildflour compat",
+    "Action": "Include",
+    "When": { "Wildflour Mods Compatibility": true,    "HasMod |contains={{Merge: {{WAG}}, {{RatA}} }}": true},
+    "FromFile": "data/compat/wildflour/contexttags.json"
+},
+
+{
+    "LogName": "Include alchemistry compat",
+    "Action": "Include",
+    "When": {  "HasMod": "Morghoula.AlchemistryCP"},
+    "FromFile": "data/compat/alchemistry/contexttags.json"
+},
+
 {
     "LogName": "include traction",
     "Action": "Include",
@@ -429,7 +608,13 @@
     "LogName": "Include context tag patches to vanilla items",
     "Action": "Include",
     "FromFile": "data/contexttags.json"
-}
+},
+{
+    "LogName": "Include custom mushroom log data",
+    "Action": "Include",
+    "FromFile": "data/mushroomlogs.json",
+    "When": { "HasMod": "BarleyZP.MushroomLogFramework", "Mushroom Log Output": "custom"}
+},
 
 
 

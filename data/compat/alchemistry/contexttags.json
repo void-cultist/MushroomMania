@@ -1,0 +1,141 @@
+{
+    "Changes": [
+           {  "LogName": "dawnsingertoadstool Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_DawnsingerToadstool", "ContextTags"],			//dawnsingertoadstool
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+
+           {  "LogName": "LunarGlowcap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_LunarGlowcap", "ContextTags"],			//LunarGlowcap
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+
+           {  "LogName": "InkCap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_InkCap", "ContextTags"],			//InkCap
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+
+           {  "LogName": "LostSouls Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_LostSouls", "ContextTags"],			//LostSouls
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+           {  "LogName": "MeteorCap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_MeteorCap", "ContextTags"],			//MeteorCap
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+
+           {  "LogName": "FalseMorel Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_FalseMorel", "ContextTags"],			//FalseMorel
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+          {  "LogName": "WizardsEye Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_WizardsEye", "ContextTags"],			//WizardsEye
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+          {  "LogName": "FaerieWings Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_FairieWings", "ContextTags"],			//FaerieWings
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+          {  "LogName": "RedSmilers Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_RedSmilers", "ContextTags"],			//RedSmilers
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+          {  "LogName": "NightCap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_NightCap", "ContextTags"],			//NightCap
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+
+           {  "LogName": "SunriseGlory Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_SunriseGlory", "ContextTags"],			//SunriseGlory
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+
+        
+           {  "LogName": "CapOLantern Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_CapOLantern", "ContextTags"],			//CapOLantern
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+
+    
+           {  "LogName": "HellfireBolete Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_HellfireBolete", "ContextTags"],			//HellfireBolete
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+          {  "LogName": "SwampLighter Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_SwampLighter", "ContextTags"],			//SwampLighter
+		   "Entries": {
+				  "#-1": "poisonous_mushroom"
+		   }
+		},
+
+      {  "LogName": "BeachedOyster Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Morghoula.AlchemistryCP_BeachedOyster", "ContextTags"],			//BeachedOyster
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+    ]
+}

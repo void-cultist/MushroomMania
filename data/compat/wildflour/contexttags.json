@@ -1,0 +1,232 @@
+{
+    "Changes": [
+
+////RATA////
+
+        {  "LogName": "baby bluegill Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Baby_Bluegill", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		
+        {  "LogName": "Coral_Fungus Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Coral_Fungus", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		   {  "LogName": "Frilly_Gilly Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Frilly_Gilly", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		   {  "LogName": "Ghostly_Parasol Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Ghostly_Parasol", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		   {  "LogName": "Indigo_Cap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Indigo_Cap", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		   {  "LogName": "Lilac_Funnel Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Lilac_Funnel", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+	   {  "LogName": "Limey_Bonnet Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Limey_Bonnet", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		   {  "LogName": "Lunar_Poof Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Lunar_Poof", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		   {  "LogName": "Midas_Cap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Midas_Cap", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		   {  "LogName": "Midnight_Milkcap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Midnight_Milkcap", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+	   {  "LogName": "Queen_Bolete Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Queen_Bolete", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		{  "LogName": "Rosey_Elfcup Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Rosey_Elfcup", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+	   {  "LogName": "Seafoam_Waxcap Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Seafoam_Waxcap", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+	   {  "LogName": "Shrumbus Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Shrumbus", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+	   {  "LogName": "Sparkling_Agaric Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Sparkling_Agaric", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+	   {  "LogName": "Stout_Funnel Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.SASS_Stout_Funnel", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+/////WAG/////
+    {  "LogName": "Honey_Fungus Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.AtelierGoods_Honey_Fungus", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		 {  "LogName": "Meringue_Mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.AtelierGoods_Meringue_Mushroom", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		 {  "LogName": "Milk_Mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.AtelierGoods_Milk_Mushroom", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+		 {  "LogName": "Wheatberry_Mushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Wildflour.AtelierGoods_Wheatberry_Mushroom", "ContextTags"],			
+		   "Entries": {
+
+                  "#-1": "mushroom_item",
+				  "#-2": "extractor_input"
+		   }
+		},
+
+
+
+
+]
+}

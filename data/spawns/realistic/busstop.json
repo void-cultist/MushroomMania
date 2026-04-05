@@ -10,7 +10,7 @@
                  "{{ModID}}_CommonEdibleMushrooms": //common
                 {
 
-                    "Chance": 0.7,
+                    "Chance": " {{query: 0.7{{SpawnChance}}  }}",
                     "Condition": "SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_GreatWoodMushroom",
                     "ItemId": "(O)MM_GreatWoodMushroom",
@@ -20,21 +20,29 @@
                 "MM_Champignon": //common
                 {
 
-                    "Chance": 0.8,
+                    "Chance": "{{query: 0.8{{SpawnChance}}  }}",
                     "Condition": "SEASON fall winter",
                     "Id": "(O)MM_Champignon",
                     "ItemId": "(O)MM_Champignon",
                     "PerItemCondition": null
                 },
                 
-               
+                "MM_BurgerShroom":
+                {
+
+                    "Chance": "{{query: 0.2{{SpawnChance}}  }}",
+                    "Condition": "!WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_BurgerShroom",
+                    "ItemId": "(O)MM_BurgerShroom",
+                    "PerItemCondition": null
+                },
 
 
                 //mushrooms during rain
 
                 "MM_SpawnDuringRain":
                 {
-                    "Chance": 0.9,
+                    "Chance": 1.0,
                     "Condition": "WEATHER Target Rain GreenRain Storm",
                     "ItemId": "RANDOM_ITEMS (O)",
                     "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_item, !ITEM_CONTEXT_TAG Target rain_exclude"

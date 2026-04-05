@@ -9,19 +9,17 @@
                  "MM_BleedingToothFungus": 
                   {
 
-                    "Chance": 0.2,
+                    "Chance": "{{query: 0.2{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_BleedingToothFungus",
                     "ItemId": "(O)MM_BleedingToothFungus",
                     "PerItemCondition": null
                 },
 
-
-
                      "MM_CaesarsMushroom": //rare
                 {
 
-                    "Chance": 0.2,
+                    "Chance": "{{query: 0.2{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_CaesarsMushroom",
                     "ItemId": "(O)MM_CaesarsMushroom",
@@ -39,7 +37,7 @@
                 },
                  "MM_Matsutake": //rare
                 {
-                    "Chance": 0.1,
+                    "Chance": "{{query: 0.1{{SpawnChance}}  }}",
                     "Season": "Fall",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 9, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_Matsutake",
@@ -49,7 +47,7 @@
                  "MM_RubyBolete": //rare
                 {
 
-                    "Chance": 0.1,
+                    "Chance": "{{query: 0.1{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 8, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_RubyBolete",
                     "ItemId": "(O)MM_RubyBolete",
@@ -58,7 +56,7 @@
 
                    "MM_DestroyingAngel": //common
                 {
-                    "Chance": 0.5,
+                    "Chance": "{{query: 0.5{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_DestroyingAngel",
                     "ItemId": "(O)MM_DestroyingAngel",
@@ -66,7 +64,7 @@
                 },
                  "MM_SpawnDuringRain":
                 {
-                    "Chance": 0.9,
+                    "Chance": 1.0,
                     "Condition": "WEATHER Target Rain GreenRain Storm",
                     "ItemId": "RANDOM_ITEMS (O)",
                     "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_item, !ITEM_CONTEXT_TAG Target rain_exclude"

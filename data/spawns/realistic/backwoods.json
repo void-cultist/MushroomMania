@@ -26,7 +26,16 @@
                     "ItemId": "(O)MM_Champignon",
                     "PerItemCondition": null
                 },
-            
+                
+                "MM_BurgerShroom":
+                {
+
+                    "Chance": 0.2,
+                    "Condition": "!WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_BurgerShroom",
+                    "ItemId": "(O)MM_BurgerShroom",
+                    "PerItemCondition": null
+                },
 
                  "MM_Deathcap": //common
                 {

@@ -2,13 +2,15 @@
     {
         "Name": "Mushroom Mania",
         "Author": "voidcultist",
-        "Version": "0.0.1",
+        "Version": "0.5.0",
         "Description": "Mushrooms for everyone!",
         "UniqueID": "void.MM",
         "UpdateKeys": [], 
         "ContentPackFor": {
             "UniqueID": "Pathoschild.ContentPatcher"
         },
+        "DH.MEEP": "2.5.0",
+        "DH.MEEP.CloseupInteractions": "",
         "Dependencies": [
             {
                 "UniqueID": "spacechase0.SpaceCore",
@@ -30,6 +32,22 @@
                 "UniqueID": "void.MM.FTM",
                 "IsRequired": true
             },
+              {
+                "UniqueID": "void.MM.FTM.Cornucopia",
+                "IsRequired": true
+            },
+            {
+                "UniqueID": "void.MM.FTM.ForageCrops",
+                "IsRequired": true
+            },
+              {
+                "UniqueID": "void.MM.FTM.RatA",
+                "IsRequired": true
+            },
+              {
+                "UniqueID": "void.MM.FTM.SVE",
+                "IsRequired": true
+            },
             {
                 "UniqueID": "alvadea.tilesheet",
                 "IsRequired": true
@@ -38,10 +56,7 @@
                 "UniqueID": "Bogs.WitchyTilesheets",
                 "IsRequired": true
             },
-            {
-                "UniqueID": "Lumisteria.TtilesheetsOutdoor",
-                "IsRequired": true
-            },
+        
             {
                 "UniqueID": "KaileyStardew.Tilesheets",
                 "IsRequired": true
@@ -62,11 +77,19 @@
                 "UniqueID": "furyx639.CustomBush",
                 "IsRequired": true
             },
+            {
+                "UniqueID": "sophie.Calcifer",
+                "IsRequired": true
+            },
 
 
 
             { 
                 "UniqueID": "Morghoula.AlchemistryCP",
+                "IsRequired": false
+            },
+            {
+                "UniqueID": "FlashShifter.StardewValleyExpandedCP",
                 "IsRequired": false
             }
         ]

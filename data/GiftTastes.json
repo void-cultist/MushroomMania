@@ -24,6 +24,13 @@
                     "Target": ["Entries", "Universal_Neutral"],
                     "Value": "inedible_mushroom mushroom_potion",
                     "Delimiter": " " 
+                },
+
+                {
+                    "Operation": "Append",
+                    "Target": ["Entries", "Universal_Hate"],
+                    "Value": "MM_Eye MM_DemonicEye",
+                    "Delimiter": " " 
                 }
             ]
         },
@@ -43,7 +50,43 @@
 
 
             ]
-        }
+        },
+
+         {
+            "LogName": "Edit Dwarf gift taste data",
+            "Action": "EditData",
+            
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target":  ["Fields", "Dwarf", "#1"],
+                    "Value": "mushroom_extract mushroom_potion mushroom_item",
+                    "Delimiter": " " 
+                },
+
+
+            ]
+        },
+
+        
+         {
+            "LogName": "Edit Pei Ming gift taste data",
+            "Action": "EditData",
+            "When": { "HasMod": "void.peiming", "Include imaginary Mushrooms": true },
+            
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target":  ["Fields", "void.peiming_Peiming", "#5"],
+                    "Value": "MM_WaningMoonShroom",
+                    "Delimiter": " " 
+                },
+
+
+            ]
+        },
 
 
 

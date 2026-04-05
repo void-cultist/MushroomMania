@@ -65,6 +65,35 @@
                     "PerItemCondition": null
                 },
             }
+        },
+
+             {
+             "LogName": "Add  mushroom spawns to island South",
+            "Target": "Data/Locations",
+             "Action": "EditData",
+             "When": { "Include imaginary Mushrooms": true },
+            "TargetField": [ "IslandSouth", "Forage" ],
+            "Entries": {
+                   "MM_HypnoShroom": 
+                  {
+
+                    "Chance": 0.2,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4",
+                    "Id": "(O)MM_HypnoShroom",
+                    "ItemId": "(O)MM_HypnoShroom",
+                    "PerItemCondition": null
+                },
+
+                 "MM_HealthShroom": 
+                  {
+
+                    "Chance": 0.25,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5, LOCATION_CONTEXT Target Island",
+                    "Id": "(O)MM_HealthShroom",
+                    "ItemId": "(O)MM_HealthShroom",
+                    "PerItemCondition": null
+                },
+            }
         }
     ]
 }

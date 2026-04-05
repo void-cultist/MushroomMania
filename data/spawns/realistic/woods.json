@@ -6,10 +6,10 @@
             "Target": "Data/Locations",
             "TargetField": [ "Woods", "Forage" ],
             "Entries": {
-                 "{{ModID}}_CommonEdibleMushrooms": //common
+               "{{ModID}}_CommonEdibleMushrooms": //common
                 {
 
-                    "Chance": 0.7,
+                    "Chance": "{{query: 0.7{{SpawnChance}}  }}",
                     "Condition": "SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_GreatWoodMushroom",
                     "ItemId": "(O)MM_GreatWoodMushroom",
@@ -20,7 +20,7 @@
                 "MM_Aspen": //rare
                 {
 
-                    "Chance": 0.2,
+                    "Chance": "{{query: 0.2{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_Aspen",
                     "ItemId": "(O)MM_Aspen",
@@ -28,7 +28,7 @@
                 },
                 "MM_BlackTrumpet": //uncommon
                 {
-                    "Chance": 0.3,
+                    "Chance": "{{query: 0.3{{SpawnChance}}  }}"
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_BlackTrumpet",
                     "ItemId": "(O)MM_BlackTrumpet",
@@ -38,7 +38,7 @@
                   "MM_CaesarsMushroom": //rare
                 {
 
-                    "Chance": 0.2,
+                    "Chance": "{{query: 0.2{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_CaesarsMushroom",
                     "ItemId": "(O)MM_CaesarsMushroom",
@@ -48,7 +48,7 @@
                     "MM_Champignon": //common
                 {
 
-                    "Chance": 0.8,
+                    "Chance": "{{query: 0.7{{SpawnChance}}  }}",
                     "Condition": "SEASON fall winter, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_Champignon",
                     "ItemId": "(O)MM_Champignon",
@@ -57,7 +57,7 @@
 
                 "MM_Enoki": //common
                 {
-                    "Chance": 0.5,
+                    "Chance": "{{query: 0.5{{SpawnChance}}  }}",
                     "Season": "Spring",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_Enoki",
@@ -68,7 +68,7 @@
 
                 "MM_GoldenBrittlegill": //uncommon
                 {
-                    "Chance": 0.3,
+                    "Chance": "{{query: 0.3{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_GoldenBrittlegill",
                     "ItemId": "(O)MM_GoldenBrittlegill",
@@ -77,7 +77,7 @@
                 
                 "MM_LobsterMushroom": //uncommon
                 {
-                    "Chance": 0.4,
+                    "Chance": "{{query: 0.4{{SpawnChance}}  }}",
                     "Season": null,
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7",
                     "Id": "(O)MM_LobsterMushroom",
@@ -86,7 +86,7 @@
                 },
                 "MM_Matsutake": //rare
                 {
-                    "Chance": 0.1,
+                    "Chance": "{{query: 0.1{{SpawnChance}}  }}",
                     "Season": "Fall",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 9, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_Matsutake",
@@ -96,7 +96,7 @@
                  "MM_RubyBolete": //rare
                 {
 
-                    "Chance": 0.1,
+                    "Chance": "{{query: 0.1{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 8, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_RubyBolete",
                     "ItemId": "(O)MM_RubyBolete",
@@ -107,7 +107,7 @@
 
                 "MM_SpawnDuringRain":
                 {
-                    "Chance": 0.9,
+                    "Chance": 1.0,
                     "Condition": "WEATHER Target Rain GreenRain Storm",
                     "ItemId": "RANDOM_ITEMS (O)",
                     "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_item, !ITEM_CONTEXT_TAG Target rain_exclude"
@@ -118,7 +118,7 @@
                 //////////poisonous
                 "MM_Deathcap": //common
                 {
-                    "Chance": 0.5,
+                    "Chance": "{{query: 0.5{{SpawnChance}}  }}",
                     "Condition": "SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_Deathcap",
                     "ItemId": "(O)MM_Deathcap",
@@ -127,16 +127,16 @@
 
                   "MM_DestroyingAngel": //common
                 {
-                    "Chance": 0.5,
+                    "Chance": "{{query: 0.5{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_DestroyingAngel",
                     "ItemId": "(O)MM_DestroyingAngel",
                     "PerItemCondition": null
                 },
 
-                 "MM_GreyKnight": //common
+                 "MM_GreyKnight": 
                 {
-                    "Chance": 0.5,
+                    "Chance": "{{query: 0.2{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_GreyKnight",
                     "ItemId": "(O)MM_GreyKnight",
@@ -145,7 +145,7 @@
 
                   "MM_SulfurTuft": //common
                 {
-                    "Chance": 0.7,
+                    "Chance": "{{query: 0.7{{SpawnChance}}  }}",
                     "Season": null,
                     "Condition": "!WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_SulfurTuft",
@@ -155,18 +155,19 @@
 
                 "MM_TheSickener":
                  {
-                    "Chance": 0.6,
+                    "Chance": "{{query: 0.6{{SpawnChance}}  }}",
                     "Condition": "SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_TheSickener",
                     "ItemId": "(O)MM_TheSickener",
                     "PerItemCondition": null
                 },
 
+
          ///////////////INEDIBLE
                    "MM_DevilsFingers": //uncommon
                   {
 
-                    "Chance": 0.3,
+                    "Chance": "{{query: 0.3{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_DevilsFingers",
                     "ItemId": "(O)MM_DevilsFingers",
@@ -176,15 +177,14 @@
                  "MM_JubileeWaxcap": //uncommon
                   {
 
-                    "Chance": 0.3,
+                    "Chance": "{{query: 0.3{{SpawnChance}}  }}",
                     "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
                     "Id": "(O)MM_JubileeWaxcap",
                     "ItemId": "(O)MM_JubileeWaxcap",
                     "PerItemCondition": null
                 },
-         
 
-
+              
             }
         },
 

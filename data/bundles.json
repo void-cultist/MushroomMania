@@ -454,7 +454,7 @@
                         "MaxItems": 3,
                         "MinStack": 2,
                         "MaxStack": 4,
-                        "PerItemCondition": "ITEM_ID Target (O)MM_Critical_Potion (O)MM_Attack_Potion (O)MM_Defense_Potion (O)MM_Shield_Potion (O)MM_AbyssalRage (O)MM_Heroic_Potion (O)MM_WeaponStat_Potion (O)MM_Immunity_Potion (O)MM_Luck_Potion (O)MM_LuckySeven (O)MM_Speed_Potion"
+                        "PerItemCondition": "ITEM_ID Target (O)MM_Critical_Potion (O)MM_Attack_Potion (O)MM_Defense_Potion (O)MM_Shield_Potion (O)MM_AbyssalRage (O)MM_Heroic_Potion (O)MM_WeaponStat_Potion (O)MM_Immunity_Potion (O)MM_Luck_Potion (O)MM_LuckySeven (O)MM_Speed_Potion (O)MM_DemonicEye"
                       
                         },
                      ], 

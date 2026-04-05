@@ -854,6 +854,159 @@
             }
         },
 
+
+////////////////////////POTIONS WITH WILDFLOUR MUSHROOMS////////////////////////////////
+
+{
+            "LogName": "Add machine: Potion Machine Rules",
+            "Action": "EditData",
+             "When": { "Wildflour Mods Compatibility": true,    "HasMod |contains={{Merge: {{WAG}}, {{RatA}} }}": true},
+            "Target": "Data/Machines",
+            "TargetField": [
+				"(BC)MM_Potionmachine",
+				"OutputRules"
+			],
+            "Entries": { 
+                "MM_SugarShock":
+
+                     {
+                        "Id": "MM_SugarShock",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_Wildflour.AtelierGoods_Meringue_Mushroom" ],                ///sugarshock
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_SugarShock",
+                            "ItemId": "MM_SugarShock",
+                            "ObjectInternalName": "MM_SugarShock",
+                            "ObjectDisplayName": "{{i18n:MM_SugarShock.DisplayName}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)167", //joja cola
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 400,
+                },
+
+                "MM_MilkyDelight":
+
+                     {
+                        "Id": "MM_MilkyDelight",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_Wildflour.AtelierGoods_Milk_Mushroom" ],                ///milky delight
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_MilkyDelight",
+                            "ItemId": "MM_MilkyDelight",
+                            "ObjectInternalName": "MM_MilkyDelight",
+                            "ObjectDisplayName": "{{i18n:MM_MilkyDelight.DisplayName}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "milk_item",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 400,
+                },
+
+            "MM_FunnyHoney":
+
+                     {
+                        "Id": "MM_FunnyHoney",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_Wildflour.AtelierGoods_Honey_Fungus" ],                ///milky delight
+                            "RequiredCount": 1
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_FunnyHoney",
+                            "ItemId": "MM_FunnyHoney",
+                            "ObjectInternalName": "MM_FunnyHoney",
+                            "ObjectDisplayName": "{{i18n:MM_FunnyHoney.DisplayName}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.RequirementTags.1": "syrup_item",
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 400,
+                },
+            }
+},
+
 ////////////LOCALIZED STRINGS
 
 {

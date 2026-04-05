@@ -580,7 +580,8 @@
               "ItemId": "(O)MM_AllEyes",
               "Chance": 1.0,
               "MinStack": 1,
-              "MaxStack": 2
+              "MaxStack": 2,
+              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
             
             {
@@ -589,7 +590,7 @@
               "MinStack": 2,
               "MaxStack": 4,
               "ObjectColor": "Aqua",
-              
+              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
               {
               "ItemId": "(O)MM_Eye",
@@ -597,7 +598,7 @@
               "MinStack": 2,
               "MaxStack": 4,
               "ObjectColor": "Gold",
-              
+              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
               {
               "ItemId": "(O)MM_Eye",
@@ -605,7 +606,7 @@
               "MinStack": 2,
               "MaxStack": 4,
               "ObjectColor": "ForestGreen",
-              
+              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
 
               {
@@ -613,24 +614,24 @@
               "Chance": 0.1,
               "MinStack": 1,
               "MaxStack": 2,
-              "ObjectColor": "DarkRed"
-              
+              "ObjectColor": "DarkRed",
+              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
              {
               "ItemId": "(O)MM_DemonicEye",
               "Chance": 0.1,
               "MinStack": 1,
               "MaxStack": 2,
-              "ObjectColor": "Yellow"
-              
+              "ObjectColor": "Yellow",
+              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
             {
               "ItemId": "(O)MM_DemonicEye",
               "Chance": 0.1,
               "MinStack": 1,
               "MaxStack": 2,
-              "ObjectColor": "Fuchsia"
-              
+              "ObjectColor": "Fuchsia",
+              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
           ],
           "Texture": "{{ModID}}/MushroomBushes",
@@ -1337,7 +1338,7 @@
     {
       "LogName": "Multiple yields all eyes",
 
-      "When": { "Include imaginary Mushrooms": true, "All Eyes Plant": "Crop" },
+      "When": { "Include imaginary Mushrooms": true, "All Eyes Planter": "Crop" },
 			"Action": "EditData",
 			"Target": "spacechase0.SpaceCore/CropExtensionData",
 			"Entries": {
