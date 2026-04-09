@@ -25,7 +25,8 @@
             "IsLamp": true,
             "Texture": "{{ModID}}/Potionmachine",
             "SpriteIndex": 0,
-            "CustomFields": {}
+            "CustomFields": {},
+           
     }
     }
 },
@@ -36,7 +37,7 @@
     "Action": "EditData",
     "Target": "Data/CraftingRecipes",
     "Entries": {
-         "MM_Potionmachine": "(O)337 5 (O)787 5 (O)MM_Flavored_MushroomEssence 5/Home/(BC)MM_Potionmachine 1/true/default/Potion Machine",
+         "MM_Potionmachine": "(O)337 5 (O)787 5 (O)MM_Flavored_MushroomEssence 5/Home/(BC)MM_Potionmachine 1/true/none/Potion Machine",
     }
 },
 
@@ -117,7 +118,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_greatwoodmushroom" ],                ///FORAGING POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition": [ "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" ]
                              },
                         ],
                         "OutputItem": 
@@ -163,7 +165,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_aspen" ],                ///MINING POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition": [ "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" ]
                              },
                         ],
                         "OutputItem": 
@@ -207,7 +210,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_lobstermushroom" ],                ///Fishing POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition": [ "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" ]
                              },
                         ],
                         "OutputItem": 

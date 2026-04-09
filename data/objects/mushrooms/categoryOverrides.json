@@ -1,0 +1,67 @@
+{
+    "Changes": [
+        {
+    "LogName": "SpaceCore: add categorie text overrides",
+    "Action": "EditData",
+    "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+    "Entries": {
+        "MM_GreatWoodMushroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_OrangePeelFungus": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_RubyBolete": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_OrangeGrisette": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_ParasolMushroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_SaffronMilkcap": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_Champignon": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_Aspen": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_RussulaVesca": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_GoldenBrittlegill": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_CaesarsMushroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_Enoki": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_Matsutake": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_LobsterMushroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_BlackTrumpet": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        
+        "MM_DestroyingAngel": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_TheSickener": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_SulfurTuft": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_Deathcap": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_GreyKnight": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+    
+        "MM_DevilsFingers": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_JubileeWaxcap": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_BluePinkgill": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_BleedingToothFungus": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_WitchesButter": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_PixiesParasol": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+
+
+    }
+},
+
+      {
+    "LogName": "SpaceCore: add categorie text overrides imaginary shrooms",
+    "Action": "EditData",
+    "When": { "Include imaginary Mushrooms": true },
+    "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+    "Entries": {
+        "MM_BurgerShroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_GhastlyButton": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_HealthShroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_ShroomOfTransingYourGender": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+
+        "MM_BleedingHeart": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_AllEyes": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_NightHorn": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+
+        "MM_WaningMoonShroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_CandyTongue": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_HypnoShroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_GloomShroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        
+        
+
+    }
+}
+    ] 
+    
+}

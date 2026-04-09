@@ -1,0 +1,86 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add special order",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "{{ModID}}_WizardPotionQuest": 
+                {
+                    "Name": "[Potion_Name]",
+                    "Requester": "Wizard",
+                    "Duration": "Month",
+                    "Repeatable": false,
+                    "RequiredTags": "mail_{{ModID}}_WizardMail, knows_Wizard",
+                    "OrderType": "",
+                    "Condition": "PLAYER_HAS_CRAFTING_RECIPE Current MM_Potionmachine",
+                    "SpecialRule": "",
+                    "Text": "[Potion_Text]",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "[Potion_Objective_1_Text]",
+                            "RequiredCount": "1",
+                            "Data": { "AcceptedContextTags": "preserve_sheet_index_mm_greatwoodmushroom, mushroom_extract" }
+                        },
+                        {
+                            "Type": "Deliver",
+                            "Text": "[Potion_Objective_2_Text]",
+                            "RequiredCount": "1",
+                            "Data": { 
+                                "AcceptedContextTags": "preserve_sheet_index_mm_greatwoodmushroom, mushroom_extract",
+                                "TargetName": "Wizard" }
+                        },
+                         {
+                            "Type": "Deliver",
+                            "Text": "[Potion_Objective_3_Text]",
+                            "RequiredCount": "1",
+                            "Data": { 
+                                "AcceptedContextTags": "poisonous_mushroom",
+                                "TargetName": "Wizard" }
+                        },
+                         {
+                            "Type": "Deliver",
+                            "Text": "[Potion_Objective_4_Text]",
+                            "RequiredCount": "1",
+                            "Data": { 
+                                "AcceptedContextTags": "id_o_257",
+                                "TargetName": "Wizard" }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": 
+                            {
+                                "MailReceived": "{{ModID}}_WizardPotionQuest1_complete", // string
+                                "NoLetter": false, // boolean
+                                "Host": true // boolean
+                            }
+                        }
+                    ]
+                }
+
+            }
+        },
+
+    {  //special order strings
+        
+
+      "LogName": "special order strings",
+      "Action": "EditData",
+      "Target": "Strings/SpecialOrderStrings",
+      "Entries": {
+        "Potion_Name": "Potion Secrets",
+        "Potion_Text": "The Wizard wishes to impart some of his knowledge on potions on you.",
+        "Potion_Objective_1_Text": "Collect 1 Great Wood Mushroom essence.",
+        "Potion_Objective_2_Text": "Deliver 1 Great Wood Mushroom essence to the Wizard.",
+        "Potion_Objective_3_Text": "Deliver 1 poisonous mushroom to the Wizard.",
+        "Potion_Objective_4_Text": "Deliver 1 morel to the Wizard.",
+      }
+    },
+    ]
+}

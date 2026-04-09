@@ -1,0 +1,24 @@
+{
+    "Changes":
+    [
+
+        {
+            "Action": "EditData",
+            "Target": "Data/Powers",
+            "Entries": {
+                "{{ModId}}_PotionBrewing1": {
+                    "DisplayName": "Potion Brewing 1",
+                    "Description": "You have just started your potion brewing journey. You know how to brew Foraging Potion, Mining Potion and Fishing Potion.",
+                    "TexturePath": "Mods/{{ModId}}/SpritesGlionox",
+                    "TexturePosition": {
+                        "X": 128,  // top-left corner of the canvas, assuming that this is the only sprite in the icon image
+                        "Y": 16
+                    },
+                    "UnlockedCondition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction",  // the player has caught a pufferfish
+                }
+            }
+        }
+        //mushroom enthusiast: mushrooms recover more hp
+        //potion enthusiast: potions recover more hp
+    ]
+}

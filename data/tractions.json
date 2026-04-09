@@ -36,5 +36,43 @@
                 }
             }
         },
+
+        {
+            "LogName": "wizard send mail after 3 essences",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_MM_WizardSendMail3Essences":
+                {
+                    "Id": "{{ModID}}_MM_WizardSendMail3Essences",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_STAT Current {{ModID}}_MushroomEssenceTracker 3, PLAYER_HAS_CRAFTING_RECIPE Current MM_Potionmachine",
+                    "Actions": [
+                        "AddMail current {{ModID}}_WizardMail tomorrow",
+                        
+                    ]
+                }
+            }
+        },
+
+        {
+            "LogName": "read potion book 1 traction",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_PotionBook1_TrAction":
+                {
+                    "Id": "{{ModID}}_PotionBook1_TrAction",
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "TRUE",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook1_Read}}\" true",
+                        "Spiderbuttons.BETAS_PlaySound book_read"
+                        
+                    ]
+                }
+            }
+        },
+
     ]
 }

@@ -1,0 +1,29 @@
+{
+    "Changes": [
+        //mail syntax: <"text"><"commands"><%item quest [quest ID] true%% for quests in letter>[#]<letter title>
+{
+    "LogName": "edit mail",
+    "Action": "EditData",
+    "Target": "data/mail",
+    "Entries": {
+	"{{ModID}}_WizardMail": "Enlightened @^, you have learned how to craft a potion machine and have made good use of your mushroom essence extractor. Come to my house and bring the following: ^ 1 Essence of the Great Wood Mushroom, 1 Morel and 1 red mushroom. ^ I will teach you the secrets of potion brewing. %item specialOrder {{ModID}}_WizardPotionQuest%%[#]Potion Brewing Course",
+    "{{ModID}}_WizardPotionQuest1_complete": "Congratulations on completing my trial. With the book that have sent you you will be able to brew more potions from now on.^ Magnus R.[#]Potion Knowledge"
+
+
+}
+},
+/* 
+    {
+	"LogName": "Edit Quests",
+	"Action": "EditData",
+	"Target": "Data/Quests",
+	"Entries": 
+		{
+			"{{ModID}}_ItemDeliveryWizard": "ItemDelivery/Potion Studies/Seems like the Wizard wants to teach you something about potions!/Bring him 1 Essence of the Great Wood Mushroom, 1 Morel and 1 poisonous mushroom/Wizard <Item Id> 1 Wizard (O)257 1 Wizard (O)420 1/-1/0/5000/-1/false/Ah, you have brought the required ingredients.",
+
+			
+		}
+    }, */
+
+    ]
+}

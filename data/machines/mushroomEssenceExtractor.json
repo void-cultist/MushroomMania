@@ -25,7 +25,7 @@
             "Texture": "{{ModID}}/Mushroomessenceextractor",
             "SpriteIndex": 0,
             "CustomFields": {},
-            "ContextTags": ["is_machine", "machine_input", "machine_output"]
+            "ContextTags": ["is_machine", "machine_input", "machine_output", "essence_extractor"]
     }
     }
 },
@@ -127,6 +127,14 @@
                 }
             ],
             "WobbleWhileWorking": true,
+            "StatsToIncrementWhenHarvested": 
+            [
+                { 
+                    "ID": "{{ModID}}_MushroomEssenceTracker",
+                    "StatName": "PreservesMade",
+                    "RequiredTags": ["mushroom_extract"]
+                }
+            ]
               
                 }
             }

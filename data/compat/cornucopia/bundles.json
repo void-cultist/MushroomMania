@@ -434,7 +434,7 @@
               
                "BundleReward": {
                "(O)MM_SaffronMilkcapStarter": 3,
-               "(BC)MM_Potionmachine": 1,
+               "(UB.Recipe)(BC)MM_Potionmachine": 1
                }
               
             },

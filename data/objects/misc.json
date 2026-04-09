@@ -1,0 +1,89 @@
+{
+    "Changes": [
+{
+    "LogName": "Add warp shroom object",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries":  {
+
+      "MM_WarpShroom":
+        {
+           "Name": "MM_WarpShroom",
+           "DisplayName": "Warp Shroom",
+            "Description": "Warps you to Mushroom Meadow. Consumed upon use.",
+          "Type": "Basic",
+            "Category": -17,
+            "Price": 300, 
+           "Texture": "{{ModID}}/SpritesGlionox", 
+            "SpriteIndex": 17, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 0,
+            "IsDrink": false,
+            "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
+            "ContextTags": [  "warp_item", "totem_item", "warp_totem", "Warp_mushroom" ],
+       
+        },
+   
+    }
+},
+
+{
+    "LogName": "Add potion book 1 object",
+    "Action": "EditData",
+    "Target": "Data/Objects",
+    "Entries":  {
+
+      "MM_PotionBook1":
+        {
+           "Name": "MM_PotionBook1",
+           "DisplayName": "Potion Book 1",
+            "Description": "Teaches you how to brew Foraging Potion, Mining Potion and Fishing Potion.",
+          "Type": "Basic",
+            "Category": -103,
+            "Price": 10000, 
+           "Texture": "{{ModID}}/SpritesGlionox", 
+            "SpriteIndex": 18, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 0,
+            "IsDrink": false,
+            "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
+            "ExcludeFromRandomSale": true,
+            "ContextTags": [  "book_item", "Potion_book" ],
+       
+        },
+   
+    }
+},
+
+{
+    "LogName": "Add warp shroom crafting recipe",
+    "Action": "EditData",
+    "Target": "Data/CraftingRecipes",
+    "Entries": {
+         "MM_WarpShroomRecipe": "(O)709 5 (O)MM_Flavored_MushroomEssence 1 (O)MM_Flavored_Potion 1/Home/(O)MM_WarpShroom 1/true/Farming 10/Warp Shroom",
+    }
+},
+
+{
+    "LogName": "SpaceCore: vanilla asset expansions",
+    "Action": "EditData",
+    "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+    "Entries": {
+        "MM_WarpShroom": {
+            "TotemWarp":
+            {
+                "Location": "{{ModID}}_MushroomMeadow",
+                "Position": "51, 8",
+                "Color": { "R": 141, "G": 112, "B": 230, "A": 0.651},
+                "ConsumedOnUse": true
+            } 
+        },
+        "MM_PotionBook1": {
+            "UseForTriggerAction": true,
+            "ConsumeForTriggerAction": true
+        }
+    }
+}
+
+    ]
+}
