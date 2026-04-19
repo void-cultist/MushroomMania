@@ -24,5 +24,96 @@
       "61,40;61,40"
     ]
   },
-  "SavedObjects": []
+  "SavedObjects": [
+    {
+      "MapName": "Custom_ForbiddenMaze",
+      "Name": "Object:MM_JubileeWaxcap",
+      "Tile": "99, 88",
+      "Type": "Forage",
+      "ID": "MM_JubileeWaxcap",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_JubileeWaxcap",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_ForbiddenMaze",
+      "Name": "Object:MM_BleedingToothFungus",
+      "Tile": "121, 35",
+      "Type": "Forage",
+      "ID": "MM_BleedingToothFungus",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_BleedingToothFungus",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_ForbiddenMaze",
+      "Name": "Object:MM_BleedingToothFungus",
+      "Tile": "81, 24",
+      "Type": "Forage",
+      "ID": "MM_BleedingToothFungus",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_BleedingToothFungus",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_ForbiddenMaze",
+      "Name": "Object:MM_JubileeWaxcap",
+      "Tile": "65, 110",
+      "Type": "Forage",
+      "ID": "MM_JubileeWaxcap",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_JubileeWaxcap",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_ForbiddenMaze",
+      "Name": "Object:MM_JubileeWaxcap",
+      "Tile": "59, 142",
+      "Type": "Forage",
+      "ID": "MM_JubileeWaxcap",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_JubileeWaxcap",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "Custom_ForbiddenMaze",
+      "Name": "Object:MM_JubileeWaxcap",
+      "Tile": "105, 30",
+      "Type": "Forage",
+      "ID": "MM_JubileeWaxcap",
+      "DaysUntilExpire": 2,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_JubileeWaxcap",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    }
+  ]
 }

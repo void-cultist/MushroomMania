@@ -134,10 +134,10 @@
             ]
           }
         ],
-        "UniqueAreaID": "Mushroom Meadow forage grass area 1",
+        "UniqueAreaID": "Mushroom Meadow forageable crops",
         "MapName": "void.MM_MushroomMeadow",
-        "MinimumSpawnsPerDay": 4,
-        "MaximumSpawnsPerDay": 20,
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
         "IncludeTerrainTypes": [
           "Grass",
           "Diggable"

@@ -56,168 +56,6 @@
             "category": "Object",
             "SpawnWeight": 1,
             "Name": "MM_ShroomOfTransingYourGender"
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_ChampignonStarter",
-                "SpawnWeight": 50
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_BurgerShroomStarter",
-                "SpawnWeight": 20
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_SaffronMilkcapStarter",
-                "SpawnWeight": 20
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_SickenerPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_DeathcapPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_EnokiPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_AspenPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_HealthShroomPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_AllEyes_Planter",
-                "SpawnWeight": 1
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_NightHornPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_WitchesButterPlanter",
-                "SpawnWeight": 8
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_EnokiPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "contents": [
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "MM_GreatWoodMushroomStarter"
-              },
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "MM_ParasolMushroomStarter"
-              }
-            ],
-            "Stack": 1
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "Truffle",
-                "SpawnWeight": 9
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "SpawnWeight": 5,
-                "Name": "Mixed Seeds"
-              },
-              {
-                "category": "Object",
-                "SpawnWeight": 10,
-                "Name": "Mixed Flower Seeds"
-              }
-            ],
-            "Stack": 1
           }
         ],
         "SummerItemIndex": [
@@ -280,178 +118,6 @@
             "category": "Object",
             "SpawnWeight": 1,
             "Name": "MM_ShroomOfTransingYourGender"
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_ChampignonStarter",
-                "SpawnWeight": 50
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_BurgerShroomStarter",
-                "SpawnWeight": 20
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_SaffronMilkcapStarter",
-                "SpawnWeight": 20
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_SickenerPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_DeathcapPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_EnokiPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_AspenPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_HealthShroomPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_AllEyes_Planter",
-                "SpawnWeight": 1
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_NightHornPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_WitchesButterPlanter",
-                "SpawnWeight": 8
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_EnokiPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "contents": [
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "MM_GreatWoodMushroomStarter"
-              },
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "MM_ParasolMushroomStarter"
-              }
-            ],
-            "Stack": 1
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "Truffle",
-                "SpawnWeight": 9
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_MagmaCapSeeds",
-                "SpawnWeight": 4
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "SpawnWeight": 5,
-                "Name": "Mixed Seeds"
-              },
-              {
-                "category": "Object",
-                "SpawnWeight": 10,
-                "Name": "Mixed Flower Seeds"
-              }
-            ],
-            "Stack": 1
           }
         ],
         "FallItemIndex": [
@@ -519,168 +185,6 @@
             "category": "Object",
             "SpawnWeight": 1,
             "Name": "MM_ShroomOfTransingYourGender"
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_ChampignonStarter",
-                "SpawnWeight": 50
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_BurgerShroomStarter",
-                "SpawnWeight": 20
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_SaffronMilkcapStarter",
-                "SpawnWeight": 20
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_SickenerPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_DeathcapPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_EnokiPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_AspenPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_HealthShroomPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_AllEyes_Planter",
-                "SpawnWeight": 1
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_NightHornPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_WitchesButterPlanter",
-                "SpawnWeight": 8
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_EnokiPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "contents": [
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "MM_GreatWoodMushroomStarter"
-              },
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "MM_ParasolMushroomStarter"
-              }
-            ],
-            "Stack": 1
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "Truffle",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "Mixed Seeds"
-              },
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "Mixed Flower Seeds"
-              }
-            ],
-            "Stack": 1
           }
         ],
         "WinterItemIndex": [
@@ -708,149 +212,19 @@
             "category": "Object",
             "PercentChanceToSpawn": 1,
             "Name": "MM_ShroomOfTransingYourGender"
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_SickenerPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_DeathcapPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_EnokiPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_AspenPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_HealthShroomPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_AllEyes_Planter",
-                "SpawnWeight": 1
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_NightHornPlanter",
-                "SpawnWeight": 5
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_WitchesButterPlanter",
-                "SpawnWeight": 8
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "MM_EnokiPlanter",
-                "SpawnWeight": 3
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "contents": [
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "MM_GreatWoodMushroomStarter"
-              },
-              {
-                "category": "Object",
-                "SpawnWeight": 50,
-                "Name": "MM_ParasolMushroomStarter"
-              }
-            ],
-            "Stack": 1
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "Truffle",
-                "SpawnWeight": 12
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "SpawnWeight": 5,
-                "Name": "Mixed Seeds"
-              },
-              {
-                "category": "Object",
-                "SpawnWeight": 10,
-                "Name": "Mixed Flower Seeds"
-              }
-            ],
-            "Stack": 1
           }
         ],
         "UniqueAreaID": "Mushroom Meadow forage grass area 1",
         "MapName": "void.MM_MushroomMeadow",
         "MinimumSpawnsPerDay": -1,
-        "MaximumSpawnsPerDay": 6,
+        "MaximumSpawnsPerDay": 4,
         "IncludeTerrainTypes": [
           "Diggable",
           "Grass"
         ],
-        "ExcludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "7,15/11,15"
+        ],
         "IncludeCoordinates": [
           "27,7/33,16",
           "26,18/30,21"
@@ -875,7 +249,7 @@
           "GameStateQueries": [],
           "CPConditions": {},
           "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": null
+          "LimitedNumberOfSpawns": 5
         },
         "DaysUntilSpawnsExpire": 1
       },
@@ -1333,7 +707,7 @@
         ],
         "UniqueAreaID": "quarry spawns",
         "MapName": "Mountain",
-        "MinimumSpawnsPerDay": -1,
+        "MinimumSpawnsPerDay": -3,
         "MaximumSpawnsPerDay": 4,
         "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
@@ -1865,6 +1239,778 @@
           "GameStateQueries": [
             "WEATHER Target Rain GreenRain Storm"
           ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_ChampignonStarter",
+                "SpawnWeight": 50
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_BurgerShroomStarter",
+                "SpawnWeight": 20
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_SaffronMilkcapStarter",
+                "SpawnWeight": 20
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_SickenerPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_DeathcapPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AspenPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_HealthShroomPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AllEyes_Planter",
+                "SpawnWeight": 1
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_NightHornPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_ChampignonStarter",
+                "SpawnWeight": 50
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_BurgerShroomStarter",
+                "SpawnWeight": 20
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_SaffronMilkcapStarter",
+                "SpawnWeight": 20
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_SickenerPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_DeathcapPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AspenPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_HealthShroomPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AllEyes_Planter",
+                "SpawnWeight": 1
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_NightHornPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_ChampignonStarter",
+                "SpawnWeight": 50
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_BurgerShroomStarter",
+                "SpawnWeight": 20
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_SaffronMilkcapStarter",
+                "SpawnWeight": 20
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_SickenerPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_DeathcapPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AspenPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_HealthShroomPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AllEyes_Planter",
+                "SpawnWeight": 1
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_NightHornPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_ChampignonStarter",
+                "SpawnWeight": 50
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_BurgerShroomStarter",
+                "SpawnWeight": 20
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_SaffronMilkcapStarter",
+                "SpawnWeight": 20
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_SickenerPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_DeathcapPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AspenPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_HealthShroomPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AllEyes_Planter",
+                "SpawnWeight": 1
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_NightHornPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Mushroom Meadow buried items1",
+        "MapName": "void.MM_MushroomMeadow",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Grass"
+        ],
+        "IncludeCoordinates": [
+          "41,23/44,28"
+        ],
+        "ExcludeCoordinates": [
+          "7,15/11,15"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_WitchesButterPlanter",
+                "SpawnWeight": 8
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 50,
+                "Name": "MM_GreatWoodMushroomStarter"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 50,
+                "Name": "MM_ParasolMushroomStarter"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "Truffle",
+                "SpawnWeight": 9
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 5,
+                "Name": "Mixed Seeds"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 10,
+                "Name": "Mixed Flower Seeds"
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_WitchesButterPlanter",
+                "SpawnWeight": 8
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 50,
+                "Name": "MM_GreatWoodMushroomStarter"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 50,
+                "Name": "MM_ParasolMushroomStarter"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "Truffle",
+                "SpawnWeight": 9
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 5,
+                "Name": "Mixed Seeds"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 10,
+                "Name": "Mixed Flower Seeds"
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_WitchesButterPlanter",
+                "SpawnWeight": 8
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 50,
+                "Name": "MM_GreatWoodMushroomStarter"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 50,
+                "Name": "MM_ParasolMushroomStarter"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "Truffle",
+                "SpawnWeight": 9
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 5,
+                "Name": "Mixed Seeds"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 10,
+                "Name": "Mixed Flower Seeds"
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_WitchesButterPlanter",
+                "SpawnWeight": 8
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 3
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 50,
+                "Name": "MM_GreatWoodMushroomStarter"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 50,
+                "Name": "MM_ParasolMushroomStarter"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "Truffle",
+                "SpawnWeight": 9
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 5,
+                "Name": "Mixed Seeds"
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "SpawnWeight": 10,
+                "Name": "Mixed Flower Seeds"
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Mushroom Meadow buried items2",
+        "MapName": "void.MM_MushroomMeadow",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Grass"
+        ],
+        "IncludeCoordinates": [
+          "34,18/37,20"
+        ],
+        "ExcludeCoordinates": [
+          "7,15/11,15"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
           "CPConditions": {},
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null

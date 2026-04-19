@@ -1,0 +1,65 @@
+{
+  "WeatherForYesterday": "Sun",
+  "LNOSCounter": {
+    "Mushroom Meadow forage grass area 1": 5
+  },
+  "ExistingObjectLocations": {
+    "Farm large object area 1": [
+      "69,115;69,115",
+      "71,113;71,113",
+      "72,109;72,109",
+      "74,88;74,88",
+      "68,101;68,101",
+      "70,98;70,98",
+      "72,90;72,90",
+      "70,93;70,93"
+    ]
+  },
+  "SavedObjects": [
+    {
+      "MapName": "IslandSouthEastCave",
+      "Name": "Object:MM_HealthShroom",
+      "Tile": "3, 9",
+      "Type": "Forage",
+      "ID": "MM_HealthShroom",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_HealthShroom",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "IslandSouthEastCave",
+      "Name": "Object:MM_HealthShroom",
+      "Tile": "21, 15",
+      "Type": "Forage",
+      "ID": "MM_HealthShroom",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_HealthShroom",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    },
+    {
+      "MapName": "IslandSouthEastCave",
+      "Name": "Object:MM_HealthShroom",
+      "Tile": "6, 10",
+      "Type": "Forage",
+      "ID": "MM_HealthShroom",
+      "DaysUntilExpire": 1,
+      "SpawnTime": 600,
+      "ConfigItem": {
+        "Category": "Object",
+        "Name": "MM_HealthShroom",
+        "SpawnWeight": 5
+      },
+      "MonType": null
+    }
+  ]
+}

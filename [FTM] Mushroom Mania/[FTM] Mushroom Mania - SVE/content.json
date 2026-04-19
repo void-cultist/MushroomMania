@@ -17,7 +17,7 @@
             ]
           }
         ],
-        "UniqueAreaID": "Bearberrys Spawns",
+        "UniqueAreaID": "Bearberrys Spawns mm",
         "MapName": "Woods",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 4,
@@ -96,7 +96,7 @@
         "WinterItemIndex": [
           "Bearberrys"
         ],
-        "UniqueAreaID": "Woods forage area 1",
+        "UniqueAreaID": "Woods forage area 1 mm",
         "MapName": "Woods",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
@@ -212,7 +212,7 @@
           {
             "category": "Object",
             "SpawnWeight": 1,
-            "Name": "(O)MM_BleedingHeart"
+            "Name": "MM_BleedingHeart"
           },
           "MM_BlackTrumpet",
           "MM_DestroyingAngel",
@@ -245,7 +245,7 @@
           "MM_Champignon",
           "MM_HypnoShroom"
         ],
-        "UniqueAreaID": "SVE Forest West",
+        "UniqueAreaID": "SVE Forest West mm",
         "MapName": "Custom_ForestWest",
         "MinimumSpawnsPerDay": 4,
         "MaximumSpawnsPerDay": 8,
@@ -375,7 +375,7 @@
         ],
         "FallItemIndex": [],
         "WinterItemIndex": [],
-        "UniqueAreaID": "Poison berry spawns",
+        "UniqueAreaID": "Poison berry spawns mm",
         "MapName": "Woods",
         "MinimumSpawnsPerDay": 4,
         "MaximumSpawnsPerDay": 8,
@@ -431,7 +431,7 @@
           "MM_GreyKnight"
         ],
         "WinterItemIndex": [],
-        "UniqueAreaID": "poison mushroom spawns",
+        "UniqueAreaID": "poison mushroom spawns mm",
         "MapName": "Woods",
         "MinimumSpawnsPerDay": 0,
         "MaximumSpawnsPerDay": 2,
@@ -548,7 +548,7 @@
             "Name": "MM_BleedingToothFungus"
           }
         ],
-        "UniqueAreaID": "Forbidden Maze swamp forage Spawns",
+        "UniqueAreaID": "Forbidden Maze swamp forage Spawns mm",
         "MapName": "Custom_ForbiddenMaze",
         "MinimumSpawnsPerDay": 70,
         "MaximumSpawnsPerDay": 100,
@@ -614,7 +614,7 @@
           "MM_Champignon",
           "MM_GhastlyButton"
         ],
-        "UniqueAreaID": "ShearwaterBridge forage area 1",
+        "UniqueAreaID": "ShearwaterBridge forage area 1 mm",
         "MapName": "Custom_ShearwaterBridge",
         "MinimumSpawnsPerDay": 1,
         "MaximumSpawnsPerDay": 3,
