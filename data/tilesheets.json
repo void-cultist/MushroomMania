@@ -5,6 +5,19 @@
       "Target": "maps/spring_MushroomMeadow, maps/summer_MushroomMeadow, maps/fall_MushroomMeadow, maps/winter_MushroomMeadow",
       "FromFile": "assets/Maps/{{TargetWithoutPath}}.png"
     },
+      {
+      "LogName": "Mushroom Meadow foliage tilesheet",
+      "Action": "Load",
+      "Target": "maps/spring_MMFoliage, maps/summer_MMFoliage, maps/fall_MMFoliage, maps/winter_MMFoliage",
+      "FromFile": "assets/Maps/{{TargetWithoutPath}}.png"
+    },
+       {
+      "LogName": "Mushroom Meadow traveling cart tilesheet",
+      "Action": "Load",
+      "Target": "maps/travelingCart",
+      "FromFile": "assets/Maps/{{TargetWithoutPath}}.png"
+    },
+
 
 ]
 }

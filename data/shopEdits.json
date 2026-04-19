@@ -28,6 +28,162 @@
                     } 
                 ]
 
-}
+            },
+
+    ////TRAVELING CART/////
+
+    {
+      "LogName": "Editing Traveler Shop",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "TargetField": [
+        "Traveler",
+        "Items"
+      ],
+      "Entries": {
+        "{{ModID}}_TravelingCart_CommonMushrooms": 
+        {
+          "Condition": "DAY_OF_WEEK Thursday, SYNCED_RANDOM day MM_TravelcartRandom 0.3",
+          "Id": "{{ModID}}_TravelingCart_CommonMushrooms",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "MaxItems": 1,
+          "PerItemCondition": "ITEM_ID Target MM_GreatWoodMushroom MM_ParasolMushroom MM_Champignon",
+          "AvailableStock": 3,
+          "AvailableStockLimit": "Global",
+          "AvoidRepeat": true,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                0.8,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+
+        "{{ModID}}_TravelingCart_PoisonousMushrooms": 
+        {
+          "Condition": "DAY_OF_WEEK Friday Saturday, SYNCED_RANDOM day MM_TravelcartRandom 0.3",
+          "Id": "{{ModID}}_TravelingCart_PoisonousMushrooms",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "MaxItems": 1,
+          "PerItemCondition": "ITEM_ID Target MM_DestroyingAngel MM_SulfurTuft MM_Deathcap",
+          "AvailableStock": 3,
+          "AvailableStockLimit": "Global",
+          "AvoidRepeat": true,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                0.8,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+
+        "{{ModID}}_TravelingCart_MushroomPlanters": 
+        {
+          "Condition": "DAY_OF_WEEK Thursday Sunday, SYNCED_RANDOM day MM_TravelcartRandom_Planters 0.1",
+          "Id": "{{ModID}}_TravelingCart_MushroomPlanters",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "MaxItems": 1,
+          "PerItemCondition": "ITEM_CONTEXT_TAG target mushroom_planter_item",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Global",
+          "AvoidRepeat": true,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                0.8,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+
+        "{{ModID}}_TravelingCart_MushroomStarters": 
+        {
+          "Condition": "DAY_OF_WEEK Thursday Friday, SYNCED_RANDOM day MM_TravelcartRandom_Starters 0.2",
+          "Id": "{{ModID}}_TravelingCart_MushroomStarters",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "MaxItems": 1,
+          "PerItemCondition": "ITEM_CONTEXT_TAG target mushroom_starter_item",
+          "AvailableStock": 2,
+          "AvailableStockLimit": "Global",
+          "AvoidRepeat": true,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                0.8,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+
+        "{{ModID}}_TravelingCart_MushroomDishes": 
+        {
+          "Condition": "DAY_OF_WEEK Friday Sunday, SYNCED_RANDOM day MM_TravelcartRandom_Dishes 0.3",
+          "Id": "{{ModID}}_TravelingCart_MushroomDishes",
+          "RandomItemId": ["RANDOM_ITEMS (O)"],
+          "MaxItems": 1,
+          "PerItemCondition": "ITEM_CONTEXT_TAG target mushroom_dish",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Player",
+          "AvoidRepeat": true,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                0.8,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+
+        "{{ModID}}_TravelingCart_RareMushrooms": 
+        {
+          "Condition": "DAY_OF_WEEK Thursday Friday Sunday, SYNCED_RANDOM day MM_TravelcartRandom_Rare 0.05",
+          "Id": "{{ModID}}_TravelingCart_RareMushrooms",
+          "ItemId": "RANDOM_ITEMS (O)",
+          "MaxItems": 1,
+          "PerItemCondition": "ITEM_CONTEXT_TAG rare_mushroom",
+          "AvailableStock": 1,
+          "AvailableStockLimit": "Player",
+          "AvoidRepeat": true,
+          "IgnoreShopPriceModifiers": false,
+          "PriceModifiers": [
+            {
+              "Modification": "Multiply",
+              "RandomAmount": [
+                0.8,
+                1,
+                2
+              ]
+            }
+          ]
+        },
+       
+      },
+    },
+
+///////////////////add custom potion shop
+
+
     ]
 }

@@ -334,7 +334,7 @@
           "SpriteIndex": 4,
           "Price": 200,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
-          "ContextTags": [ "seedmaker_banned", "mushroom_starter_item", "edible_mushroom_starter" ]
+          "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
         }
       }
     },
@@ -581,7 +581,7 @@
               "Chance": 1.0,
               "MinStack": 1,
               "MaxStack": 2,
-              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
+              //"PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
             
             {
@@ -590,7 +590,7 @@
               "MinStack": 2,
               "MaxStack": 4,
               "ObjectColor": "Aqua",
-              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
+              //"PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
               {
               "ItemId": "(O)MM_Eye",
@@ -598,7 +598,7 @@
               "MinStack": 2,
               "MaxStack": 4,
               "ObjectColor": "Gold",
-              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
+              //"PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
               {
               "ItemId": "(O)MM_Eye",
@@ -606,7 +606,7 @@
               "MinStack": 2,
               "MaxStack": 4,
               "ObjectColor": "ForestGreen",
-              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
+              //"PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
 
               {
@@ -615,7 +615,7 @@
               "MinStack": 1,
               "MaxStack": 2,
               "ObjectColor": "DarkRed",
-              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
+              //"PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
              {
               "ItemId": "(O)MM_DemonicEye",
@@ -623,7 +623,7 @@
               "MinStack": 1,
               "MaxStack": 2,
               "ObjectColor": "Yellow",
-              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
+              //"PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
             {
               "ItemId": "(O)MM_DemonicEye",
@@ -631,7 +631,7 @@
               "MinStack": 1,
               "MaxStack": 2,
               "ObjectColor": "Fuchsia",
-              "PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
+              //"PerItemCondition": "ANY \"SEASON Fall,DAY_OF_MONTH 1 2 3\" \"SEASON Winter,DAY_OF_MONTH 24 25 26 27 28\""
             },
           ],
           "Texture": "{{ModID}}/MushroomBushes",
@@ -643,7 +643,7 @@
     
 
     {
-      "LogName": "custom bush data all eyes",
+      "LogName": "custom bush data SICKENER",
       "Action": "EditData",
       "Target": "furyx639.CustomBush/Data",
       "Entries": {

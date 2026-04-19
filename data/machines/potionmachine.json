@@ -119,7 +119,7 @@
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_greatwoodmushroom" ],                ///FORAGING POTION
                             "RequiredCount": 1,
-                            "Condition": [ "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" ]
+                            "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" 
                              },
                         ],
                         "OutputItem": 
@@ -166,7 +166,7 @@
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_aspen" ],                ///MINING POTION
                             "RequiredCount": 1,
-                            "Condition": [ "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" ]
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" 
                              },
                         ],
                         "OutputItem": 
@@ -211,7 +211,7 @@
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_lobstermushroom" ],                ///Fishing POTION
                             "RequiredCount": 1,
-                            "Condition": [ "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" ]
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction" 
                              },
                         ],
                         "OutputItem": 
@@ -256,7 +256,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_caesarsmushroom" ],                ///Combat POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook2_TrAction"
                              },
                         ],
                         "OutputItem": 
@@ -346,7 +347,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_bleedingtoothfungus" ],                ///Attack POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook2_TrAction"
                              },
                         ],
                         "OutputItem": 
@@ -390,7 +392,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_russulavesca" ],                ///Defense POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook2_TrAction"
                              },
                         ],
                         "OutputItem": 
@@ -614,7 +617,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_goldenbrittlegill" ],                ///Critical POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook4_TrAction"
                              },
                         ],
                         "OutputItem": 
@@ -659,7 +663,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_blacktrumpet" ],                ///Immunity POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook4_TrAction"
                              },
                         ],
                         "OutputItem": 
@@ -799,7 +804,8 @@
                             {
                             "Trigger": "ItemPlacedInMachine",
                             "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_champignon" ],                ///WeaponStat POTION
-                            "RequiredCount": 1
+                            "RequiredCount": 1,
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook3_TrAction"
                              },
                         ],
                         "OutputItem": 
@@ -826,7 +832,53 @@
                               
                                 "selph.ExtraMachineConfig.RequirementId.1": "(O)768", //solar essence
                                 "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
-								"selph.ExtraMachineConfig.RequirementCount.1": 2,
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
+                                "selph.ExtraMachineConfig.RequirementCount.2": 1,
+                                "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
+                            } 
+                          
+
+                        }
+                     ],
+                       "MinutesUntilReady": 600,
+                },
+
+                {
+                        "Id": "MM_Speed_Potion",
+                        "Triggers": 
+                        [
+                            {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [ "mushroom_extract", "preserve_sheet_index_mm_parasolmushroom" ],                ///Speed POTION
+                            "RequiredCount": 1,
+                            "Condition":  "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook3_TrAction"
+                             },
+                        ],
+                        "OutputItem": 
+                        [
+                            {
+                            "Id": "MM_Speed_Potion",
+                            "ItemId": "MM_Speed_Potion",
+                            "ObjectInternalName": "MM_Speed_Potion",
+                            "ObjectDisplayName": "{{i18n:MM_Speed_Potion.name}}",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": false,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            
+                            "PriceModifiers":
+                            [
+                                {
+									"Id": "MM_PotionPrice",
+									"Modification": "Multiply",
+									"Amount": 2.0
+								}
+                            ],
+                            "CustomData": {
+                              
+                                "selph.ExtraMachineConfig.RequirementId.1": "(O)253", //triple shot espresso
+                                "selph.ExtraMachineConfig.RequirementTags.2": "poisonous_mushroom",
+								"selph.ExtraMachineConfig.RequirementCount.1": 1,
                                 "selph.ExtraMachineConfig.RequirementCount.2": 1,
                                 "selph.ExtraMachineConfig.RequirementAddPriceMultiplier.2": 1.5
                             } 

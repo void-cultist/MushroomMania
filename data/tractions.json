@@ -27,7 +27,7 @@
                 "{{ModID}}_MMUnlock":
                 {
                     "Id": "{{ModID}}_MMUnlock",
-                    "Trigger": "DayStarted",
+                    "Trigger": "DayEnding",
                     "Condition": "PLAYER_FARMING_LEVEL Any 3, PLAYER_FORAGING_LEVEL Any 3, PLAYER_VISITED_LOCATION Any Woods",
                     "Actions": [
                         "Spiderbuttons.BETAS_Message \"{{i18n:MMUnlock}}\" true",
@@ -45,10 +45,10 @@
                 "{{ModID}}_MM_WizardSendMail3Essences":
                 {
                     "Id": "{{ModID}}_MM_WizardSendMail3Essences",
-                    "Trigger": "DayStarted",
-                    "Condition": "PLAYER_STAT Current {{ModID}}_MushroomEssenceTracker 3, PLAYER_HAS_CRAFTING_RECIPE Current MM_Potionmachine",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Current MM_Flavored_MushroomEssence 3, PLAYER_HAS_CRAFTING_RECIPE Current MM_Potionmachine",
                     "Actions": [
-                        "AddMail current {{ModID}}_WizardMail tomorrow",
+                        "AddMail current void.MM_WizardMail tomorrow"
                         
                     ]
                 }
@@ -56,7 +56,61 @@
         },
 
         {
-            "LogName": "read potion book 1 traction",
+            "LogName": "wizard sends potion book 2",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_MM_WizardSendMailPotionBook2":
+                {
+                    "Id": "{{ModID}}_MM_WizardSendMailPotionBook2",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook1_TrAction, PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_PotionBook1_Read",
+                    "Actions": [
+                        "AddMail current void.MM_Wizard_SendsPotionBook2 tomorrow"
+                        
+                    ]
+                }
+            }
+        },
+
+        {
+            "LogName": "wizard sends potion book 3",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_MM_WizardSendMailPotionBook3":
+                {
+                    "Id": "{{ModID}}_MM_WizardSendMailPotionBook3",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook2_TrAction, PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_PotionBook2_Read",
+                    "Actions": [
+                        "AddMail current void.MM_Wizard_SendsPotionBook3 tomorrow"
+                        
+                    ]
+                }
+            }
+        },
+
+        {
+            "LogName": "wizard sends potion book 4",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_MM_WizardSendMailPotionBook4":
+                {
+                    "Id": "{{ModID}}_MM_WizardSendMailPotionBook4",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_RUN_TRIGGER_ACTION Current {{ModID}}_PotionBook3_TrAction, PLAYER_SEEN_CONVERSATION_TOPIC Current {{ModID}}_PotionBook3_Read",
+                    "Actions": [
+                        "AddMail current void.MM_Wizard_SendsPotionBook4 tomorrow"
+                        
+                    ]
+                }
+            }
+        },
+
+        {
+            "LogName": "read potion books tractions",
             "Action": "EditData",
             "Target": "Data/TriggerActions",
             "Entries": {
@@ -66,13 +120,52 @@
                     "Trigger": "spacechase0.SpaceCore_OnItemUsed",
                     "Condition": "TRUE",
                     "Actions": [
-                        "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook1_Read}}\" true",
-                        "Spiderbuttons.BETAS_PlaySound book_read"
+                        "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook_Read}}\" true",
+                        "Spiderbuttons.BETAS_PlaySound book_read",
+                        "AddConversationTopic {{ModID}}_PotionBook1_Read 7"
                         
                     ]
-                }
+                },
+
+                "{{ModID}}_PotionBook2_TrAction":
+                {
+                    "Id": "{{ModID}}_PotionBook2_TrAction",
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "TRUE",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook_Read}}\" true",
+                        "Spiderbuttons.BETAS_PlaySound book_read",
+                        "AddConversationTopic {{ModID}}_PotionBook2_Read 7"
+                        
+                    ]
+                },
+                "{{ModID}}_PotionBook3_TrAction":
+                {
+                    "Id": "{{ModID}}_PotionBook3_TrAction",
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "TRUE",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook_Read}}\" true",
+                        "Spiderbuttons.BETAS_PlaySound book_read",
+                        "AddConversationTopic {{ModID}}_PotionBook3_Read 7"
+                        
+                    ]
+                },
+                "{{ModID}}_PotionBook4_TrAction":
+                {
+                    "Id": "{{ModID}}_PotionBook4_TrAction",
+                    "Trigger": "spacechase0.SpaceCore_OnItemUsed",
+                    "Condition": "TRUE",
+                    "Actions": [
+                        "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook_Read}}\" true",
+                        "Spiderbuttons.BETAS_PlaySound book_read",
+                        "AddConversationTopic {{ModID}}_PotionBook4_Read 7"
+                        
+                    ]
+                },
             }
-        },
+        }
+        
 
     ]
 }

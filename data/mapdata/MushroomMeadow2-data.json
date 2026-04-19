@@ -1,0 +1,154 @@
+{
+    "Changes": [
+
+         {
+            "LogName": "Load second mushroom meadow map",
+            "Action": "Load",
+            "Target": "Maps/{{ModID}}_MushroomMeadow2",
+            "FromFile": "assets/maps/MushroomMeadow2.tmx"
+        },
+
+         {
+            "LogName": "Create New Location: Mushroom Meadow2",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModID}}_MushroomMeadow2": 
+                {
+                    	"DefaultArrivalTile": { "X": 2, "Y": 14},
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModID}}_MushroomMeadow2"
+                        },
+                        "Music": 
+                        [
+                            {
+                            "ID": "{{ModId}}_SpringBGM",
+                            "Track": "{{SpringBGM}}",
+                            "Condition": "SEASON spring"
+                            },
+                            {
+                            "ID": "{{ModId}}_SummerBGM",
+                            "Track": "{{SummerBGM}}",
+                            "Condition": "SEASON summer"
+                            },
+                             {
+                            "ID": "{{ModId}}_FallBGM",
+                            "Track": "{{FallBGM}}",
+                            "Condition": "SEASON fall"
+                            },
+                            {
+                            "ID": "{{ModId}}_WinterBGM",
+                            "Track": "{{WinterBGM}}",
+                            "Condition": "SEASON winter"
+                            },
+                            {
+                            "ID": "{{ModId}}_NightBGM",
+                            "Track": "{{NightBGM}}",
+                            "Condition": "TIME 2100 2600"
+                            },
+                        ],
+                        "MusicIgnoredInRain": false,
+                        "MusicIgnoredInFallDebris": true,
+                        "CustomFields": {
+                            "mushymato.MMAP_LightRays": "T",
+                             "mushymato.MMAP_WoodsDebris":  "-1 \"RANDOM 0.2\"",
+                             "mushymato.MMAP_WoodsLighting": "#af67deeb #695b9ef2 false",
+                             "mushymato.MMAP_ProtectFruitTree": "T"
+                             //"mushymato.MMAP_WaterColor": "#EFA7BF #8e7cc3 #e69138 #5a9483"
+                        }
+                }
+            }
+        },
+
+
+
+        {
+            "LogName": "Add traveler cart map patch",
+            "Action": "EditMap",
+            "When": { "DayOfWeek": "Thursday"  },
+            "Target": "Maps/{{ModID}}_MushroomMeadow2",
+            "PatchMode": "Overlay",
+            "FromFile": "assets/Maps/TravelingCart.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 7,
+                "Height": 5
+            },
+            "ToArea": { "X": 49, "Y":25, "Width": 7, "Height": 5 }
+        },
+
+
+
+    {      
+        "LogName": "Add traveling cart shop tile",
+        "Action": "EditMap",
+        "When": { "DayOfWeek": "Thursday"  },
+        "Target": "Maps/{{ModID}}_MushroomMeadow2", 
+        "MapTiles": [  
+        {  
+            "Position": { "X": 52, "Y": 29 }, 
+            "Layer": "Buildings", 
+            "SetProperties": { 
+                "Action": "OpenShop Traveler" } }, 
+       
+        ]
+
+        },
+
+        
+    {      
+        "LogName": "Add tree tiles",
+        "Action": "EditMap",
+        "Target": "Maps/{{ModID}}_MushroomMeadow2", 
+        "MapTiles": [  
+        {  
+            "Position": { "X": 2, "Y": 45 }, 
+            "Layer": "Paths", 
+            "SetProperties": { 
+                "SpawnTree": "Fruit {{FruitTree1}}" } }, 
+
+        {  
+            "Position": { "X": 5, "Y": 47 }, 
+            "Layer": "Paths", 
+            "SetProperties": { 
+                "SpawnTree": "Fruit {{FruitTree2}}" } },
+
+        {  
+            "Position": { "X": 51, "Y": 11 }, 
+            "Layer": "Paths", 
+            "SetProperties": { 
+                "SpawnTree": "Fruit {{FruitTree3}}" } },
+
+        {  
+            "Position": { "X": 10, "Y": 34 }, 
+            "Layer": "Paths", 
+            "SetProperties": { 
+                "SpawnTree": "Fruit {{FruitTree4}}" } },
+
+        {  
+            "Position": { "X": 49, "Y": 48 }, 
+            "Layer": "Paths", 
+            "SetProperties": { 
+                "SpawnTree": "Wild {{WildTree}}" } },
+
+        {  
+            "Position": { "X": 41, "Y": 26 }, 
+            "Layer": "Paths", 
+            "SetProperties": { 
+                "SpawnTree": "Wild {{WildTree}}" } },
+
+        {  
+            "Position": { "X": 8, "Y": 19 }, 
+            "Layer": "Paths", 
+            "SetProperties": { 
+                "SpawnTree": "Wild {{WildTree}}" } },
+       
+       
+        ]
+
+        },
+
+    
+    ]
+}

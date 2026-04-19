@@ -1,7 +1,7 @@
 {
     "Changes": [
-        {
-    "LogName": "SpaceCore: add categorie text overrides",
+{
+    "LogName": "SpaceCore: add categorie text overrides for mushrooms",
     "Action": "EditData",
     "Target": "spacechase0.SpaceCore/ObjectExtensionData",
     "Entries": {
@@ -38,7 +38,7 @@
     }
 },
 
-      {
+{
     "LogName": "SpaceCore: add categorie text overrides imaginary shrooms",
     "Action": "EditData",
     "When": { "Include imaginary Mushrooms": true },
@@ -61,7 +61,49 @@
         
 
     }
-}
+},
+
+{
+    "LogName": "SpaceCore: add categorie text overrides for potions",
+    "Action": "EditData",
+    "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+    "Entries": {
+        "MM_Flavored_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Foraging_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Mining_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Fishing_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Combat_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Luck_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Attack_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Defense_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Speed_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Critical_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Immunity_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Heroic_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_WeaponStat_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_Shield_Potion": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_LuckySeven": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_LeviathansGrace": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_AbyssalRage": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_BlessingOfHermes": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+
+
+    }
+},
+
+{
+    "LogName": "SpaceCore: add categorie text overrides for wildflour compat potions",
+    "When": { "Wildflour Mods Compatibility": true,    "HasMod |contains={{Merge: {{WAG}}, {{RatA}} }}": true},
+    "Action": "EditData",
+    "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+    "Entries": {
+        "MM_SugarShock": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_MilkyDelight": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+        "MM_FunnyHoney": { "CategoryTextOverride": "{{i18n:Category.Potion}}" },
+
+
+    }
+},
     ] 
     
 }

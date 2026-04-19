@@ -127,7 +127,7 @@
                   "MM_BleedingHeart":
                       {
                          "Name": "MM_BleedingHeart",
-                         "DisplayName": "{{i18n:BleedingHeartDisplayName}}",
+                         "DisplayName": "{{i18n:BleedingHeartDisplayName{{BleedingHeartRename}}}}",
                           "Description": "{{i18n:BleedingHeartDescription}}",
                         "Type": "Basic",
                           "Category": -75,

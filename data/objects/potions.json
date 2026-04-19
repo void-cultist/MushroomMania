@@ -22,7 +22,7 @@
            "Edibility": 50,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [  "magic_potion", "mushroom_potion" ],
+            "ContextTags": [  "magic_potion", "mushroom_potion", "basic_potion" ],
        
         },
    
@@ -41,7 +41,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Foraging_Potion_Buff",
@@ -75,7 +75,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Mining_Potion_Buff",
@@ -109,7 +109,7 @@
            "Edibility": 20,
             "IsDrink": true,
             "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Fishing_Potion_Buff", 
@@ -144,7 +144,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Combat_Potion_Buff", 
@@ -212,7 +212,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Attack_Potion_Buff", 
@@ -247,7 +247,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Defense_Potion_Buff", 
@@ -282,7 +282,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Speed_Potion_Buff", 
@@ -318,7 +318,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Critical_Potion_Buff", 
@@ -353,7 +353,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Immunity_Potion_Buff", 
@@ -464,7 +464,7 @@
            "Edibility": 20,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "basic_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_WeaponStat_Potion_Buff", 
@@ -573,7 +573,7 @@
            "Edibility": 40,
             "IsDrink": true,
 "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "advanced_potion" ],
             "Buffs": [
                             {
                             "Id": "{{ModID}}_Shield_Potion_Buff", 
@@ -662,7 +662,7 @@
            "Edibility": 20,
             "IsDrink": true,
             "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "wildflour_potion" ],
             "Buffs": [
                             {
                                "Id": "{{ModID}}_SugarShockbuff",
@@ -691,7 +691,7 @@
            "Edibility": 120,
             "IsDrink": true,
             "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "wildflour_potion" ],
             "Buffs": [
                             {
                                "Id": "{{ModID}}_MilkyDelightbuff",
@@ -719,7 +719,7 @@
            "Edibility": 45,
             "IsDrink": true,
             "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
-            "ContextTags": [ "magic_potion", "mushroom_potion" ],
+            "ContextTags": [ "magic_potion", "mushroom_potion", "wildflour_potion" ],
             "Buffs": [
                             {
                                "Id": "{{ModID}}_FunnyHoneybuff",

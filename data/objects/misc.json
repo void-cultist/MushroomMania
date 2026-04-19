@@ -48,7 +48,64 @@
             "IsDrink": false,
             "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
             "ExcludeFromRandomSale": true,
-            "ContextTags": [  "book_item", "Potion_book" ],
+            "ContextTags": [  "book_item", "Potion_book", "potion_vendor_exclusive" ],
+       
+        },
+
+        "MM_PotionBook2":
+        {
+           "Name": "MM_PotionBook2",
+           "DisplayName": "Potion Book 2",
+            "Description": "Teaches you how to brew Combat Potion, Attack Potion and Defense Potion.",
+          "Type": "Basic",
+            "Category": -103,
+            "Price": 10000, 
+           "Texture": "{{ModID}}/SpritesGlionox", 
+            "SpriteIndex": 19, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 0,
+            "IsDrink": false,
+            "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
+            "ExcludeFromRandomSale": true,
+            "ContextTags": [  "book_item", "Potion_book", "potion_vendor_exclusive" ],
+       
+        },
+
+        "MM_PotionBook3":
+        {
+           "Name": "MM_PotionBook3",
+           "DisplayName": "Potion Book 3",
+            "Description": "Teaches you how to brew Speed Potion and Weapon Stats Potion.",
+          "Type": "Basic",
+            "Category": -103,
+            "Price": 10000, 
+           "Texture": "{{ModID}}/SpritesGlionox", 
+            "SpriteIndex": 20, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 0,
+            "IsDrink": false,
+            "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
+            "ExcludeFromRandomSale": true,
+            "ContextTags": [  "book_item", "Potion_book", "potion_vendor_exclusive" ],
+       
+        },
+
+        "MM_PotionBook4":
+        {
+           "Name": "MM_PotionBook4",
+           "DisplayName": "Potion Book 4",
+            "Description": "Teaches you how to brew Critical Potion and Immunity Potion.",
+          "Type": "Basic",
+            "Category": -103,
+            "Price": 10000, 
+           "Texture": "{{ModID}}/SpritesGlionox", 
+            "SpriteIndex": 21, 
+            "ColorOverlayFromNextIndex": false,
+           "Edibility": 0,
+            "IsDrink": false,
+            "ExcludeFromShippingCollection":"{{PerfectionToggle2}}",
+            "ExcludeFromRandomSale": true,
+            "ContextTags": [  "book_item", "Potion_book", "potion_vendor_exclusive" ],
        
         },
    
@@ -81,7 +138,19 @@
         "MM_PotionBook1": {
             "UseForTriggerAction": true,
             "ConsumeForTriggerAction": true
-        }
+        },
+        "MM_PotionBook2": {
+            "UseForTriggerAction": true,
+            "ConsumeForTriggerAction": true
+        },
+        "MM_PotionBook3": {
+            "UseForTriggerAction": true,
+            "ConsumeForTriggerAction": true
+        },
+        "MM_PotionBook4": {
+            "UseForTriggerAction": true,
+            "ConsumeForTriggerAction": true
+        },
     }
 }
 

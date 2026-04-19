@@ -131,7 +131,7 @@
             [
                 { 
                     "ID": "{{ModID}}_MushroomEssenceTracker",
-                    "StatName": "PreservesMade",
+                    "StatName": "ItemsShipped",
                     "RequiredTags": ["mushroom_extract"]
                 }
             ]

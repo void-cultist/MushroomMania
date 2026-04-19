@@ -1,0 +1,72 @@
+{
+    "Changes": [
+        {
+            "LogName": "Add Potion shop",
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": 
+            {
+                "{{ModID}}_PotionShop": 
+                {
+                    "Owners": 
+                    [
+                        {
+                            "Name": "Any",
+                            "Dialogues": [
+                                // dialogue on sunny summer days
+                                {
+                                    "Id": "Example.ModId_SunnySummer",
+                                    "Condition": "SEASON Summer, WEATHER Here Sun",
+                                    "Dialogue": "Ice-cream is perfect for a day like this."
+                                },
+
+                                // dialogue any other time
+                                {
+                                    "Id": "Example.ModId_Default",
+                                    "Dialogue": "Welcome to the only place in town for pufferfish!"
+                                }
+                            ]
+                        }
+                    ],
+
+                    "Items": [
+                        {
+                            "Id": "{{ModID}}_PotionVendor_DailyEssence",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_extract preserve_sheet_index_mm_{{MushroomEssence}}",
+                            "Condition": "SYNCED_RANDOM day ShopEssenceChance 0.3",
+                            "Price": 4500,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Global"
+                        },
+                        {
+                            "Id": "{{ModID}}_PotionVendor_WaningMoonEssence",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_extract preserve_sheet_index_mm_waningmoonshroom",
+                            "Condition": "SYNCED_RANDOM day ShopWaningMoonEssenceChance 0.1",
+                            "Price": 10000,
+                            "PriceModifiers": [ {
+                                "Id": "WaningMoonEssencePrice",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.9, 1, 1.5, 2]
+                            } ]
+                        },
+                        {
+                            "Id": "{{ModID}}_PotionVendor_PotionBook",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_extract preserve_sheet_index_mm_waningmoonshroom",
+                            "Condition": "SYNCED_RANDOM day ShopWaningMoonEssenceChance 0.1",
+                            "Price": 10000,
+                            "PriceModifiers": [ {
+                                "Id": "WaningMoonEssencePrice",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.9, 1, 1.5, 2]
+                            } ]
+                        },
+                    ]
+
+                }
+            }
+        }
+    ]
+}

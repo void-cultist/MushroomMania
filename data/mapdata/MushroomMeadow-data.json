@@ -1,0 +1,1985 @@
+{
+    "Changes": [
+
+        {
+            "LogName": "Load mushroom meadow maps",
+            "Action": "Load",
+            "Target": "Maps/{{ModID}}_MushroomMeadow",
+            "FromFile": "assets/maps/MushroomMeadow.tmx"
+        },
+
+         {
+            "LogName": "Load old shed maps",
+            "Action": "Load",
+            "Target": "Maps/{{ModID}}_old_shed_1",
+            "FromFile": "assets/maps/old_shed_1.tmx"
+        },
+              {
+            "LogName": "Load old shed maps",
+            "Action": "Load",
+            "Target": "Maps/{{ModID}}_old_shed_2",
+            "FromFile": "assets/maps/old_shed_2.tmx"
+        },
+
+
+        {
+            "LogName": "Create New Location: Mushroom Meadow",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModID}}_MushroomMeadow": 
+                {
+                    	"DefaultArrivalTile": { "X": 34, "Y": 23},
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModID}}_MushroomMeadow"
+                        },
+                        "FishAreas": {
+                            "MM_Pond1": {
+                                "Position": 
+                                {
+                                   "X": 43, 
+                                   "Y": 10, 
+                                   "Width": 13, 
+                                   "Height": 5
+                                }
+                            },
+                            "MM_Pond2": {
+                                "Position":
+                                {
+                                    "X": 43,
+                                    "Y": 8,
+                                    "Width": 5,
+                                    "Height": 2
+                                },
+                            },
+                            "MM_TidePools": { 
+                                "Position":
+                                {
+                                   "X": 7, 
+                                   "Y": 6, 
+                                   "Width": 4, 
+                                   "Height": 4
+                                },
+                            },
+                            "MM_TidePools2": {
+                                "Position":
+                                {
+                                   "X": 11, 
+                                   "Y": 8, 
+                                   "Width": 1, 
+                                   "Height": 2
+                                }
+                            },
+                            "MM_River": {
+                                "Position":
+                                {
+                                   "X": 22, 
+                                   "Y": 3, 
+                                   "Width": 3, 
+                                   "Height": 4
+                                },
+                            },
+                             "MM_River2": {
+                                "Position":
+                                {
+                                   "X": 21, 
+                                   "Y": 11, 
+                                   "Width": 2, 
+                                   "Height": 6
+                                }
+                            },
+                            "MM_River3": {
+                                "Position":
+                                {
+                                   "X": 20, 
+                                   "Y": 13, 
+                                   "Width": 1, 
+                                   "Height": 10
+                                }
+                            },
+                            "MM_River4": {
+                                "Position":
+                                {
+                                   "X": 16, 
+                                   "Y": 21, 
+                                   "Width": 4, 
+                                   "Height": 4
+                                }
+                            },
+                            "MM_River5": {
+                                "Position":
+                                {
+                                   "X": 12, 
+                                   "Y": 25, 
+                                   "Width": 4, 
+                                   "Height": 4
+                                }
+                            }
+                        },
+                        "Fish": [
+                            { 	
+                                //Sludge pond area
+                                
+                            //Slimejack
+                                "ItemID": "(O)796",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -101,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Crayfish
+                                "ItemID": "(O)716",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.5,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -100,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Ghostfish
+                                "ItemID": "(O)156",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -100,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//White algae
+                                "ItemID": "(O)157",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -102,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Stonefish
+                                "ItemID": "(O)158",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -103,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                 { 	//Scorpion Carp
+                                "ItemID": "(O)165",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -104,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//cave jelly
+                                "ItemID": "(O)CaveJelly",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -105,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                            { 	//bonefish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Bonefish",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 4,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -109,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                             { 	//frog SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Frog",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -112,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                              { 	//radioactive Bass SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Radioactive_Bass",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.15,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -112,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                  { 	//Snatcher worm SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Snatcher_Worm",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -113,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                //RadiationBiter
+                                { 	
+                                "ItemID": "(O)MM_RadiationBiter",
+                                "FishAreaId": "MM_Pond1",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -140,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+
+
+
+
+                                //Slimejack
+                                { "ItemID": "(O)796",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -101,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Crayfish
+                                "ItemID": "(O)716",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.5,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -100,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Ghostfish
+                                "ItemID": "(O)156",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -100,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//White algae
+                                "ItemID": "(O)157",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -102,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Stonefish
+                                "ItemID": "(O)158",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -103,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                 { 	//Scorpion Carp
+                                "ItemID": "(O)165",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -104,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//cave jelly
+                                "ItemID": "(O)CaveJelly",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -105,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                            { 	//bonefish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Bonefish",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 4,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -109,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                             { 	//frog SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Frog",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -112,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                              { 	//radioactive Bass SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Radioactive_Bass",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.15,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -112,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                  { 	//Snatcher worm SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Snatcher_Worm",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -113,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                //RadiationBiter
+                                { 	
+                                "ItemID": "(O)MM_RadiationBiter",
+                                "FishAreaId": "MM_Pond2",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -140,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                        
+                        ////River area
+                                { 	//River jelly
+                                "ItemID": "(O)RiverJelly",
+                                "FishAreaId": "MM_River",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -106,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Eel
+                                "ItemID": "(O)148",
+                                "FishAreaId": "MM_River",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -107,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                  { 	//Woodskip
+                                "ItemID": "(O)734",
+                                "FishAreaId": "MM_River",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -108,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                            { 	//Alligator SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Alligator",
+                                "FishAreaId": "MM_River",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -110,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                               { 	//Butterfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Butterfish",
+                                "FishAreaId": "MM_River",
+                                "Chance": 0.4,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -111,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+                                //ForestSaridne
+                                { 	
+                                "ItemID": "(O)MM_ForestSardine",
+                                "FishAreaId": "MM_River",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -142,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+
+
+
+                                  { 	//River jelly
+                                "ItemID": "(O)RiverJelly",
+                                "FishAreaId": "MM_River2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -106,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Eel
+                                "ItemID": "(O)148",
+                                "FishAreaId": "MM_River2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -107,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                  { 	//Woodskip
+                                "ItemID": "(O)734",
+                                "FishAreaId": "MM_River2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -108,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                            { 	//Alligator SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Alligator",
+                                "FishAreaId": "MM_River2",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -110,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                               { 	//Butterfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Butterfish",
+                                "FishAreaId": "MM_River2",
+                                "Chance": 0.4,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -111,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                //ForestSaridne
+                                { 	
+                                "ItemID": "(O)MM_ForestSardine",
+                                "FishAreaId": "MM_River2",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -142,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+                                  { 	//River jelly
+                                "ItemID": "(O)RiverJelly",
+                                "FishAreaId": "MM_River3",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -106,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Eel
+                                "ItemID": "(O)148",
+                                "FishAreaId": "MM_River3",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -107,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                  { 	//Woodskip
+                                "ItemID": "(O)734",
+                                "FishAreaId": "MM_River3",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -108,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                            { 	//Alligator SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Alligator",
+                                "FishAreaId": "MM_River3",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -110,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                               { 	//Butterfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Butterfish",
+                                "FishAreaId": "MM_River3",
+                                "Chance": 0.4,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -111,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+                                //ForestSaridne
+                                { 	
+                                "ItemID": "(O)MM_ForestSardine",
+                                "FishAreaId": "MM_River3",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -142,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+                                  { 	//River jelly
+                                "ItemID": "(O)RiverJelly",
+                                "FishAreaId": "MM_River4",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -106,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Eel
+                                "ItemID": "(O)148",
+                                "FishAreaId": "MM_River4",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -107,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                  { 	//Woodskip
+                                "ItemID": "(O)734",
+                                "FishAreaId": "MM_River4",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -108,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                            { 	//Alligator SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Alligator",
+                                "FishAreaId": "MM_River4",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -110,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                               { 	//Butterfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Butterfish",
+                                "FishAreaId": "MM_River4",
+                                "Chance": 0.4,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -111,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                //ForestSaridne
+                                { 	
+                                "ItemID": "(O)MM_ForestSardine",
+                                "FishAreaId": "MM_River4",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -142,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+
+                                  { 	//River jelly
+                                "ItemID": "(O)RiverJelly",
+                                "FishAreaId": "MM_River5",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -106,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                { 	//Eel
+                                "ItemID": "(O)148",
+                                "FishAreaId": "MM_River5",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 2,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -107,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                                  { 	//Woodskip
+                                "ItemID": "(O)734",
+                                "FishAreaId": "MM_River5",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -108,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                            { 	//Alligator SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Alligator",
+                                "FishAreaId": "MM_River5",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -110,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                               { 	//Butterfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Butterfish",
+                                "FishAreaId": "MM_River5",
+                                "Chance": 0.4,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 9,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -111,
+                                "IgnoreFishDataRequirements": true,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+                                //ForestSaridne
+                                { 	
+                                "ItemID": "(O)MM_ForestSardine",
+                                "FishAreaId": "MM_River5",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -142,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+
+
+                    ////Pond in the West
+                    { 	//tadpole SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Tadpole",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.5,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 1,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -114,
+                                "IgnoreFishDataRequirements": true
+				            },
+                           { 	//goldfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Goldfish",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.4,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 1,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -115,
+                                "IgnoreFishDataRequirements": true
+				            },
+                             { 	//glowfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Glowfish",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 4,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -116,
+                                "IgnoreFishDataRequirements": true
+				            },
+                             { 	//grass carp SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Grass_Carp",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 4,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -117,
+                                "IgnoreFishDataRequirements": true
+				            },
+                            { 	//spook fish
+                                "ItemID": "(O)799",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 8,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -118,
+                                "IgnoreFishDataRequirements": true
+				            },
+                             { 	//ice pip
+                                "ItemID": "(O)161",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.3,
+                                "Season": "Winter",
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -119,
+                                "IgnoreFishDataRequirements": true
+				            },
+                             { 	//goby
+                                "ItemID": "(O)Goby",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -119,
+                                "IgnoreFishDataRequirements": true
+				            },
+                            { 	//fiber goby SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Fiber_Goby",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 5,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -120,
+                                "IgnoreFishDataRequirements": true
+				            },
+
+                            //ShroomHead
+                                { 	
+                                "ItemID": "(O)MM_ShroomHead",
+                                "FishAreaId": "MM_TidePools",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -142,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+
+                            { 	//tadpole SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Tadpole",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.5,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 1,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -114,
+                                "IgnoreFishDataRequirements": true
+				            },
+                           { 	//goldfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Goldfish",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.4,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 1,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -115,
+                                "IgnoreFishDataRequirements": true
+				            },
+                             { 	//glowfish SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Glowfish",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 4,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -116,
+                                "IgnoreFishDataRequirements": true
+				            },
+                             { 	//grass carp SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Grass_Carp",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 4,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -117,
+                                "IgnoreFishDataRequirements": true
+				            },
+                            { 	//spook fish
+                                "ItemID": "(O)799",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.1,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 8,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -118,
+                                "IgnoreFishDataRequirements": true
+				            },
+                             { 	//ice pip
+                                "ItemID": "(O)161",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.3,
+                                "Season": "Winter",
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 6,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -119,
+                                "IgnoreFishDataRequirements": true
+				            },
+                             { 	//goby
+                                "ItemID": "(O)Goby",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 3,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -119,
+                                "IgnoreFishDataRequirements": true
+				            },
+                            { 	//fiber goby SVE
+                                "ItemID": "(O)FlashShifter.StardewValleyExpandedCP_Fiber_Goby",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.2,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 5,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.2,
+                                "SpecificBaitBuff": 0.3,
+                                "SpecificBaitMultiplier": 1.66,
+                                "Precedence": -120,
+                                "IgnoreFishDataRequirements": true
+				            },
+                            //ShroomHead
+                                { 	
+                                "ItemID": "(O)MM_ShroomHead",
+                                "FishAreaId": "MM_TidePools2",
+                                "Chance": 0.3,
+                                "PlayerPosition": {
+                                "X": 0,
+                                "Y": 0,
+                                "Width": 255,
+                                "Height": 15
+                                },
+                                "MinFishingLevel": 7,
+                                "MinDistanceFromShore": 0,
+                                "MaxDistanceFromShore": -1,
+                                "ApplyDailyLuck": true,
+                                "CuriosityLureBuff": 0.1,
+                                "SpecificBaitBuff": 0.15,
+                                "SpecificBaitMultiplier": 1.5,
+                                "Precedence": -142,
+                                "IgnoreFishDataRequirements": false,
+                                "ChanceBoostPerLuckLevel": 0.1,
+				                },
+                
+                        ],
+                        "ArtifactSpots": [
+                                /* {
+                                    "Chance": "0.5",
+                                    "ItemId": "(O)MM_ChampignonStarter",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                },
+                                 {
+                                    "Chance": "0.25",
+                                    "Condition": "ANY \"SEASON winter, DAY_OF_MONTH 20 21 22 23 24 25 26 27 28\" \"SEASON spring, DAY_OF_MONTH 1 2 3 4 5 6 7 8 9 10 11 12 13 14\"",
+                                    "ItemId": "(O)MM_BurgerShroomStarter",
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                 {
+                                    "Chance": "0.2",
+                                    "PerItemCondition": "RANDOM 0.33",
+                                    "RandomItemId": [ "(O)MM_GreatWoodMushroomStarter", "(O)MM_ParasolMushroomStarter", "(O)MM_SaffronMilkcapStarter" ],
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                {
+                                    "ID": "PoisonousMushroomPlanters",
+                                    "RandomItemId":[ "(O)MM_SickenerPlanter", "(O)MM_DeathcapPlanter"],
+                                    "Condition": "PLAYER_FARMING_LEVEL Host 6",
+                                    "Chance": 0.05,
+                                    "PerItemCondition": "RANDOM 0.5",
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                 {
+                                    "ID": "EdibleMushroomPlanters",
+                                    "Condition": "PLAYER_FARMING_LEVEL Host 7",
+                                    "RandomItemId":[ "(O)MM_EnokiPlanter", "(O)MM_AspenPlanter", "(O)MM_HealthShroomPlanter"],
+                                    "Chance": 0.1,
+                                    "PerItemCondition": "RANDOM 0.33",
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                {
+                                    "ItemID": "(O)MM_AllEyes_Starter",
+                                    "Condition": "PLAYER_FORAGING_LEVEL Host 9, PLAYER_SHIPPED_BASIC_ITEM Host (O)MM_AllEyes",
+                                    "Chance": 0.01,
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                {
+                                    "ItemID": "(O)MM_NightHornPlanter",
+                                    "Condition": "PLAYER_FORAGING_LEVEL Host 8",
+                                    "Chance": 0.05,
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                {
+                                    "ItemID": "(O)MM_WitchesButterPlanter",
+                                    "Condition": "PLAYER_SHIPPED_BASIC_ITEM Host (O)MM_WitchesButter",
+                                    "Chance": 0.2,
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                 {
+                                    "ItemID": "(O)Cornucopia_ChickenoftheWoodsSeeds",
+                                    "Condition": "{{HasMod | contains=Cornucopia.MoreCrops}}",
+                                    "Chance": 0.15,
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                {
+                                    "ItemID": "(O)Cornucopia_ShiitakeSeeds",
+                                    "Condition": "{{HasMod | contains=Cornucopia.MoreCrops}}",
+                                    "Chance": 0.15,
+                                    "MinStack": 1,
+                                    "MaxStack": 2
+                                },
+                                {
+                                    "RandomItemId": [ "(O)Cornucopia_CommonMushroomSeeds", "(O)Cornucopia_MorelSeeds", "(O)Cornucopia_ChanterelleSeeds"],
+                                    "Condition": "{{HasMod | contains=Cornucopia.GrowableForage}}",
+                                    "Chance": 0.15,
+                                    "PerItemCondition": "RANDOM 0.3",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                },
+                                  {
+                                    "RandomItemId": [ "(O)ZoeyHoshi.ForageCrops_MagmaCapSeeds", "(O)ZoeyHoshi.ForageCrops_PurpleMushroomSeeds", "(O)ZoeyHoshi.ForageCrops_RedMushroomSeeds"],
+                                    "Condition": "{{HasMod | contains=ZoeyHoshi.ForageCrops}}",
+                                    "Chance": 0.1,
+                                    "PerItemCondition": "RANDOM 0.3",
+                                    "MinStack": 1,
+                                    "MaxStack": 3
+                                }, */
+
+
+
+                            ],
+                        //"Forage": [],
+                        "Music": 
+                        [
+                            {
+                            "ID": "{{ModId}}_SpringBGM",
+                            "Track": "{{SpringBGM}}",
+                            "Condition": "SEASON spring"
+                            },
+                            {
+                            "ID": "{{ModId}}_SummerBGM",
+                            "Track": "{{SummerBGM}}",
+                            "Condition": "SEASON summer"
+                            },
+                             {
+                            "ID": "{{ModId}}_FallBGM",
+                            "Track": "{{FallBGM}}",
+                            "Condition": "SEASON fall"
+                            },
+                            {
+                            "ID": "{{ModId}}_WinterBGM",
+                            "Track": "{{WinterBGM}}",
+                            "Condition": "SEASON winter"
+                            },
+                            {
+                            "ID": "{{ModId}}_NightBGM",
+                            "Track": "{{NightBGM}}",
+                            "Condition": "TIME 2100 2600"
+                            },
+                        ],
+                        "MusicIgnoredInRain": false,
+                        "MusicIgnoredInFallDebris": true,
+                        "CustomFields": {
+                            "mushymato.MMAP_LightRays": "T",
+                             "mushymato.MMAP_WoodsDebris":  "-1 \"RANDOM 0.2\"",
+                             "mushymato.MMAP_WoodsLighting": "#af67deeb #695b9ef2 false",
+                             //"mushymato.MMAP_WaterColor": "#EFA7BF #8e7cc3 #e69138 #5a9483"
+                        }
+                }
+            }
+        },
+               
+
+        {
+            "LogName": "Add warp patch to woods",
+            "Action": "EditMap",
+            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": false
+                      
+                     },
+            "Target": "Maps/Woods",
+            "PatchMode": "Overlay",
+            "FromFile": "assets/Maps/WoodsWarpToMushroomMeadow.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 5,
+                "Height": 5
+            },
+            "ToArea": { "X": 39, "Y":25, "Width":  5, "Height": 5 }
+        },
+
+        
+        {
+            "LogName": "Add warp patch to woods SVE",
+            "Action": "EditMap",
+            "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+            "Target": "Maps/Woods",
+            "PatchMode": "Overlay",
+            "FromFile": "assets/Maps/WoodsWarpToMushroomMeadow.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 5,
+                "Height": 5
+            },
+            "ToArea": { "X": 39, "Y":55, "Width": 5, "Height": 5 }
+        },
+
+
+
+        {
+            
+    "LogName": "Add magic warp tiles from Woods to mushroom meadow",
+    "Action": "EditMap",
+      "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": false },
+    "Target": "Maps/Woods", 
+    "MapTiles": [  
+        {  
+        "Position": { "X": 41, "Y": 27 }, 
+        "Layer": "Back", 
+        "SetProperties": { 
+            "TouchAction": "MagicWarp {{ModID}}_MushroomMeadow 34 23" } }, 
+       
+        ]
+
+        },
+        
+        {
+            
+    "LogName": "Add magic warp tiles from Woods to mushroom meadow SVE",
+    "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+    "Action": "EditMap",
+    "Target": "Maps/Woods", 
+    "MapTiles": [  
+        {  
+        "Position": { "X": 41, "Y": 57 }, 
+        "Layer": "Back", 
+        "SetProperties": { "TouchAction": "MagicWarp {{ModID}}_MushroomMeadow 34 23" } }, 
+    ]
+
+        },
+
+        {
+    
+    "LogName": "Add magic warp tiles from MM to Woods",
+    "Action": "EditMap",
+    "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": false },
+    "Target": "Maps/{{ModID}}_MushroomMeadow",
+    "MapTiles": [  { "Position": { "X": 34, "Y": 22 }, "Layer": "Back", "SetProperties": { "TouchAction": "MagicWarp Woods 41 27" } } ]
+        },
+    
+    {
+    
+    "LogName": "Add magic warp tiles from MM to Woods",
+    "Action": "EditMap",
+    "When": { "HasMod:| contains=FlashShifter.StardewValleyExpandedCP": true },
+    "Target": "Maps/{{ModID}}_MushroomMeadow",
+    "MapTiles": [  { "Position": { "X": 34, "Y": 22 }, "Layer": "Back", "SetProperties": { "TouchAction": "MagicWarp Woods 41 57" } } ]
+        },
+
+/////////////MEEP closeup interaction
+ {
+            "LogName": "Mushroom Meadow closeup interaction book",
+            "Action": "EditMap",
+            "Target": "Maps/{{ModID}}_MushroomMeadow",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 48,
+                        "Y": 27
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MEEP_CloseupInteractionReel",
+                        "MEEP_CloseupInteraction_Text_1": "{{i18n:MEEP_CloseupInteraction_Text_1}}",
+                        "MEEP_CloseupInteraction_Image_1": "{{InternalAssetKey:assets/PILZ.png}}",
+                        "MEEP_CloseupInteraction_Image_2": "{{InternalAssetKey:assets/letter.png}}",
+                        "MEEP_CloseupInteraction_Text_3": "{{i18n:MEEP_CloseupInteraction_Text}}",
+                        "MEEP_CloseupInteraction_Image_3": "Maps/springobjects 128 80 16 16",
+
+                    }
+                }
+            ]
+        },
+
+
+/*    _      _      _      _      _      _      _      _      _      _      _      _      _    */
+/*  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  */
+/* (_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _) */
+/*  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  */
+/*    _    $$$$$$\  $$\       $$$$$$$\         $$$$$$\  $$\   $$\ $$$$$$$$\ $$$$$$$\      _    */
+/*  _( )_ $$  __$$\ $$ |      $$  __$$\       $$  __$$\ $$ |  $$ |$$  _____|$$  __$$\   _( )_  */
+/* (_ o _)$$ /  $$ |$$ |      $$ |  $$ |      $$ /  \__|$$ |  $$ |$$ |      $$ |  $$ | (_ o _) */
+/*  (_,_) $$ |  $$ |$$ |      $$ |  $$ |      \$$$$$$\  $$$$$$$$ |$$$$$\    $$ |  $$ |  (_,_)  */
+/*    _   $$ |  $$ |$$ |      $$ |  $$ |       \____$$\ $$  __$$ |$$  __|   $$ |  $$ |    _    */
+/*  _( )_ $$ |  $$ |$$ |      $$ |  $$ |      $$\   $$ |$$ |  $$ |$$ |      $$ |  $$ |  _( )_  */
+/* (_ o _) $$$$$$  |$$$$$$$$\ $$$$$$$  |      \$$$$$$  |$$ |  $$ |$$$$$$$$\ $$$$$$$  | (_ o _) */
+/*  (_,_)  \______/ \________|\_______/        \______/ \__|  \__|\________|\_______/   (_,_)  */
+/*    _      _      _      _      _      _      _      _      _      _      _      _      _    */
+/*  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  _( )_  */
+/* (_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _)(_ o _) */
+/*  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  (_,_)  */
+
+
+
+    {
+            "LogName": "Create New Location: Old Shed1",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModID}}_old_shed_1": 
+                {
+                    "DefaultArrivalTile": { "X": 9, "Y": 19 },
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModID}}_old_shed_1"
+                    },
+                    "CustomFields": {
+                         "mushymato.MMAP_WoodsLighting": "#64ebde #087a6ff2 false",
+                    }
+            }
+        }
+    },
+        {
+            "LogName": "Create New Location: Old Shed2",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModID}}_old_shed_2": 
+                {
+                    "DefaultArrivalTile": { "X": 10, "Y": 20 },
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModID}}_old_shed_2"
+                    },
+                 "CustomFields": {
+                         "mushymato.MMAP_WoodsLighting": "#41ebbd8a #1d785f8a false",
+                    }
+                   
+            }
+        }
+    },
+
+    {
+    "LogName": "Locked Door Warp",
+    "Action": "EditMap",
+    "Target": "Maps/{{ModID}}_MushroomMeadow", 
+	"When": { "Query: {{DLX.Bundles/DaysSincePurchase:MM_Final}} = 0": true
+			},
+    "MapTiles": [ 
+        {
+            "Position": { "X": 50, "Y": 7 }, 
+            "Layer": "Buildings", 
+            "SetProperties": {
+                "Action": "LockedDoorWarp 9 19 {{ModID}}_old_shed_1 600 2600" 
+            }
+        },
+		{ "Position": { "X": 51, "Y": 7 }, 
+            "Layer": "Buildings",
+            "SetProperties": {
+                "Action": "LockedDoorWarp 9 19 {{ModID}}_old_shed_1 600 2600" 
+			}
+			},
+    ]
+},
+
+    
+    ]
+}

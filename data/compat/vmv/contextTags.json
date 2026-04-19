@@ -1,0 +1,36 @@
+{
+    "Changes": [
+        {  "LogName": "blackchanterelle Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Lumisteria.MtVapius_BlackChanterelle", "ContextTags"],			//blackchanterelle
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+        {  "LogName": "Porchini Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Lumisteria.MtVapius_Porchini", "ContextTags"],			//Porchini
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+        {  "LogName": "WoodgoatMushroom Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Lumisteria.MtVapius_WoodgoatMushroom", "ContextTags"],			//WoodgoatMushroom
+		   "Entries": {
+				  "#-1": "extractor_input"
+		   }
+		},
+        {  "LogName": "_Cooking_TroutAndMushrooms Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Lumisteria.MtVapius_Cooking_TroutAndMushrooms", "ContextTags"],			//_CookingTroutAndMushrooms
+		   "Entries": {
+				  "#-1": "mushroom_dish"
+		   }
+		},
+    ]
+}

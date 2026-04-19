@@ -7,7 +7,10 @@
     "Target": "data/mail",
     "Entries": {
 	"{{ModID}}_WizardMail": "Enlightened @^, you have learned how to craft a potion machine and have made good use of your mushroom essence extractor. Come to my house and bring the following: ^ 1 Essence of the Great Wood Mushroom, 1 Morel and 1 red mushroom. ^ I will teach you the secrets of potion brewing. %item specialOrder {{ModID}}_WizardPotionQuest%%[#]Potion Brewing Course",
-    "{{ModID}}_WizardPotionQuest1_complete": "Congratulations on completing my trial. With the book that have sent you you will be able to brew more potions from now on.^ Magnus R.[#]Potion Knowledge"
+    "{{ModID}}_WizardPotionQuest1_complete": "Congratulations on completing my trial. With the book attached to this letter you will be able to brew more potions from now on.^ Magnus R.%item id MM_PotionBook1 1%%[#]Potion Knowledge",
+    "{{ModID}}_Wizard_SendsPotionBook2": "Greetings @. ^^ You are now ready to learn how to brew even more potions. Very carefully read the book I sent you with this letter. ^ Magnus R.%item id MM_PotionBook2 1%%[#]More Potion Knowledge",
+    "{{ModID}}_Wizard_SendsPotionBook3": "Greetings @. ^^ Your knowledge on potion brewing keeps broadening. Keep it up. ^ Magnus R.%item id MM_PotionBook3 1%%[#]Even More Potion Knowledge",
+    "{{ModID}}_Wizard_SendsPotionBook4": "Greetings @. ^^ This is the final potion book I will be sending you. With this, you should now be able to brew all basic potions. But remain open-minded - there is many more potion recipes to learn. ^ Magnus R.%item id MM_PotionBook4 1%%[#]Much More Potion Knowledge",
 
 
 }

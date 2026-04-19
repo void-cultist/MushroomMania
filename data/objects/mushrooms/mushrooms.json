@@ -67,7 +67,7 @@
                    "Edibility": 1,
                     "IsDrink": false, 
                     "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                    "ContextTags": [ "color_dark_red", "color_dark_pink", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input"  ],
+                    "ContextTags": [ "color_dark_red", "color_dark_pink", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input", "rare_mushroom"  ],
                 
                 },
 
@@ -199,7 +199,7 @@
                    "Edibility": 50,
                     "IsDrink": false, 
                     "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
+                    "ContextTags": [  "color_orange", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input", "rare_mushroom" ]
                 },
                   "MM_Enoki":
                   {
@@ -231,7 +231,7 @@
                    "Edibility": 100,
                     "IsDrink": false, 
                     "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
+                    "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input", "rare_mushroom" ]
                 },
                 "MM_LobsterMushroom":
                   {
@@ -393,7 +393,7 @@
                    "Edibility": 1,
                     "IsDrink": false, 
                     "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                    "ContextTags": [  "color_grey", "extractor_input", "poisonous_mushroom", "mushroom_item", "forage_item" ],
+                    "ContextTags": [  "color_grey", "extractor_input", "poisonous_mushroom", "mushroom_item", "forage_item", "rare_mushroom" ],
                     "Buffs": [
                             {
                                 "Id": "{{ModID}}_DeathcapDebuff",
@@ -477,7 +477,7 @@
                    "Edibility": -1,
                     "IsDrink": false, 
                     "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                    "ContextTags": [  "color_blue", "color_cyan", "color_aquamarine", "inedible_mushroom", "extractor_input", "mushroom_item", "rain_exclude" ],
+                    "ContextTags": [  "color_blue", "color_cyan", "color_aquamarine", "inedible_mushroom", "extractor_input", "mushroom_item", "rain_exclude", "rare_mushroom" ],
                 
                 },
                 
@@ -496,7 +496,7 @@
                          "Edibility": -10,
                           "IsDrink": false, 
                         "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "inedible_mushroom", "extractor_input", "color_orange", "mushroom_item" ],
+                          "ContextTags": [ "inedible_mushroom", "extractor_input", "color_orange", "mushroom_item", "rare_mushroom" ],
                         
                       },
 

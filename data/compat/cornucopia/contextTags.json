@@ -21,5 +21,47 @@
 				  "#-3": "extractor_input"
 		   }
 		},
+
+		 {  "LogName": "MushroomBurger Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Cornucopia_MushroomBurger", "ContextTags"],			//MushroomBurger
+		   "Entries": {
+				  "#-1": "mushroom_dish",
+                  
+		   }
+		},
+
+		{  "LogName": "StuffedMushrooms Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Cornucopia_StuffedMushrooms", "ContextTags"],			//StuffedMushrooms
+		   "Entries": {
+				  "#-1": "mushroom_dish",
+                  
+		   }
+		},
+
+		
+		{  "LogName": "MotleyMushrooms Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Cornucopia_MotleyMushrooms", "ContextTags"],			//MotleyMushrooms
+		   "Entries": {
+				  "#-1": "mushroom_dish",
+                  
+		   }
+		},
+
+		{  "LogName": "MushroomSoup Context tags edit",
+		   "Action": "EditData",
+		   "Target": "Data/Objects",
+		   "TargetField": ["Cornucopia_MushroomSoup", "ContextTags"],			//MushroomSoup
+		   "Entries": {
+				  "#-1": "mushroom_dish",
+                  
+		   }
+		},
+    
     ]
 }
