@@ -7,43 +7,64 @@
         //dynamic tokens for spawn rates
         {
             "Name": "MinDailyForageSpawn",
-            "Value": 4
+            "Value": 7,
+            "When": { "HasMod": "Morghoula.AlchemistryCP" }
+        },
+        {
+            "Name": "MinDailyForageSpawn",
+            "Value": 4,
+            "When": { "SpawnRate": "default", "HasMod |contains=Morghoula.AlchemistryCP": false, }
         },
         {
             "Name": "MinDailyForageSpawn",
             "Value": 2,
-            "When": { "SpawnRate": "lower" }
+            "When": { "SpawnRate": "lower", "HasMod |contains=Morghoula.AlchemistryCP": false, }
         },
-          {
+        {
             "Name": "MinDailyForageSpawn",
             "Value": 8,
             "When": { "SpawnRate": "higher" }
         },
 
+        /* ⛧─── ⋆⋅☆⋅⋆ ───⛧ */
+
         {
             "Name": "MaxDailyForageSpawn",
-            "Value": 9
+            "Value": 15,
+            "When": { "HasMod": "Morghoula.AlchemistryCP" }
         },
-
-         {
+        {
+            "Name": "MaxDailyForageSpawn",
+            "Value": 9,
+            "When": { "SpawnRate": "default", "HasMod |contains=Morghoula.AlchemistryCP": false, }
+        },
+        {
             "Name": "MaxDailyForageSpawn",
             "Value": 6,
-            "When": { "SpawnRate": "lower" }
+            "When": { "SpawnRate": "lower", "HasMod |contains=Morghoula.AlchemistryCP": false }
         },
-          {
+        {
             "Name": "MaxDailyForageSpawn",
             "Value": 18,
             "When": { "SpawnRate": "higher" }
         },
 
+        /* ⛧─── ⋆⋅☆⋅⋆ ───⛧ */
+
         {
             "Name": "MaxSpawnedForageAtOnce",
-            "Value": 12
+            "Value": 18,
+            "When": { "HasMod": "Morghoula.AlchemistryCP" }
         },
-          {
+        {
+            "Name": "MaxSpawnedForageAtOnce",
+            "Value": 12,
+            "When": { "SpawnRate": "default", "HasMod |contains=Morghoula.AlchemistryCP": false, }
+        },
+        {
             "Name": "MaxSpawnedForageAtOnce",
             "Value": 7,
-            "When": { "SpawnRate": "lower" }
+            "When": { "SpawnRate": "lower", "HasMod |contains=Morghoula.AlchemistryCP": false }
         },
         {
             "Name": "MaxSpawnedForageAtOnce",
@@ -51,7 +72,8 @@
             "When": { "SpawnRate": "higher" }
         },
 
-         {
+///Mushroom Spawn Chance
+        {
             "Name": "SpawnChance",
             "Value": "+0.25",
             "When": { "Mushroom Spawn Chance": "higher" }
@@ -150,7 +172,7 @@
             "Value": "junimoKart_whaleMusic"
         },
 
-        //fish pond rewards
+        /////fish pond rewards
         {
             "Name": "RadiationBiterInput",
             "Value": "MM_AllEyes",
@@ -161,7 +183,7 @@
             "Value": "MM_Matsutake"
         },
 
-        //cornucopia packs
+        ///////cornucopia packs
         {
             "Name": "CornucopiaArtisan",
             "Value": "Cornucopia.ArtisanMachines",
@@ -183,7 +205,7 @@
             "When": { "Cornucopia Compatibility": true}
         },
 
-        //wildflour packs
+        /////wildflour packs
         {
             "Name": "RatA",
             "Value": "Wildflour.SASS",
@@ -369,6 +391,139 @@
             "When": { "Potion Perfection Toggle": "false" }
         },
 
+        //bleeding heart rename when alchemistry is installed
+        {
+            "Name": "BleedingHeartRename",
+            "Value": ".Alchemistry",
+            "When": { "HasMod": "Morghoula.AlchemistryCP"}
+        },
+        {
+            "Name": "BleedingHeartRename",
+            "Value": "",
+        },
+
+        //vanilla or modded trees
+
+        {
+            "Name": "FruitTree1",
+            "Value": "FlashShifter.StardewValleyExpandedCP_Persimmon_Sapling",
+            "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true },
+        },
+
+        {
+            "Name": "FruitTree1",
+            "Value": "631", //peach 
+        },
+
+        {
+            "Name": "FruitTree2",
+            "Value": "Cornucopia_LemonSapling",
+            "When": { "HasMod |contains=Cornucopia.MoreCrops": true },
+        },
+
+        {
+            "Name": "FruitTree2",
+            "Value": "630", //orange
+        },
+
+        {
+            "Name": "FruitTree3",
+            "Value": "Cornucopia_DragonFruitSapling",
+            "When": { "HasMod |contains=Cornucopia.MoreCrops": true },
+        },
+
+        {
+            "Name": "FruitTree3",
+            "Value": "FlashShifter.StardewValleyExpandedCP_Nectarine_Sapling",
+            "When": { "HasMod |contains=Cornucopia.MoreCrops": false, 
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                },
+        },
+
+        {
+            "Name": "FruitTree3",
+            "Value": "629", //apricot
+        },
+
+        {
+            "Name": "FruitTree4",
+            "Value": "Cornucopia_LycheeSapling",
+            "When": { "HasMod |contains=Cornucopia.MoreCrops": true },
+        },
+
+        {
+            "Name": "FruitTree4",
+            "Value": "FlashShifter.StardewValleyExpandedCP_Tree_Coin",
+            "When": { "HasMod |contains=Cornucopia.MoreCrops": false, 
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+                },
+        },
+
+        {
+            "Name": "FruitTree4",
+            "Value": "835", //mango
+        },
+
+        {
+            "Name": "WildTree",
+            "Value": "Cornucopia_CorpseFlowerSeed",
+            "When": { "HasMod": "Cornucopia.MoreFlowers" },
+        },
+
+        {
+            "Name": "WildTree",
+            "Value": "7", //mushroom tree
+        },
+
+        //////Potion Vendor dynamic tokens///////
+
+        ///essences///
+        {
+            "Name": "MushroomEssence",
+            "Value": "rubybolete",
+            "When": { "DayOfWeek": "Monday", "Include imaginary Mushrooms": false}
+        },
+        {
+            "Name": "MushroomEssence",
+            "Value": "healthshroom",
+            "When": { "DayOfWeek": "Monday", "Include imaginary Mushrooms": true}
+        },
+        {
+            "Name": "MushroomEssence",
+            "Value": "caesarsmushroom",
+            "When": { "DayOfWeek": "Tuesday"}
+        },
+        {
+            "Name": "MushroomEssence",
+            "Value": "jubileewaxcap",
+            "When": { "DayOfWeek": "Wednesday"}
+        },
+        {
+            "Name": "MushroomEssence",
+            "Value": "orangepeelfungus",
+            "When": { "DayOfWeek": "Thursday"}
+        },
+        {
+            "Name": "MushroomEssence",
+            "Value": "devilsfingers",
+            "When": { "DayOfWeek": "Friday"}
+        },
+        {
+            "Name": "MushroomEssence",
+            "Value": "devilsfingers",
+            "When": { "DayOfWeek": "Saturday"}
+        },
+        {
+            "Name": "MushroomEssence",
+            "Value": "greatwoodmushroom",
+            "When": { "DayOfWeek": "Sunday", "Include imaginary Mushrooms": false}
+        },
+        {
+            "Name": "MushroomEssence",
+            "Value": "greatwoodmushroom",
+            "When": { "DayOfWeek": "Sunday", "Include imaginary Mushrooms": true}
+        },
+
         
 
 
@@ -388,12 +543,7 @@
                 "Description": "This mod edits the way items spawn. If you find any issues in the amount spawned, change this setting to 'lower'.",
                 "Section": "Spawns",
             },
-            /* "Spawn Rate in Rain":{
-                "AllowBlank": false,
-                "AllowValues": "normal, increased",
-                "Default": "increased",
-                "Description": "Increases the spawn rate for all mushrooms during rainy weather."
-            }, */
+           
             "Include imaginary Mushrooms":
             {
                 "AllowValues": "true, false",
@@ -431,44 +581,37 @@
                 "Description": "If you use both 'Rose and the Alchemist' and 'Wildflour Atelier Goods' by Wildflour , toggle this setting for maximum compatibility. Doesn't do anything if none or only one of these mod packs are installed.",
                 "Section": "Compatibility"
             },
-            /* "Include Poisonous Mushrooms":
+
+            "VMV Compatibility":
             {
                 "AllowValues": "true, false",
-                "Default": true,
-                "AllowBlank": false,
-                "Description": "Toggle this option off if you do not want to add poisonous mushrooms to your game.",
-                "Section": "Mushroom configs",
-                },
-
-             "Include Inedible Mushrooms":
-            {
-                "AllowValues": "true, false",
-                "Default": true,
-                "AllowBlank": false,
-                "Description": "Toggle this option off if you do not want to add inedible mushrooms to your game.",
-                "Section": "Mushroom configs",
-            }, */
-
+                "Default": false,
+                "Description": "If you have Lumisteria's Visit Mount Vapius installed, toggle this setting for maximum compatibility. Doesn't do anything if VMV is not installed.",
+                "Section": "Compatibility"
+            },
             "Music": 
             {
                 "AllowValues": "custom, vanilla",
                 "Default": "custom",
                 "AllowBlank": false,
                 "Description": "This mod adds custom music tracks. If you prefer the original Stardew Valley music, turn this setting off. Custom music might also slow down your game in some instances, so if you are experiencing lag, disable this config as well.",
+                "Section": "General"
             },
             "Mushroom Perfection Toggle":
             {
                 "AllowValues": "true, false",
                 "Default": true,
                 "AllowBlank": false,
-                "Description": "By default, mushrooms count towards the perfection achievement (shipping collection). Disable this setting if you don't want this."
+                "Description": "By default, mushrooms count towards the perfection achievement (shipping collection). Disable this setting if you don't want this.",
+                "Section": "General"
             },
             "Potion Perfection Toggle":
             {
                 "AllowValues": "true, false",
                 "Default": true,
                 "AllowBlank": false,
-                "Description": "By default, potions count towards the perfection achievement (shipping collection). Disable this setting if you don't want this."
+                "Description": "By default, potions count towards the perfection achievement (shipping collection). Disable this setting if you don't want this.",
+                "Section": "General"
             }, 
             "Mushroom Spawn Chance":
             {
@@ -503,7 +646,7 @@
 {
     "LogName": "Include mushroom data",
     "Action": "Include",
-    "FromFile": "data/objects/mushrooms/mushrooms.json"
+    "FromFile": "data/objects/mushrooms/mushrooms.json, data/objects/mushrooms/categoryOverrides.json"
 },
 {
     "LogName": "Include imaginary mushrooms",
@@ -529,7 +672,7 @@
 {
     "LogName": "Include map data and map strings",
     "Action": "Include",
-    "FromFile": "data/mapdata.json, data/stringsFromMaps.json"
+    "FromFile": "data/mapdata/MushroomMeadow-data.json, data/mapdata/MushroomMeadow2-data.json, data/stringsFromMaps.json"
 },
 {
     "LogName": "Include spawnable forage data",
@@ -555,6 +698,11 @@
     "LogName": "Include seeds and saplings",
     "Action": "Include",
     "FromFile": "data/objects/seeds.json"
+},
+{
+    "LogName": "Include misc objects",
+    "Action": "Include",
+    "FromFile": "data/objects/misc.json"
 },
 {
     "LogName": "Include custom music",
@@ -588,16 +736,37 @@
 },
 
 {
+    "LogName": "Include VMV compat",
+    "Action": "Include",
+    "When": { "VMV Compatibility": true,    "HasMod |contains=Lumisteria.MtVapius": true},
+    "FromFile": "data/compat/vmv/contextTags.json"
+},
+
+{
     "LogName": "Include alchemistry compat",
     "Action": "Include",
     "When": {  "HasMod": "Morghoula.AlchemistryCP"},
     "FromFile": "data/compat/alchemistry/contexttags.json"
 },
-
+{
+    "LogName": "include mails and quests",
+    "Action": "Include",
+    "FromFile": "data/mailAndQuests.json"
+},
+{
+    "LogName": "include special orders",
+    "Action": "Include",
+    "FromFile": "data/specialOrders.json"
+},
 {
     "LogName": "include traction",
     "Action": "Include",
     "FromFile": "data/tractions.json"
+},
+{
+    "LogName": "Include powers",
+    "Action": "Include",
+    "FromFile": "data/powers.json"
 },
 {
     "LogName": "include shop edits",

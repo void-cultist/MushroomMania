@@ -49,6 +49,10 @@
                 "IsRequired": true
             },
             {
+                "UniqueID": "void.MM.FTM.VMV",
+                "IsRequired": true
+            },
+            {
                 "UniqueID": "alvadea.tilesheet",
                 "IsRequired": true
             },
@@ -88,9 +92,18 @@
                 "UniqueID": "Morghoula.AlchemistryCP",
                 "IsRequired": false
             },
+            { 
+                "UniqueID": "Morghoula.AlchemistryFTMVanilla",
+                "IsRequired": false
+            },
+            { 
+                "UniqueID": "Morghoula.AlchemistryFTMSVE",
+                "IsRequired": false
+            },
             {
                 "UniqueID": "FlashShifter.StardewValleyExpandedCP",
                 "IsRequired": false
-            }
+            },
+            
         ]
     }
