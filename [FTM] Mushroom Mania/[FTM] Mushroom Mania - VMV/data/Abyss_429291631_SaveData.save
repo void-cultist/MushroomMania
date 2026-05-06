@@ -1,8 +1,6 @@
 {
   "WeatherForYesterday": "Sun",
-  "LNOSCounter": {
-    "Mushroom Meadow forage grass area 1": 10
-  },
+  "LNOSCounter": {},
   "ExistingObjectLocations": {
     "Farm large object area 1": [
       "69,115;69,115",

@@ -4,19 +4,5 @@
   "ExistingObjectLocations": {
     "Farm large object area 1": []
   },
-  "SavedObjects": [
-    {
-      "MapName": "void.MM_MushroomMeadow",
-      "Name": "MM_Aspen",
-      "Tile": "14, 13",
-      "Type": "Forage",
-      "ID": "MM_Aspen",
-      "DaysUntilExpire": 2,
-      "SpawnTime": 600,
-      "ConfigItem": {
-        "Category": "object"
-      },
-      "MonType": null
-    }
-  ]
+  "SavedObjects": []
 }

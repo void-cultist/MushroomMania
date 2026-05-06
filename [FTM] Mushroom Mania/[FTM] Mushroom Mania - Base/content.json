@@ -8,254 +8,6 @@
       {
         "SpringItemIndex": [
           {
-            "category": "Object",
-            "SpawnWeight": 10,
-            "Name": "MM_CandyTongue"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 20,
-            "Name": "MM_Enoki"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 20,
-            "Name": "MM_SulfurTuft"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 20,
-            "Name": "MM_BurgerShroom"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_HealthShroom"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_LobsterMushroom"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 422
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 430
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 257
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 1,
-            "Name": "MM_ShroomOfTransingYourGender"
-          }
-        ],
-        "SummerItemIndex": [
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_RubyBolete"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "(O)MM_GoldenBrittlegill"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_BlackTrumpet"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_Aspen"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_GreatWoodMushroom"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_DevilsFingers"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_TheSickener"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 422
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 430
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 257
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 420
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 1,
-            "Name": "MM_ShroomOfTransingYourGender"
-          }
-        ],
-        "FallItemIndex": [
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_RubyBolete"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_GoldenBrittlegill"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_BlackTrumpet"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_Aspen"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_GreatWoodMushroom"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_DevilsFingers"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 15,
-            "Name": "MM_TheSickener"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 422
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 430
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 257
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": 420
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 30,
-            "Name": "MM_BleedingHeart"
-          },
-          {
-            "category": "Object",
-            "SpawnWeight": 1,
-            "Name": "MM_ShroomOfTransingYourGender"
-          }
-        ],
-        "WinterItemIndex": [
-          {
-            "category": "Object",
-            "PercentChanceToSpawn": 5,
-            "Name": "MM_WaningMoonShroom"
-          },
-          {
-            "category": "Object",
-            "PercentChanceToSpawn": 30,
-            "Name": "MM_GhastlyButton"
-          },
-          {
-            "category": "Object",
-            "PercentChanceToSpawn": 2,
-            "Name": "MM_AllEyes"
-          },
-          {
-            "category": "Object",
-            "PercentChanceToSpawn": 5,
-            "Name": "MM_BleedingHeart"
-          },
-          {
-            "category": "Object",
-            "PercentChanceToSpawn": 1,
-            "Name": "MM_ShroomOfTransingYourGender"
-          }
-        ],
-        "UniqueAreaID": "Mushroom Meadow forage grass area 1",
-        "MapName": "void.MM_MushroomMeadow",
-        "MinimumSpawnsPerDay": -1,
-        "MaximumSpawnsPerDay": 4,
-        "IncludeTerrainTypes": [
-          "Diggable",
-          "Grass"
-        ],
-        "ExcludeTerrainTypes": [
-          "7,15/11,15"
-        ],
-        "IncludeCoordinates": [
-          "27,7/33,16",
-          "26,18/30,21"
-        ],
-        "ExcludeCoordinates": [],
-        "StrictTileChecking": "Maximum",
-        "SpawnTiming": {
-          "StartTime": 600,
-          "EndTime": 600,
-          "MinimumTimeBetweenSpawns": 10,
-          "MaximumSimultaneousSpawns": null,
-          "OnlySpawnIfAPlayerIsPresent": false,
-          "SpawnSound": ""
-        },
-        "ExtraConditions": {
-          "Years": [],
-          "Seasons": [],
-          "Days": [],
-          "WeatherYesterday": [],
-          "WeatherToday": [],
-          "WeatherTomorrow": [],
-          "GameStateQueries": [],
-          "CPConditions": {},
-          "EPUPreconditions": [],
-          "LimitedNumberOfSpawns": 5
-        },
-        "DaysUntilSpawnsExpire": 1
-      },
-      {
-        "SpringItemIndex": [
-          {
             "Category": "Buried",
             "Contents": [
               {
@@ -340,48 +92,48 @@
         "SpringItemIndex": [
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_BluePinkgill"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": " MM_PixiesParasol"
           }
         ],
         "SummerItemIndex": [
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_BluePinkgill"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": " MM_PixiesParasol"
           }
         ],
         "FallItemIndex": [
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_BluePinkgill"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": " MM_PixiesParasol"
           }
         ],
         "WinterItemIndex": [
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_BluePinkgill"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": " MM_PixiesParasol"
           }
         ],
@@ -510,83 +262,83 @@
         "SpringItemIndex": [
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_BluePinkgill"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": " MM_PixiesParasol"
           },
           {
             "category": "Object",
-            "SpawnWeight": 5,
+            "PercentChanceToSpawn": 5,
             "Name": "MM_HealthShroom"
           }
         ],
         "SummerItemIndex": [
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_BluePinkgill"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_PixiesParasol"
           },
           {
             "category": "Object",
-            "SpawnWeight": 5,
+            "PercentChanceToSpawn": 5,
             "Name": "MM_GreyKnight"
           }
         ],
         "FallItemIndex": [
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_BluePinkgill"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": " MM_PixiesParasol"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_Matsutake"
           },
           {
             "category": "Object",
-            "SpawnWeight": 5,
+            "PercentChanceToSpawn": 5,
             "Name": "MM_RussulaVesca"
           },
           {
             "category": "Object",
-            "SpawnWeight": 5,
+            "PercentChanceToSpawn": 5,
             "Name": "MM_NightHorn"
           }
         ],
         "WinterItemIndex": [
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_BluePinkgill"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": " MM_PixiesParasol"
           },
           {
             "category": "Object",
-            "SpawnWeight": 1,
+            "PercentChanceToSpawn": 1,
             "Name": "MM_ShroomOfTransingYourGender"
           },
           {
             "category": "Object",
-            "SpawnWeight": 10,
+            "PercentChanceToSpawn": 10,
             "Name": "MM_BleedingToothFungus"
           }
         ],
@@ -2016,6 +1768,640 @@
           "LimitedNumberOfSpawns": null
         },
         "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "MM_Enoki",
+          "MM_BurgerShroom",
+          "MM_HealthShroom",
+          "MM_CandyTongue"
+        ],
+        "SummerItemIndex": [
+          "MM_GoldenBrittlegill",
+          "MM_BlackTrumpet",
+          "MM_GreatWoodMushroom"
+        ],
+        "FallItemIndex": [
+          "MM_ParasolMushroom",
+          "MM_SaffronMilkcap",
+          "MM_GreatWoodMushroom",
+          "MM_TheSickener"
+        ],
+        "WinterItemIndex": [
+          "MM_Champignon",
+          "MM_GhastlyButton"
+        ],
+        "UniqueAreaID": "MM2 Grass West",
+        "MapName": "void.MM_MushroomMeadow2",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Dirt"
+        ],
+        "IncludeCoordinates": [
+          "15,12/23,19",
+          "6,6/14,15"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          "MM_HypnoShroom",
+          "MM_Enoki"
+        ],
+        "SummerItemIndex": [
+          "MM_DevilsFingers",
+          "MM_JubileeWaxcap",
+          "MM_DestroyingAngel",
+          "MM_GreyKnight",
+          "MM_CaesarsMushroom"
+        ],
+        "FallItemIndex": [
+          "MM_RubyBolete",
+          "MM_HealthShroom",
+          "MM_OrangePeelFungus",
+          "MM_RussulaVesca",
+          "MM_Aspen"
+        ],
+        "WinterItemIndex": [
+          "MM_Champignon",
+          "MM_GhastlyButton"
+        ],
+        "UniqueAreaID": "MM2 Grass East",
+        "MapName": "void.MM_MushroomMeadow2",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Dirt"
+        ],
+        "IncludeCoordinates": [
+          "48,14/56,22"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          "MM_CandyTongue"
+        ],
+        "SummerItemIndex": [
+          "MM_BleedingToothFungus"
+        ],
+        "FallItemIndex": [
+          "MM_WitchesButter"
+        ],
+        "WinterItemIndex": [
+          "MM_NightHorn"
+        ],
+        "UniqueAreaID": "MM2 Grass South",
+        "MapName": "void.MM_MushroomMeadow2",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Dirt"
+        ],
+        "IncludeCoordinates": [
+          "29,44/53,46"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          "MM_Eye"
+        ],
+        "SummerItemIndex": [
+          "MM_Eye"
+        ],
+        "FallItemIndex": [
+          "MM_Eye"
+        ],
+        "WinterItemIndex": [
+          "MM_WaningMoonShroom"
+        ],
+        "UniqueAreaID": "MM2 Waning Moon Spawn",
+        "MapName": "void.MM_MushroomMeadow2",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Grass"
+        ],
+        "IncludeCoordinates": [
+          "30,4/40,9"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "SYNCED_RANDOM day MM2WaningMoon 0.05"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "MM_Matsutake"
+        ],
+        "SummerItemIndex": [
+          "MM_BluePinkgill",
+          "MM_PixiesParasol"
+        ],
+        "FallItemIndex": [
+          "MM_BleedingHeart"
+        ],
+        "WinterItemIndex": [
+          "MM_AllEyes",
+          "MM_WaningMoonShroom"
+        ],
+        "UniqueAreaID": "MM2 Rare Spawns",
+        "MapName": "void.MM_MushroomMeadow2",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [
+          "Dirt"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "SYNCED_RANDOM day MM2Rare 0.05"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 23
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_ChampignonStarter",
+                "SpawnWeight": 23
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_WitchesButterPlanter",
+                "SpawnWeight": 8
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_EnokiPlanter",
+                "SpawnWeight": 23
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_AllEyes_Planter",
+                "SpawnWeight": 1
+              }
+            ]
+          },
+          {
+            "Category": "Buried",
+            "Contents": [
+              {
+                "category": "Object",
+                "Name": "MM_NightHornPlanter",
+                "SpawnWeight": 5
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "MM2 Diggable",
+        "MapName": "void.MM_MushroomMeadow2",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Diggable",
+          "Dirt"
+        ],
+        "ExcludeTerrainTypes": [
+          "Grass",
+          "Stone"
+        ],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          "MM_Enoki",
+          "MM_SulfurTuft",
+          "MM_CandyTongue"
+        ],
+        "SummerItemIndex": [
+          "MM_RubyBolete",
+          "MM_GoldenBrittlegill",
+          "MM_BlackTrumpet"
+        ],
+        "FallItemIndex": [
+          "MM_RubyBolete",
+          "MM_GoldenBrittlegill",
+          "MM_BlackTrumpet"
+        ],
+        "WinterItemIndex": [
+          "MM_GhastlyButton"
+        ],
+        "UniqueAreaID": "MushroomMeadowSpawnArea1",
+        "MapName": "void.MM_MushroomMeadow",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "26,20/30,26"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [
+            "Sun"
+          ],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "SYNCED_RANDOM day MMArea1 0.5 @addDailyLuck"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          "MM_BurgerShroom",
+          "MM_HealthShroom",
+          "MM_LobsterMushroom"
+        ],
+        "SummerItemIndex": [
+          "MM_Aspen",
+          "MM_GreatWoodMushroom"
+        ],
+        "FallItemIndex": [
+          "MM_Aspen",
+          "MM_GreatWoodMushroom"
+        ],
+        "WinterItemIndex": [
+          "MM_HypnoShroom",
+          "MM_GhastlyButton"
+        ],
+        "UniqueAreaID": "MushroomMeadowSpawnArea2",
+        "MapName": "void.MM_MushroomMeadow",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "33,11/37,15"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "SYNCED_RANDOM day MMArea2 0.2 @addDailyLuck"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          422,
+          430,
+          257
+        ],
+        "SummerItemIndex": [
+          422,
+          430,
+          257,
+          420
+        ],
+        "FallItemIndex": [
+          422,
+          430,
+          257,
+          420
+        ],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "MushroomMeadowSpawnArea3",
+        "MapName": "void.MM_MushroomMeadow",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,18/38,20",
+          "52,27/55,28"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "SYNCED_RANDOM day MMArea3 0.6"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [],
+        "SummerItemIndex": [
+          "MM_DevilsFingers",
+          "MM_TheSickener"
+        ],
+        "FallItemIndex": [
+          "MM_DevilsFingers",
+          "MM_TheSickener"
+        ],
+        "WinterItemIndex": [
+          "MM_AllEyes",
+          "MM_BleedingHeart"
+        ],
+        "UniqueAreaID": "MushroomMeadowArea4UNCOMMON",
+        "MapName": "void.MM_MushroomMeadow",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "39,6/43,7"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "SYNCED_RANDOM day MMArea4 0.2 @addDailyLuck"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          "MM_ShroomOfTransingYourGender"
+        ],
+        "SummerItemIndex": [
+          "MM_ShroomOfTransingYourGender"
+        ],
+        "FallItemIndex": [
+          "MM_ShroomOfTransingYourGender"
+        ],
+        "WinterItemIndex": [
+          "MM_ShroomOfTransingYourGender",
+          "MM_WaningMoonShroom"
+        ],
+        "UniqueAreaID": "MushroomMeadowSpawnArea5RARE",
+        "MapName": "void.MM_MushroomMeadow",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "17,16/18,17"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "SYNCED_RANDOM day MMArea5 0.05 @addDailyLuck"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
       }
     ],
     "PercentExtraSpawnsPerForagingLevel": 1,

@@ -8,144 +8,91 @@
       {
         "SpringItemIndex": [
           {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_MagmaCapSeeds",
-                "SpawnWeight": 4
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_PurpleMushroomSeeds",
-                "SpawnWeight": 8
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_RedMushroomSeeds",
-                "SpawnWeight": 12
-              }
-            ]
+            "category": "Object",
+            "PercentChanceToSpawn": 5,
+            "Name": "Lumisteria.MtVapius_Porchini"
           }
         ],
         "SummerItemIndex": [
           {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_MagmaCapSeeds",
-                "SpawnWeight": 4
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_PurpleMushroomSeeds",
-                "SpawnWeight": 8
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_RedMushroomSeeds",
-                "SpawnWeight": 12
-              }
-            ]
+            "category": "Object",
+            "PercentChanceToSpawn": 7,
+            "Name": "Lumisteria.MtVapius_Porchini"
           }
         ],
         "FallItemIndex": [
           {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_MagmaCapSeeds",
-                "SpawnWeight": 4
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_PurpleMushroomSeeds",
-                "SpawnWeight": 8
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_RedMushroomSeeds",
-                "SpawnWeight": 12
-              }
-            ]
+            "category": "Object",
+            "PercentChanceToSpawn": 10,
+            "Name": "Lumisteria.MtVapius_Porchini"
           }
         ],
         "WinterItemIndex": [
           {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_MagmaCapSeeds",
-                "SpawnWeight": 4
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_PurpleMushroomSeeds",
-                "SpawnWeight": 8
-              }
-            ]
-          },
-          {
-            "Category": "Buried",
-            "Contents": [
-              {
-                "category": "Object",
-                "Name": "ZoeyHoshi.ForageCrops_RedMushroomSeeds",
-                "SpawnWeight": 12
-              }
-            ]
+            "category": "Object",
+            "PercentChanceToSpawn": 2,
+            "Name": "Lumisteria.MtVapius_Porchini"
           }
         ],
-        "UniqueAreaID": "Mushroom Meadow forageable crops",
+        "UniqueAreaID": "MM_VMV-Forage",
         "MapName": "void.MM_MushroomMeadow",
         "MinimumSpawnsPerDay": -1,
         "MaximumSpawnsPerDay": 1,
-        "IncludeTerrainTypes": [
-          "Grass",
-          "Diggable"
-        ],
+        "IncludeTerrainTypes": [],
         "ExcludeTerrainTypes": [],
         "IncludeCoordinates": [
-          "27,7/33,16",
-          "26,18/30,21"
+          "54,26/56,27",
+          "54,23/55,25"
+        ],
+        "ExcludeCoordinates": [
+          "7,15/11,15"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      },
+      {
+        "SpringItemIndex": [
+          "Lumisteria.MtVapius_BlackChanterelle"
+        ],
+        "SummerItemIndex": [
+          "Lumisteria.MtVapius_BlackChanterelle"
+        ],
+        "FallItemIndex": [
+          "Lumisteria.MtVapius_BlackChanterelle"
+        ],
+        "WinterItemIndex": [
+          "Lumisteria.MtVapius_BlackChanterelle"
+        ],
+        "UniqueAreaID": "MM2 Grass South VMV",
+        "MapName": "void.MM_MushroomMeadow2",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [
+          "Dirt"
+        ],
+        "IncludeCoordinates": [
+          "29,44/53,46"
         ],
         "ExcludeCoordinates": [],
         "StrictTileChecking": "Maximum",
@@ -169,7 +116,7 @@
           "EPUPreconditions": [],
           "LimitedNumberOfSpawns": null
         },
-        "DaysUntilSpawnsExpire": 1
+        "DaysUntilSpawnsExpire": null
       }
     ],
     "PercentExtraSpawnsPerForagingLevel": 5,
@@ -206,7 +153,7 @@
           "Stump"
         ],
         "FindExistingObjectLocations": true,
-        "PercentExtraSpawnsPerSkillLevel": 0,
+        "PercentExtraSpawnsPerSkillLevel": 4,
         "RelatedSkill": "Foraging",
         "UniqueAreaID": "Farm large object area 1",
         "MapName": "Farm",
@@ -420,8 +367,8 @@
         "MinimumSpawnsPerDay": 5,
         "MaximumSpawnsPerDay": 8,
         "IncludeTerrainTypes": [
-          "Dirt",
           "Diggable",
+          "Dirt",
           "Grass"
         ],
         "ExcludeTerrainTypes": [],
@@ -548,7 +495,7 @@
     "FarmerNames": [],
     "SaveFileNames": [],
     "OtherMods": {
-      "ZoeyHoshi.ForageCrops": true
+      "Lumisteria.MtVapius": true
     }
   }
 }
