@@ -1,0 +1,104 @@
+{
+    "Changes": [
+        {
+             "LogName": "Add  mushroom spawns to railroad map",
+            "Target": "Data/Locations",
+             "Action": "EditData",
+            "TargetField": [ "Railroad", "Forage" ],
+            "Entries": {
+                 "MM_BleedingToothFungus": 
+                  {
+
+                    "Chance": "0.2",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_BleedingToothFungus",
+                    "ItemId": "(O)MM_BleedingToothFungus",
+                    "PerItemCondition": null
+                },
+
+
+                  "MM_WaningMoonShroom":
+                {
+
+                    "Chance": "0.2",
+                    "Condition": "PLAYER_BASE_COMBAT_LEVEL Any 6, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_WaningMoonShroom",
+                    "ItemId": "(O)MM_WaningMoonShroom",
+                    "PerItemCondition": null
+                },
+
+                     "MM_CaesarsMushroom": //rare
+                {
+
+                    "Chance": "0.2",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_CaesarsMushroom",
+                    "ItemId": "(O)MM_CaesarsMushroom",
+                    "PerItemCondition": null
+                },
+
+                    "MM_Champignon": //common
+                {
+
+                    "Chance": 0.8,
+                    "Condition": "SEASON fall winter, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_Champignon",
+                    "ItemId": "(O)MM_Champignon",
+                    "PerItemCondition": null
+                },
+                 "MM_Matsutake": //rare
+                {
+                    "Chance": "0.1",
+                    "Season": "Fall",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 9, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_Matsutake",
+                    "ItemId": "(O)MM_Matsutake",
+                    "PerItemCondition": null
+                },
+                "MM_Maitake": //rare
+                {
+                    "Chance": "0.2",
+                    "Season": "Fall",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_Maitake",
+                    "ItemId": "(O)MM_Maitake",
+                    "PerItemCondition": null
+                },
+                 "MM_RubyBolete": //rare
+                {
+
+                    "Chance": "0.1",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 8, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_RubyBolete",
+                    "ItemId": "(O)MM_RubyBolete",
+                    "PerItemCondition": null
+                },
+
+                "MM_DestroyingAngel": //common
+                {
+                    "Chance": "0.5",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_DestroyingAngel",
+                    "ItemId": "(O)MM_DestroyingAngel",
+                    "PerItemCondition": null
+                },
+                 "MM_LilBuddy": 
+                {
+                    "Chance": "0.4",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 2, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_LilBuddy",
+                    "ItemId": "(O)MM_LilBuddy",
+                    "PerItemCondition": null
+                },
+                 "MM_SpawnDuringRain":
+                {
+                    "Chance": 1.0,
+                    "Condition": "WEATHER Target Rain GreenRain Storm",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_item, !ITEM_CONTEXT_TAG Target rain_exclude"
+                },
+            
+            }
+        },
+    ]
+}

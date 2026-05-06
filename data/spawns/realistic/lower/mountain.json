@@ -1,0 +1,128 @@
+{
+    "Changes": [
+        {
+             "LogName": "Add  mushroom spawns to mountain map",
+            "Target": "Data/Locations",
+            "Action": "EditData",
+            "TargetField": [ "Mountain", "Forage" ],
+            "Entries": {
+                  "{{ModID}}_CommonEdibleMushrooms": //common
+                {
+
+                    "Chance": "0.5",
+                    "Condition": "SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "{{ModID}}_CommonEdibleMushrooms",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "RandomItemId": [ "(O)MM_GreatWoodMushroom", "(O)MM_OrangePeelFungus", "(O)MM_SaffronMilkcap", "(O)MM_RussulaVesca", "(O)MM_OrangeGrisette", "(O)MM_ParasolMushroom"],
+                    "PerItemCondition": null
+                },
+
+
+               
+                   "MM_BlackTrumpet": //uncommon
+                {
+                    "Chance": "0.2",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_BlackTrumpet",
+                    "ItemId": "(O)MM_BlackTrumpet",
+
+                },
+
+                  "MM_CaesarsMushroom": //rare
+                {
+
+                    "Chance": "0.1",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_CaesarsMushroom",
+                    "ItemId": "(O)MM_CaesarsMushroom",
+                    "PerItemCondition": null
+                },
+
+                    "MM_Champignon": //common
+                {
+
+                    "Chance": "0.5",
+                    "Condition": "SEASON fall winter, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_Champignon",
+                    "ItemId": "(O)MM_Champignon",
+                    "PerItemCondition": null
+                },
+
+                "MM_RussulaVesca": //uncommon
+                {
+                    "Chance": "0.15",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_RussulaVesca",
+                    "ItemId": "(O)MM_RussulaVesca",
+
+                },
+
+                  "MM_GoldenBrittlegill": //uncommon
+                {
+                    "Chance": "0.15",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_GoldenBrittlegill",
+                    "ItemId": "(O)MM_GoldenBrittlegill",
+
+                },
+                
+                "MM_LobsterMushroom": //uncommon
+                {
+                    "Chance": "0.2",
+                    "Season": null,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7",
+                    "Id": "(O)MM_LobsterMushroom",
+                    "ItemId": "(O)MM_LobsterMushroom",
+                    "PerItemCondition": null
+                },
+                
+                 "MM_RubyBolete": //rare
+                {
+
+                    "Chance": "0.05",
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 8, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_RubyBolete",
+                    "ItemId": "(O)MM_RubyBolete",
+                    "PerItemCondition": null
+                },
+
+
+                //mushrooms during rain
+
+                "MM_SpawnDuringRain":
+                {
+                    "Chance": 1.0,
+                    "Condition": "WEATHER Target Rain GreenRain Storm",
+                    "ItemId": "RANDOM_ITEMS (O)",
+                    "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_item, !ITEM_CONTEXT_TAG Target rain_exclude"
+                },
+
+                 
+           
+                //////////poisonous
+                "MM_Deathcap": //common
+                {
+                    "Chance": 0.3,
+                    "Condition": "SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_Deathcap",
+                    "ItemId": "(O)MM_Deathcap",
+                    "PerItemCondition": null
+                },
+
+              
+                 "MM_GreyKnight": 
+                {
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4, SEASON summer fall, !WEATHER Target Rain GreenRain Storm",
+                    "Id": "(O)MM_GreyKnight",
+                    "ItemId": "(O)MM_GreyKnight",
+                    "PerItemCondition": null
+                },
+
+            }
+        }
+
+           
+
+    ]
+}

@@ -162,7 +162,7 @@
           "Id": "{{ModID}}_TravelingCart_RareMushrooms",
           "ItemId": "RANDOM_ITEMS (O)",
           "MaxItems": 1,
-          "PerItemCondition": "ITEM_CONTEXT_TAG rare_mushroom",
+          "PerItemCondition": "ITEM_CONTEXT_TAG target rare_mushroom",
           "AvailableStock": 1,
           "AvailableStockLimit": "Player",
           "AvoidRepeat": true,

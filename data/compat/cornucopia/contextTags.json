@@ -27,7 +27,7 @@
 		   "Target": "Data/Objects",
 		   "TargetField": ["Cornucopia_MushroomBurger", "ContextTags"],			//MushroomBurger
 		   "Entries": {
-				  "#-1": "mushroom_dish",
+				  "mushroom_dish": "mushroom_dish",
                   
 		   }
 		},
@@ -37,7 +37,7 @@
 		   "Target": "Data/Objects",
 		   "TargetField": ["Cornucopia_StuffedMushrooms", "ContextTags"],			//StuffedMushrooms
 		   "Entries": {
-				  "#-1": "mushroom_dish",
+				  "mushroom_dish": "mushroom_dish",
                   
 		   }
 		},
@@ -48,7 +48,7 @@
 		   "Target": "Data/Objects",
 		   "TargetField": ["Cornucopia_MotleyMushrooms", "ContextTags"],			//MotleyMushrooms
 		   "Entries": {
-				  "#-1": "mushroom_dish",
+				  "mushroom_dish": "mushroom_dish",
                   
 		   }
 		},
@@ -58,7 +58,7 @@
 		   "Target": "Data/Objects",
 		   "TargetField": ["Cornucopia_MushroomSoup", "ContextTags"],			//MushroomSoup
 		   "Entries": {
-				  "#-1": "mushroom_dish",
+				  "mushroom_dish": "mushroom_dish",
                   
 		   }
 		},

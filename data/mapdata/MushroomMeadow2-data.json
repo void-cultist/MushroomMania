@@ -7,6 +7,12 @@
             "Target": "Maps/{{ModID}}_MushroomMeadow2",
             "FromFile": "assets/maps/MushroomMeadow2.tmx"
         },
+              {
+            "LogName": "Load vendor house",
+            "Action": "Load",
+            "Target": "Maps/{{ModID}}_VendorHouse",
+            "FromFile": "assets/maps/vendorHouse.tmx"
+        },
 
          {
             "LogName": "Create New Location: Mushroom Meadow2",
@@ -16,6 +22,7 @@
                 "{{ModID}}_MushroomMeadow2": 
                 {
                     	"DefaultArrivalTile": { "X": 2, "Y": 14},
+                        "DisplayName": "{{i18n:MushroomMeadowEast.LocationName}}",
                         "CreateOnLoad": {
                             "MapPath": "Maps/{{ModID}}_MushroomMeadow2"
                         },
@@ -147,6 +154,44 @@
        
         ]
 
+        },
+
+////////////VENDOR HOUSE
+//gate patch coordinates mm2 12 32
+  {
+            "LogName": "Create New Location: vendor house",
+            "Action": "EditData",
+            "Target": "Data/Locations",
+            "Entries": {
+                "{{ModID}}_VendorHouse": 
+                {
+                    "DefaultArrivalTile": { "X": 9, "Y": 19 },
+                    "DisplayName": "{{i18n:PotionVendor.LocationName}}",
+                        "CreateOnLoad": {
+                            "MapPath": "Maps/{{ModID}}_VendorHouse"
+                    },
+                 "CustomFields": {
+                         "mushymato.MMAP_WoodsLighting": "#41ebbd8a #1d785f8a false",
+                    }
+                   
+            }
+        }
+    },
+
+{
+            "LogName": "open entrance to vendor house",
+            "Action": "EditMap",
+            "When": { "DLX.Bundles/Purchased |contains=MM_SmokedMushrooms": true,  },
+            "Target": "Maps/{{ModID}}_MushroomMeadow2",
+            "PatchMode": "Overlay",
+            "FromFile": "assets/Maps/MM2GatePatch.tmx",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 3,
+                "Height": 1
+            },
+            "ToArea": { "X": 12, "Y":32, "Width": 3, "Height": 1 }
         },
 
     

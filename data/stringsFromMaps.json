@@ -10,6 +10,8 @@
 			"MM.001": "{{i18n:MM1}}",
 			"MM.002": "{{i18n:MM2}}",
 
+			"VendorHouse.000": "{{i18n:VendorHouse0}}"
+
 				
 			}
 		},

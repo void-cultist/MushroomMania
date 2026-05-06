@@ -233,6 +233,41 @@
                     "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
                     "ContextTags": [  "color_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input", "rare_mushroom" ]
                 },
+
+                "MM_Shimeji":
+               {
+                   "Name": "MM_Shimeji",
+                     "DisplayName": "{{i18n:MM_Shimeji.DisplayName}}",
+                    "Description": "{{i18n:MM_Shimeji.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -75,
+                    //"sophie.Calcifer/Category": "{{i18n:sophie.Calcifer/Category}}",
+                    "Price": 290, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 9, 
+                   "Edibility": 10,
+                    "IsDrink": false, 
+                    "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
+                },
+
+                "MM_SlipperyJack":
+               {
+                   "Name": "MM_SlipperyJack",
+                     "DisplayName": "{{i18n:MM_SlipperyJack.DisplayName}}",
+                    "Description": "{{i18n:MM_SlipperyJack.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -75,
+                    //"sophie.Calcifer/Category": "{{i18n:sophie.Calcifer/Category}}",
+                    "Price": 290, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 12, 
+                   "Edibility": 8,
+                    "IsDrink": false, 
+                    "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                    "ContextTags": [  "color_white", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
+                },
+
                 "MM_LobsterMushroom":
                   {
                    "Name": "MM_LobsterMushroom",
@@ -264,6 +299,23 @@
                     "IsDrink": false, 
                     "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
                     "ContextTags": [  "color_black", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
+                },
+
+              "MM_Maitake":
+               {
+                   "Name": "MM_Maitake",
+                     "DisplayName": "{{i18n:MM_Maitake.DisplayName}}",
+                    "Description": "{{i18n:MM_Maitake.Description}}" ,
+                  "Type": "Basic",
+                    "Category": -75,
+                    //"sophie.Calcifer/Category": "{{i18n:sophie.Calcifer/Category}}",
+                    "Price": 1500, 
+                   "Texture": "{{ModID}}/MushroomsPixerelia", 
+                    "SpriteIndex": 14, 
+                   "Edibility": 20,
+                    "IsDrink": false, 
+                    "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                    "ContextTags": [  "color_dark_brown", "preserves_pickle", "edible_mushroom", "mushroom_item", "forage_item", "extractor_input" ]
                 },
 
       

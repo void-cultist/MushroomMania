@@ -29,6 +29,7 @@
             "Entries": {
                 "{{ModID}}_MushroomMeadow": 
                 {
+                        "DisplayName": "{{i18n:MushroomMeadow.LocationName}}",
                     	"DefaultArrivalTile": { "X": 34, "Y": 23},
                         "CreateOnLoad": {
                             "MapPath": "Maps/{{ModID}}_MushroomMeadow"
@@ -1929,6 +1930,7 @@
                 "{{ModID}}_old_shed_1": 
                 {
                     "DefaultArrivalTile": { "X": 9, "Y": 19 },
+                    "DisplayName": "{{i18n:OldShed1.LocationName}}",
                         "CreateOnLoad": {
                             "MapPath": "Maps/{{ModID}}_old_shed_1"
                     },
@@ -1946,6 +1948,7 @@
                 "{{ModID}}_old_shed_2": 
                 {
                     "DefaultArrivalTile": { "X": 10, "Y": 20 },
+                    "DisplayName": "{{i18n:OldShed2.LocationName}}",
                         "CreateOnLoad": {
                             "MapPath": "Maps/{{ModID}}_old_shed_2"
                     },

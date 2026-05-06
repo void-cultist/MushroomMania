@@ -15,15 +15,15 @@
                             "Dialogues": [
                                 // dialogue on sunny summer days
                                 {
-                                    "Id": "Example.ModId_SunnySummer",
+                                    "Id": "{{ModID}}_PotionVendor_SunnySummer",
                                     "Condition": "SEASON Summer, WEATHER Here Sun",
-                                    "Dialogue": "Ice-cream is perfect for a day like this."
+                                    "Dialogue": "I personally think the taste of potions is better during rainy days."
                                 },
 
                                 // dialogue any other time
                                 {
-                                    "Id": "Example.ModId_Default",
-                                    "Dialogue": "Welcome to the only place in town for pufferfish!"
+                                    "Id": "{{ModID}}_PotionVendor_Default",
+                                    "Dialogue": "Greetings. Enjoy the finest selection of mushroom items here."
                                 }
                             ]
                         }
@@ -34,8 +34,8 @@
                             "Id": "{{ModID}}_PotionVendor_DailyEssence",
                             "ItemId": "RANDOM_ITEMS (O)",
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_extract preserve_sheet_index_mm_{{MushroomEssence}}",
-                            "Condition": "SYNCED_RANDOM day ShopEssenceChance 0.3",
                             "Price": 4500,
+                            "MaxItems": 1,
                             "AvailableStock": 1,
                             "AvailableStockLimit": "Global"
                         },
@@ -45,6 +45,7 @@
                             "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_extract preserve_sheet_index_mm_waningmoonshroom",
                             "Condition": "SYNCED_RANDOM day ShopWaningMoonEssenceChance 0.1",
                             "Price": 10000,
+                            "MaxItems": 1,
                             "PriceModifiers": [ {
                                 "Id": "WaningMoonEssencePrice",
                                 "Modification": "Multiply",
@@ -54,15 +55,138 @@
                         {
                             "Id": "{{ModID}}_PotionVendor_PotionBook",
                             "ItemId": "RANDOM_ITEMS (O)",
-                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_extract preserve_sheet_index_mm_waningmoonshroom",
-                            "Condition": "SYNCED_RANDOM day ShopWaningMoonEssenceChance 0.1",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target potion_book",
+                            "Condition": "SYNCED_RANDOM day ShopPotionBookChance 0.1",
                             "Price": 10000,
+                            "MaxItems": 1,
                             "PriceModifiers": [ {
-                                "Id": "WaningMoonEssencePrice",
+                                "Id": "PotionBookEssencePrice",
                                 "Modification": "Multiply",
                                 "RandomAmount": [ 0.9, 1, 1.5, 2]
                             } ]
                         },
+                         {
+                            "Id": "{{ModID}}_PotionVendor_MushroomPlanters1",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_planter_item",
+                            "Price": 4500,
+                            "MaxItems": 1,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                               "PriceModifiers": [ {
+                                "Id": "PlanterPrice1",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.9, 1, 1.5, 2, 3]
+                            } ]
+                        },
+                         {
+                            "Id": "{{ModID}}_PotionVendor_MushroomPlanters2",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_planter_item",
+                            "Price": 7000,
+                            "MaxItems": 1,
+                            "Condition": "SYNCED_RANDOM day ShopExtraPlanterChance 0.5",
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                               "PriceModifiers": [ {
+                                "Id": "PlanterPrice2",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.9, 1, 1.5, 2, 3]
+                            } ]
+                        },
+
+                         {
+                            "Id": "{{ModID}}_PotionVendor_MushroomPlanters3",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_planter_item",
+                            "Price": 9500,
+                            "MaxItems": 1,
+                            "Condition": "SYNCED_RANDOM day ShopAnotherExtraPlanterChance 0.25",
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                               "PriceModifiers": [ {
+                                "Id": "PlanterPrice3",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.5, 1, 1.5, 2, 2.5]
+                            } ]
+                        },
+
+                            {
+                            "Id": "{{ModID}}_PotionVendor_MushroomStarters",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_starter_item",
+                            "Price": 300,
+                            "MaxItems": 1,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                               "PriceModifiers": [ {
+                                "Id": "StarterPrice1",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.5, 1, 1.5, 2, 2.5]
+                            } ]
+                        },
+
+                        {
+                            "Id": "{{ModID}}_PotionVendor_MushroomStarters2",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_starter_item",
+                            "Condition": "SYNCED_RANDOM day ShopExtraStarterChance 0.5",
+                            "Price": 500,
+                            "MaxItems": 1,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                               "PriceModifiers": [ {
+                                "Id": "StarterPrice2",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.5, 1, 1.5, 2, 2.5]
+                            } ]
+                        },
+
+                         {
+                            "Id": "{{ModID}}_PotionVendor_MushroomStarters3",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_starter_item",
+                            "Condition": "SYNCED_RANDOM day ShopAnotherExtraStarterChance 0.25",
+                            "Price": 1000,
+                            "MaxItems": 1,
+                            "AvailableStock": 3,
+                            "AvailableStockLimit": "Global",
+                               "PriceModifiers": [ {
+                                "Id": "StarterPrice3",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.5, 1, 1.5, 2, 2.5]
+                            } ]
+                        },
+
+                         {
+                            "Id": "{{ModID}}_PotionVendor_Potions",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_potion, !ITEM_CONTEXT_TAG Target advanced_potion",
+                            "Price": 2000,
+                            "AvailableStock": 3,
+                            "MaxItems": 2,
+                            "AvailableStockLimit": "Global",
+                               "PriceModifiers": [ {
+                                "Id": "PotionPrice",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.5, 0.7, 1, 1.5, 2, 2.5]
+                            } ]
+                        },
+
+                        /* {
+                            "Id": "{{ModID}}_PotionVendor_Essences",
+                            "ItemId": "RANDOM_ITEMS (O)",
+                            "PerItemCondition": "ITEM_CONTEXT_TAG Target mushroom_extract",
+                            "Price": 1000,
+                            "AvailableStock": 3,
+                            "MaxItems": 2,
+                            "AvailableStockLimit": "Player",
+                               "PriceModifiers": [ {
+                                "Id": "EssencePrice",
+                                "Modification": "Multiply",
+                                "RandomAmount": [ 0.5, 0.7, 1, 1.5, 2, 2.5]
+                            } ]
+                        } */,
                     ]
 
                 }

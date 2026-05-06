@@ -1,0 +1,73 @@
+{
+    "Changes": [
+
+         { 
+            "LogName": "BlankLoads",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Dialogue/PlaceholderName, Characters/Dialogue/MarriageDialoguePlaceholderName, Characters/schedules/PlaceholderName, Strings/Schedules/PlaceholderName",
+            "FromFile": "data/Blank.json"
+        },
+
+        { 	"LogName": "vendor dispos",
+			"Action": "EditData",
+			"Target": "Data/Characters",
+			"Entries":
+			{
+				"PlaceholderName":
+			 {
+				"DisplayName": "PlaceholderName",
+				"BirthSeason": "Fall",
+				"BirthDay": 20,
+				"HomeRegion": "Other",
+				"Language": "Default",
+				"Gender": "Undefined",
+				"Age": "Adult",
+				"Manner": "Polite",
+				"SocialAnxiety": "Neutral",
+				"Optimism": "Neutral",
+				"IsDarkSkinned": "False",
+				"CanBeRomanced": "False",
+				"SocialTab": "HiddenUntilMet",
+                "Calendar": "HiddenUntilMet",
+				"CanSocialize": "false",
+				"CanReceiveGifts": "False",
+				"CanGreetNearbyCharacters": "False",
+				"Home": [ 
+									{
+										"Id": "Default",
+										"Location": "{{ModID}}_VendorHouse",
+										"Tile": {
+											"X": 8,
+											"Y": 12
+										},
+										"Direction": "up",
+									
+									}
+								],
+
+				"SpouseAdopts": null,
+				"SpouseWantsChildren": null,
+				"SpouseGiftJealousy": null,
+
+					}	
+			}
+	},
+        {
+            "LogName": "Load portrait",
+            "Action": "Load",
+            "Target": "Portraits/PlaceholderName",
+            "FromFile": "assets/npc/portrait.png"
+        },
+        {
+            "LogName": "Load sprite",
+            "Action": "Load",
+            "Target": "Characters/PlaceholderName",
+            "FromFile": "assets/npc/sprites.png"
+        },
+
+	
+
+
+    ]
+}

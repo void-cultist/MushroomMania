@@ -1,0 +1,13 @@
+{
+    "Changes": [
+
+        {
+            "LogName": "vendor Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/PlaceholderName",
+            "Entries": {
+                "spring": "610 {{ModId}}_VendorHouse 8 12 2"
+            }
+        }
+     ]
+}

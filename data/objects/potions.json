@@ -331,8 +331,8 @@
                             "ActionsOnApply": null,
                             "CustomAttributes": 
                                 {
-                                "CriticalChanceMultiplier": 3.0,
-                                "CriticalPowerMultiplier": 3.0
+                                "CriticalChanceMultiplier": 0.5,
+                                "CriticalPowerMultiplier": 0.5
                                 }
                             }
                        ]
@@ -402,9 +402,9 @@
                                 {
                                 "CombatLevel": 4.0,
                                 "Attack": 2.5,
-                                "CriticalChanceMultiplier": 1.5,
+                                "CriticalChanceMultiplier": 0.7,
                                 "WeaponSpeedMultiplier": 2.0,
-                                "Defense": -0.2
+                                "Defense": -0.3
                                 }
                             }
                        ]
@@ -477,8 +477,8 @@
                             "ActionsOnApply": null,
                             "CustomAttributes": 
                                 {
-                                "WeaponPrecisionMultiplier": 4.0,
-                                "WeaponSpeedMultiplier": 4.0
+                                "WeaponPrecisionMultiplier": 0.5,
+                                "WeaponSpeedMultiplier": 0.5
                                 }
                             }
                        ]
@@ -614,7 +614,7 @@
                             {
                             "Id": "{{ModID}}_AbyssalRage_Buff", 
                             "IsDebuff": false,
-                            "Duration": 500,
+                            "Duration": 200,
                             "IconTexture": "{{ModID}}\\BuffsPixerelia",
                             "IconSpriteIndex": 10,
                             "GlowColor": "Black",
@@ -624,10 +624,10 @@
                                 {
                                 "Immunity": 2.5,
                                 "WeaponPrecisionMultiplier": 2.0,
-                                "WeaponSpeedMultiplier": 2.0,
+                                "WeaponSpeedMultiplier": 1.5,
                                 "CriticalChanceMultiplier": 4.0,
-                                "CriticalPowerMultiplier": 5.0,
-                                "AttackMultiplier": 2.0,
+                                "CriticalPowerMultiplier": 1.5,
+                                "AttackMultiplier": 0.3,
                                 "Attack": 5.0
                                
                                 }

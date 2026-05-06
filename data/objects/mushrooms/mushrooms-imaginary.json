@@ -28,7 +28,7 @@
                          "Edibility": 40,
                           "IsDrink": false, 
                           "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "edible_mushroom", "color_brown", "mushroom_item", "preserves_pickle", "borgr", "extractor_input" ],
+                          "ContextTags": [ "edible_mushroom", "color_brown", "mushroom_item", "preserves_pickle", "borgr", "extractor_input", "imaginary_mushroom" ],
                          "Buffs": [
                                {
                                 "Id": "{{ModID}}_BurgerShroomBuff",
@@ -57,7 +57,7 @@
                          "Edibility": 40,
                           "IsDrink": false, 
                         "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "edible_mushroom", "color_indigo_blue", "mushroom_item", "preserves_pickle", "extractor_input" ],
+                          "ContextTags": [ "edible_mushroom", "color_indigo_blue", "mushroom_item", "preserves_pickle", "extractor_input", "imaginary_mushroom" ],
                         
                       },
 
@@ -75,7 +75,7 @@
                          "Edibility": 300,
                           "IsDrink": false, 
                           "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "edible_mushroom", "color_light_cyan", "mushroom_item", "preserves_pickle", "extractor_input" ],
+                          "ContextTags": [ "edible_mushroom", "color_light_cyan", "mushroom_item", "preserves_pickle", "extractor_input", "imaginary_mushroom" ],
                         
                       },
 
@@ -93,7 +93,7 @@
                          "Edibility": 300,
                           "IsDrink": false, 
                         "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "edible_mushroom", "color_pink", "mushroom_item", "preserves_pickle", "color_blue", "fck_trfs", "extractor_input", "rain_exclude" ],
+                          "ContextTags": [ "edible_mushroom", "color_pink", "mushroom_item", "preserves_pickle", "color_blue", "fck_trfs", "extractor_input", "rain_exclude", "imaginary_mushroom" ],
                          "Buffs": [
                                {
                                 "Id": "{{ModID}}_TransPower",
@@ -138,7 +138,7 @@
                          "Edibility": -240,
                           "IsDrink": false, 
                           "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "poisonous_mushroom", "extractor_input", "mushroom_item", "rain_exclude" ],
+                          "ContextTags": [ "poisonous_mushroom", "extractor_input", "mushroom_item", "rain_exclude", "imaginary_mushroom" ],
                          "Buffs": [
                                {
                                 "Id": "{{ModID}}_BleedingHeartDebuff",
@@ -165,7 +165,7 @@
                          "Edibility": -200,
                           "IsDrink": false, 
                         "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "poisonous_mushroom", "extractor_input", "mushroom_item", "rain_exclude", "season_winter" ],
+                          "ContextTags": [ "poisonous_mushroom", "extractor_input", "mushroom_item", "rain_exclude", "season_winter", "imaginary_mushroom" ],
                          "Buffs": [
                                  {
                             "Id": "{{ModId}}_AllEyesDebuff",
@@ -200,7 +200,7 @@
                          "Edibility": -90,
                           "IsDrink": false, 
                         "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "poisonous_mushroom", "color_dark_blue", "mushroom_item" ],
+                          "ContextTags": [ "poisonous_mushroom", "color_dark_blue", "mushroom_item", "imaginary_mushroom" ],
                           "Buffs": [
                                {
                                 "Id": "{{ModID}}_NightHornDebuff",
@@ -235,7 +235,7 @@
                    "Edibility": -1,
                     "IsDrink": false, 
                     "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                    "ContextTags": [  "color_dark_slate_blue", "inedible_mushroom", "extractor_input", "mushroom_item", "rain_exclude" ],
+                    "ContextTags": [  "color_dark_slate_blue", "inedible_mushroom", "extractor_input", "mushroom_item", "rain_exclude", "imaginary_mushroom" ],
                 
                 },
 
@@ -253,7 +253,7 @@
                          "Edibility": 40,
                           "IsDrink": false, 
                         "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "inedible_mushroom", "color_pink", "mushroom_item",  "extractor_input" ],
+                          "ContextTags": [ "inedible_mushroom", "color_pink", "mushroom_item",  "extractor_input", "imaginary_mushroom" ],
                           "Buffs": [
                                {
                                 "Id": "{{ModID}}_CandyTongueDebuff",
@@ -282,7 +282,7 @@
                          "Edibility": 40,
                           "IsDrink": false, 
                         "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "inedible_mushroom", "color_dark_purple", "mushroom_item",  "extractor_input" ],
+                          "ContextTags": [ "inedible_mushroom", "color_dark_purple", "mushroom_item",  "extractor_input", "imaginary_mushroom" ],
                           "Buffs": [
                                {
                                 "Id": "{{ModID}}_HypnoShroomDebuff",
@@ -312,7 +312,25 @@
                          "Edibility": 161,
                           "IsDrink": false, 
                         "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
-                          "ContextTags": [ "inedible_mushroom", "color_light_cyan", "mushroom_item", "extractor_input", "rain_exclude" ],
+                          "ContextTags": [ "inedible_mushroom", "color_light_cyan", "mushroom_item", "extractor_input", "rain_exclude", "imaginary_mushroom" ],
+                        
+                      },
+
+                      "MM_LilBuddy":
+                      {
+                         "Name": "MM_LilBuddy",
+                         "DisplayName": "{{i18n:MM_LilBuddy.DisplayName}}",
+                          "Description": "{{i18n:MM_LilBuddy.Description}}",
+                        "Type": "Basic",
+                          "Category": -75,
+                        //"sophie.Calcifer/Category": "{{i18n:sophie.Calcifer/Category}}",
+                          "Price": 150, 
+                         "Texture": "{{ModID}}/SpritesGlionox", 
+                          "SpriteIndex": 1, 
+                         "Edibility": -1,
+                          "IsDrink": false, 
+                        "ExcludeFromShippingCollection":"{{PerfectionToggle}}",
+                          "ContextTags": [ "inedible_mushroom", "color_gray", "mushroom_item", "extractor_input", "rain_exclude", "imaginary_mushroom" ],
                         
                       },
 

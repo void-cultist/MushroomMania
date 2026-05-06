@@ -393,7 +393,7 @@
           "Type": "Basic",
           "Category": -74,
           "Texture": "{{ModID}}/MushroomSeeds",
-          "SpriteIndex": 7,
+          "SpriteIndex": 8,
           "Price": 340,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
           "ContextTags": [  "mushroom_starter_item", "edible_mushroom_starter" ]
@@ -512,7 +512,7 @@
           "Type": "Basic",
           "Category": -74,
           "Texture": "{{ModID}}/MushroomSeeds",
-          "SpriteIndex": 7,
+          "SpriteIndex": 9,
           "Price": 1000,
           "ExcludeFromRandomSale": "{{ExcludeFromRandomSale}}",
           "ContextTags": [  "mushroom_starter_item", "inedible_mushroom_starter" ]
@@ -1154,7 +1154,7 @@
                       "summer"
                     ],
                     "DaysInPhase": 
-                       [ 7,7,7 ],
+                       [ 5,5,5,6 ],
                     "RegrowDays": 5,
                     "NeedsWatering": true,
                     "HarvestMinStack": 1,

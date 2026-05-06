@@ -450,6 +450,7 @@
             "DLX.Bundles/Purchased |contains=MM_ForestFish": true,
             "DLX.Bundles/Purchased |contains=MM_MushroomDishes": true,
             "DLX.Bundles/Purchased |contains=MM_MushroomEssencesBundle": true,
+            "DLX.Bundles/Purchased |contains=MM_SmokedMushrooms": true,
          },
          "Entries":{
             
@@ -501,6 +502,83 @@
          }
       },
 
+      ///////////////////Second map bundles
+{
+        "LogName": "even more Mushrooms Bundle",
+         "Action":"EditData",
+         "When":{
+            "DLX.Bundles/Purchased |contains=MM_InedibleShrooms": true,
+            "DLX.Bundles/Purchased |contains=MM_MushroomEssencesBundle": true
+         },
+         "Target":"UnlockableBundles/Bundles",
+         "Entries":{
+            "MM_EvenMoreMushrooms":{
+                "BundleName": "{{i18n:EvenMoreMushrooms_Bundle.name}}",
+               "BundleDescription": "{{i18n:EvenMoreMushrooms_Bundle.description}}",
+               "BundleCompletedRibbon": "Raccoon",
+               "BundleIcon": "Mushrooms",
+               "Location":"{{ModID}}_MushroomMeadow2",
+               "ShopPosition":"35, 5",
+               "ShopType": "CCMagicBook",
+               "BundleSlots": 3,
+               "Price": { 
+                "(O)MM_Maitake": 3,
+                "(O)MM_Shimeji": 3,
+                "(O)MM_SlipperyJack": 3,
+                "(O)MM_LilBuddy": 3,
+                "(O)430": 5,
+                },
+                "DrawQuestionMark": true,
+                "BundleReward": { 
+                    "(BC)FishSmoker": 2
+            }
+         }
+      },
+},
+
+{
+        "LogName": "smoked mushrooms Bundle",
+         "Action":"EditData",
+         "When":{
+            "DLX.Bundles/Purchased |contains=MM_EvenMoreMushrooms": true,
+         },
+         "Target":"UnlockableBundles/Bundles",
+         "Entries":{
+            "MM_SmokedMushrooms":{
+                "BundleName": "{{i18n:SmokedMushrooms_Bundle.name}}",
+               "BundleDescription": "{{i18n:SmokedMushrooms_Bundle.description}}",
+               "BundleCompletedRibbon": "Raccoon",
+               "BundleIcon": "Mushrooms",
+               "Location":"{{ModID}}_MushroomMeadow2",
+               "ShopPosition":"35, 5",
+               "ShopType": "CCMagicBook",
+               "BundleSlots": 5,
+               "Price": { 
+                "(UB.AP)DLX.MM.SmokedChampignon_BundleItem": 3,
+                "(UB.AP)DLX.MM.SmokedCommonMushroom_BundleItem": 3,
+                "(UB.AP)DLX.MM.SmokedGreatWoodMushroom_BundleItem": 3,
+                "(UB.AP)DLX.MM.SmokedMatsutake_BundleItem": 3,
+                "(UB.AP)DLX.MM.SmokedAspen_BundleItem": 3,
+                "(UB.AP)DLX.MM.SmokedMorel_BundleItem": 3,
+                "(UB.AP)DLX.MM.SmokedChanterelle_BundleItem": 3
+
+                },
+                   
+                
+                "DrawQuestionMark": true,
+                "BundleReward": {
+                  "(O)MM_ShroomOfTransingYourGender": 1,
+                
+
+               },
+               "EditMap": "{{InternalAssetKey: assets/maps/MM2GatePatch.tmx}}",
+               "EditMapLocation": "void.MM_MushroomMeadow2",
+               "EditMapPosition": "12, 32",
+               "EditMapMode": "Replace"
+         }
+      },
+},
+
       
 
 
@@ -518,10 +596,10 @@
                 //The item key should not contain spaces or colons
                 //it has to be unique
 		"MM.PickledMushrooms_BundleItem": { 
-			"Name": "Pickled Mushrooms", //Overwriting the item Name
+			"Name": "{{i18n:MM.PickledMushrooms_BundleItem}}", //Overwriting the item Name
 			"ContextTags": [ 
 				"id_(o)342", //ItemId = (O)348 Wine
-				"edible_mushroom"
+				"preserve_sheet_index_404"
 				
 			],
 			"ItemCopy": "(O)342", //Copy image, Description and Name from (O)348 Wine
@@ -754,6 +832,100 @@
 			],
 			"ItemCopy": "(O)MM_Flavored_Potion", 
 			"SubItemCopy": "(O)Cornucopia_Shiitake", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+//////////smoked mushrooms bundle items
+      
+      "DLX.MM.SmokedChampignon_BundleItem":
+      {
+         "Name": "{{i18n:MM.SmokedChampignon_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_SmokedMushroom", 
+				"preserve_sheet_index_mm_champignon",
+				
+			],
+			"ItemCopy": "(O)MM_SmokedMushroom", 
+			"SubItemCopy": "(O)MM_Champignon", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+      "DLX.MM.SmokedGreatWoodMushroom_BundleItem":
+      {
+         "Name": "{{i18n:MM.SmokedGreatWoodMushroom_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_SmokedMushroom", 
+				"preserve_sheet_index_mm_GreatWoodMushroom",
+				
+			],
+			"ItemCopy": "(O)MM_SmokedMushroom", 
+			"SubItemCopy": "(O)MM_GreatWoodMushroom", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+       "DLX.MM.SmokedCommonMushroom_BundleItem":
+      {
+         "Name": "{{i18n:MM.SmokedCommonMushroom_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_SmokedMushroom", 
+				"preserve_sheet_index_404",
+				
+			],
+			"ItemCopy": "(O)MM_SmokedMushroom", 
+			"SubItemCopy": "(O)404", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+       "DLX.MM.SmokedMatsutake_BundleItem":
+      {
+         "Name": "{{i18n:MM.SmokedMatsutake_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_SmokedMushroom", 
+				"preserve_sheet_index_mm_matsutake",
+				
+			],
+			"ItemCopy": "(O)MM_SmokedMushroom", 
+			"SubItemCopy": "(O)MM_Matsutake", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+      "DLX.MM.SmokedAspen_BundleItem":
+      {
+         "Name": "{{i18n:MM.SmokedAspen_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_SmokedMushroom", 
+				"preserve_sheet_index_mm_Aspen",
+				
+			],
+			"ItemCopy": "(O)MM_SmokedMushroom", 
+			"SubItemCopy": "(O)MM_Aspen", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+      "DLX.MM.SmokedMorel_BundleItem":
+      {
+         "Name": "{{i18n:MM.SmokedMorel_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_SmokedMushroom", 
+				"preserve_sheet_index_257",
+				
+			],
+			"ItemCopy": "(O)MM_SmokedMushroom", 
+			"SubItemCopy": "(O)257", 
+			"ItemTypes": [ "(O)"] 
+      },
+
+      
+      "DLX.MM.SmokedChanterelle_BundleItem":
+      {
+         "Name": "{{i18n:MM.SmokedChanterelle_BundleItem}}",
+			"ContextTags": [ 
+				"id_(o)MM_SmokedMushroom", 
+				"preserve_sheet_index_281",
+				
+			],
+			"ItemCopy": "(O)MM_SmokedMushroom", 
+			"SubItemCopy": "(O)281", 
 			"ItemTypes": [ "(O)"] 
       },
 

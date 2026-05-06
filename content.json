@@ -72,54 +72,6 @@
             "When": { "SpawnRate": "higher" }
         },
 
-///Mushroom Spawn Chance
-        {
-            "Name": "SpawnChance",
-            "Value": "+0.25",
-            "When": { "Mushroom Spawn Chance": "higher" }
-        },
-         {
-            "Name": "SpawnChance",
-            "Value": "* 0.7",
-            "When": { "Mushroom Spawn Chance": "lower" }
-        },
-         {
-            "Name": "SpawnChance",
-            "Value": "",
-            "When": { "Mushroom Spawn Chance": "default" }
-        },
-
-         {
-            "Name": "RareSpawnChance",
-            "Value": "+0.1",
-            "When": { "Mushroom Spawn Chance": "higher" }
-        },
-         {
-            "Name": "RareSpawnChance",
-            "Value": "* 0.9",
-            "When": { "Mushroom Spawn Chance": "lower" }
-        },
-         {
-            "Name": "RareSpawnChance",
-            "Value": "",
-            "When": { "Mushroom Spawn Chance": "default" }
-        },
-
-          /* {
-            "Name": "SyncedRandom",
-            "Value": "* 2 + 0.1",
-            "When": { "Mushroom Spawn Chance": "higher" }
-        },
-         {
-            "Name": "SyncedRandom",
-            "Value": "* 0.8",
-            "When": { "Mushroom Spawn Chance": "lower" }
-        },
-         {
-            "Name": "SyncedRandom",
-            "Value": "",
-            "When": { "Mushroom Spawn Chance": "default" }
-        }, */
 
 
 
@@ -339,7 +291,8 @@
         //including imaginary shrooms
         {
             "Name": "IncludeImaginary",
-            "Value": "imaginary"
+            "Value": "imaginary",
+            "When": { "Include imaginary Mushrooms": true }
         },
         {
             "Name": "IncludeImaginary",
@@ -395,7 +348,7 @@
         {
             "Name": "BleedingHeartRename",
             "Value": ".Alchemistry",
-            "When": { "HasMod": "Morghoula.AlchemistryCP"}
+            "When": { "HasMod |contains=Morghoula.AlchemistryCP": true }
         },
         {
             "Name": "BleedingHeartRename",
@@ -413,6 +366,7 @@
         {
             "Name": "FruitTree1",
             "Value": "631", //peach 
+            "When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false },
         },
 
         {
@@ -424,6 +378,7 @@
         {
             "Name": "FruitTree2",
             "Value": "630", //orange
+            "When": { "HasMod |contains=Cornucopia.MoreCrops": false },
         },
 
         {
@@ -442,7 +397,10 @@
 
         {
             "Name": "FruitTree3",
-            "Value": "629", //apricot
+            "Value": "629", //apricot,
+            "When": { "HasMod |contains=Cornucopia.MoreCrops": false, 
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+                },
         },
 
         {
@@ -461,7 +419,10 @@
 
         {
             "Name": "FruitTree4",
-            "Value": "835", //mango
+            "Value": "835", //mango,
+             "When": { "HasMod |contains=Cornucopia.MoreCrops": false, 
+            "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+                },
         },
 
         {
@@ -522,6 +483,43 @@
             "Name": "MushroomEssence",
             "Value": "greatwoodmushroom",
             "When": { "DayOfWeek": "Sunday", "Include imaginary Mushrooms": true}
+        },
+
+        //////weekdays//////
+        {
+            "Name": "Weekday",
+            "When": { "DayOfWeek": "Monday" },
+            "Value": "Mon"
+        },
+        {
+            "Name": "Weekday",
+            "When": { "DayOfWeek": "Tuesday" },
+            "Value": "Tue"
+        },
+        {
+            "Name": "Weekday",
+            "When": { "DayOfWeek": "Wednesday" },
+            "Value": "Wed"
+        },
+        {
+            "Name": "Weekday",
+            "When": { "DayOfWeek": "Thursday" },
+            "Value": "Thu"
+        },
+        {
+            "Name": "Weekday",
+            "When": { "DayOfWeek": "Friday" },
+            "Value": "Fri"
+        },
+        {
+            "Name": "Weekday",
+            "When": { "DayOfWeek": "Saturday" },
+            "Value": "Sat"
+        },
+        {
+            "Name": "Weekday",
+            "When": { "DayOfWeek": "Sunday" },
+            "Value": "Sun"
         },
 
         
@@ -613,6 +611,13 @@
                 "Description": "By default, potions count towards the perfection achievement (shipping collection). Disable this setting if you don't want this.",
                 "Section": "General"
             }, 
+            "Rename Fish Smoker":
+            {
+                "AllowValues": "true, false",
+                "Default": true,
+                "Description": "Renames Fish Smoker machine to 'Smoker'.",
+                "Section": "General"
+            }, 
             "Mushroom Spawn Chance":
             {
                "AllowValues": "default, lower, higher",
@@ -677,17 +682,22 @@
 {
     "LogName": "Include spawnable forage data",
     "Action": "Include",
-    "FromFile": "data/spawns/{{IncludeImaginary}}/forage.json, data/spawns/{{IncludeImaginary}}/forest.json, data/spawns/{{IncludeImaginary}}/mushroommeadow.json, data/spawns/{{IncludeImaginary}}/island.json, data/spawns/{{IncludeImaginary}}/mountain.json, data/spawns/{{IncludeImaginary}}/railroad.json, data/spawns/{{IncludeImaginary}}/busstop.json, data/spawns/{{IncludeImaginary}}/backwoods.json"
+    "FromFile": "data/spawns/forage.json, data/spawns/{{IncludeImaginary}}/{{Mushroom Spawn Chance}}/forest.json, data/spawns/{{IncludeImaginary}}/{{Mushroom Spawn Chance}}/woods.json, data/spawns/{{IncludeImaginary}}/{{Mushroom Spawn Chance}}/mushroommeadow.json, data/spawns/{{IncludeImaginary}}/{{Mushroom Spawn Chance}}/island.json, data/spawns/{{IncludeImaginary}}/{{Mushroom Spawn Chance}}/mountain.json, data/spawns/{{IncludeImaginary}}/{{Mushroom Spawn Chance}}/railroad.json, data/spawns/{{IncludeImaginary}}/{{Mushroom Spawn Chance}}/busstop.json, data/spawns/{{IncludeImaginary}}/{{Mushroom Spawn Chance}}/backwoods.json"
 },
 {
     "LogName": "Include machine data",
     "Action": "Include",
-    "FromFile": "data/machines/mushroomEssenceExtractor.json, data/machines/potionmachine.json"
+    "FromFile": "data/machines/mushroomEssenceExtractor.json, data/machines/potionmachine.json, data/machines/smoker.json"
 },
 { 
     "LogName": "Include bundles",
     "Action": "Include",
     "FromFile": "data/bundles.json"
+},
+{
+    "LogName": "Include vendor NPC",
+    "Action": "Include",
+    "FromFile": "data/npc/character.json, data/npc/schedule.json, data/npc/dialogue.json, data/potionShop.json"
 },
 {
     "LogName": "Include potions",

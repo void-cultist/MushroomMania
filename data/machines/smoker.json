@@ -1,0 +1,91 @@
+{
+    "Changes": [
+
+        {
+            "LogName": "FishSmoker rename",
+			"Action": "EditData",
+			"Target": "Data/BigCraftables",
+			"When": {
+				"Rename Fish Smoker": true
+			},
+			"Fields": {
+				"FishSmoker": {
+					"DisplayName": "{{i18n:Smoker.name}}",
+					"Description": "{{i18n:Smoker.description}}"
+				}
+			}
+		},
+
+        {
+            "LogName": "Add smoked mushroom object",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries":  {
+            "MM_SmokedMushroom":
+                {
+                    "Name": "MM_SmokedMushroom",
+                    "DisplayName": "{{i18n:MM_SmokedMushroom.name}}",
+                    "Description": "{{i18n:MM_SmokedMushroom.description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 20, 
+                    "Texture": "maps/springObjects", 
+                    "SpriteIndex": 404, 
+                    "ColorOverlayFromNextIndex": false,
+                    "Edibility": 2,
+                    "IsDrink": false,
+                    "ContextTags": [ "smoked_item", "smoked_mushroom", "draw_preserve_sprite" ],
+            
+                },
+            }
+            
+        },
+
+        {
+            "LogName": "Edit smoker machine output rules",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [ "(BC)FishSmoker", "OutputRules" ],
+            "Entries": {
+                "MM_SmokedMushroom": {
+					"Id": "MM_SmokedMushroom",
+					"Triggers": 
+						[
+							{
+							"RequiredTags": ["edible_mushroom"],
+                            "RequiredCount": 1
+							}
+						],
+					"OutputItem":
+						[
+							{
+							"Id": "MM_SmokedMushroom",
+                            "ItemId": "MM_SmokedMushroom",
+                            "ObjectInternalName": "{0} MM_SmokedMushroom",
+                            "ModData": { "selph.ExtraMachineConfig.ExtraContextTags": "mushroom_item" },
+                            "ObjectDisplayName": "[LocalizedText Strings\\Objects:MM_SmokedMushroom %PRESERVED_DISPLAY_NAME]",
+                            "PreserveId": "DROP_IN",
+                            "CopyColor": true,
+                            "CopyPrice": true,
+                            "CopyQuality": true,
+                            "CustomData": {
+                                "selph.ExtraMachineConfig.InputEdibilityMultiplier": 2.0
+                            }
+							}
+						],
+					"MinutesUntilReady": 150,
+					
+				}
+            }
+        },
+
+        {
+            "LogName": "Strings patch - smoked mushroom",
+            "Action": "EditData",
+            "Target": "Strings/Objects",
+            "Entries": {
+                "MM_SmokedMushroom": "{{i18n: MM_SmokedMushroom}}",
+        },
+      }
+    ]
+}

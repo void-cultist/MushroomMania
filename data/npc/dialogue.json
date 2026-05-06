@@ -1,0 +1,16 @@
+{
+    "Changes": [
+        {
+            "LogName": "vendor npc dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/PlaceholderName",
+			"Entries": {
+
+                "spring": "Greetings, seeker of knowledge.",
+                "{{Weekday}}": "{{i18n:{{Weekday}}_{{Random:{{Range:0,5}}}}}}",
+                "{{Season}}_{{Weekday}}": "{{i18n:{{Season}}_{{Weekday}}_{{Random:{{Range:0,5}}}}}}"
+                
+            }
+        }
+    ]
+}

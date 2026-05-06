@@ -118,7 +118,7 @@
                 {
                     "Id": "{{ModID}}_PotionBook1_TrAction",
                     "Trigger": "spacechase0.SpaceCore_OnItemUsed",
-                    "Condition": "TRUE",
+                    "Condition": "ITEM_ID Target (O)MM_PotionBook1",
                     "Actions": [
                         "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook_Read}}\" true",
                         "Spiderbuttons.BETAS_PlaySound book_read",
@@ -131,7 +131,7 @@
                 {
                     "Id": "{{ModID}}_PotionBook2_TrAction",
                     "Trigger": "spacechase0.SpaceCore_OnItemUsed",
-                    "Condition": "TRUE",
+                    "Condition": "ITEM_ID Target (O)MM_PotionBook2",
                     "Actions": [
                         "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook_Read}}\" true",
                         "Spiderbuttons.BETAS_PlaySound book_read",
@@ -143,7 +143,7 @@
                 {
                     "Id": "{{ModID}}_PotionBook3_TrAction",
                     "Trigger": "spacechase0.SpaceCore_OnItemUsed",
-                    "Condition": "TRUE",
+                    "Condition": "ITEM_ID Target (O)MM_PotionBook3",
                     "Actions": [
                         "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook_Read}}\" true",
                         "Spiderbuttons.BETAS_PlaySound book_read",
@@ -155,7 +155,7 @@
                 {
                     "Id": "{{ModID}}_PotionBook4_TrAction",
                     "Trigger": "spacechase0.SpaceCore_OnItemUsed",
-                    "Condition": "TRUE",
+                    "Condition": "ITEM_ID Target (O)MM_PotionBook4",
                     "Actions": [
                         "Spiderbuttons.BETAS_Message \"{{i18n:PotionBook_Read}}\" true",
                         "Spiderbuttons.BETAS_PlaySound book_read",

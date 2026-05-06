@@ -1,0 +1,99 @@
+{
+    "Changes": [
+           {
+             "LogName": "Add  mushroom spawns to island east",
+            "Target": "Data/Locations",
+             "Action": "EditData",
+            "TargetField": [ "IslandEast", "Forage" ],
+            "Entries": {
+                   "MM_DevilsFingers": 
+                  {
+
+                    "Chance": 0.05,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3, !WEATHER Target Rain, GreenRain",
+                    "Id": "(O)MM_DevilsFingers",
+                    "ItemId": "(O)MM_DevilsFingers",
+                    "PerItemCondition": null
+                },
+
+                 "MM_BluePinkgill": 
+                  {
+
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, LOCATION_CONTEXT Target Island",
+                    "Id": "(O)MM_BluePinkgill",
+                    "ItemId": "(O)MM_BluePinkgill",
+                    "PerItemCondition": null
+                },
+
+                "MM_PixiesParasol": 
+                  {
+
+                    "Chance": 0.05,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 7, LOCATION_CONTEXT Target Island",
+                    "Id": "(O)MM_PixiesParasol",
+                    "ItemId": "(O)MM_PixiesParasol",
+                    "PerItemCondition": null
+                },
+            }
+        },
+
+          {
+             "LogName": "Add  mushroom spawns to island West",
+            "Target": "Data/Locations",
+             "Action": "EditData",
+             //"When": { "Include Inedible Mushrooms": true },
+            "TargetField": [ "IslandWest", "Forage" ],
+            "Entries": {
+                   "MM_DevilsFingers": 
+                  {
+
+                    "Chance": 0.05,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 3",
+                    "Id": "(O)MM_DevilsFingers",
+                    "ItemId": "(O)MM_DevilsFingers",
+                    "PerItemCondition": null
+                },
+
+                 "MM_BluePinkgill": 
+                  {
+
+                    "Chance": 0.1,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 6, LOCATION_CONTEXT Target Island",
+                    "Id": "(O)MM_BluePinkgill",
+                    "ItemId": "(O)MM_BluePinkgill",
+                    "PerItemCondition": null
+                },
+            }
+        },
+
+             {
+             "LogName": "Add  mushroom spawns to island South",
+            "Target": "Data/Locations",
+             "Action": "EditData",
+             "When": { "Include imaginary Mushrooms": true },
+            "TargetField": [ "IslandSouth", "Forage" ],
+            "Entries": {
+                   "MM_HypnoShroom": 
+                  {
+
+                    "Chance": 0.15,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 4",
+                    "Id": "(O)MM_HypnoShroom",
+                    "ItemId": "(O)MM_HypnoShroom",
+                    "PerItemCondition": null
+                },
+
+                 "MM_HealthShroom": 
+                  {
+
+                    "Chance": 0.15,
+                    "Condition": "PLAYER_BASE_FORAGING_LEVEL Any 5, LOCATION_CONTEXT Target Island",
+                    "Id": "(O)MM_HealthShroom",
+                    "ItemId": "(O)MM_HealthShroom",
+                    "PerItemCondition": null
+                },
+            }
+        }
+    ]
+}

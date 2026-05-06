@@ -18,8 +18,11 @@
         "MM_CaesarsMushroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_Enoki": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_Matsutake": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_Shimeji": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_SlipperyJack": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_LobsterMushroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_BlackTrumpet": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
+        "MM_Maitake": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         
         "MM_DestroyingAngel": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_TheSickener": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
@@ -53,6 +56,7 @@
         "MM_AllEyes": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_NightHorn": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
 
+        "MM_LilBuddy":  { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_WaningMoonShroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_CandyTongue": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
         "MM_HypnoShroom": { "CategoryTextOverride": "{{i18n:sophie.Calcifer/Category}}" },
