@@ -14,3 +14,6 @@ As of 0.5.0:
 * [MEEP](https://www.nexusmods.com/stardewvalley/mods/14493)
 * [Kailey's Tilesheets](https://www.nexusmods.com/stardewvalley/mods/14371)
 
+As of 0.6.0:
+*[PeliQ v 1.2.0](https://github.com/Mushymato/PeliQ/releases/download/1.2.0/PeliQ.1.2.0.zip) - big thanks to mushymato for the custom flavored item support!
+
